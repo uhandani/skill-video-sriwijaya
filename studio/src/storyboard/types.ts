@@ -47,6 +47,8 @@ export type SceneBase = {
   /** transisi KELUAR dari adegan ini */
   transisi?: Transisi;
   bingkai?: boolean;
+  /** lapisan ilustrasi di belakang konten adegan apa pun (kanvas 1000 × 1778) */
+  ilustrasi?: IlustrasiProps;
   /** voice-over per adegan — diisi otomatis oleh `npm run sinkron` */
   vo?: SceneVO;
 };

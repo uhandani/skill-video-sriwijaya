@@ -6,10 +6,10 @@ description: Membuat video pendek FISIKA pilar "Ruang Semesta" UDcation — gaya
 # Video Ruang Semesta (Fisika) — UDcation
 
 Pilar fisika UDcation. Mesin video, komponen, dan alur kerja SAMA dengan skill
-**video-sains-nusantara** (Ruang Hitung); yang berbeda: tema warna, motif, ilustrasi, dan pola cerita.
+**video-ruang-hitung** (Ruang Hitung); yang berbeda: tema warna, motif, ilustrasi, dan pola cerita.
 
-**Baca dulu**: `.claude/skills/video-sains-nusantara/SKILL.md` (alur kerja 9 langkah & aturan gaya),
-lalu referensi bersama di `.claude/skills/video-sains-nusantara/references/`:
+**Baca dulu**: `.claude/skills/video-ruang-hitung/SKILL.md` (alur kerja 9 langkah & aturan gaya),
+lalu referensi bersama di `.claude/skills/video-ruang-hitung/references/`:
 `scene-library.md`, `production.md`, `accuracy.md`, `tema-ilustrasi-thumbnail.md`.
 
 ## Identitas Ruang Semesta

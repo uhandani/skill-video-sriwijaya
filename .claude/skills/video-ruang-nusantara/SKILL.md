@@ -6,10 +6,10 @@ description: Membuat video pendek pilar "Ruang Nusantara" UDcation — sejarah, 
 # Video Ruang Nusantara — UDcation
 
 Pilar sejarah & budaya × MTK/fisika. Mesin video dan alur kerja SAMA dengan skill
-**video-sains-nusantara**; yang berbeda: tema, ilustrasi, pola cerita, dan **standar riset yang lebih ketat**.
+**video-ruang-hitung**; yang berbeda: tema, ilustrasi, pola cerita, dan **standar riset yang lebih ketat**.
 
-**Baca dulu**: `.claude/skills/video-sains-nusantara/SKILL.md` (alur kerja & aturan gaya), lalu
-`.claude/skills/video-sains-nusantara/references/`: `scene-library.md`, `production.md`,
+**Baca dulu**: `.claude/skills/video-ruang-hitung/SKILL.md` (alur kerja & aturan gaya), lalu
+`.claude/skills/video-ruang-hitung/references/`: `scene-library.md`, `production.md`,
 `accuracy.md`, `tema-ilustrasi-thumbnail.md`.
 
 ## Identitas Ruang Nusantara

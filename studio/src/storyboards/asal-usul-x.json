@@ -278,6 +278,18 @@
       "end": 6.687
      }
     ]
+   },
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "gulungan",
+      "x": 500,
+      "y": 1250,
+      "skala": 1.3,
+      "at": 1.45,
+      "kata": "Diophantus"
+     }
+    ]
    }
   },
   {
@@ -356,6 +368,25 @@
       "w": "sesuatu.",
       "start": 6.595,
       "end": 7.314
+     }
+    ]
+   },
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "kubah",
+      "x": 470,
+      "y": 1270,
+      "skala": 1.25,
+      "at": 2.68,
+      "kata": "Baghdad"
+     },
+     {
+      "jenis": "bintang",
+      "x": 800,
+      "y": 1000,
+      "skala": 0.9,
+      "at": 0.8
      }
     ]
    }
@@ -490,6 +521,18 @@
       "end": 7.889
      }
     ]
+   },
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "buku",
+      "x": 500,
+      "y": 1270,
+      "skala": 1.5,
+      "at": 3.39,
+      "kata": "Viète,"
+     }
+    ]
    }
   },
   {
@@ -574,6 +617,18 @@
       "w": "Géométrie.",
       "start": 4.956,
       "end": 5.642
+     }
+    ]
+   },
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "buku",
+      "x": 500,
+      "y": 1250,
+      "skala": 1.6,
+      "at": 4.28,
+      "kata": "menerbitkan"
      }
     ]
    }
@@ -868,6 +923,26 @@
       "w": "terbukti.",
       "start": 9.377,
       "end": 10.188
+     }
+    ]
+   },
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "percetakan",
+      "x": 270,
+      "y": 1280,
+      "skala": 1.05,
+      "at": 3.26,
+      "kata": "percetakan"
+     },
+     {
+      "jenis": "gulungan",
+      "x": 760,
+      "y": 1270,
+      "skala": 0.95,
+      "at": 7.25,
+      "kata": "Arab"
      }
     ]
    }

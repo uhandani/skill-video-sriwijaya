@@ -1,5 +1,5 @@
 ---
-name: video-sains-nusantara
+name: video-ruang-hitung
 description: Membuat video pendek MATEMATIKA pilar "Ruang Hitung" UDcation (juga konten Fakta Unik) bergaya khas "Nusantara Emas" — navy + marun, motif kawung, foil emas, subtitle karaoke, logo Δ Kawung, rumus KaTeX, diagram & grafik, voice-over ElevenLabs, plus thumbnail — dengan Remotion. Ini juga skill INTI: mesin video, alur kerja, dan referensi bersama untuk skill video-ruang-semesta (fisika) dan video-ruang-nusantara (sejarah & budaya). Gunakan saat pengguna minta video/Reels/Shorts UDcation tentang MTK (aljabar, geometri, bilangan, peluang, sejarah simbol MTK) atau revisi video UDcation.
 ---
 
@@ -22,7 +22,7 @@ Semua komponen visual sudah ada di proyek Remotion `studio/` dan dipakai ulang.
 | `studio/src/storyboards/*.json` | Storyboard tiap video + `index.ts` (daftar video) |
 | `studio/verify/*.py` | Skrip verifikasi angka/rumus per video (wajib) |
 | `branding/` | Logo Δ Kawung (SVG/PNG), dokumen brand, generator aset |
-| `.claude/skills/video-sains-nusantara/references/` | Panduan rinci (baca sesuai kebutuhan) |
+| `.claude/skills/video-ruang-hitung/references/` | Panduan rinci (baca sesuai kebutuhan) |
 
 Jika `studio/` belum ada `node_modules`, jalankan `cd studio && npm install` dulu.
 
@@ -36,7 +36,9 @@ Jika `studio/` belum ada `node_modules`, jalankan `cd studio && npm install` dul
    angka ditulis seperti diucapkan: "dua puluh lima").
 3. **Verifikasi isi** → `references/accuracy.md`. Buat `studio/verify/<nama-file>.py`
    yang meng-assert setiap angka di narasi, rumus, grafik, dan simulasi. Jalankan sampai OK.
-4. **Susun storyboard JSON** di `studio/src/storyboards/<nama-file>.json`, pilih tipe adegan
+4. **Susun storyboard JSON** — termasuk lapisan `"ilustrasi"` untuk benda/tokoh/tempat yang disebut
+   (lihat `references/tema-ilustrasi-thumbnail.md` → "Lapisan ilustrasi").
+   Simpan di `studio/src/storyboards/<nama-file>.json`, pilih tipe adegan
    dari `references/scene-library.md`. Daftarkan di `studio/src/storyboards/index.ts`.
    Koordinat geometri yang rumit → hitung dengan skrip Python, jangan ditebak.
 5. **Cek otomatis:** `cd studio && npm run cek && npm run verifikasi && npx tsc --noEmit`.
@@ -78,6 +80,8 @@ Perintah lengkap, audio/voice-over, dan catatan lingkungan → `references/produ
 - [ ] Emas tidak dipakai berlebihan; tiap adegan punya satu fokus jelas
 - [ ] Hook ≤ 7 detik dan memancing rasa ingin tahu; payoff menjawab hook
 - [ ] Thumbnail `<Id>-thumb` & `<Id>-thumb-yt` dirender dan dicek
+- [ ] **Tidak monoton**: benda/tokoh/tempat konkret di narasi punya ilustrasi yang muncul saat disebut
+      (field `"ilustrasi"` di adegan mana pun) — minimal separuh adegan berilustrasi
 
 ## Menambah kemampuan baru
 

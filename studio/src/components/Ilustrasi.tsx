@@ -9,7 +9,8 @@ import { C } from "../brand/theme";
  */
 export type JenisIlustrasi =
   | "matahari" | "bulan" | "bumi" | "bintang" | "awan" | "ombak" | "gunung"
-  | "kapal" | "candi" | "rumahPanggung" | "gong" | "orang" | "kelapa" | "planet";
+  | "kapal" | "candi" | "rumahPanggung" | "gong" | "orang" | "kelapa" | "planet"
+  | "tangga" | "dindingBata" | "gulungan" | "buku" | "kubah" | "percetakan";
 
 const L = 4.5; // tebal garis
 
@@ -233,6 +234,139 @@ const Kelapa: React.FC<{ t: number }> = ({ t }) => (
   </g>
 );
 
+const Bata: React.FC<{ x: number; y: number; w: number; h: number }> = ({ x, y, w, h }) => {
+  const rows = Math.floor(h / 22);
+  return (
+    <g>
+      <rect x={x} y={y} width={w} height={h} fill={IL.bata} stroke={C.krem} strokeWidth={L} />
+      <g stroke={C.krem} strokeWidth={1.8} opacity={0.55}>
+        {Array.from({ length: rows }).map((_, r) => (
+          <g key={r}>
+            <path d={`M${x} ${y + (r + 1) * 22} H${x + w}`} />
+            {Array.from({ length: Math.ceil(w / 40) + 1 }).map((__, c) => {
+              const bx = x + c * 40 + (r % 2 ? 20 : 0);
+              return bx > x && bx < x + w ? <path key={c} d={`M${bx} ${y + r * 22} V${y + (r + 1) * 22}`} /> : null;
+            })}
+          </g>
+        ))}
+      </g>
+    </g>
+  );
+};
+
+/** Tembok bata (tukang bangunan). (0,0) = tengah-bawah. */
+const DindingBata: React.FC = () => (
+  <g>
+    <Bata x={-110} y={-176} w={220} h={176} />
+    <path d="M-120 0 H120" stroke={C.krem} strokeWidth={L} />
+  </g>
+);
+
+/** Tangga bersandar di tembok — proporsi 3 : 4 : 5 (kaki 3, tinggi 4, tangga 5). */
+const Tangga: React.FC = () => {
+  const u = 44; // 1 meter
+  const wallX = 60;
+  const foot: [number, number] = [wallX - 3 * u, 0];
+  const top: [number, number] = [wallX, -4 * u];
+  const rail = (dx: number) => `M${foot[0] + dx} ${foot[1]} L${top[0] + dx - 4} ${top[1]}`;
+  return (
+    <g strokeLinecap="round">
+      <Bata x={wallX} y={-4 * u - 30} w={60} h={4 * u + 30} />
+      <path d={`M-120 0 H${wallX + 80}`} stroke={C.krem} strokeWidth={L} />
+      <g stroke={IL.kayuTerang} strokeWidth={9}>
+        <path d={rail(-10)} />
+        <path d={rail(10)} />
+      </g>
+      <g stroke={IL.kayuTerang} strokeWidth={6}>
+        {Array.from({ length: 7 }).map((_, i) => {
+          const t = (i + 1) / 8;
+          const x = foot[0] + (top[0] - foot[0]) * t;
+          const y = foot[1] + (top[1] - foot[1]) * t;
+          return <path key={i} d={`M${x - 12} ${y} L${x + 10} ${y}`} />;
+        })}
+      </g>
+      <g stroke={C.krem} strokeWidth={3} fill="none">
+        <path d={rail(-10)} opacity={0} />
+        <path d={`M${wallX - 16} 0 V-16 H${wallX}`} />
+      </g>
+    </g>
+  );
+};
+
+/** Gulungan naskah kuno (papirus/perkamen) dengan tulisan samar. */
+const Gulungan: React.FC = () => (
+  <g stroke={C.krem} strokeWidth={L} strokeLinejoin="round">
+    <path d="M-90 -120 H90 V-20 H-90 Z" fill={C.perkamen} />
+    <g stroke={IL.kayu} strokeWidth={3} opacity={0.7}>
+      {[-100, -84, -68, -52, -36].map((y, i) => (
+        <path key={y} d={`M-70 ${y} H${40 - (i % 2) * 30}`} />
+      ))}
+    </g>
+    <rect x={-104} y={-130} width={18} height={120} rx={9} fill={IL.kayuTerang} />
+    <rect x={86} y={-130} width={18} height={120} rx={9} fill={IL.kayuTerang} />
+    <path d="M-95 -132 v-10 M95 -132 v-10 M-95 -8 v10 M95 -8 v10" stroke={C.emas} strokeWidth={5} />
+  </g>
+);
+
+/** Buku terbuka + pena bulu (naskah matematika). */
+const Buku: React.FC = () => (
+  <g stroke={C.krem} strokeWidth={L} strokeLinejoin="round">
+    <path d="M0 -20 Q-50 -40 -110 -24 V-110 Q-50 -126 0 -106 Z" fill={C.perkamen} />
+    <path d="M0 -20 Q50 -40 110 -24 V-110 Q50 -126 0 -106 Z" fill={C.perkamen} />
+    <path d="M0 -106 V-20" />
+    <path d="M-110 -24 L-110 -10 Q-50 -26 0 -6 Q50 -26 110 -10 L110 -24" fill={IL.marun} />
+    <g stroke={IL.kayu} strokeWidth={2.5} opacity={0.75}>
+      {[-92, -78, -64, -50].map((y) => (
+        <path key={y} d={`M-90 ${y + 4} Q-50 ${y - 6} -14 ${y + 4}`} fill="none" />
+      ))}
+      <path d="M20 -80 q20 -18 40 0 q20 18 40 0" fill="none" />
+    </g>
+    <g transform="translate(70 -110) rotate(28)">
+      <path d="M0 0 C-14 -40 -6 -90 12 -120 C18 -86 14 -40 0 0 Z" fill={C.krem} strokeWidth={3} />
+      <path d="M0 0 L6 -100" strokeWidth={2} />
+      <path d="M0 0 l-3 12 l6 0 Z" fill={C.emas} stroke="none" />
+    </g>
+  </g>
+);
+
+/** Bangunan berkubah ala Baghdad abad pertengahan (rumah ilmu). */
+const Kubah: React.FC = () => (
+  <g stroke={C.krem} strokeWidth={L} strokeLinejoin="round">
+    <path d="M-110 0 V-90 H110 V0 Z" fill={IL.kayu} />
+    {[-70, -24, 24, 70].map((x) => (
+      <path key={x} d={`M${x - 14} 0 V-44 Q${x} -66 ${x + 14} -44 V0`} fill={IL.indigoGelap} />
+    ))}
+    <path d="M-60 -90 Q-60 -170 0 -186 Q60 -170 60 -90 Z" fill={IL.indigo} />
+    <path d="M-40 -100 Q-38 -160 0 -172" fill="none" strokeWidth={2} opacity={0.5} />
+    <path d="M0 -186 V-212" stroke={C.emas} strokeWidth={5} />
+    <circle cy={-218} r={7} fill={C.emas} stroke="none" />
+    <path d="M150 0 V-150 M130 0 V-150 M125 -150 H155 L140 -176 Z" fill={IL.kayuTerang} />
+    <path d="M-114 -90 H114" stroke={C.emas} strokeWidth={4} />
+  </g>
+);
+
+/** Mesin cetak kayu + blok huruf (salah satunya "x"). */
+const Percetakan: React.FC<{ t: number }> = ({ t }) => {
+  const press = Math.max(0, Math.sin(t / 16)) * 14;
+  return (
+    <g stroke={C.krem} strokeWidth={L} strokeLinejoin="round">
+      <path d="M-80 0 V-200 M80 0 V-200 M-96 -200 H96" fill="none" strokeWidth={10} stroke={IL.kayuTerang} />
+      <path d="M-6 -200 V-150" stroke={C.emas} strokeWidth={6} />
+      <rect x={-60} y={-150 + press} width={120} height={22} fill={IL.kayu} />
+      <rect x={-70} y={-60} width={140} height={16} fill={IL.kayu} />
+      {[-48, -16, 16, 48].map((x, i) => (
+        <g key={x}>
+          <rect x={x - 14} y={-92} width={28} height={30} fill={i === 2 ? C.emas : C.perkamen} strokeWidth={2.5} />
+          <text x={x} y={-70} textAnchor="middle" fontFamily="serif" fontStyle="italic" fontWeight={700} fontSize={22} fill={IL.indigoGelap} stroke="none">
+            {["a", "b", "x", "y"][i]}
+          </text>
+        </g>
+      ))}
+      <path d="M-100 0 H100" />
+    </g>
+  );
+};
+
 export const ILUSTRASI: Record<JenisIlustrasi, React.FC<{ t: number }>> = {
   matahari: Matahari,
   bulan: Bulan,
@@ -248,6 +382,12 @@ export const ILUSTRASI: Record<JenisIlustrasi, React.FC<{ t: number }>> = {
   gong: Gong,
   orang: Orang,
   kelapa: Kelapa,
+  tangga: Tangga,
+  dindingBata: DindingBata,
+  gulungan: Gulungan,
+  buku: Buku,
+  kubah: Kubah,
+  percetakan: Percetakan,
 };
 
 /** <defs> bersama (gradien emas + glow). Taruh sekali di dalam <svg>. */

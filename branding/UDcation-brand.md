@@ -164,7 +164,7 @@ Hasil penelusuran singkat:
 
 1. **Fase 1 — Konten (bulan 0–6)**
    - Ritme: 3–4 Reels/Shorts per minggu + 1 video YouTube panjang per 2 minggu.
-   - Pakai skill `video-sains-nusantara` supaya produksinya konsisten dan cepat.
+   - Pakai skill `video-ruang-hitung` supaya produksinya konsisten dan cepat.
    - Dari awal, tandai setiap video dengan topik kurikulum (kelas & bab) agar nanti bisa langsung dipindah ke platform.
 2. **Fase 2 — Komunitas (bulan 4–9)**
    - Buat saluran WhatsApp atau newsletter.

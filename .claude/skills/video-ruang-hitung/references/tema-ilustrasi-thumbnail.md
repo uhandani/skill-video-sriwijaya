@@ -7,7 +7,7 @@ Emas & krem sama di semua pilar = benang merah brand.
 
 | Pilar (`pilar`) | Skill | Latar utama (`bg: navy`) | Latar sekunder (`bg: cokelat`) | Bar subtitle | Aksen ilustrasi | Motif batik |
 |---|---|---|---|---|---|---|
-| `Ruang Hitung` (juga `Fakta Unik`) | video-sains-nusantara | navy | cokelat kayu | marun | merah | **kawung** |
+| `Ruang Hitung` (juga `Fakta Unik`) | video-ruang-hitung | navy | cokelat kayu | marun | merah | **kawung** |
 | `Ruang Semesta` | video-ruang-semesta | hijau zamrud | langit malam indigo | jingga senja | hijau giok | **mega mendung** |
 | `Ruang Nusantara` (juga `Jejak Ilmu Nusantara`) | video-ruang-nusantara | cokelat sogan | laut indigo | indigo | terakota | **parang** |
 
@@ -39,9 +39,25 @@ teks krem/emas TIDAK terbaca di perkamen — pakai perkamen hanya untuk diagram 
 
 Jenis yang tersedia (`studio/src/components/Ilustrasi.tsx`):
 
-| Langit | Alam | Budaya & manusia |
-|---|---|---|
-| `matahari` `bulan` `bumi` `planet` `bintang` `awan` | `gunung` `ombak` `kelapa` | `kapal` (jung/pinisi) `candi` `rumahPanggung` `gong` `orang` (bercaping) |
+| Langit | Alam | Budaya & manusia | Benda MTK & sejarah ilmu |
+|---|---|---|---|
+| `matahari` `bulan` `bumi` `planet` `bintang` `awan` | `gunung` `ombak` `kelapa` | `kapal` (jung/pinisi) `candi` `rumahPanggung` `gong` `orang` (bercaping) | `tangga` (bersandar di tembok, proporsi 3:4:5) `dindingBata` `gulungan` (naskah kuno) `buku` (+ pena bulu) `kubah` (rumah ilmu Baghdad) `percetakan` (mesin cetak + blok huruf) |
+
+### Lapisan ilustrasi di adegan APA PUN
+
+Selain adegan `ilustrasi`, setiap adegan (`title`, `equation`, `counter`, `diagram`, …) boleh diberi
+field `"ilustrasi"` dengan isi sama (`elemen`, `label`, `garisLaut`). Gambar tampil di belakang konten.
+Taruh di area bawah (y ≈ 1050–1290) agar tidak menabrak rumus/teks di tengah dan bar subtitle.
+
+```json
+{ "id": "contoh-tangga", "type": "equation", "...": "...",
+  "ilustrasi": { "elemen": [ { "jenis": "tangga", "x": 520, "y": 1250, "skala": 1.25, "kata": "Tangga" } ],
+                 "label": [ { "teks": "5 m", "x": 415, "y": 1140, "ukuran": 56, "kata": "lima" } ] } }
+```
+
+**Aturan anti-monoton:** setiap benda/tokoh/tempat konkret yang disebut di narasi (tangga, tali, kapal,
+buku, kota, ilmuwan) diberi ilustrasi pada adegannya, dan muncul tepat saat disebut (isyarat `"kata"`).
+Minimal separuh adegan video punya ilustrasi. Bila jenisnya belum ada → buat di `Ilustrasi.tsx`.
 
 Gaya wajib untuk ilustrasi baru: garis krem tebal (±4,5) berujung bulat, isian warna **tekstil tetap**
 (`IL.kayu`, `IL.indigo`, `IL.bata`, … — tidak ikut tema, seperti video Sriwijaya), aksen `C.emas`/`C.aksen2`,

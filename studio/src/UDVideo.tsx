@@ -52,6 +52,7 @@ export const SceneView: React.FC<{ scene: Scene; pilar?: Storyboard["pilar"] }> 
     <Background variant={scene.bg ?? "navy"} />
     {scene.bingkai ? <TumpalFrame color={scene.bg === "perkamen" ? "#6B5A44" : undefined} /> : null}
     <GoldDust />
+    {scene.ilustrasi && scene.type !== "ilustrasi" ? <IllustrationScene {...scene.ilustrasi} judul={undefined} /> : null}
     <SceneBody scene={scene} />
   </AbsoluteFill>
   );

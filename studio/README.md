@@ -1,7 +1,7 @@
 # UDcation Studio
 
 Proyek Remotion untuk video edukasi Matematika & Fisika bergaya "Nusantara Emas".
-Panduan lengkap: `.claude/skills/video-sains-nusantara/SKILL.md`.
+Panduan lengkap: `.claude/skills/video-ruang-hitung/SKILL.md`.
 
 ```bash
 npm install

@@ -91,10 +91,19 @@ def norm(w: str) -> str:
 
 
 def pasang_isyarat(sc, words):
-    props = sc.get("props", {})
+    for props in (sc.get("props", {}), sc.get("ilustrasi") or {}):
+        _pasang(sc, props, words)
+
+
+def _pasang(sc, props, words):
     lead = VO_LEAD / FPS
     for key in ("items", "langkah", "points", "curves", "elemen", "label"):
-        for el in props.get(key, []) or []:
+        daftar = props.get(key)
+        if not isinstance(daftar, list):
+            continue
+        for el in daftar:
+            if not isinstance(el, dict):
+                continue
             kata = el.get("kata")
             if not kata:
                 continue

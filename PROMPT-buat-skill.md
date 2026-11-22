@@ -1,6 +1,6 @@
-# Prompt: Buat Skill "video-sains-nusantara" (UDcation)
+# Prompt: Buat Skill "video-ruang-hitung" (UDcation)
 
-> **Status:** skill ini sudah dibangun di `.claude/skills/video-sains-nusantara/` dengan proyek
+> **Status:** skill ini sudah dibangun di `.claude/skills/video-ruang-hitung/` dengan proyek
 > Remotion di `studio/` (contoh: `Pythagoras345`, `GerakParabola45`). Prompt di bawah disimpan
 > sebagai spesifikasi asal.
 
@@ -12,8 +12,8 @@
 ---
 
 ```text
-Buatkan sebuah Claude Code skill bernama `video-sains-nusantara` (simpan di
-`.claude/skills/video-sains-nusantara/`) untuk membuat video pendek edukasi
+Buatkan sebuah Claude Code skill bernama `video-ruang-hitung` (simpan di
+`.claude/skills/video-ruang-hitung/`) untuk membuat video pendek edukasi
 MATEMATIKA dan FISIKA secara berulang dengan satu gaya visual khas yang konsisten
 (ciri khas channel saya). Gunakan skill `skill-creator` (atau
 `superpowers:writing-skills`) untuk struktur skill, dan Remotion (React) untuk

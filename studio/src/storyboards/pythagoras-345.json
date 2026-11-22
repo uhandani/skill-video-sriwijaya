@@ -414,6 +414,24 @@
       "end": 3.971
      }
     ]
+   },
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "dindingBata",
+      "x": 170,
+      "y": 1280,
+      "skala": 0.85,
+      "at": 0.6
+     },
+     {
+      "jenis": "orang",
+      "x": 840,
+      "y": 1280,
+      "skala": 1.1,
+      "at": 0.9
+     }
+    ]
    }
   },
   {
@@ -911,6 +929,45 @@
       "w": "meter.",
       "start": 7.712,
       "end": 8.281
+     }
+    ]
+   },
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "tangga",
+      "x": 520,
+      "y": 1250,
+      "skala": 1.25,
+      "at": 0.2,
+      "kata": "Tangga"
+     }
+    ],
+    "label": [
+     {
+      "teks": "5 m",
+      "x": 415,
+      "y": 1140,
+      "ukuran": 56,
+      "at": 0.56,
+      "kata": "lima"
+     },
+     {
+      "teks": "3 m",
+      "x": 470,
+      "y": 1300,
+      "ukuran": 56,
+      "at": 2.13,
+      "kata": "tiga"
+     },
+     {
+      "teks": "?",
+      "x": 690,
+      "y": 1160,
+      "ukuran": 70,
+      "emas": true,
+      "at": 3.9,
+      "kata": "Tingginya?"
      }
     ]
    }
