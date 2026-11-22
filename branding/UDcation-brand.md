@@ -3,7 +3,26 @@
 **UD** = Uhan Dani · **UDcation** = plesetan *education*.
 Posisi: belajar Matematika & Fisika dengan rasa Nusantara — mewah, otentik, dan ilmiah.
 
-## Logo terpilih: Kawung UD v2 (huruf dari kelopak)
+## Logo terpilih: Δ Kawung (delta dari tiga kelopak kawung)
+
+Sketsa: [`logo-delta-kawung.png`](logo-delta-kawung.png) (sumber: `logo-delta-kawung.html`).
+
+- **Bentuk:** segitiga sama sisi (Δ). Ketiga sisinya adalah **kelopak kawung**: sisi luar hampir lurus sehingga siluetnya tetap segitiga tegas, sisi dalam melengkung seperti buah aren. Di tiap sudut ada celah kecil, dan di pusatnya ada **titik**.
+- **Filosofi:**
+  - **Δ = perubahan.** Dalam MTK dan fisika: Δx, Δv, Δt. Belajar adalah perubahan, dari tidak tahu menjadi paham.
+  - **Tiga kelopak kawung** = tiga akar UDcation: Matematika, Fisika, Nusantara. Kawung melambangkan kebijaksanaan dan keseimbangan.
+  - **Titik pusat** = titik berat (sentroid), tempat semua gaya seimbang.
+  - **Segitiga** = bangun paling kokoh, dipakai pada rangka jembatan dan atap. Celah di sudut = ruang untuk bertumbuh.
+- **Warna:** emas penuh (utama); dua warna (satu kelopak emas, dua krem); satu warna navy/putih.
+- **Turunan:**
+  - Pola Δ dan ∇ bergantian (tessellation segitiga) untuk latar video dan kemasan.
+  - Logo bisa dipakai langsung sebagai simbol Δ di dalam rumus video, misalnya v = Δx/Δt. Ini gimmick khas UDcation.
+- **Alternatif:** Δ tipografis, dengan kelopak kanan tebal dan kiri tipis seperti huruf Yunani di buku teks.
+- **Catatan desain:** kelopak yang terlalu gemuk membuat bentuknya membulat dan mirip simbol radiasi, jadi dipilih kelopak dengan sisi luar hampir lurus.
+
+---
+
+## Versi sebelumnya: Kawung UD v2 (huruf dari kelopak)
 
 Sketsa: [`logo-kawung-ud-v2.png`](logo-kawung-ud-v2.png) (sumber: `logo-kawung-ud-v2.html`).
 Pendekatannya mengikuti referensi logo KVG (huruf yang disusun dari bentuk kawung) dan logo G20 Indonesia 2022 (siluet gunungan yang diisi motif kawung).

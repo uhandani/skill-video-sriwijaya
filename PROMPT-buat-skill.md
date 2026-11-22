@@ -133,7 +133,7 @@ Bangun sebagai komponen Remotion berparameter, dipanggil dari storyboard JSON:
   - Analogy/WorldScene: ilustrasi dunia nyata bergaya tekstil (kapal, jembatan,
                        roket, bola, rumah panggung) untuk konteks soal.
   - OutroCard        : kesimpulan satu kalimat + rumus final emas + logo
-                       UDcation "Kawung UD" + wordmark (lihat bagian 10).
+                       UDcation "Δ Kawung" + wordmark (lihat bagian 10).
   - BrandIntro       : emblem "Gunungan Kawung" berputar lalu membuka
                        (±1,5 dtk) — opsional, untuk video YouTube panjang.
 
@@ -199,17 +199,18 @@ Checklist gaya (wajib lolos sebelum render):
 ==================================================================
 Nama channel: UDcation (UD = Uhan Dani, plesetan "education").
 Aset & filosofi ada di `branding/` repo ini (UDcation-brand.md, logo-konsep.html):
-  - Logo utama "Kawung UD v2" (branding/logo-kawung-ud-v2.html — salin
-    primitif & path-nya): huruf U dan D disusun dari potongan kawung
-    (seperempat lingkaran, kelopak, batang) dengan celah garis silang;
-    kelopak D + biji U berwarna emas. Animasi logo: potongan-potongan masuk
-    satu per satu (scale+rotate kecil dari pusat modulnya), celah menutup,
-    lalu kelopak emas berkilau (foil shine) dan biji jatuh ke cawan U.
-  - Emblem "Gunungan Kawung" (gunungan berisi pola kawung + mark UD) untuk
-    BrandIntro.
-    Muncul di OutroCard; watermark kecil sudut kanan atas (opacity 25%).
-  - Pola brand: kelopak kawung dari logo, diulang — untuk tekstur latar navy.
-  - Wordmark: "UD" emas foil + "cation" krem, DM Serif Display.
+  - Logo utama "Δ Kawung" (branding/logo-delta-kawung.html — salin fungsi
+    petal() & simbolnya): segitiga Δ yang tiap sisinya kelopak kawung emas,
+    titik krem di pusat (titik berat). Animasi logo: tiga kelopak tergambar
+    dari tiap sudut, bertemu membentuk Δ, lalu titik jatuh ke pusat + foil
+    shine. Muncul di OutroCard; watermark kecil sudut kanan atas (opacity 25%).
+  - Gimmick: di EquationReveal, simbol Δ pada rumus (Δx, Δv, Δt) boleh
+    diganti logo Δ Kawung saat rumus kunci muncul.
+  - Pola brand: Δ dan ∇ bergantian (tessellation) untuk tekstur latar.
+  - Emblem "Gunungan Kawung" (gunungan berisi pola kawung + logo Δ Kawung)
+    untuk BrandIntro, terinspirasi logo G20 Indonesia 2022.
+  - Wordmark: "UDCATION" huruf kapital renggang, Cormorant Garamond
+    SemiBold; "UD" emas, "CATION" krem/navy.
   - Tagline default: "Ilmu Semesta, Rasa Nusantara".
 Pilar konten (tambahkan sebagai field `pilar` di storyboard JSON + label kecil
 di TitleCard): Ruang Hitung (MTK), Ruang Semesta (Fisika), Fakta Unik,
