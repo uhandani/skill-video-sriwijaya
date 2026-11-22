@@ -134,7 +134,7 @@ Bangun sebagai komponen Remotion berparameter, dipanggil dari storyboard JSON:
                        roket, bola, rumah panggung) untuk konteks soal.
   - OutroCard        : kesimpulan satu kalimat + rumus final emas + logo
                        UDcation "Kawung UD" + wordmark (lihat bagian 10).
-  - BrandIntro       : gunungan wayang "Gunungan Ilmu" berputar lalu membuka
+  - BrandIntro       : emblem "Gunungan Kawung" berputar lalu membuka
                        (±1,5 dtk) — opsional, untuk video YouTube panjang.
 
 ==================================================================
