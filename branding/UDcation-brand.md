@@ -3,7 +3,23 @@
 **UD** = Uhan Dani · **UDcation** = plesetan *education*.
 Posisi: belajar Matematika & Fisika dengan rasa Nusantara — mewah, otentik, dan ilmiah.
 
-## Logo terpilih: Kawung UD
+## Logo terpilih: Kawung UD v2 (huruf dari kelopak)
+
+Sketsa: [`logo-kawung-ud-v2.png`](logo-kawung-ud-v2.png) (sumber: `logo-kawung-ud-v2.html`).
+Pendekatannya mengikuti referensi logo KVG (huruf yang disusun dari bentuk kawung) dan logo G20 Indonesia 2022 (siluet gunungan yang diisi motif kawung).
+
+- **Modul:** satu lingkaran kawung dibagi empat oleh garis silang. Tiap seperempatnya bisa berupa kelopak (irisan dua lingkaran, bentuk buah aren), seperempat lingkaran, atau batang. Celah di antara potongan adalah garis silang khas kawung.
+- **U:** dua lengan seperempat lingkaran yang mekar seperti cawan, di atas mangkuk setengah lingkaran yang terbelah garis kawung. Di dasarnya ada **biji emas** = benih ilmu di dalam wadah.
+- **D:** batang tegak sebagai poros, ditambah **dua kelopak kawung emas** yang membentuk lengkung D.
+- **Warna:** krem/navy untuk potongan dasar, emas untuk kelopak dan biji. Versi satu warna tetap terbaca karena bentuknya solid.
+- **Turunan:**
+  - Pola brand dari modul yang sama.
+  - Emblem *Gunungan Kawung*: siluet gunungan berisi pola kawung dengan mark UD di dalamnya, terinspirasi logo G20 Indonesia. Cocok untuk intro video dan sertifikat.
+- **Catatan:** sejumlah variasi bentuk lengan U sudah dicoba. Lengan kelopak tipis membuat logo terlihat seperti kepala banteng, jadi dipilih lengan seperempat lingkaran.
+
+---
+
+## Versi sebelumnya: Kawung UD v1 (garis + kelopak di dalam)
 
 Sketsa: [`logo-kawung-ud.png`](logo-kawung-ud.png) (sumber: `logo-kawung-ud.html`)
 

@@ -199,12 +199,16 @@ Checklist gaya (wajib lolos sebelum render):
 ==================================================================
 Nama channel: UDcation (UD = Uhan Dani, plesetan "education").
 Aset & filosofi ada di `branding/` repo ini (UDcation-brand.md, logo-konsep.html):
-  - Logo utama "Kawung UD" (branding/logo-kawung-ud.html — salin SVG-nya):
-    ligatur U+D satu tiang, 4 kelopak kawung emas di dalamnya. Animasi logo:
-    garis U-D tergambar (draw-on), lalu 4 kelopak mekar dari pusat tiang.
+  - Logo utama "Kawung UD v2" (branding/logo-kawung-ud-v2.html — salin
+    primitif & path-nya): huruf U dan D disusun dari potongan kawung
+    (seperempat lingkaran, kelopak, batang) dengan celah garis silang;
+    kelopak D + biji U berwarna emas. Animasi logo: potongan-potongan masuk
+    satu per satu (scale+rotate kecil dari pusat modulnya), celah menutup,
+    lalu kelopak emas berkilau (foil shine) dan biji jatuh ke cawan U.
+  - Emblem "Gunungan Kawung" (gunungan berisi pola kawung + mark UD) untuk
+    BrandIntro.
     Muncul di OutroCard; watermark kecil sudut kanan atas (opacity 25%).
   - Pola brand: kelopak kawung dari logo, diulang — untuk tekstur latar navy.
-  - "Gunungan Ilmu": BrandIntro / outro.
   - Wordmark: "UD" emas foil + "cation" krem, DM Serif Display.
   - Tagline default: "Ilmu Semesta, Rasa Nusantara".
 Pilar konten (tambahkan sebagai field `pilar` di storyboard JSON + label kecil
