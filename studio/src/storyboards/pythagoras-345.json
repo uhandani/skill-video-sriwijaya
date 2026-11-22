@@ -354,7 +354,7 @@
   {
    "id": "hook",
    "type": "title",
-   "durasi": 5,
+   "durasi": 5.3,
    "bg": "navy",
    "bingkai": true,
    "transisi": "iris",
@@ -363,6 +363,57 @@
     "kicker": "Ruang Hitung",
     "judul": "Kenapa harus 3, 4, 5?",
     "tandaTanya": true
+   },
+   "vo": {
+    "file": "audio/pythagoras-345/2-hook.mp3",
+    "durasi": 3.971,
+    "words": [
+     {
+      "w": "Kenapa",
+      "start": 0.0,
+      "end": 0.479
+     },
+     {
+      "w": "angka",
+      "start": 0.479,
+      "end": 0.798
+     },
+     {
+      "w": "itu",
+      "start": 0.798,
+      "end": 1.117
+     },
+     {
+      "w": "selalu",
+      "start": 1.117,
+      "end": 1.596
+     },
+     {
+      "w": "menghasilkan",
+      "start": 1.596,
+      "end": 2.235
+     },
+     {
+      "w": "sudut",
+      "start": 2.235,
+      "end": 2.554
+     },
+     {
+      "w": "siku-siku",
+      "start": 2.554,
+      "end": 3.193
+     },
+     {
+      "w": "yang",
+      "start": 3.193,
+      "end": 3.352
+     },
+     {
+      "w": "sempurna?",
+      "start": 3.352,
+      "end": 3.971
+     }
+    ]
    }
   },
   {
@@ -464,7 +515,7 @@
       "text": "9",
       "size": 84,
       "fill": "emas",
-      "at": 2.4,
+      "at": 2.98,
       "kata": "sembilan"
      },
      {
@@ -515,7 +566,7 @@
       "text": "16",
       "size": 84,
       "fill": "emas",
-      "at": 4.0,
+      "at": 3.97,
       "kata": "belas"
      },
      {
@@ -538,7 +589,7 @@
         100
        ]
       ],
-      "at": 4.8,
+      "at": 4.2,
       "dur": 1.0,
       "stroke": "emas",
       "fill": "navyTerang",
@@ -548,7 +599,7 @@
      {
       "type": "path",
       "d": "M456 422 L666 142 M442 324 L722 534 M512 464 L722 184 M484 268 L764 478 M568 506 L778 226 M526 212 L806 422 M624 548 L834 268 M568 156 L848 366",
-      "at": 5.6,
+      "at": 4.8,
       "dur": 0.5,
       "stroke": "krem",
       "width": 2
@@ -562,9 +613,85 @@
       "text": "25",
       "size": 96,
       "fill": "emas",
-      "at": 6.1,
+      "at": 5.16,
       "focus": true,
       "kata": "lima"
+     }
+    ]
+   },
+   "vo": {
+    "file": "audio/pythagoras-345/3-persegi.mp3",
+    "durasi": 6.034,
+    "words": [
+     {
+      "w": "Gambar",
+      "start": 0.0,
+      "end": 0.397
+     },
+     {
+      "w": "persegi",
+      "start": 0.397,
+      "end": 0.992
+     },
+     {
+      "w": "di",
+      "start": 0.992,
+      "end": 1.191
+     },
+     {
+      "w": "setiap",
+      "start": 1.191,
+      "end": 1.588
+     },
+     {
+      "w": "sisi.",
+      "start": 1.588,
+      "end": 2.381
+     },
+     {
+      "w": "Luasnya",
+      "start": 2.381,
+      "end": 2.778
+     },
+     {
+      "w": "sembilan,",
+      "start": 2.778,
+      "end": 3.373
+     },
+     {
+      "w": "enam",
+      "start": 3.373,
+      "end": 3.77
+     },
+     {
+      "w": "belas,",
+      "start": 3.77,
+      "end": 4.167
+     },
+     {
+      "w": "dan",
+      "start": 4.167,
+      "end": 4.366
+     },
+     {
+      "w": "dua",
+      "start": 4.366,
+      "end": 4.564
+     },
+     {
+      "w": "puluh",
+      "start": 4.564,
+      "end": 4.961
+     },
+     {
+      "w": "lima",
+      "start": 4.961,
+      "end": 5.358
+     },
+     {
+      "w": "kotak.",
+      "start": 5.358,
+      "end": 6.034
      }
     ]
    }
@@ -791,13 +918,79 @@
   {
    "id": "penutup",
    "type": "outro",
-   "durasi": 6.5,
+   "durasi": 7.2,
    "bg": "navy",
    "bingkai": true,
    "narasi": "Jadi, seutas tali tiga, empat, lima sudah cukup untuk sudut siku-siku sempurna.",
    "props": {
     "kesimpulan": "Seutas tali 3-4-5 = sudut siku-siku sempurna",
     "tex": "\\g{a^2 + b^2 = c^2}"
+   },
+   "vo": {
+    "file": "audio/pythagoras-345/6-penutup.mp3",
+    "durasi": 5.878,
+    "words": [
+     {
+      "w": "Jadi,",
+      "start": 0.0,
+      "end": 0.404
+     },
+     {
+      "w": "seutas",
+      "start": 0.404,
+      "end": 0.946
+     },
+     {
+      "w": "tali",
+      "start": 0.946,
+      "end": 1.349
+     },
+     {
+      "w": "tiga,",
+      "start": 1.349,
+      "end": 1.753
+     },
+     {
+      "w": "empat,",
+      "start": 1.753,
+      "end": 2.296
+     },
+     {
+      "w": "lima",
+      "start": 2.296,
+      "end": 2.7
+     },
+     {
+      "w": "sudah",
+      "start": 2.7,
+      "end": 3.104
+     },
+     {
+      "w": "cukup",
+      "start": 3.104,
+      "end": 3.508
+     },
+     {
+      "w": "untuk",
+      "start": 3.508,
+      "end": 3.912
+     },
+     {
+      "w": "sudut",
+      "start": 3.912,
+      "end": 4.316
+     },
+     {
+      "w": "siku-siku",
+      "start": 4.316,
+      "end": 5.124
+     },
+     {
+      "w": "sempurna.",
+      "start": 5.124,
+      "end": 5.878
+     }
+    ]
    }
   }
  ],

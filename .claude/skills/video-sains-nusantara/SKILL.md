@@ -38,9 +38,13 @@ Jika `studio/` belum ada `node_modules`, jalankan `cd studio && npm install` dul
 6. **Cek visual:** render 6–9 still lalu LIHAT gambarnya (Read) dan cocokkan dengan
    checklist di bawah:
    `npx remotion render <Id> out/cek --frames=30,120,... --image-format=png --scale=0.5`
-7. **Render final** (hanya setelah cek lolos):
+7. **Voice-over** (bila diminta / konektor ElevenLabs tersedia): generate per adegan dengan suara
+   UDcation "Saos Cocol", simpan ke `public/audio/<nama>/<n>-<id>.mp3`, lalu
+   `npm run sinkron -- src/storyboards/<nama>.json` (subtitle, durasi, dan isyarat `"kata"`
+   otomatis menyesuaikan suara). Detail & aturan antrean paket Free → `references/production.md`.
+8. **Render final** (hanya setelah cek lolos):
    `npx remotion render <Id> out/<Id>.mp4 --codec=h264 --crf=20`
-8. Laporkan ke pengguna: file MP4, durasi, ringkasan adegan, hal yang belum (mis. VO/musik).
+9. Laporkan ke pengguna: file MP4, durasi, ringkasan adegan, hal yang belum (mis. VO/musik).
 
 Perintah lengkap, audio/voice-over, dan catatan lingkungan → `references/production.md`.
 

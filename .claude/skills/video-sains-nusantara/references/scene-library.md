@@ -31,6 +31,12 @@ Field umum tiap adegan:
 
 Waktu di dalam `props` (`at`, `dur`) dalam **detik relatif awal adegan**.
 
+**Isyarat kata (sinkron dengan voice-over)** — item diagram, langkah rumus, titik & kurva grafik
+boleh diberi `"kata": "tiga"` (opsional `"kataKe": 2` untuk kemunculan ke-2, `"kataMaju": 0.1`
+detik lebih awal). `npm run sinkron` lalu mengisi `at` tepat saat kata itu diucapkan, jadi visual
+muncul bersamaan dengan suara. Kata dicocokkan tanpa tanda baca, tidak peka huruf besar.
+Field `vo` pada adegan diisi otomatis — jangan ditulis manual.
+
 ---
 
 ## `title` — hook / judul
