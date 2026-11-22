@@ -12,6 +12,7 @@ Semua perintah dijalankan di folder `studio/`.
 | Cek tipe | `npx tsc --noEmit` |
 | Still untuk cek visual | `npx remotion render <Id> out/cek --frames=30,150,300 --image-format=png --scale=0.5` |
 | Render final | `npx remotion render <Id> out/<Id>.mp4 --codec=h264 --crf=20` |
+| Normalisasi volume (setelah render ber-VO) | `ffmpeg -i out/<Id>.mp4 -c:v copy -af loudnorm=I=-14:TP=-1.5:LRA=11 -ar 48000 -c:a aac -b:a 192k out/<Id>-UDcation.mp4` |
 | Daftar komposisi | `npx remotion compositions` |
 
 Frame = detik × 30. Untuk memilih frame cek: ambil tengah setiap adegan + saat transisi.

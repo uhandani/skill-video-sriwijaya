@@ -31,6 +31,9 @@ export const EquationScene: React.FC<EquationProps & { durasi: number }> = ({ ju
         let shift = 0;
         for (let j = i + 1; j < shown; j++) shift += rowH * (tall(langkah[j].tex) || tall(langkah[j - 1].tex) ? 1.25 : 0.95);
         const y = centerY - shift + (1 - p) * 40 * s;
+        // langkah lama memudar sebelum menabrak judul adegan
+        const topLimit = judul ? height * 0.2 : height * 0.08;
+        const roomFade = interpolate(y - rowH / 2, [topLimit - rowH * 0.25, topLimit + rowH * 0.15], [0, 1], clamp);
         const isFinal = i === n - 1 && finalEmas;
         const boxP = interpolate(frame, [starts[i] + 10, starts[i] + 30], [0, 1], { ...clamp, easing: easeOut });
         return (
@@ -46,7 +49,7 @@ export const EquationScene: React.FC<EquationProps & { durasi: number }> = ({ ju
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
-              opacity: p * (fromLatest === 0 ? 1 : Math.max(0.15, 0.55 - (fromLatest - 1) * 0.25)),
+              opacity: p * roomFade * (fromLatest === 0 ? 1 : Math.max(0.15, 0.55 - (fromLatest - 1) * 0.25)),
               scale: fromLatest === 0 ? "1" : "0.82",
             }}
           >
