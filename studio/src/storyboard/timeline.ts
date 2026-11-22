@@ -1,6 +1,8 @@
 import type { Storyboard, Transisi } from "./types";
 
 export const FPS = 30;
+/** jeda dari awal adegan sampai suara mulai (frame) */
+export const VO_LEAD = 9;
 export const TRANS_FRAMES: Record<Transisi, number> = { iris: 22, fade: 15, perkamen: 24, none: 0 };
 
 export type SceneTiming = { start: number; dur: number; transOut: number };
@@ -36,20 +38,27 @@ export function buildCaptions(sb: Storyboard): CaptionChunk[] {
   const timings = sceneTimings(sb);
   const chunks: CaptionChunk[] = [];
   sb.scenes.forEach((s, i) => {
-    const words = s.narasi.split(/\s+/).filter(Boolean);
-    if (!words.length) return;
     const t = timings[i];
-    const lead = 8; // jeda sebelum bicara
-    const winStart = t.start + lead;
-    const winEnd = t.start + t.dur - Math.max(t.transOut, 10);
-    const per = (winEnd - winStart) / words.length;
-    // pecah jadi potongan
-    const groups: string[][] = [];
-    let cur: string[] = [];
-    words.forEach((w) => {
-      cur.push(w);
-      const punct = /[,.;:!?…]$/.test(w);
-      if (cur.length >= 5 || (punct && cur.length >= 2) || (cur.length >= 4 && w.length > 7)) {
+    // 1) waktu kata: dari voice-over (presisi) atau estimasi rata
+    let timed: CaptionWord[];
+    if (s.vo?.words?.length) {
+      const base = t.start + VO_LEAD;
+      timed = s.vo.words.map((w) => ({ w: w.w, start: Math.round(base + w.start * FPS), end: Math.round(base + w.end * FPS) }));
+    } else {
+      const words = s.narasi.split(/\s+/).filter(Boolean);
+      if (!words.length) return;
+      const winStart = t.start + VO_LEAD;
+      const winEnd = t.start + t.dur - Math.max(t.transOut, 10);
+      const per = (winEnd - winStart) / words.length;
+      timed = words.map((w, k) => ({ w, start: Math.round(winStart + k * per), end: Math.round(winStart + (k + 1) * per) }));
+    }
+    // 2) pecah jadi potongan 2–5 kata (memotong di tanda baca)
+    let cur: CaptionWord[] = [];
+    const groups: CaptionWord[][] = [];
+    timed.forEach((cw) => {
+      cur.push(cw);
+      const punct = /[,.;:!?…]$/.test(cw.w);
+      if (cur.length >= 5 || (punct && cur.length >= 2) || (cur.length >= 4 && cw.w.length > 7)) {
         groups.push(cur);
         cur = [];
       }
@@ -58,15 +67,7 @@ export function buildCaptions(sb: Storyboard): CaptionChunk[] {
       if (cur.length === 1 && groups.length) groups[groups.length - 1].push(cur[0]);
       else groups.push(cur);
     }
-    let k = 0;
-    groups.forEach((g) => {
-      const cw: CaptionWord[] = g.map((w) => {
-        const st = winStart + k * per;
-        k++;
-        return { w, start: Math.round(st), end: Math.round(st + per) };
-      });
-      chunks.push({ start: cw[0].start, end: cw[cw.length - 1].end, words: cw });
-    });
+    groups.forEach((g) => chunks.push({ start: g[0].start, end: g[g.length - 1].end, words: g }));
   });
   return chunks;
 }

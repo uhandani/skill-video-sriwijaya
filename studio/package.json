@@ -31,7 +31,8 @@
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
     "cek": "tsx scripts/cek-storyboard.ts",
-    "verifikasi": "for f in verify/*.py; do python3 $f || exit 1; done"
+    "verifikasi": "for f in verify/*.py; do python3 $f || exit 1; done",
+    "sinkron": "python3 scripts/sinkron_vo.py"
   },
   "allowScripts": {
     "esbuild": false

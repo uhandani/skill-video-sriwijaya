@@ -15,7 +15,10 @@ export type Prim =
   | { type: "text"; pos: [number, number]; text: string; size?: number; anchor?: "start" | "middle" | "end" }
   | { type: "tex"; pos: [number, number]; tex: string; size?: number };
 
-export type DiagramItem = Prim & {
+/** Isyarat sinkron: `npm run sinkron` mengisi `at` = saat kata ini diucapkan di voice-over. */
+export type Isyarat = { kata?: string; kataKe?: number; kataMaju?: number };
+
+export type DiagramItem = Prim & Isyarat & {
   /** detik (relatif awal adegan) saat mulai digambar */
   at: number;
   /** lama menggambar (detik) */
@@ -41,6 +44,17 @@ export type SceneBase = {
   /** transisi KELUAR dari adegan ini */
   transisi?: Transisi;
   bingkai?: boolean;
+  /** voice-over per adegan — diisi otomatis oleh `npm run sinkron` */
+  vo?: SceneVO;
+};
+
+export type SceneVO = {
+  /** path relatif ke public/ */
+  file: string;
+  /** durasi audio (detik) */
+  durasi: number;
+  /** waktu tiap kata relatif awal audio (detik) */
+  words: { w: string; start: number; end: number }[];
 };
 
 export type TitleProps = {
@@ -61,16 +75,16 @@ export type DiagramProps = {
   height?: number;
 };
 
-export type EquationStep = { tex: string; at?: number; catatan?: string };
+export type EquationStep = Isyarat & { tex: string; at?: number; catatan?: string };
 export type EquationProps = { judul?: string; langkah: EquationStep[]; finalEmas?: boolean; size?: number };
 
-export type GraphCurve = { expr: string; color?: string; at: number; dur?: number; label?: string; labelAt?: number };
+export type GraphCurve = Isyarat & { expr: string; color?: string; at: number; dur?: number; label?: string; labelAt?: number };
 export type GraphProps = {
   judul?: string;
   x: [number, number];
   y: [number, number];
   curves: GraphCurve[];
-  points?: { x: number; y: number; label?: string; at: number }[];
+  points?: (Isyarat & { x: number; y: number; label?: string; at: number })[];
   moving?: { curve: number; from: number; to: number; at: number; dur: number };
   xLabel?: string;
   yLabel?: string;

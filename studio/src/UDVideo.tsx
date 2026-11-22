@@ -14,7 +14,7 @@ import { OutroScene } from "./scenes/OutroScene";
 import { ProjectileScene } from "./scenes/ProjectileScene";
 import { TitleScene } from "./scenes/TitleScene";
 import { GoldDust } from "./scenes/common";
-import { FPS, TRANS_FRAMES, buildCaptions, sceneTimings } from "./storyboard/timeline";
+import { FPS, TRANS_FRAMES, VO_LEAD, buildCaptions, sceneTimings } from "./storyboard/timeline";
 import type { Scene, Storyboard } from "./storyboard/types";
 
 const SceneBody: React.FC<{ scene: Scene }> = ({ scene }) => {
@@ -89,6 +89,13 @@ export const UDVideo: React.FC<{ storyboard: Storyboard }> = ({ storyboard }) =>
       <Watermark hideFrom={last ? last.start : Infinity} />
       <CaptionBar chunks={captions} />
       {storyboard.audio?.voiceover ? <Audio src={staticFile(storyboard.audio.voiceover)} /> : null}
+      {storyboard.scenes.map((scene, i) =>
+        scene.vo ? (
+          <Sequence key={`vo-${scene.id}`} name={`VO ${scene.id}`} from={timings[i].start + VO_LEAD} durationInFrames={Math.ceil(scene.vo.durasi * FPS) + 2}>
+            <Audio src={staticFile(scene.vo.file)} />
+          </Sequence>
+        ) : null,
+      )}
       {storyboard.audio?.musik ? (
         <Sequence>
           <Audio src={staticFile(storyboard.audio.musik)} volume={storyboard.audio.musikVolume ?? 0.18} loop />

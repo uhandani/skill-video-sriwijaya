@@ -12,7 +12,7 @@
   {
    "id": "pembuka-tali",
    "type": "diagram",
-   "durasi": 6.5,
+   "durasi": 7.4,
    "bg": "perkamen",
    "bingkai": true,
    "transisi": "iris",
@@ -250,7 +250,8 @@
       "text": "3",
       "size": 90,
       "fill": "marun",
-      "at": 3.9
+      "at": 4.34,
+      "kata": "tiga"
      },
      {
       "type": "text",
@@ -261,7 +262,8 @@
       "text": "4",
       "size": 90,
       "fill": "marun",
-      "at": 4.1
+      "at": 4.94,
+      "kata": "empat"
      },
      {
       "type": "text",
@@ -272,7 +274,79 @@
       "text": "5",
       "size": 90,
       "fill": "marun",
-      "at": 4.3
+      "at": 5.67,
+      "kata": "lima"
+     }
+    ]
+   },
+   "vo": {
+    "file": "audio/pythagoras-345/1-pembuka-tali.mp3",
+    "durasi": 6.034,
+    "words": [
+     {
+      "w": "Tukang",
+      "start": 0.0,
+      "end": 0.354
+     },
+     {
+      "w": "bangunan",
+      "start": 0.354,
+      "end": 0.886
+     },
+     {
+      "w": "punya",
+      "start": 0.886,
+      "end": 1.24
+     },
+     {
+      "w": "trik",
+      "start": 1.24,
+      "end": 1.417
+     },
+     {
+      "w": "sederhana:",
+      "start": 1.417,
+      "end": 2.545
+     },
+     {
+      "w": "seutas",
+      "start": 2.545,
+      "end": 2.899
+     },
+     {
+      "w": "tali",
+      "start": 2.899,
+      "end": 3.253
+     },
+     {
+      "w": "dengan",
+      "start": 3.253,
+      "end": 3.607
+     },
+     {
+      "w": "ukuran",
+      "start": 3.607,
+      "end": 4.139
+     },
+     {
+      "w": "tiga,",
+      "start": 4.139,
+      "end": 4.741
+     },
+     {
+      "w": "empat,",
+      "start": 4.741,
+      "end": 5.288
+     },
+     {
+      "w": "dan",
+      "start": 5.288,
+      "end": 5.465
+     },
+     {
+      "w": "lima.",
+      "start": 5.465,
+      "end": 6.034
      }
     ]
    }
@@ -390,7 +464,8 @@
       "text": "9",
       "size": 84,
       "fill": "emas",
-      "at": 2.4
+      "at": 2.4,
+      "kata": "sembilan"
      },
      {
       "type": "polygon",
@@ -440,7 +515,8 @@
       "text": "16",
       "size": 84,
       "fill": "emas",
-      "at": 4.0
+      "at": 4.0,
+      "kata": "belas"
      },
      {
       "type": "polygon",
@@ -487,7 +563,8 @@
       "size": 96,
       "fill": "emas",
       "at": 6.1,
-      "focus": true
+      "focus": true,
+      "kata": "lima"
      }
     ]
    }
@@ -503,16 +580,80 @@
     "langkah": [
      {
       "tex": "9 + 16 = 25",
-      "at": 0.6
+      "at": 0.2,
+      "kata": "Sembilan"
      },
      {
       "tex": "3^2 + 4^2 = 5^2",
-      "at": 2.4
+      "at": 3.87,
+      "kata": "Inilah"
      },
      {
       "tex": "\\g{a^2 + b^2 = c^2}",
-      "at": 4.2,
-      "catatan": "a, b = sisi siku · c = sisi miring"
+      "at": 4.59,
+      "catatan": "a, b = sisi siku · c = sisi miring",
+      "kata": "Teorema"
+     }
+    ]
+   },
+   "vo": {
+    "file": "audio/pythagoras-345/4-rumus.mp3",
+    "durasi": 5.642,
+    "words": [
+     {
+      "w": "Sembilan",
+      "start": 0.0,
+      "end": 0.54
+     },
+     {
+      "w": "tambah",
+      "start": 0.54,
+      "end": 0.9
+     },
+     {
+      "w": "enam",
+      "start": 0.9,
+      "end": 1.26
+     },
+     {
+      "w": "belas",
+      "start": 1.26,
+      "end": 1.621
+     },
+     {
+      "w": "tepat",
+      "start": 1.621,
+      "end": 2.283
+     },
+     {
+      "w": "dua",
+      "start": 2.283,
+      "end": 2.463
+     },
+     {
+      "w": "puluh",
+      "start": 2.463,
+      "end": 2.823
+     },
+     {
+      "w": "lima.",
+      "start": 2.823,
+      "end": 3.672
+     },
+     {
+      "w": "Inilah",
+      "start": 3.672,
+      "end": 4.394
+     },
+     {
+      "w": "Teorema",
+      "start": 4.394,
+      "end": 4.934
+     },
+     {
+      "w": "Pythagoras.",
+      "start": 4.934,
+      "end": 5.642
      }
     ]
    }
@@ -520,7 +661,7 @@
   {
    "id": "contoh-tangga",
    "type": "equation",
-   "durasi": 9.5,
+   "durasi": 9.6,
    "bg": "cokelat",
    "transisi": "iris",
    "narasi": "Tangga lima meter, kakinya tiga meter dari dinding. Tingginya? Akar dua puluh lima kurang sembilan, yaitu empat meter.",
@@ -530,19 +671,119 @@
     "langkah": [
      {
       "tex": "c = 5\\text{ m},\\quad a = 3\\text{ m}",
-      "at": 0.5
+      "at": 0.2,
+      "kata": "Tangga"
      },
      {
       "tex": "b = \\sqrt{5^2 - 3^2}",
-      "at": 2.6
+      "at": 3.9,
+      "kata": "Tingginya?"
      },
      {
       "tex": "b = \\sqrt{25 - 9} = \\sqrt{16}",
-      "at": 4.4
+      "at": 4.87,
+      "kata": "Akar"
      },
      {
       "tex": "\\g{b = 4\\text{ m}}",
-      "at": 6.2
+      "at": 7.2,
+      "kata": "yaitu"
+     }
+    ]
+   },
+   "vo": {
+    "file": "audio/pythagoras-345/5-contoh-tangga.mp3",
+    "durasi": 8.281,
+    "words": [
+     {
+      "w": "Tangga",
+      "start": 0.0,
+      "end": 0.357
+     },
+     {
+      "w": "lima",
+      "start": 0.357,
+      "end": 0.713
+     },
+     {
+      "w": "meter,",
+      "start": 0.713,
+      "end": 1.399
+     },
+     {
+      "w": "kakinya",
+      "start": 1.399,
+      "end": 1.934
+     },
+     {
+      "w": "tiga",
+      "start": 1.934,
+      "end": 2.291
+     },
+     {
+      "w": "meter",
+      "start": 2.291,
+      "end": 2.648
+     },
+     {
+      "w": "dari",
+      "start": 2.648,
+      "end": 3.004
+     },
+     {
+      "w": "dinding.",
+      "start": 3.004,
+      "end": 3.7
+     },
+     {
+      "w": "Tingginya?",
+      "start": 3.7,
+      "end": 4.669
+     },
+     {
+      "w": "Akar",
+      "start": 4.669,
+      "end": 5.026
+     },
+     {
+      "w": "dua",
+      "start": 5.026,
+      "end": 5.204
+     },
+     {
+      "w": "puluh",
+      "start": 5.204,
+      "end": 5.561
+     },
+     {
+      "w": "lima",
+      "start": 5.561,
+      "end": 5.917
+     },
+     {
+      "w": "kurang",
+      "start": 5.917,
+      "end": 6.274
+     },
+     {
+      "w": "sembilan,",
+      "start": 6.274,
+      "end": 6.999
+     },
+     {
+      "w": "yaitu",
+      "start": 6.999,
+      "end": 7.355
+     },
+     {
+      "w": "empat",
+      "start": 7.355,
+      "end": 7.712
+     },
+     {
+      "w": "meter.",
+      "start": 7.712,
+      "end": 8.281
      }
     ]
    }

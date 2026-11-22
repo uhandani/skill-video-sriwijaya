@@ -5,7 +5,7 @@
 import { readdirSync, readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import type { Storyboard } from "../src/storyboard/types";
-import { FPS, TRANS_FRAMES, totalFrames } from "../src/storyboard/timeline";
+import { FPS, TRANS_FRAMES, VO_LEAD, totalFrames } from "../src/storyboard/timeline";
 
 const DIR = join(__dirname, "..", "src", "storyboards");
 const TYPES = ["title", "diagram", "equation", "graph", "projectile", "counter", "outro"];
@@ -28,8 +28,14 @@ for (const f of readdirSync(DIR).filter((x) => x.endsWith(".json"))) {
     if (s.bg && !BG.includes(s.bg)) err.push(`${s.id}: bg tidak dikenal (${s.bg})`);
     const kata = s.narasi.split(/\s+/).filter(Boolean).length;
     const trans = i < sb.scenes.length - 1 ? TRANS_FRAMES[s.transisi ?? "iris"] / FPS : 0;
-    const perlu = kata / kpd + 0.3 + Math.max(trans, 0.35);
-    if (s.durasi < perlu) err.push(`${s.id}: durasi ${s.durasi}s terlalu pendek untuk ${kata} kata (min ${perlu.toFixed(1)}s pada ${kpd} kata/detik)`);
+    if (s.vo) {
+      const perluVo = VO_LEAD / FPS + s.vo.durasi + trans + 0.2;
+      if (s.durasi < perluVo) err.push(`${s.id}: suara ${s.vo.durasi}s tidak muat di ${s.durasi}s — jalankan npm run sinkron`);
+    } else {
+      const perlu = kata / kpd + 0.3 + Math.max(trans, 0.35);
+      if (s.durasi < perlu) err.push(`${s.id}: durasi ${s.durasi}s terlalu pendek untuk ${kata} kata (min ${perlu.toFixed(1)}s pada ${kpd} kata/detik)`);
+      if (sb.scenes.some((x) => x.vo)) warn.push(`${s.id}: belum ada voice-over`);
+    }
     if (s.transisi === "none") warn.push(`${s.id}: transisi "none" = hard cut, hindari`);
   });
   if (sb.scenes[sb.scenes.length - 1]?.type !== "outro") err.push("adegan terakhir harus outro (logo + ajakan)");
