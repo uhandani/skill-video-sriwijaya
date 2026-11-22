@@ -581,7 +581,7 @@
   {
    "id": "aturan-descartes",
    "type": "equation",
-   "durasi": 11,
+   "durasi": 12.4,
    "bg": "navy",
    "transisi": "perkamen",
    "narasi": "Ia memakai huruf awal a, b, c untuk yang diketahui, dan huruf akhir x, y, z untuk yang dicari. Aturan ini kita pakai sampai sekarang.",
@@ -592,22 +592,153 @@
     "langkah": [
      {
       "tex": "\\text{diketahui: }\\; a,\\ b,\\ c",
-      "at": 1.2,
+      "at": 1.33,
       "kata": "awal"
      },
      {
       "tex": "\\text{dicari: }\\; \\g{x,\\ y,\\ z}",
-      "at": 4.0,
+      "at": 5.19,
       "kata": "akhir"
      },
      {
       "tex": "a x^2 + b x + c = 0",
-      "at": 7.0,
+      "at": 7.92,
       "kata": "Aturan",
       "catatan": "bentuk yang kita kenal sampai sekarang"
      }
     ],
     "finalEmas": true
+   },
+   "vo": {
+    "file": "audio/asal-usul-x/7-aturan-descartes.mp3",
+    "durasi": 10.998,
+    "words": [
+     {
+      "w": "Ia",
+      "start": 0.0,
+      "end": 0.188
+     },
+     {
+      "w": "memakai",
+      "start": 0.188,
+      "end": 0.752
+     },
+     {
+      "w": "huruf",
+      "start": 0.752,
+      "end": 1.128
+     },
+     {
+      "w": "awal",
+      "start": 1.128,
+      "end": 1.504
+     },
+     {
+      "w": "a,",
+      "start": 1.504,
+      "end": 1.984
+     },
+     {
+      "w": "b,",
+      "start": 1.984,
+      "end": 2.172
+     },
+     {
+      "w": "c",
+      "start": 2.172,
+      "end": 2.36
+     },
+     {
+      "w": "untuk",
+      "start": 2.36,
+      "end": 2.894
+     },
+     {
+      "w": "yang",
+      "start": 2.894,
+      "end": 3.083
+     },
+     {
+      "w": "diketahui,",
+      "start": 3.083,
+      "end": 4.028
+     },
+     {
+      "w": "dan",
+      "start": 4.028,
+      "end": 4.216
+     },
+     {
+      "w": "huruf",
+      "start": 4.216,
+      "end": 4.994
+     },
+     {
+      "w": "akhir",
+      "start": 4.994,
+      "end": 5.37
+     },
+     {
+      "w": "x,",
+      "start": 5.37,
+      "end": 5.558
+     },
+     {
+      "w": "y,",
+      "start": 5.558,
+      "end": 6.052
+     },
+     {
+      "w": "z",
+      "start": 6.052,
+      "end": 6.24
+     },
+     {
+      "w": "untuk",
+      "start": 6.24,
+      "end": 6.616
+     },
+     {
+      "w": "yang",
+      "start": 6.616,
+      "end": 6.804
+     },
+     {
+      "w": "dicari.",
+      "start": 6.804,
+      "end": 7.721
+     },
+     {
+      "w": "Aturan",
+      "start": 7.721,
+      "end": 8.285
+     },
+     {
+      "w": "ini",
+      "start": 8.285,
+      "end": 9.096
+     },
+     {
+      "w": "kita",
+      "start": 9.096,
+      "end": 9.472
+     },
+     {
+      "w": "pakai",
+      "start": 9.472,
+      "end": 9.848
+     },
+     {
+      "w": "sampai",
+      "start": 9.848,
+      "end": 10.225
+     },
+     {
+      "w": "sekarang.",
+      "start": 10.225,
+      "end": 10.998
+     }
+    ]
    }
   },
   {
@@ -623,6 +754,122 @@
     "kicker": "Teori populer",
     "judul": "Kenapa x paling sering?",
     "sub": "① percetakan kelebihan huruf x\n② kata Arab syai' → x\nkeduanya belum terbukti"
+   },
+   "vo": {
+    "file": "audio/asal-usul-x/8-teori-populer.mp3",
+    "durasi": 10.188,
+    "words": [
+     {
+      "w": "Kenapa",
+      "start": 0.0,
+      "end": 0.523
+     },
+     {
+      "w": "x",
+      "start": 0.523,
+      "end": 0.698
+     },
+     {
+      "w": "yang",
+      "start": 0.698,
+      "end": 0.872
+     },
+     {
+      "w": "paling",
+      "start": 0.872,
+      "end": 1.221
+     },
+     {
+      "w": "populer?",
+      "start": 1.221,
+      "end": 2.193
+     },
+     {
+      "w": "Ada",
+      "start": 2.193,
+      "end": 2.542
+     },
+     {
+      "w": "cerita",
+      "start": 2.542,
+      "end": 3.065
+     },
+     {
+      "w": "percetakan",
+      "start": 3.065,
+      "end": 3.762
+     },
+     {
+      "w": "yang",
+      "start": 3.762,
+      "end": 3.937
+     },
+     {
+      "w": "kelebihan",
+      "start": 3.937,
+      "end": 4.634
+     },
+     {
+      "w": "huruf",
+      "start": 4.634,
+      "end": 5.186
+     },
+     {
+      "w": "x,",
+      "start": 5.186,
+      "end": 5.36
+     },
+     {
+      "w": "dan",
+      "start": 5.36,
+      "end": 5.534
+     },
+     {
+      "w": "cerita",
+      "start": 5.534,
+      "end": 6.058
+     },
+     {
+      "w": "dari",
+      "start": 6.058,
+      "end": 6.406
+     },
+     {
+      "w": "kata",
+      "start": 6.406,
+      "end": 7.052
+     },
+     {
+      "w": "Arab",
+      "start": 7.052,
+      "end": 7.789
+     },
+     {
+      "w": "syai'.",
+      "start": 7.789,
+      "end": 7.963
+     },
+     {
+      "w": "Tapi",
+      "start": 7.963,
+      "end": 8.312
+     },
+     {
+      "w": "keduanya",
+      "start": 8.312,
+      "end": 8.835
+     },
+     {
+      "w": "belum",
+      "start": 8.835,
+      "end": 9.377
+     },
+     {
+      "w": "terbukti.",
+      "start": 9.377,
+      "end": 10.188
+     }
+    ]
    }
   },
   {
@@ -637,7 +884,68 @@
     "kesimpulan": "Simbol “yang tak diketahui” pun asal-usulnya masih misteri",
     "tex": "\\g{x = \\;?}"
    },
-   "tts": "Jadi, huruf untuk hal yang tak diketahui... asal-usulnya pun, masih misteri."
+   "tts": "Jadi, huruf untuk hal yang tak diketahui... asal-usulnya pun, masih misteri.",
+   "vo": {
+    "file": "audio/asal-usul-x/9-penutup.mp3",
+    "durasi": 5.642,
+    "words": [
+     {
+      "w": "Jadi,",
+      "start": 0.0,
+      "end": 0.405
+     },
+     {
+      "w": "huruf",
+      "start": 0.405,
+      "end": 0.989
+     },
+     {
+      "w": "untuk",
+      "start": 0.989,
+      "end": 1.394
+     },
+     {
+      "w": "hal",
+      "start": 1.394,
+      "end": 1.597
+     },
+     {
+      "w": "yang",
+      "start": 1.597,
+      "end": 1.799
+     },
+     {
+      "w": "tak",
+      "start": 1.799,
+      "end": 2.002
+     },
+     {
+      "w": "diketahui…",
+      "start": 2.002,
+      "end": 2.813
+     },
+     {
+      "w": "asal-usulnya",
+      "start": 2.813,
+      "end": 4.157
+     },
+     {
+      "w": "pun",
+      "start": 4.157,
+      "end": 4.36
+     },
+     {
+      "w": "masih",
+      "start": 4.36,
+      "end": 4.906
+     },
+     {
+      "w": "misteri.",
+      "start": 4.906,
+      "end": 5.642
+     }
+    ]
+   }
   },
   {
    "id": "sumber",
@@ -654,6 +962,47 @@
      "R. Descartes, La Géométrie (1637)"
     ],
     "catatan": "Teori percetakan & kata Arab: populer, belum ada bukti tertulis."
+   },
+   "vo": {
+    "file": "audio/asal-usul-x/10-sumber.mp3",
+    "durasi": 2.351,
+    "words": [
+     {
+      "w": "Sumber",
+      "start": 0.0,
+      "end": 0.331
+     },
+     {
+      "w": "riset",
+      "start": 0.331,
+      "end": 0.662
+     },
+     {
+      "w": "video",
+      "start": 0.662,
+      "end": 0.993
+     },
+     {
+      "w": "ini",
+      "start": 0.993,
+      "end": 1.324
+     },
+     {
+      "w": "ada",
+      "start": 1.324,
+      "end": 1.656
+     },
+     {
+      "w": "di",
+      "start": 1.656,
+      "end": 1.821
+     },
+     {
+      "w": "layar.",
+      "start": 1.821,
+      "end": 2.351
+     }
+    ]
    }
   }
  ]
