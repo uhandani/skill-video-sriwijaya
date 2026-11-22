@@ -1,0 +1,564 @@
+{
+ "id": "Pythagoras345",
+ "judul": "Rahasia Tali 3-4-5",
+ "pilar": "Ruang Hitung",
+ "kurikulum": "SMP Kelas 8 — Teorema Pythagoras",
+ "rasio": "9:16",
+ "sumber": [
+  "Teorema Pythagoras: a² + b² = c² untuk segitiga siku-siku (buku Matematika SMP kelas VIII, Kemendikbud)",
+  "Metode 3-4-5 untuk membuat sudut siku di lapangan: kebalikan teorema Pythagoras (bila a²+b²=c² maka sudutnya siku-siku)"
+ ],
+ "scenes": [
+  {
+   "id": "pembuka-tali",
+   "type": "diagram",
+   "durasi": 6.5,
+   "bg": "perkamen",
+   "bingkai": true,
+   "transisi": "iris",
+   "narasi": "Tukang bangunan punya trik sederhana: seutas tali dengan ukuran tiga, empat, dan lima.",
+   "props": {
+    "pena": true,
+    "items": [
+     {
+      "type": "line",
+      "from": [
+       330,
+       700
+      ],
+      "to": [
+       770,
+       700
+      ],
+      "at": 0.3,
+      "dur": 0.8,
+      "stroke": "#3A2A12",
+      "width": 8
+     },
+     {
+      "type": "line",
+      "from": [
+       770,
+       700
+      ],
+      "to": [
+       330,
+       370
+      ],
+      "at": 1.1,
+      "dur": 0.9,
+      "stroke": "#3A2A12",
+      "width": 8
+     },
+     {
+      "type": "line",
+      "from": [
+       330,
+       370
+      ],
+      "to": [
+       330,
+       700
+      ],
+      "at": 2.0,
+      "dur": 0.7,
+      "stroke": "#3A2A12",
+      "width": 8
+     },
+     {
+      "type": "circle",
+      "c": [
+       330.0,
+       700.0
+      ],
+      "r": 10,
+      "at": 2.8,
+      "dur": 0.15,
+      "stroke": "marun",
+      "fill": "marun",
+      "width": 3
+     },
+     {
+      "type": "circle",
+      "c": [
+       440.0,
+       700.0
+      ],
+      "r": 10,
+      "at": 2.87,
+      "dur": 0.15,
+      "stroke": "marun",
+      "fill": "marun",
+      "width": 3
+     },
+     {
+      "type": "circle",
+      "c": [
+       550.0,
+       700.0
+      ],
+      "r": 10,
+      "at": 2.94,
+      "dur": 0.15,
+      "stroke": "marun",
+      "fill": "marun",
+      "width": 3
+     },
+     {
+      "type": "circle",
+      "c": [
+       660.0,
+       700.0
+      ],
+      "r": 10,
+      "at": 3.01,
+      "dur": 0.15,
+      "stroke": "marun",
+      "fill": "marun",
+      "width": 3
+     },
+     {
+      "type": "circle",
+      "c": [
+       770.0,
+       700.0
+      ],
+      "r": 10,
+      "at": 3.08,
+      "dur": 0.15,
+      "stroke": "marun",
+      "fill": "marun",
+      "width": 3
+     },
+     {
+      "type": "circle",
+      "c": [
+       682.0,
+       634.0
+      ],
+      "r": 10,
+      "at": 3.15,
+      "dur": 0.15,
+      "stroke": "marun",
+      "fill": "marun",
+      "width": 3
+     },
+     {
+      "type": "circle",
+      "c": [
+       594.0,
+       568.0
+      ],
+      "r": 10,
+      "at": 3.22,
+      "dur": 0.15,
+      "stroke": "marun",
+      "fill": "marun",
+      "width": 3
+     },
+     {
+      "type": "circle",
+      "c": [
+       506.0,
+       502.0
+      ],
+      "r": 10,
+      "at": 3.29,
+      "dur": 0.15,
+      "stroke": "marun",
+      "fill": "marun",
+      "width": 3
+     },
+     {
+      "type": "circle",
+      "c": [
+       418.0,
+       436.0
+      ],
+      "r": 10,
+      "at": 3.36,
+      "dur": 0.15,
+      "stroke": "marun",
+      "fill": "marun",
+      "width": 3
+     },
+     {
+      "type": "circle",
+      "c": [
+       330.0,
+       370.0
+      ],
+      "r": 10,
+      "at": 3.43,
+      "dur": 0.15,
+      "stroke": "marun",
+      "fill": "marun",
+      "width": 3
+     },
+     {
+      "type": "circle",
+      "c": [
+       330.0,
+       480.0
+      ],
+      "r": 10,
+      "at": 3.5,
+      "dur": 0.15,
+      "stroke": "marun",
+      "fill": "marun",
+      "width": 3
+     },
+     {
+      "type": "circle",
+      "c": [
+       330.0,
+       590.0
+      ],
+      "r": 10,
+      "at": 3.57,
+      "dur": 0.15,
+      "stroke": "marun",
+      "fill": "marun",
+      "width": 3
+     },
+     {
+      "type": "rightAngle",
+      "vertex": [
+       330,
+       700
+      ],
+      "dir1": [
+       1,
+       0
+      ],
+      "dir2": [
+       0,
+       -1
+      ],
+      "size": 46,
+      "at": 3.7,
+      "dur": 0.4,
+      "stroke": "marun",
+      "width": 5
+     },
+     {
+      "type": "text",
+      "pos": [
+       270,
+       561.0
+      ],
+      "text": "3",
+      "size": 90,
+      "fill": "marun",
+      "at": 3.9
+     },
+     {
+      "type": "text",
+      "pos": [
+       550.0,
+       800
+      ],
+      "text": "4",
+      "size": 90,
+      "fill": "marun",
+      "at": 4.1
+     },
+     {
+      "type": "text",
+      "pos": [
+       590.0,
+       505.0
+      ],
+      "text": "5",
+      "size": 90,
+      "fill": "marun",
+      "at": 4.3
+     }
+    ]
+   }
+  },
+  {
+   "id": "hook",
+   "type": "title",
+   "durasi": 5,
+   "bg": "navy",
+   "bingkai": true,
+   "transisi": "iris",
+   "narasi": "Kenapa angka itu selalu menghasilkan sudut siku-siku yang sempurna?",
+   "props": {
+    "kicker": "Ruang Hitung",
+    "judul": "Kenapa harus 3, 4, 5?",
+    "tandaTanya": true
+   }
+  },
+  {
+   "id": "persegi",
+   "type": "diagram",
+   "durasi": 8.5,
+   "bg": "navy",
+   "transisi": "fade",
+   "narasi": "Gambar persegi di setiap sisi. Luasnya sembilan, enam belas, dan dua puluh lima kotak.",
+   "props": {
+    "judul": "Persegi di tiap sisi",
+    "items": [
+     {
+      "type": "polygon",
+      "points": [
+       [
+        400,
+        590
+       ],
+       [
+        680,
+        590
+       ],
+       [
+        400,
+        380
+       ]
+      ],
+      "at": 0.2,
+      "dur": 1.0,
+      "stroke": "krem",
+      "width": 8
+     },
+     {
+      "type": "rightAngle",
+      "vertex": [
+       400,
+       590
+      ],
+      "dir1": [
+       1,
+       0
+      ],
+      "dir2": [
+       0,
+       -1
+      ],
+      "size": 34,
+      "at": 1.0,
+      "dur": 0.3,
+      "stroke": "krem",
+      "width": 4
+     },
+     {
+      "type": "polygon",
+      "points": [
+       [
+        190,
+        380
+       ],
+       [
+        400,
+        380
+       ],
+       [
+        400,
+        590
+       ],
+       [
+        190,
+        590
+       ]
+      ],
+      "at": 1.4,
+      "dur": 0.8,
+      "stroke": "krem",
+      "fill": "marun",
+      "fillOpacity": 0.55,
+      "width": 5
+     },
+     {
+      "type": "grid",
+      "x": 190,
+      "y": 380,
+      "w": 210,
+      "h": 210,
+      "step": 70,
+      "at": 2.0,
+      "dur": 0.4,
+      "stroke": "krem",
+      "width": 2
+     },
+     {
+      "type": "text",
+      "pos": [
+       295,
+       505
+      ],
+      "text": "9",
+      "size": 84,
+      "fill": "emas",
+      "at": 2.4
+     },
+     {
+      "type": "polygon",
+      "points": [
+       [
+        400,
+        590
+       ],
+       [
+        680,
+        590
+       ],
+       [
+        680,
+        870
+       ],
+       [
+        400,
+        870
+       ]
+      ],
+      "at": 3.0,
+      "dur": 0.8,
+      "stroke": "krem",
+      "fill": "marun",
+      "fillOpacity": 0.55,
+      "width": 5
+     },
+     {
+      "type": "grid",
+      "x": 400,
+      "y": 590,
+      "w": 280,
+      "h": 280,
+      "step": 70,
+      "at": 3.6,
+      "dur": 0.4,
+      "stroke": "krem",
+      "width": 2
+     },
+     {
+      "type": "text",
+      "pos": [
+       540,
+       758
+      ],
+      "text": "16",
+      "size": 84,
+      "fill": "emas",
+      "at": 4.0
+     },
+     {
+      "type": "polygon",
+      "points": [
+       [
+        400,
+        380
+       ],
+       [
+        680,
+        590
+       ],
+       [
+        890,
+        310
+       ],
+       [
+        610,
+        100
+       ]
+      ],
+      "at": 4.8,
+      "dur": 1.0,
+      "stroke": "emas",
+      "fill": "navyTerang",
+      "fillOpacity": 0.6,
+      "width": 6
+     },
+     {
+      "type": "path",
+      "d": "M456 422 L666 142 M442 324 L722 534 M512 464 L722 184 M484 268 L764 478 M568 506 L778 226 M526 212 L806 422 M624 548 L834 268 M568 156 L848 366",
+      "at": 5.6,
+      "dur": 0.5,
+      "stroke": "krem",
+      "width": 2
+     },
+     {
+      "type": "text",
+      "pos": [
+       645,
+       373
+      ],
+      "text": "25",
+      "size": 96,
+      "fill": "emas",
+      "at": 6.1,
+      "focus": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "rumus",
+   "type": "equation",
+   "durasi": 7,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Sembilan tambah enam belas tepat dua puluh lima. Inilah Teorema Pythagoras.",
+   "props": {
+    "langkah": [
+     {
+      "tex": "9 + 16 = 25",
+      "at": 0.6
+     },
+     {
+      "tex": "3^2 + 4^2 = 5^2",
+      "at": 2.4
+     },
+     {
+      "tex": "\\g{a^2 + b^2 = c^2}",
+      "at": 4.2,
+      "catatan": "a, b = sisi siku · c = sisi miring"
+     }
+    ]
+   }
+  },
+  {
+   "id": "contoh-tangga",
+   "type": "equation",
+   "durasi": 9.5,
+   "bg": "cokelat",
+   "transisi": "iris",
+   "narasi": "Tangga lima meter, kakinya tiga meter dari dinding. Tingginya? Akar dua puluh lima kurang sembilan, yaitu empat meter.",
+   "props": {
+    "judul": "Contoh: tangga",
+    "size": 68,
+    "langkah": [
+     {
+      "tex": "c = 5\\text{ m},\\quad a = 3\\text{ m}",
+      "at": 0.5
+     },
+     {
+      "tex": "b = \\sqrt{5^2 - 3^2}",
+      "at": 2.6
+     },
+     {
+      "tex": "b = \\sqrt{25 - 9} = \\sqrt{16}",
+      "at": 4.4
+     },
+     {
+      "tex": "\\g{b = 4\\text{ m}}",
+      "at": 6.2
+     }
+    ]
+   }
+  },
+  {
+   "id": "penutup",
+   "type": "outro",
+   "durasi": 6.5,
+   "bg": "navy",
+   "bingkai": true,
+   "narasi": "Jadi, seutas tali tiga, empat, lima sudah cukup untuk sudut siku-siku sempurna.",
+   "props": {
+    "kesimpulan": "Seutas tali 3-4-5 = sudut siku-siku sempurna",
+    "tex": "\\g{a^2 + b^2 = c^2}"
+   }
+  }
+ ],
+ "kpd": 2.6
+}

@@ -1,0 +1,99 @@
+import React, { useMemo } from "react";
+import { AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { TransitionSeries, linearTiming } from "@remotion/transitions";
+import { Background } from "./components/Background";
+import { CaptionBar } from "./components/CaptionBar";
+import { DeltaLogo } from "./components/DeltaLogo";
+import { TumpalFrame } from "./components/TumpalFrame";
+import { presentationFor } from "./components/transitions";
+import { CounterScene } from "./scenes/CounterScene";
+import { DiagramScene } from "./scenes/DiagramScene";
+import { EquationScene } from "./scenes/EquationScene";
+import { GraphScene } from "./scenes/GraphScene";
+import { OutroScene } from "./scenes/OutroScene";
+import { ProjectileScene } from "./scenes/ProjectileScene";
+import { TitleScene } from "./scenes/TitleScene";
+import { GoldDust } from "./scenes/common";
+import { FPS, TRANS_FRAMES, buildCaptions, sceneTimings } from "./storyboard/timeline";
+import type { Scene, Storyboard } from "./storyboard/types";
+
+const SceneBody: React.FC<{ scene: Scene }> = ({ scene }) => {
+  switch (scene.type) {
+    case "title":
+      return <TitleScene {...scene.props} />;
+    case "diagram":
+      return <DiagramScene {...scene.props} />;
+    case "equation":
+      return <EquationScene {...scene.props} durasi={scene.durasi} />;
+    case "graph":
+      return <GraphScene {...scene.props} />;
+    case "projectile":
+      return <ProjectileScene {...scene.props} />;
+    case "counter":
+      return <CounterScene {...scene.props} />;
+    case "outro":
+      return <OutroScene {...scene.props} />;
+    default:
+      return null;
+  }
+};
+
+export const SceneView: React.FC<{ scene: Scene }> = ({ scene }) => (
+  <AbsoluteFill>
+    <Background variant={scene.bg ?? "navy"} />
+    {scene.bingkai ? <TumpalFrame color={scene.bg === "perkamen" ? "#6B5A44" : undefined} /> : null}
+    <GoldDust />
+    <SceneBody scene={scene} />
+  </AbsoluteFill>
+);
+
+const Watermark: React.FC<{ hideFrom: number }> = ({ hideFrom }) => {
+  const frame = useCurrentFrame();
+  const { width } = useVideoConfig();
+  if (frame >= hideFrom) return null;
+  const s = width / 1080;
+  return (
+    <div style={{ position: "absolute", top: 70 * s, right: 70 * s, opacity: 0.32 }}>
+      <DeltaLogo size={64 * s} isStatic id="wm" />
+    </div>
+  );
+};
+
+/** Video UDcation lengkap dari satu storyboard JSON. */
+export const UDVideo: React.FC<{ storyboard: Storyboard }> = ({ storyboard }) => {
+  const timings = useMemo(() => sceneTimings(storyboard), [storyboard]);
+  const captions = useMemo(() => buildCaptions(storyboard), [storyboard]);
+  const last = timings[timings.length - 1];
+  return (
+    <AbsoluteFill style={{ backgroundColor: "#141833" }}>
+      <TransitionSeries>
+        {storyboard.scenes.flatMap((scene, i) => {
+          const els = [
+            <TransitionSeries.Sequence key={`s-${scene.id}`} name={scene.id} durationInFrames={Math.round(scene.durasi * FPS)}>
+              <SceneView scene={scene} />
+            </TransitionSeries.Sequence>,
+          ];
+          const t = scene.transisi ?? "iris";
+          if (i < storyboard.scenes.length - 1 && t !== "none") {
+            els.push(
+              <TransitionSeries.Transition
+                key={`t-${scene.id}`}
+                presentation={presentationFor(t)}
+                timing={linearTiming({ durationInFrames: TRANS_FRAMES[t] })}
+              />,
+            );
+          }
+          return els;
+        })}
+      </TransitionSeries>
+      <Watermark hideFrom={last ? last.start : Infinity} />
+      <CaptionBar chunks={captions} />
+      {storyboard.audio?.voiceover ? <Audio src={staticFile(storyboard.audio.voiceover)} /> : null}
+      {storyboard.audio?.musik ? (
+        <Sequence>
+          <Audio src={staticFile(storyboard.audio.musik)} volume={storyboard.audio.musikVolume ?? 0.18} loop />
+        </Sequence>
+      ) : null}
+    </AbsoluteFill>
+  );
+};

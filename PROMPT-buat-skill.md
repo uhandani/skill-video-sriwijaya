@@ -1,5 +1,9 @@
 # Prompt: Buat Skill "video-sains-nusantara" (UDcation)
 
+> **Status:** skill ini sudah dibangun di `.claude/skills/video-sains-nusantara/` dengan proyek
+> Remotion di `studio/` (contoh: `Pythagoras345`, `GerakParabola45`). Prompt di bawah disimpan
+> sebagai spesifikasi asal.
+
 > Salin seluruh isi blok di bawah ini ke Claude Code (sebaiknya di repo ini).
 > Gaya desainnya diambil dari video referensi "Sriwijaya" (Instagram Reels),
 > lalu disesuaikan menjadi **identitas visual tetap** untuk konten Matematika & Fisika.

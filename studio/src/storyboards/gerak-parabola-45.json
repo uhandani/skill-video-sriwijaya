@@ -1,0 +1,165 @@
+{
+ "id": "GerakParabola45",
+ "judul": "Sudut Lemparan Terjauh",
+ "pilar": "Ruang Semesta",
+ "kurikulum": "SMA Kelas 10 — Gerak Parabola",
+ "rasio": "9:16",
+ "kpd": 2.6,
+ "sumber": [
+  "Jangkauan gerak parabola tanpa hambatan udara: R = v0² sin 2θ / g (buku Fisika SMA kelas X)",
+  "Nilai g ≈ 9,8 m/s² (pembulatan percepatan gravitasi di permukaan Bumi)"
+ ],
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "title",
+   "durasi": 7.5,
+   "bg": "navy",
+   "bingkai": true,
+   "transisi": "iris",
+   "narasi": "Kalau kamu melempar bola dengan kecepatan yang sama, sudut berapa yang membuatnya terbang paling jauh?",
+   "props": {
+    "kicker": "Ruang Semesta",
+    "judul": "Sudut berapa lemparan terjauh?",
+    "tandaTanya": true
+   }
+  },
+  {
+   "id": "lempar-30",
+   "type": "projectile",
+   "durasi": 6.5,
+   "bg": "navy",
+   "transisi": "fade",
+   "narasi": "Coba tiga puluh derajat. Bola mendarat sekitar tiga puluh lima meter.",
+   "props": {
+    "judul": "θ = 30°",
+    "v0": 20,
+    "sudut": 30,
+    "slow": 1.5
+   }
+  },
+  {
+   "id": "lempar-45",
+   "type": "projectile",
+   "durasi": 7.5,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Sekarang empat puluh lima derajat. Jangkauannya hampir empat puluh satu meter.",
+   "props": {
+    "judul": "θ = 45°",
+    "v0": 20,
+    "sudut": 45,
+    "slow": 1.3
+   }
+  },
+  {
+   "id": "angka",
+   "type": "counter",
+   "durasi": 3.8,
+   "bg": "cokelat",
+   "transisi": "iris",
+   "narasi": "Paling jauh dari semua sudut!",
+   "props": {
+    "from": 0,
+    "to": 40.8,
+    "desimal": 1,
+    "satuan": "m",
+    "label": "jangkauan terjauh untuk v₀ = 20 m/s"
+   }
+  },
+  {
+   "id": "grafik",
+   "type": "graph",
+   "durasi": 9.5,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Grafik jangkauan terhadap sudut memuncak tepat di empat puluh lima derajat. Tiga puluh dan enam puluh derajat jatuh di titik yang sama.",
+   "props": {
+    "judul": "Jangkauan vs sudut",
+    "x": [
+     0,
+     90
+    ],
+    "y": [
+     0,
+     45
+    ],
+    "xLabel": "θ (°)",
+    "yLabel": "R (m)",
+    "curves": [
+     {
+      "expr": "400/9.8*sin(2*x*PI/180)",
+      "at": 0.5,
+      "dur": 2,
+      "label": "R(θ)",
+      "labelAt": 70
+     }
+    ],
+    "points": [
+     {
+      "x": 30,
+      "y": 35.35,
+      "label": "30°",
+      "at": 3.4
+     },
+     {
+      "x": 60,
+      "y": 35.35,
+      "label": "60°",
+      "at": 3.8
+     },
+     {
+      "x": 45,
+      "y": 40.82,
+      "label": "45°",
+      "at": 2.8
+     }
+    ],
+    "moving": {
+     "curve": 0,
+     "from": 10,
+     "to": 45,
+     "at": 5.2,
+     "dur": 2.5
+    }
+   }
+  },
+  {
+   "id": "rumus",
+   "type": "equation",
+   "durasi": 10.5,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Rumusnya: jangkauan sama dengan v nol kuadrat kali sin dua theta, dibagi g. Sin dua theta paling besar saat theta empat puluh lima derajat.",
+   "props": {
+    "langkah": [
+     {
+      "tex": "R = \\frac{v_0^2 \\,\\sin 2\\theta}{g}",
+      "at": 0.6
+     },
+     {
+      "tex": "\\sin 2\\theta \\le 1",
+      "at": 4.2,
+      "catatan": "nilai sinus paling besar = 1"
+     },
+     {
+      "tex": "\\g{2\\theta = 90^\\circ \\Rightarrow \\theta = 45^\\circ}",
+      "at": 6.6
+     }
+    ]
+   }
+  },
+  {
+   "id": "penutup",
+   "type": "outro",
+   "durasi": 6.5,
+   "bg": "navy",
+   "bingkai": true,
+   "narasi": "Ingat, tanpa hambatan udara, empat puluh lima derajat selalu juara.",
+   "props": {
+    "kesimpulan": "Tanpa hambatan udara, 45° memberi lemparan terjauh",
+    "tex": "\\g{R = \\frac{v_0^2 \\sin 2\\theta}{g}}"
+   }
+  }
+ ]
+}
