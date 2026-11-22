@@ -273,11 +273,23 @@ const Tangga: React.FC = () => {
     <g strokeLinecap="round">
       <Bata x={wallX} y={-4 * u - 30} w={60} h={4 * u + 30} />
       <path d={`M-120 0 H${wallX + 80}`} stroke={C.krem} strokeWidth={L} />
-      <g stroke={IL.kayuTerang} strokeWidth={9}>
+      <g stroke={C.krem} strokeWidth={15}>
         <path d={rail(-10)} />
         <path d={rail(10)} />
       </g>
-      <g stroke={IL.kayuTerang} strokeWidth={6}>
+      <g stroke={C.krem} strokeWidth={11}>
+        {Array.from({ length: 7 }).map((_, i) => {
+          const t = (i + 1) / 8;
+          const x = foot[0] + (top[0] - foot[0]) * t;
+          const y = foot[1] + (top[1] - foot[1]) * t;
+          return <path key={i} d={`M${x - 13} ${y} L${x + 11} ${y}`} />;
+        })}
+      </g>
+      <g stroke={IL.kayuTerang} strokeWidth={8}>
+        <path d={rail(-10)} />
+        <path d={rail(10)} />
+      </g>
+      <g stroke={IL.kayuTerang} strokeWidth={5}>
         {Array.from({ length: 7 }).map((_, i) => {
           const t = (i + 1) / 8;
           const x = foot[0] + (top[0] - foot[0]) * t;
