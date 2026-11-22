@@ -8,7 +8,7 @@ import type { Storyboard } from "../src/storyboard/types";
 import { FPS, TRANS_FRAMES, VO_LEAD, totalFrames } from "../src/storyboard/timeline";
 
 const DIR = join(__dirname, "..", "src", "storyboards");
-const TYPES = ["title", "diagram", "equation", "graph", "projectile", "counter", "outro", "sumber"];
+const TYPES = ["title", "diagram", "equation", "graph", "projectile", "counter", "outro", "sumber", "ilustrasi"];
 const BG = ["navy", "cokelat", "perkamen", "kayu"];
 let gagal = 0;
 

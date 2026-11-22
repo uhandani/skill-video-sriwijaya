@@ -197,7 +197,7 @@ export const DiagramScene: React.FC<DiagramProps> = ({ judul, items, pena, top, 
         style={{ position: "absolute", left: (width - size) / 2, top: areaTop + (areaH - size) / 2, overflow: "visible" }}
       >
         <defs>
-          <linearGradient id="diagGold" x1="0" y1="0" x2="0" y2="1">
+          <linearGradient id="diagGold" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1000">
             {GOLD_STOPS.map(([o, c]) => (
               <stop key={o} offset={o} stopColor={c} />
             ))}
@@ -207,7 +207,7 @@ export const DiagramScene: React.FC<DiagramProps> = ({ judul, items, pena, top, 
             <stop offset="0.5" stopColor="#F8DA88" />
             <stop offset="1" stopColor="#B07A26" />
           </linearGradient>
-          <filter id="diagGlow" x="-20%" y="-20%" width="140%" height="140%">
+          <filter id="diagGlow" filterUnits="userSpaceOnUse" x={-200} y={-200} width={1400} height={1400}>
             <feGaussianBlur stdDeviation={5} result="b" />
             <feMerge>
               <feMergeNode in="b" />

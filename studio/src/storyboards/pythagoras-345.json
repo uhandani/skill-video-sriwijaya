@@ -994,5 +994,11 @@
    }
   }
  ],
- "kpd": 2.6
+ "kpd": 2.6,
+ "thumbnail": {
+  "hook": "Rahasia\nTali *3-4-5*",
+  "sub": "Trik tukang bangunan bikin sudut siku sempurna",
+  "elemen": [],
+  "tex": "\\g{a^2 + b^2 = c^2}"
+ }
 }

@@ -31,6 +31,7 @@ export const GoldText: React.FC<{
         color: "transparent",
         filter: "drop-shadow(0 6px 18px rgba(237,181,61,0.35)) drop-shadow(0 2px 2px rgba(0,0,0,0.5))",
         display: "inline-block",
+        fontVariantNumeric: "lining-nums",
         ...style,
       }}
     >

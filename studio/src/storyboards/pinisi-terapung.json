@@ -1,0 +1,381 @@
+{
+ "id": "PinisiTerapung",
+ "judul": "Pinisi: Kok Bisa Terapung?",
+ "pilar": "Ruang Nusantara",
+ "kurikulum": "SMP Kelas 8 — Tekanan Zat & Hukum Archimedes",
+ "rasio": "9:16",
+ "kpd": 2.6,
+ "sumber": [
+  "UNESCO, “Pinisi, art of boatbuilding in South Sulawesi” — Daftar Warisan Budaya Takbenda (2017)",
+  "Archimedes, On Floating Bodies (± abad ke-3 SM) — prinsip gaya apung",
+  "Massa jenis air laut ≈ 1.025 kg/m³ (NOAA, sifat fisik air laut)"
+ ],
+ "thumbnail": {
+  "hook": "Kayu *Puluhan Ton*\nKok Bisa Terapung?",
+  "sub": "Rahasia kapal pinisi dari Sulawesi",
+  "elemen": [
+   {
+    "jenis": "matahari",
+    "x": 250,
+    "y": 250,
+    "skala": 1.1
+   },
+   {
+    "jenis": "kapal",
+    "x": 520,
+    "y": 760,
+    "skala": 2.6
+   },
+   {
+    "jenis": "ombak",
+    "x": 500,
+    "y": 800,
+    "skala": 1.6
+   }
+  ]
+ },
+ "scenes": [
+  {
+   "id": "pembuka",
+   "type": "ilustrasi",
+   "durasi": 6.5,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Pinisi, kapal kayu dari Sulawesi Selatan, beratnya bisa puluhan ton.",
+   "props": {
+    "garisLaut": 1180,
+    "elemen": [
+     {
+      "jenis": "matahari",
+      "x": 230,
+      "y": 420,
+      "skala": 1.3,
+      "at": 0.2
+     },
+     {
+      "jenis": "awan",
+      "x": 760,
+      "y": 520,
+      "skala": 1.1,
+      "at": 0.5,
+      "gerak": "melayang"
+     },
+     {
+      "jenis": "gunung",
+      "x": 150,
+      "y": 1180,
+      "skala": 1.6,
+      "at": 0.4
+     },
+     {
+      "jenis": "kapal",
+      "x": 560,
+      "y": 1190,
+      "skala": 2.4,
+      "at": 0.9
+     },
+     {
+      "jenis": "ombak",
+      "x": 500,
+      "y": 1260,
+      "skala": 1.6,
+      "at": 1.2
+     }
+    ],
+    "label": [
+     {
+      "teks": "Pinisi",
+      "x": 560,
+      "y": 1400,
+      "at": 1.8,
+      "emas": true,
+      "ukuran": 70
+     }
+    ]
+   }
+  },
+  {
+   "id": "hook",
+   "type": "title",
+   "durasi": 5,
+   "bg": "navy",
+   "bingkai": true,
+   "transisi": "iris",
+   "narasi": "Kayu seberat itu, kok bisa terapung di laut?",
+   "props": {
+    "kicker": "Ruang Nusantara",
+    "judul": "Kok bisa terapung?",
+    "tandaTanya": true
+   }
+  },
+  {
+   "id": "archimedes",
+   "type": "diagram",
+   "durasi": 9.5,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Rahasianya hukum Archimedes. Berat kapal menekan ke bawah, dan air laut mendorong ke atas, seberat air yang dipindahkan.",
+   "tts": "Rahasianya, hukum Arkimedes. Berat kapal menekan ke bawah, dan air laut mendorong ke atas, seberat air yang dipindahkan.",
+   "props": {
+    "judul": "Hukum Archimedes",
+    "items": [
+     {
+      "type": "rect",
+      "x": 120,
+      "y": 520,
+      "w": 760,
+      "h": 360,
+      "at": 0.2,
+      "dur": 0.8,
+      "stroke": "krem",
+      "fill": "cokelat",
+      "fillOpacity": 0.75,
+      "width": 5
+     },
+     {
+      "type": "text",
+      "pos": [
+       790,
+       860
+      ],
+      "text": "air laut",
+      "size": 40,
+      "fill": "krem",
+      "at": 0.6
+     },
+     {
+      "type": "polygon",
+      "points": [
+       [
+        300,
+        440
+       ],
+       [
+        700,
+        440
+       ],
+       [
+        650,
+        620
+       ],
+       [
+        350,
+        620
+       ]
+      ],
+      "at": 0.8,
+      "dur": 0.8,
+      "stroke": "emas",
+      "fill": "navyDalam",
+      "fillOpacity": 0.9,
+      "width": 6
+     },
+     {
+      "type": "line",
+      "from": [
+       500,
+       380
+      ],
+      "to": [
+       500,
+       180
+      ],
+      "at": 2.2,
+      "dur": 0.6,
+      "stroke": "krem",
+      "width": 10,
+      "kata": "berat"
+     },
+     {
+      "type": "polygon",
+      "points": [
+       [
+        470,
+        330
+       ],
+       [
+        530,
+        330
+       ],
+       [
+        500,
+        390
+       ]
+      ],
+      "at": 2.6,
+      "dur": 0.3,
+      "stroke": "krem",
+      "fill": "krem",
+      "width": 3
+     },
+     {
+      "type": "text",
+      "pos": [
+       620,
+       300
+      ],
+      "text": "berat kapal",
+      "size": 46,
+      "fill": "krem",
+      "at": 2.8
+     },
+     {
+      "type": "line",
+      "from": [
+       500,
+       680
+      ],
+      "to": [
+       500,
+       860
+      ],
+      "at": 4.0,
+      "dur": 0.6,
+      "stroke": "emas",
+      "width": 10,
+      "kata": "mendorong"
+     },
+     {
+      "type": "polygon",
+      "points": [
+       [
+        470,
+        700
+       ],
+       [
+        530,
+        700
+       ],
+       [
+        500,
+        640
+       ]
+      ],
+      "at": 4.4,
+      "dur": 0.3,
+      "stroke": "emas",
+      "fill": "emas",
+      "width": 3
+     },
+     {
+      "type": "text",
+      "pos": [
+       330,
+       800
+      ],
+      "text": "gaya apung",
+      "size": 46,
+      "fill": "emas",
+      "at": 4.6
+     }
+    ]
+   }
+  },
+  {
+   "id": "hitung",
+   "type": "equation",
+   "durasi": 9.5,
+   "bg": "cokelat",
+   "transisi": "iris",
+   "narasi": "Kapal seratus ton cukup memindahkan sekitar sembilan puluh delapan meter kubik air laut untuk terapung.",
+   "props": {
+    "judul": "Contoh: kapal 100 ton",
+    "size": 66,
+    "langkah": [
+     {
+      "tex": "m_{\\text{kapal}} = \\rho_{\\text{laut}} \\cdot V",
+      "at": 0.6
+     },
+     {
+      "tex": "100\\,000 = 1\\,025 \\cdot V",
+      "at": 3.0
+     },
+     {
+      "tex": "\\g{V \\approx 98\\ \\text{m}^3}",
+      "at": 6.0
+     }
+    ]
+   }
+  },
+  {
+   "id": "unesco",
+   "type": "ilustrasi",
+   "durasi": 8,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Seni membuat pinisi diakui UNESCO sebagai warisan budaya takbenda sejak tahun dua ribu tujuh belas.",
+   "props": {
+    "garisLaut": 1150,
+    "elemen": [
+     {
+      "jenis": "kelapa",
+      "x": 160,
+      "y": 1150,
+      "skala": 1.6,
+      "at": 0.3
+     },
+     {
+      "jenis": "orang",
+      "x": 330,
+      "y": 1150,
+      "skala": 1.4,
+      "at": 0.6
+     },
+     {
+      "jenis": "kapal",
+      "x": 640,
+      "y": 1160,
+      "skala": 2.0,
+      "at": 0.9
+     }
+    ],
+    "label": [
+     {
+      "teks": "UNESCO",
+      "x": 500,
+      "y": 520,
+      "at": 1.2,
+      "ukuran": 96,
+      "emas": true,
+      "kata": "UNESCO"
+     },
+     {
+      "teks": "Warisan Budaya Takbenda · 2017",
+      "x": 500,
+      "y": 600,
+      "at": 1.6,
+      "ukuran": 46
+     }
+    ]
+   }
+  },
+  {
+   "id": "penutup",
+   "type": "outro",
+   "durasi": 7.5,
+   "bg": "navy",
+   "bingkai": true,
+   "transisi": "fade",
+   "narasi": "Tanpa rumus tertulis, para pembuat pinisi menguasai ilmu apung lewat pengalaman turun-temurun.",
+   "props": {
+    "kesimpulan": "Ilmu apung leluhur, diwariskan turun-temurun",
+    "tex": "\\g{F = \\rho\\, V g}"
+   }
+  },
+  {
+   "id": "sumber",
+   "type": "sumber",
+   "durasi": 6,
+   "bg": "navy",
+   "narasi": "Sumber riset ada di layar.",
+   "props": {
+    "daftar": [
+     "UNESCO, “Pinisi, art of boatbuilding in South Sulawesi” — Daftar Warisan Budaya Takbenda (2017)",
+     "Archimedes, On Floating Bodies (± abad ke-3 SM) — prinsip gaya apung",
+     "Massa jenis air laut ≈ 1.025 kg/m³ (NOAA, sifat fisik air laut)"
+    ],
+    "catatan": "Perhitungan disederhanakan: kapal dianggap terapung diam, g saling meniadakan."
+   }
+  }
+ ]
+}

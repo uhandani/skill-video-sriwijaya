@@ -1005,5 +1005,11 @@
     ]
    }
   }
- ]
+ ],
+ "thumbnail": {
+  "hook": "Kenapa Harus\n*x*?",
+  "sub": "Asal-usulnya ternyata masih misteri",
+  "elemen": [],
+  "tex": "\\g{x = \\;?}"
+ }
 }

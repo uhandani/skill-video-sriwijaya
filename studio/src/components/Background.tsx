@@ -1,15 +1,56 @@
 import React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { C } from "../brand/theme";
+import { motif as motifAktif } from "../brand/tema";
 
 export type BgVariant = "navy" | "cokelat" | "perkamen" | "kayu";
 
-const BASE: Record<BgVariant, { bg: string; motif: string; op: number }> = {
-  navy: { bg: `radial-gradient(ellipse at 50% 38%, ${C.navyTerang} 0%, ${C.navy} 45%, ${C.navyDalam} 100%)`, motif: C.krem, op: 0.09 },
-  cokelat: { bg: `radial-gradient(ellipse at 50% 40%, #A4652F 0%, ${C.cokelat} 45%, ${C.cokelatGelap} 100%)`, motif: "#F1D6A8", op: 0.1 },
-  perkamen: { bg: `radial-gradient(ellipse at 50% 40%, #E6DAC2 0%, ${C.perkamen} 60%, #A8977C 100%)`, motif: "#6B5A44", op: 0.12 },
-  kayu: { bg: `linear-gradient(100deg, #3A2112 0%, #5A3420 30%, #4A2A16 55%, #5E3822 80%, #3A2112 100%)`, motif: "#E0B98A", op: 0.06 },
+const baseOf = (variant: BgVariant): { bg: string; motif: string; op: number } => {
+  switch (variant) {
+    case "navy":
+      return { bg: `radial-gradient(ellipse at 50% 38%, ${C.navyTerang} 0%, ${C.navy} 45%, ${C.navyDalam} 100%)`, motif: C.krem, op: 0.09 };
+    case "cokelat":
+      return { bg: `radial-gradient(ellipse at 50% 40%, ${C.cokelatTerang} 0%, ${C.cokelat} 45%, ${C.cokelatGelap} 100%)`, motif: "#F1D6A8", op: 0.1 };
+    case "perkamen":
+      return { bg: `radial-gradient(ellipse at 50% 40%, #E6DAC2 0%, ${C.perkamen} 60%, #A8977C 100%)`, motif: "#6B5A44", op: 0.12 };
+    default:
+      return { bg: `linear-gradient(100deg, #3A2112 0%, #5A3420 30%, #4A2A16 55%, #5E3822 80%, #3A2112 100%)`, motif: "#E0B98A", op: 0.06 };
+  }
 };
+
+/** Mega mendung: awan bergulung berlapis (Cirebon) — motif Ruang Semesta. */
+const MegaMendungTile: React.FC<{ id: string; color: string }> = ({ id, color }) => {
+  const cloud = (x: number, y: number) =>
+    [0, 1, 2].map((k) => {
+      const r = 34 - k * 9;
+      return (
+        <path
+          key={k}
+          d={`M${x - r * 1.9} ${y} a${r * 0.95} ${r * 0.95} 0 0 1 ${r * 1.9} 0 a${r * 0.7} ${r * 0.7} 0 0 1 ${r * 1.4} 0 a${r * 0.5} ${r * 0.5} 0 0 1 ${r} 0`}
+          fill="none"
+          stroke={color}
+          strokeWidth={1.8}
+        />
+      );
+    });
+  return (
+    <pattern id={id} width={180} height={120} patternUnits="userSpaceOnUse">
+      {cloud(70, 50)}
+      {cloud(160, 110)}
+      {cloud(-20, 110)}
+    </pattern>
+  );
+};
+
+/** Parang: rantai huruf S miring berulang (motif keraton) — motif Ruang Nusantara. */
+const ParangTile: React.FC<{ id: string; color: string }> = ({ id, color }) => (
+  <pattern id={id} width={60} height={60} patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <path d="M0 30 C10 10 20 10 30 30 S50 50 60 30" fill="none" stroke={color} strokeWidth={2} />
+    <path d="M0 0 H60 M0 60 H60" stroke={color} strokeWidth={1.2} strokeDasharray="3 5" />
+    <circle cx={15} cy={22} r={2} fill={color} />
+    <circle cx={45} cy={38} r={2} fill={color} />
+  </pattern>
+);
 
 /** Motif kawung: 4 kelopak per sel menunjuk ke pusat sel. */
 const lens = (x: number, y: number, d: "\\" | "/", s: number) =>
@@ -55,7 +96,8 @@ export const Background: React.FC<{ variant?: BgVariant; motif?: boolean }> = ({
 }) => {
   const frame = useCurrentFrame();
   const { width, height } = useVideoConfig();
-  const b = BASE[variant];
+  const b = baseOf(variant);
+  const m = motifAktif();
   const id = `motif-${variant}`;
   return (
     <AbsoluteFill style={{ background: b.bg, overflow: "hidden" }}>
@@ -68,8 +110,10 @@ export const Background: React.FC<{ variant?: BgVariant; motif?: boolean }> = ({
         >
           <svg width={width} height={height} style={{ opacity: b.op }}>
             <defs>
-              {variant === "navy" ? <KawungTile id={id} color={b.motif} size={96} /> : null}
-              {variant === "cokelat" ? <WeaveTile id={id} color={b.motif} /> : null}
+              {(variant === "navy" || (variant === "cokelat" && m !== "kawung")) && m === "kawung" ? <KawungTile id={id} color={b.motif} size={96} /> : null}
+              {(variant === "navy" || variant === "cokelat") && m === "megamendung" ? <MegaMendungTile id={id} color={b.motif} /> : null}
+              {(variant === "navy" || variant === "cokelat") && m === "parang" ? <ParangTile id={id} color={b.motif} /> : null}
+              {variant === "cokelat" && m === "kawung" ? <WeaveTile id={id} color={b.motif} /> : null}
               {variant === "perkamen" ? <NotebookTile id={id} color={b.motif} /> : null}
               {variant === "kayu" ? <WeaveTile id={id} color={b.motif} /> : null}
             </defs>

@@ -21,7 +21,7 @@ Field umum tiap adegan:
 | Field | Keterangan |
 |---|---|
 | `id` | unik dalam storyboard |
-| `type` | `title` · `diagram` · `equation` · `graph` · `projectile` · `counter` · `outro` |
+| `type` | `title` · `diagram` · `equation` · `graph` · `projectile` · `counter` · `ilustrasi` · `outro` · `sumber` |
 | `durasi` | detik. Minimal ≈ `kata/2.6 + 0.3 + durasi transisi`. `npm run cek` menghitungnya. |
 | `narasi` | teks voice-over = sumber subtitle karaoke |
 | `bg` | `navy` (default) · `cokelat` · `perkamen` · `kayu` |
@@ -145,3 +145,8 @@ Watermark logo kecil otomatis hilang saat outro.
 
 Pola adegan baru: terima props dari JSON, pakai `useCurrentFrame()` + `interpolate()` (bukan CSS animation),
 ukuran dikali `s` dari `useS()`, warna dari `C`, fokus emas maksimal 1–2.
+
+## `ilustrasi` — adegan ilustrasi bergaya Sriwijaya
+
+Lihat `tema-ilustrasi-thumbnail.md` (daftar jenis, koordinat, gaya wajib). Contoh:
+`studio/src/storyboards/pinisi-terapung.json` (adegan `pembuka`, `unesco`).

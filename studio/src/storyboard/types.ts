@@ -1,4 +1,5 @@
 import type { BgVariant } from "../components/Background";
+import type { ElemenIlustrasi } from "../components/Ilustrasi";
 
 export type Transisi = "iris" | "fade" | "perkamen" | "none";
 
@@ -106,6 +107,26 @@ export type CounterProps = { from: number; to: number; desimal?: number; /** tan
 
 export type OutroProps = { kesimpulan: string; tex?: string; ajakan?: string };
 
+/** Adegan ilustrasi bergaya Sriwijaya (kanvas 1000 lebar; tinggi 1778 untuk 9:16). */
+export type IlustrasiProps = {
+  judul?: string;
+  elemen: ElemenIlustrasi[];
+  label?: { teks: string; x: number; y: number; at?: number; ukuran?: number; emas?: boolean }[];
+  /** y garis laut/tanah (kanvas); bila diisi, bagian bawah jadi laut bermotif ombak */
+  garisLaut?: number;
+};
+
+/** Thumbnail video (Reels 1080×1920 & YouTube 1280×720). */
+export type ThumbnailSpec = {
+  /** hook besar; baris baru pakai \n; kata dalam *bintang* jadi emas */
+  hook: string;
+  sub?: string;
+  /** ilustrasi utama, koordinat kanvas 1000×1000 (persegi, diletakkan di area gambar) */
+  elemen: ElemenIlustrasi[];
+  /** rumus besar di tengah gambar (untuk konten MTK tanpa ilustrasi benda); bagian kunci \\g{} */
+  tex?: string;
+};
+
 /** Daftar sumber riset di akhir video (setelah outro). */
 export type SumberProps = { judul?: string; daftar: string[]; catatan?: string };
 
@@ -117,17 +138,19 @@ export type Scene =
   | (SceneBase & { type: "projectile"; props: ProjectileProps })
   | (SceneBase & { type: "counter"; props: CounterProps })
   | (SceneBase & { type: "outro"; props: OutroProps })
-  | (SceneBase & { type: "sumber"; props: SumberProps });
+  | (SceneBase & { type: "sumber"; props: SumberProps })
+  | (SceneBase & { type: "ilustrasi"; props: IlustrasiProps });
 
 export type Storyboard = {
   id: string;
   judul: string;
-  pilar: "Ruang Hitung" | "Ruang Semesta" | "Fakta Unik" | "Jejak Ilmu Nusantara";
+  pilar: "Ruang Hitung" | "Ruang Semesta" | "Ruang Nusantara" | "Fakta Unik" | "Jejak Ilmu Nusantara";
   kurikulum?: string;
   rasio?: "9:16" | "16:9";
   /** kata per detik untuk estimasi subtitle tanpa VO */
   kpd?: number;
   audio?: { voiceover?: string; musik?: string; musikVolume?: number };
   sumber?: string[];
+  thumbnail?: ThumbnailSpec;
   scenes: Scene[];
 };

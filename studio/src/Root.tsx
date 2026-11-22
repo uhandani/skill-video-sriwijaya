@@ -1,5 +1,6 @@
 import React from "react";
-import { Composition, Folder } from "remotion";
+import { Composition, Folder, Still } from "remotion";
+import { Thumbnail } from "./Thumbnail";
 import { UDVideo, SceneView } from "./UDVideo";
 import { STORYBOARDS } from "./storyboards";
 import { FPS, totalFrames } from "./storyboard/timeline";
@@ -20,6 +21,10 @@ export const RemotionRoot: React.FC = () => {
             durationInFrames={totalFrames(sb)}
             defaultProps={{ storyboard: sb }}
           />
+          <Folder name={`${sb.id}-Thumbnail`}>
+            <Still id={`${sb.id}-thumb`} component={Thumbnail} width={1080} height={1920} defaultProps={{ storyboard: sb }} />
+            <Still id={`${sb.id}-thumb-yt`} component={Thumbnail} width={1280} height={720} defaultProps={{ storyboard: sb }} />
+          </Folder>
           <Folder name={`${sb.id}-Adegan`}>
             {sb.scenes.map((scene) => (
               <Composition
@@ -29,7 +34,7 @@ export const RemotionRoot: React.FC = () => {
                 fps={FPS}
                 {...dims(sb)}
                 durationInFrames={Math.round(scene.durasi * FPS)}
-                defaultProps={{ scene }}
+                defaultProps={{ scene, pilar: sb.pilar }}
               />
             ))}
           </Folder>

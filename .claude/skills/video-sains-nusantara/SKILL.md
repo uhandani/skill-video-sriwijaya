@@ -1,9 +1,14 @@
 ---
 name: video-sains-nusantara
-description: Membuat video pendek edukasi Matematika & Fisika bergaya khas UDcation ("Nusantara Emas" — tekstur batik/kawung, foil emas, subtitle marun karaoke, logo Δ Kawung) dengan Remotion. Gunakan setiap kali pengguna minta membuat video/Reels/Shorts/konten UDcation tentang konsep MTK, fisika, fakta unik sains, atau sejarah Nusantara yang dikaitkan dengan MTK/fisika — termasuk "buatkan video tentang X", "bikin konten Pythagoras", "video fisika gerak parabola", atau revisi video UDcation yang sudah ada.
+description: Membuat video pendek MATEMATIKA pilar "Ruang Hitung" UDcation (juga konten Fakta Unik) bergaya khas "Nusantara Emas" — navy + marun, motif kawung, foil emas, subtitle karaoke, logo Δ Kawung, rumus KaTeX, diagram & grafik, voice-over ElevenLabs, plus thumbnail — dengan Remotion. Ini juga skill INTI: mesin video, alur kerja, dan referensi bersama untuk skill video-ruang-semesta (fisika) dan video-ruang-nusantara (sejarah & budaya). Gunakan saat pengguna minta video/Reels/Shorts UDcation tentang MTK (aljabar, geometri, bilangan, peluang, sejarah simbol MTK) atau revisi video UDcation.
 ---
 
-# Video Sains Nusantara (UDcation)
+# Video Ruang Hitung (MTK) — inti UDcation
+
+> **Tiga pilar, tiga skill, satu mesin:**
+> Ruang Hitung (MTK) → skill ini · Ruang Semesta (fisika) → `video-ruang-semesta` ·
+> Ruang Nusantara (sejarah & budaya × sains) → `video-ruang-nusantara`.
+> Warna & motif otomatis dari `"pilar"` di storyboard — lihat `references/tema-ilustrasi-thumbnail.md`.
 
 Skill ini mengubah satu topik MTK/fisika menjadi video vertikal 9:16 (atau 16:9) dengan
 identitas visual UDcation yang konsisten. **Satu video = satu file storyboard JSON.**
@@ -42,16 +47,19 @@ Jika `studio/` belum ada `node_modules`, jalankan `cd studio && npm install` dul
    UDcation "Saos Cocol", simpan ke `public/audio/<nama>/<n>-<id>.mp3`, lalu
    `npm run sinkron -- src/storyboards/<nama>.json` (subtitle, durasi, dan isyarat `"kata"`
    otomatis menyesuaikan suara). Detail & aturan antrean paket Free → `references/production.md`.
-8. **Render final** (hanya setelah cek lolos):
+8. **Thumbnail**: isi `"thumbnail"` (hook "wow" + rumus/ilustrasi), lalu
+   `npx remotion still <Id>-thumb out/thumb/<Id>.png` dan `<Id>-thumb-yt` → LIHAT hasilnya.
+   Rumus hook & format → `references/tema-ilustrasi-thumbnail.md`.
+9. **Render final** (hanya setelah cek lolos):
    `npx remotion render <Id> out/<Id>.mp4 --codec=h264 --crf=20`
-9. Laporkan ke pengguna: file MP4, durasi, ringkasan adegan, hal yang belum (mis. VO/musik).
+10. Laporkan ke pengguna: file MP4, durasi, ringkasan adegan, hal yang belum (mis. VO/musik).
 
 Perintah lengkap, audio/voice-over, dan catatan lingkungan → `references/production.md`.
 
 ## Aturan gaya yang tidak boleh dilanggar
 
-- Palet hanya: navy `#262B4A`, cokelat `#8E5227`, emas `#EDB53D`, marun `#6A1A25`,
-  krem `#F1E6D0`, perkamen `#CDBFA6` (token di `studio/src/brand/theme.ts`).
+- `"pilar": "Ruang Hitung"` (MTK) → navy `#262B4A`, cokelat `#8E5227`, marun `#6A1A25`, motif kawung.
+  Emas `#EDB53D`, krem `#F1E6D0`, perkamen `#CDBFA6` sama di semua pilar. Pakai token `C.*`, jangan hex baru.
 - **Emas hanya untuk 1–2 fokus per adegan** (rumus kunci, jawaban, titik penting).
   Di rumus: bungkus bagian kunci dengan `\g{...}`.
 - Latar selalu bertekstur (komponen `Background`: navy/cokelat/perkamen/kayu) — tidak ada warna polos.
@@ -69,6 +77,7 @@ Perintah lengkap, audio/voice-over, dan catatan lingkungan → `references/produ
 - [ ] Minimal 3 signature move: pena emas · iris cincin emas · draw-on · count-up · foil shine · fade perkamen
 - [ ] Emas tidak dipakai berlebihan; tiap adegan punya satu fokus jelas
 - [ ] Hook ≤ 7 detik dan memancing rasa ingin tahu; payoff menjawab hook
+- [ ] Thumbnail `<Id>-thumb` & `<Id>-thumb-yt` dirender dan dicek
 
 ## Menambah kemampuan baru
 

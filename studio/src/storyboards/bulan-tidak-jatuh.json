@@ -1,0 +1,276 @@
+{
+ "id": "BulanTidakJatuh",
+ "judul": "Kenapa Bulan Tidak Jatuh?",
+ "pilar": "Ruang Semesta",
+ "kurikulum": "SMA Kelas 10 — Hukum Gravitasi Newton & Gerak Melingkar",
+ "rasio": "9:16",
+ "kpd": 2.6,
+ "sumber": [
+  "NASA, Moon Fact Sheet — jarak rata-rata 384.400 km, kecepatan orbit rata-rata 1,022 km/s",
+  "I. Newton, A Treatise of the System of the World (1728) — eksperimen pikiran meriam",
+  "Parameter gravitasi Bumi GM = 3,986 × 10¹⁴ m³/s² (IERS Conventions 2010)"
+ ],
+ "thumbnail": {
+  "hook": "Bulan Itu\n*Selalu Jatuh!*",
+  "sub": "Tapi kenapa tidak pernah menimpa kita?",
+  "elemen": [
+   {
+    "jenis": "bintang",
+    "x": 250,
+    "y": 250,
+    "skala": 1.4
+   },
+   {
+    "jenis": "bumi",
+    "x": 430,
+    "y": 640,
+    "skala": 3.2
+   },
+   {
+    "jenis": "bulan",
+    "x": 800,
+    "y": 300,
+    "skala": 1.6
+   }
+  ]
+ },
+ "scenes": [
+  {
+   "id": "pembuka",
+   "type": "ilustrasi",
+   "durasi": 6,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Setiap detik, Bulan ditarik gravitasi Bumi.",
+   "props": {
+    "elemen": [
+     {
+      "jenis": "bintang",
+      "x": 230,
+      "y": 330,
+      "skala": 1.6,
+      "at": 0.2
+     },
+     {
+      "jenis": "bintang",
+      "x": 800,
+      "y": 1050,
+      "skala": 1.2,
+      "at": 0.4
+     },
+     {
+      "jenis": "bumi",
+      "x": 420,
+      "y": 880,
+      "skala": 3.0,
+      "at": 0.3
+     },
+     {
+      "jenis": "bulan",
+      "x": 790,
+      "y": 460,
+      "skala": 1.5,
+      "at": 1.0,
+      "gerak": "melayang"
+     }
+    ],
+    "label": [
+     {
+      "teks": "Bumi",
+      "x": 420,
+      "y": 1160,
+      "at": 1.2
+     },
+     {
+      "teks": "Bulan",
+      "x": 790,
+      "y": 600,
+      "at": 1.6
+     }
+    ]
+   }
+  },
+  {
+   "id": "hook",
+   "type": "title",
+   "durasi": 5,
+   "bg": "navy",
+   "bingkai": true,
+   "transisi": "iris",
+   "narasi": "Lalu kenapa Bulan tidak pernah jatuh menimpa kita?",
+   "props": {
+    "kicker": "Ruang Semesta",
+    "judul": "Kenapa Bulan tidak jatuh?",
+    "tandaTanya": true
+   }
+  },
+  {
+   "id": "meriam-newton",
+   "type": "diagram",
+   "durasi": 10,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Bayangkan meriam di puncak gunung. Makin kencang tembakannya, makin jauh pelurunya jatuh. Cukup kencang, pelurunya terus jatuh mengelilingi Bumi.",
+   "props": {
+    "judul": "Meriam Newton",
+    "items": [
+     {
+      "type": "circle",
+      "c": [
+       500,
+       620
+      ],
+      "r": 200,
+      "at": 0.2,
+      "dur": 1.0,
+      "stroke": "krem",
+      "fill": "aksen2",
+      "fillOpacity": 0.35,
+      "width": 6
+     },
+     {
+      "type": "polygon",
+      "points": [
+       [
+        454,
+        430
+       ],
+       [
+        500,
+        330
+       ],
+       [
+        546,
+        430
+       ]
+      ],
+      "at": 0.9,
+      "dur": 0.5,
+      "stroke": "krem",
+      "fill": "cokelat",
+      "width": 5
+     },
+     {
+      "type": "path",
+      "d": "M500 330 Q650 320 600 447",
+      "at": 2.2,
+      "dur": 0.8,
+      "stroke": "krem",
+      "width": 5,
+      "kata": "Makin"
+     },
+     {
+      "type": "path",
+      "d": "M500 330 Q800 320 677 526",
+      "at": 3.2,
+      "dur": 0.9,
+      "stroke": "krem",
+      "width": 5,
+      "kata": "jauh"
+     },
+     {
+      "type": "path",
+      "d": "M500 330 Q970 320 681 705",
+      "at": 4.3,
+      "dur": 1.0,
+      "stroke": "krem",
+      "width": 5
+     },
+     {
+      "type": "circle",
+      "c": [
+       500,
+       620
+      ],
+      "r": 290,
+      "at": 6.0,
+      "dur": 1.6,
+      "stroke": "emas",
+      "width": 6,
+      "kata": "mengelilingi"
+     },
+     {
+      "type": "text",
+      "pos": [
+       500,
+       640
+      ],
+      "text": "Bumi",
+      "size": 64,
+      "fill": "krem",
+      "at": 0.8
+     }
+    ]
+   }
+  },
+  {
+   "id": "kecepatan",
+   "type": "counter",
+   "durasi": 7,
+   "bg": "cokelat",
+   "transisi": "iris",
+   "narasi": "Bulan juga begitu. Ia terus jatuh, sambil melaju ke samping sekitar satu kilometer per detik.",
+   "props": {
+    "from": 0,
+    "to": 1.0,
+    "desimal": 1,
+    "satuan": "km/s",
+    "label": "kecepatan Bulan mengelilingi Bumi"
+   }
+  },
+  {
+   "id": "rumus",
+   "type": "equation",
+   "durasi": 9.5,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Kecepatan orbit dihitung dari akar G kali massa Bumi, dibagi jarak. Hasilnya sekitar satu kilometer per detik.",
+   "tts": "Kecepatan orbit dihitung dari akar, ge kali massa Bumi, dibagi jarak. Hasilnya, sekitar satu kilometer per detik.",
+   "props": {
+    "size": 70,
+    "langkah": [
+     {
+      "tex": "v = \\sqrt{\\frac{GM}{r}}",
+      "at": 0.6
+     },
+     {
+      "tex": "v = \\sqrt{\\frac{3{,}986\\times10^{14}}{3{,}844\\times10^{8}}}",
+      "at": 3.5
+     },
+     {
+      "tex": "\\g{v \\approx 1{,}0\\ \\text{km/s}}",
+      "at": 6.5
+     }
+    ]
+   }
+  },
+  {
+   "id": "penutup",
+   "type": "outro",
+   "durasi": 7,
+   "bg": "navy",
+   "bingkai": true,
+   "transisi": "fade",
+   "narasi": "Jadi, Bulan memang selalu jatuh. Hanya saja, ia selalu meleset dari Bumi.",
+   "props": {
+    "kesimpulan": "Bulan selalu jatuh… tapi selalu meleset dari Bumi",
+    "tex": "\\g{v = \\sqrt{GM/r}}"
+   }
+  },
+  {
+   "id": "sumber",
+   "type": "sumber",
+   "durasi": 6,
+   "bg": "navy",
+   "narasi": "Sumber riset ada di layar.",
+   "props": {
+    "daftar": [
+     "NASA, Moon Fact Sheet — jarak rata-rata 384.400 km, kecepatan orbit rata-rata 1,022 km/s",
+     "I. Newton, A Treatise of the System of the World (1728) — eksperimen pikiran meriam",
+     "Parameter gravitasi Bumi GM = 3,986 × 10¹⁴ m³/s² (IERS Conventions 2010)"
+    ],
+    "catatan": "Model sederhana: orbit dianggap lingkaran, tanpa pengaruh Matahari."
+   }
+  }
+ ]
+}

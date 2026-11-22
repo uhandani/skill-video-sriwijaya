@@ -14,9 +14,11 @@ import { OutroScene } from "./scenes/OutroScene";
 import { ProjectileScene } from "./scenes/ProjectileScene";
 import { TitleScene } from "./scenes/TitleScene";
 import { SourcesScene } from "./scenes/SourcesScene";
+import { IllustrationScene } from "./scenes/IllustrationScene";
 import { GoldDust } from "./scenes/common";
 import { FPS, TRANS_FRAMES, VO_LEAD, buildCaptions, sceneTimings } from "./storyboard/timeline";
 import type { Scene, Storyboard } from "./storyboard/types";
+import { applyTheme } from "./brand/tema";
 
 const SceneBody: React.FC<{ scene: Scene }> = ({ scene }) => {
   switch (scene.type) {
@@ -36,19 +38,24 @@ const SceneBody: React.FC<{ scene: Scene }> = ({ scene }) => {
       return <OutroScene {...scene.props} />;
     case "sumber":
       return <SourcesScene {...scene.props} />;
+    case "ilustrasi":
+      return <IllustrationScene {...scene.props} />;
     default:
       return null;
   }
 };
 
-export const SceneView: React.FC<{ scene: Scene }> = ({ scene }) => (
+export const SceneView: React.FC<{ scene: Scene; pilar?: Storyboard["pilar"] }> = ({ scene, pilar }) => {
+  if (pilar) applyTheme(pilar);
+  return (
   <AbsoluteFill>
     <Background variant={scene.bg ?? "navy"} />
     {scene.bingkai ? <TumpalFrame color={scene.bg === "perkamen" ? "#6B5A44" : undefined} /> : null}
     <GoldDust />
     <SceneBody scene={scene} />
   </AbsoluteFill>
-);
+  );
+};
 
 const Watermark: React.FC<{ hideFrom: number }> = ({ hideFrom }) => {
   const frame = useCurrentFrame();
@@ -64,6 +71,7 @@ const Watermark: React.FC<{ hideFrom: number }> = ({ hideFrom }) => {
 
 /** Video UDcation lengkap dari satu storyboard JSON. */
 export const UDVideo: React.FC<{ storyboard: Storyboard }> = ({ storyboard }) => {
+  applyTheme(storyboard.pilar);
   const timings = useMemo(() => sceneTimings(storyboard), [storyboard]);
   const captions = useMemo(() => buildCaptions(storyboard), [storyboard]);
   // watermark disembunyikan mulai adegan outro (logo besar sudah tampil)
@@ -75,7 +83,7 @@ export const UDVideo: React.FC<{ storyboard: Storyboard }> = ({ storyboard }) =>
         {storyboard.scenes.flatMap((scene, i) => {
           const els = [
             <TransitionSeries.Sequence key={`s-${scene.id}`} name={scene.id} durationInFrames={Math.round(scene.durasi * FPS)}>
-              <SceneView scene={scene} />
+              <SceneView scene={scene} pilar={storyboard.pilar} />
             </TransitionSeries.Sequence>,
           ];
           const t = scene.transisi ?? "iris";

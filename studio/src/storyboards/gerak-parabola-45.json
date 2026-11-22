@@ -161,5 +161,24 @@
     "tex": "\\g{R = \\frac{v_0^2 \\sin 2\\theta}{g}}"
    }
   }
- ]
+ ],
+ "thumbnail": {
+  "hook": "Lemparan Terjauh\nItu *45°*?",
+  "sub": "Fisika di balik sudut lempar",
+  "elemen": [
+   {
+    "jenis": "matahari",
+    "x": 790,
+    "y": 230,
+    "skala": 0.9
+   },
+   {
+    "jenis": "orang",
+    "x": 190,
+    "y": 930,
+    "skala": 1.3
+   }
+  ],
+  "tex": "\\g{R = \\tfrac{v_0^2 \\sin 2\\theta}{g}}"
+ }
 }

@@ -26,12 +26,23 @@ if (typeof document !== "undefined") {
 export const serif = '"UD Cormorant", "Cormorant Garamond", Georgia, serif';
 export const sans = '"UD Mulish", Mulish, "Helvetica Neue", Arial, sans-serif';
 
-/** Palet "Nusantara Emas" — satu-satunya warna yang boleh dipakai. */
-export const C = {
+/**
+ * Palet aktif. Nama kunci = PERAN warna (bukan warna harfiah):
+ *   navy*      = latar utama        cokelat*  = latar sekunder
+ *   marun/merah= bar subtitle/aksen kuat      aksen2 = aksen ilustrasi
+ *   emas/krem/perkamen = sama di semua pilar (benang merah UDcation)
+ * Nilainya diganti per pilar oleh applyTheme() — lihat brand/tema.ts.
+ */
+export const C: Record<
+  | "navy" | "navyTerang" | "navyDalam" | "cokelat" | "cokelatTerang" | "cokelatGelap"
+  | "emas" | "emasTua" | "emasMuda" | "marun" | "merah" | "krem" | "perkamen" | "aksen2",
+  string
+> = {
   navy: "#262B4A",
   navyTerang: "#3A4378",
   navyDalam: "#141833",
   cokelat: "#8E5227",
+  cokelatTerang: "#A4652F",
   cokelatGelap: "#4A2A16",
   emas: "#EDB53D",
   emasTua: "#C8923A",
@@ -40,7 +51,8 @@ export const C = {
   merah: "#9C2A35",
   krem: "#F1E6D0",
   perkamen: "#CDBFA6",
-} as const;
+  aksen2: "#9C2A35",
+};
 
 export type WarnaKey = keyof typeof C;
 

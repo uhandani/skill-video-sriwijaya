@@ -93,7 +93,7 @@ def norm(w: str) -> str:
 def pasang_isyarat(sc, words):
     props = sc.get("props", {})
     lead = VO_LEAD / FPS
-    for key in ("items", "langkah", "points", "curves"):
+    for key in ("items", "langkah", "points", "curves", "elemen", "label"):
         for el in props.get(key, []) or []:
             kata = el.get("kata")
             if not kata:
