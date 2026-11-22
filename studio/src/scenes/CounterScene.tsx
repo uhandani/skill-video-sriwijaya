@@ -6,11 +6,11 @@ import type { CounterProps } from "../storyboard/types";
 import { SceneHeading, clamp, useAppear, useS } from "./common";
 
 /** Angka besar emas yang berhitung naik + label kecil di bawahnya. */
-export const CounterScene: React.FC<CounterProps> = ({ from, to, desimal = 0, satuan, label, judul }) => {
+export const CounterScene: React.FC<CounterProps> = ({ from, to, desimal = 0, satuan, label, judul, tahun = false }) => {
   const frame = useCurrentFrame();
   const { s, height } = useS();
   const v = interpolate(frame, [8, 50], [from, to], { ...clamp, easing: Easing.bezier(0.2, 0.8, 0.2, 1) });
-  const txt = v.toLocaleString("id-ID", { minimumFractionDigits: desimal, maximumFractionDigits: desimal });
+  const txt = v.toLocaleString("id-ID", { minimumFractionDigits: desimal, maximumFractionDigits: desimal, useGrouping: !tahun });
   const lab = useAppear(48);
   return (
     <AbsoluteFill style={{ alignItems: "center", paddingTop: height * 0.3 }}>

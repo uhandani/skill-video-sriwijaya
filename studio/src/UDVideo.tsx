@@ -13,6 +13,7 @@ import { GraphScene } from "./scenes/GraphScene";
 import { OutroScene } from "./scenes/OutroScene";
 import { ProjectileScene } from "./scenes/ProjectileScene";
 import { TitleScene } from "./scenes/TitleScene";
+import { SourcesScene } from "./scenes/SourcesScene";
 import { GoldDust } from "./scenes/common";
 import { FPS, TRANS_FRAMES, VO_LEAD, buildCaptions, sceneTimings } from "./storyboard/timeline";
 import type { Scene, Storyboard } from "./storyboard/types";
@@ -33,6 +34,8 @@ const SceneBody: React.FC<{ scene: Scene }> = ({ scene }) => {
       return <CounterScene {...scene.props} />;
     case "outro":
       return <OutroScene {...scene.props} />;
+    case "sumber":
+      return <SourcesScene {...scene.props} />;
     default:
       return null;
   }
@@ -63,7 +66,9 @@ const Watermark: React.FC<{ hideFrom: number }> = ({ hideFrom }) => {
 export const UDVideo: React.FC<{ storyboard: Storyboard }> = ({ storyboard }) => {
   const timings = useMemo(() => sceneTimings(storyboard), [storyboard]);
   const captions = useMemo(() => buildCaptions(storyboard), [storyboard]);
-  const last = timings[timings.length - 1];
+  // watermark disembunyikan mulai adegan outro (logo besar sudah tampil)
+  const outroIdx = storyboard.scenes.findIndex((sc) => sc.type === "outro");
+  const last = timings[outroIdx >= 0 ? outroIdx : timings.length - 1];
   return (
     <AbsoluteFill style={{ backgroundColor: "#141833" }}>
       <TransitionSeries>

@@ -8,7 +8,7 @@ import type { Storyboard } from "../src/storyboard/types";
 import { FPS, TRANS_FRAMES, VO_LEAD, totalFrames } from "../src/storyboard/timeline";
 
 const DIR = join(__dirname, "..", "src", "storyboards");
-const TYPES = ["title", "diagram", "equation", "graph", "projectile", "counter", "outro"];
+const TYPES = ["title", "diagram", "equation", "graph", "projectile", "counter", "outro", "sumber"];
 const BG = ["navy", "cokelat", "perkamen", "kayu"];
 let gagal = 0;
 
@@ -38,7 +38,10 @@ for (const f of readdirSync(DIR).filter((x) => x.endsWith(".json"))) {
     }
     if (s.transisi === "none") warn.push(`${s.id}: transisi "none" = hard cut, hindari`);
   });
-  if (sb.scenes[sb.scenes.length - 1]?.type !== "outro") err.push("adegan terakhir harus outro (logo + ajakan)");
+  const types = sb.scenes.map((x) => x.type);
+  const lastT = types[types.length - 1];
+  const okEnd = lastT === "outro" || (lastT === "sumber" && types[types.length - 2] === "outro");
+  if (!okEnd) err.push("video harus diakhiri outro (boleh diikuti satu adegan sumber)");
   const verifPy = join(__dirname, "..", "verify", `${f.replace(".json", "")}.py`);
   if (!existsSync(verifPy)) warn.push(`belum ada skrip verifikasi ${verifPy}`);
   const dur = totalFrames(sb) / FPS;

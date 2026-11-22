@@ -38,8 +38,10 @@ export type SceneBase = {
   id: string;
   /** durasi adegan (detik) */
   durasi: number;
-  /** narasi voice-over; juga sumber subtitle */
+  /** narasi voice-over; juga sumber subtitle (ejaan benar) */
   narasi: string;
+  /** teks untuk TTS bila lafal beda dari ejaan (mis. "Dekart" untuk Descartes); default = narasi */
+  tts?: string;
   bg?: BgVariant;
   /** transisi KELUAR dari adegan ini */
   transisi?: Transisi;
@@ -100,9 +102,12 @@ export type ProjectileProps = {
   tampilkanVektor?: boolean;
 };
 
-export type CounterProps = { from: number; to: number; desimal?: number; satuan?: string; label?: string; judul?: string };
+export type CounterProps = { from: number; to: number; desimal?: number; /** tanpa pemisah ribuan (1637, bukan 1.637) */ tahun?: boolean; satuan?: string; label?: string; judul?: string };
 
 export type OutroProps = { kesimpulan: string; tex?: string; ajakan?: string };
+
+/** Daftar sumber riset di akhir video (setelah outro). */
+export type SumberProps = { judul?: string; daftar: string[]; catatan?: string };
 
 export type Scene =
   | (SceneBase & { type: "title"; props: TitleProps })
@@ -111,7 +116,8 @@ export type Scene =
   | (SceneBase & { type: "graph"; props: GraphProps })
   | (SceneBase & { type: "projectile"; props: ProjectileProps })
   | (SceneBase & { type: "counter"; props: CounterProps })
-  | (SceneBase & { type: "outro"; props: OutroProps });
+  | (SceneBase & { type: "outro"; props: OutroProps })
+  | (SceneBase & { type: "sumber"; props: SumberProps });
 
 export type Storyboard = {
   id: string;

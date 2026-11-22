@@ -27,7 +27,7 @@ export const TitleScene: React.FC<TitleProps> = ({ kicker, judul, sub, tandaTany
         </GoldText>
       </div>
       {sub ? (
-        <div style={{ marginTop: 30 * s, fontFamily: serif, fontWeight: 600, fontSize: 52 * s, color: C.krem, lineHeight: 1.25, ...subSt }}>{sub}</div>
+        <div style={{ marginTop: 30 * s, fontFamily: serif, fontWeight: 600, fontSize: 52 * s, color: C.krem, lineHeight: 1.3, whiteSpace: "pre-line", ...subSt }}>{sub}</div>
       ) : null}
       {tandaTanya ? (
         <div style={{ marginTop: 20 * s, opacity: q, scale: `${(0.6 + 0.4 * q) * pulse}` }}>

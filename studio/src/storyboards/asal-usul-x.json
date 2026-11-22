@@ -1,0 +1,660 @@
+{
+ "id": "AsalUsulX",
+ "judul": "Asal-usul Huruf x",
+ "pilar": "Fakta Unik",
+ "kurikulum": "SMP Kelas 7 — Bentuk Aljabar & Persamaan Linear",
+ "rasio": "9:16",
+ "kpd": 2.6,
+ "sumber": [
+  "F. Cajori, A History of Mathematical Notations, Vol. 1–2 (1928–1929)",
+  "J. Miller, “Earliest Uses of Symbols for Variables”, MacTutor History of Mathematics, Univ. of St Andrews",
+  "P. Schumer, “X marks the unknown in algebra, but X’s origins are a math mystery”, The Conversation (Agustus 2023)",
+  "T. L. Heath, Diophantus of Alexandria (1910)",
+  "R. Descartes, La Géométrie (1637)"
+ ],
+ "scenes": [
+  {
+   "id": "pembuka-x",
+   "type": "diagram",
+   "durasi": 6,
+   "bg": "perkamen",
+   "bingkai": true,
+   "transisi": "iris",
+   "narasi": "Di hampir setiap soal matematika, yang dicari selalu huruf x.",
+   "props": {
+    "pena": true,
+    "items": [
+     {
+      "type": "path",
+      "d": "M330 230 C420 330 560 470 670 600",
+      "at": 0.3,
+      "dur": 0.9,
+      "stroke": "#3A2A12",
+      "width": 26
+     },
+     {
+      "type": "path",
+      "d": "M670 230 C580 330 440 470 330 600",
+      "at": 1.2,
+      "dur": 0.9,
+      "stroke": "#3A2A12",
+      "width": 26
+     },
+     {
+      "type": "tex",
+      "pos": [
+       500,
+       790
+      ],
+      "tex": "2x + 3 = 11",
+      "size": 64,
+      "fill": "marun",
+      "at": 4.5,
+      "kata": "x."
+     }
+    ]
+   },
+   "tts": "Di hampir setiap soal matematika, yang dicari selalu huruf eks.",
+   "vo": {
+    "file": "audio/asal-usul-x/1-pembuka-x.mp3",
+    "durasi": 4.676,
+    "words": [
+     {
+      "w": "Di",
+      "start": 0.0,
+      "end": 0.203
+     },
+     {
+      "w": "hampir",
+      "start": 0.203,
+      "end": 0.608
+     },
+     {
+      "w": "setiap",
+      "start": 0.608,
+      "end": 1.014
+     },
+     {
+      "w": "soal",
+      "start": 1.014,
+      "end": 1.217
+     },
+     {
+      "w": "matematika,",
+      "start": 1.217,
+      "end": 2.479
+     },
+     {
+      "w": "yang",
+      "start": 2.479,
+      "end": 2.682
+     },
+     {
+      "w": "dicari",
+      "start": 2.682,
+      "end": 3.29
+     },
+     {
+      "w": "selalu",
+      "start": 3.29,
+      "end": 3.899
+     },
+     {
+      "w": "huruf",
+      "start": 3.899,
+      "end": 4.304
+     },
+     {
+      "w": "x.",
+      "start": 4.304,
+      "end": 4.676
+     }
+    ]
+   }
+  },
+  {
+   "id": "hook",
+   "type": "title",
+   "durasi": 5.9,
+   "bg": "navy",
+   "bingkai": true,
+   "transisi": "iris",
+   "narasi": "Tapi kenapa harus x? Kenapa bukan a, atau huruf lain?",
+   "props": {
+    "kicker": "Fakta Unik",
+    "judul": "Kenapa harus x?",
+    "tandaTanya": true
+   },
+   "tts": "Tapi kenapa harus eks? Kenapa bukan a, atau huruf lain?",
+   "vo": {
+    "file": "audio/asal-usul-x/2-hook.mp3",
+    "durasi": 4.598,
+    "words": [
+     {
+      "w": "Tapi",
+      "start": 0.0,
+      "end": 0.417
+     },
+     {
+      "w": "kenapa",
+      "start": 0.417,
+      "end": 1.041
+     },
+     {
+      "w": "harus",
+      "start": 1.041,
+      "end": 1.458
+     },
+     {
+      "w": "x?",
+      "start": 1.458,
+      "end": 1.99
+     },
+     {
+      "w": "Kenapa",
+      "start": 1.99,
+      "end": 2.615
+     },
+     {
+      "w": "bukan",
+      "start": 2.615,
+      "end": 3.031
+     },
+     {
+      "w": "a,",
+      "start": 3.031,
+      "end": 3.39
+     },
+     {
+      "w": "atau",
+      "start": 3.39,
+      "end": 3.806
+     },
+     {
+      "w": "huruf",
+      "start": 3.806,
+      "end": 4.223
+     },
+     {
+      "w": "lain?",
+      "start": 4.223,
+      "end": 4.598
+     }
+    ]
+   }
+  },
+  {
+   "id": "diophantus",
+   "type": "equation",
+   "durasi": 8.0,
+   "bg": "cokelat",
+   "transisi": "iris",
+   "narasi": "Abad ketiga, Diophantus dari Aleksandria sudah memakai satu simbol khusus untuk bilangan yang dicari.",
+   "props": {
+    "judul": "Abad ke-3 · Diophantus",
+    "size": 150,
+    "finalEmas": true,
+    "langkah": [
+     {
+      "tex": "\\g{\\varsigma}",
+      "at": 4.36,
+      "kata": "simbol",
+      "catatan": "simbol Diophantus untuk “bilangan yang dicari”"
+     }
+    ]
+   },
+   "vo": {
+    "file": "audio/asal-usul-x/3-diophantus.mp3",
+    "durasi": 6.687,
+    "words": [
+     {
+      "w": "Abad",
+      "start": 0.0,
+      "end": 0.364
+     },
+     {
+      "w": "ketiga,",
+      "start": 0.364,
+      "end": 1.25
+     },
+     {
+      "w": "Diophantus",
+      "start": 1.25,
+      "end": 1.795
+     },
+     {
+      "w": "dari",
+      "start": 1.795,
+      "end": 2.159
+     },
+     {
+      "w": "Aleksandria",
+      "start": 2.159,
+      "end": 2.887
+     },
+     {
+      "w": "sudah",
+      "start": 2.887,
+      "end": 3.25
+     },
+     {
+      "w": "memakai",
+      "start": 3.25,
+      "end": 3.796
+     },
+     {
+      "w": "satu",
+      "start": 3.796,
+      "end": 4.16
+     },
+     {
+      "w": "simbol",
+      "start": 4.16,
+      "end": 4.524
+     },
+     {
+      "w": "khusus",
+      "start": 4.524,
+      "end": 4.887
+     },
+     {
+      "w": "untuk",
+      "start": 4.887,
+      "end": 5.251
+     },
+     {
+      "w": "bilangan",
+      "start": 5.251,
+      "end": 5.797
+     },
+     {
+      "w": "yang",
+      "start": 5.797,
+      "end": 5.979
+     },
+     {
+      "w": "dicari.",
+      "start": 5.979,
+      "end": 6.687
+     }
+    ]
+   }
+  },
+  {
+   "id": "khwarizmi",
+   "type": "title",
+   "durasi": 8.6,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Abad kesembilan, al-Khwarizmi di Baghdad menyebut bilangan yang dicari syai', artinya sesuatu.",
+   "tts": "Abad kesembilan, al-Khawarizmi di Baghdad menyebut bilangan yang dicari, syai, artinya, sesuatu.",
+   "props": {
+    "kicker": "Abad ke-9 · Baghdad",
+    "judul": "al-Khwarizmi",
+    "sub": "menyebut yang dicari: syai' — “sesuatu”"
+   },
+   "vo": {
+    "file": "audio/asal-usul-x/4-khwarizmi.mp3",
+    "durasi": 7.314,
+    "words": [
+     {
+      "w": "Abad",
+      "start": 0.0,
+      "end": 0.387
+     },
+     {
+      "w": "kesembilan,",
+      "start": 0.387,
+      "end": 1.519
+     },
+     {
+      "w": "al-Khwarizmi",
+      "start": 1.519,
+      "end": 2.292
+     },
+     {
+      "w": "di",
+      "start": 2.292,
+      "end": 2.485
+     },
+     {
+      "w": "Baghdad",
+      "start": 2.485,
+      "end": 2.997
+     },
+     {
+      "w": "menyebut",
+      "start": 2.997,
+      "end": 3.577
+     },
+     {
+      "w": "bilangan",
+      "start": 3.577,
+      "end": 4.157
+     },
+     {
+      "w": "yang",
+      "start": 4.157,
+      "end": 4.35
+     },
+     {
+      "w": "dicari",
+      "start": 4.35,
+      "end": 5.293
+     },
+     {
+      "w": "syai',",
+      "start": 5.293,
+      "end": 5.836
+     },
+     {
+      "w": "artinya",
+      "start": 5.836,
+      "end": 6.595
+     },
+     {
+      "w": "sesuatu.",
+      "start": 6.595,
+      "end": 7.314
+     }
+    ]
+   }
+  },
+  {
+   "id": "viete",
+   "type": "equation",
+   "durasi": 9.2,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Tahun seribu lima ratus sembilan puluh satu, François Viète memakai huruf vokal untuk yang dicari, dan konsonan untuk yang diketahui.",
+   "tts": "Tahun seribu lima ratus sembilan puluh satu, Fransuwa Fiyet memakai huruf vokal untuk yang dicari, dan konsonan untuk yang diketahui.",
+   "props": {
+    "judul": "1591 · François Viète",
+    "size": 64,
+    "finalEmas": false,
+    "langkah": [
+     {
+      "tex": "\\text{dicari: }\\; \\g{A,\\ E,\\ I,\\ O,\\ U}",
+      "at": 4.54,
+      "kata": "vokal"
+     },
+     {
+      "tex": "\\text{diketahui: }\\; B,\\ C,\\ D,\\ \\dots",
+      "at": 6.33,
+      "kata": "konsonan"
+     }
+    ]
+   },
+   "vo": {
+    "file": "audio/asal-usul-x/5-viete.mp3",
+    "durasi": 7.889,
+    "words": [
+     {
+      "w": "Tahun",
+      "start": 0.0,
+      "end": 0.327
+     },
+     {
+      "w": "seribu",
+      "start": 0.327,
+      "end": 0.816
+     },
+     {
+      "w": "lima",
+      "start": 0.816,
+      "end": 1.143
+     },
+     {
+      "w": "ratus",
+      "start": 1.143,
+      "end": 1.469
+     },
+     {
+      "w": "sembilan",
+      "start": 1.469,
+      "end": 1.959
+     },
+     {
+      "w": "puluh",
+      "start": 1.959,
+      "end": 2.539
+     },
+     {
+      "w": "satu,",
+      "start": 2.539,
+      "end": 2.866
+     },
+     {
+      "w": "François",
+      "start": 2.866,
+      "end": 3.192
+     },
+     {
+      "w": "Viète",
+      "start": 3.192,
+      "end": 3.519
+     },
+     {
+      "w": "memakai",
+      "start": 3.519,
+      "end": 4.009
+     },
+     {
+      "w": "huruf",
+      "start": 4.009,
+      "end": 4.335
+     },
+     {
+      "w": "vokal",
+      "start": 4.335,
+      "end": 4.662
+     },
+     {
+      "w": "untuk",
+      "start": 4.662,
+      "end": 4.988
+     },
+     {
+      "w": "yang",
+      "start": 4.988,
+      "end": 5.151
+     },
+     {
+      "w": "dicari,",
+      "start": 5.151,
+      "end": 5.964
+     },
+     {
+      "w": "dan",
+      "start": 5.964,
+      "end": 6.127
+     },
+     {
+      "w": "konsonan",
+      "start": 6.127,
+      "end": 6.617
+     },
+     {
+      "w": "untuk",
+      "start": 6.617,
+      "end": 6.944
+     },
+     {
+      "w": "yang",
+      "start": 6.944,
+      "end": 7.107
+     },
+     {
+      "w": "diketahui.",
+      "start": 7.107,
+      "end": 7.889
+     }
+    ]
+   }
+  },
+  {
+   "id": "descartes-tahun",
+   "type": "counter",
+   "durasi": 7.0,
+   "bg": "cokelat",
+   "transisi": "iris",
+   "narasi": "Lalu tahun seribu enam ratus tiga puluh tujuh, René Descartes menerbitkan La Géométrie.",
+   "tts": "Lalu tahun seribu enam ratus tiga puluh tujuh, Rene Dekart menerbitkan La Zhe-o-me-tri.",
+   "props": {
+    "from": 1500,
+    "to": 1637,
+    "label": "René Descartes · La Géométrie",
+    "tahun": true
+   },
+   "vo": {
+    "file": "audio/asal-usul-x/6-descartes-tahun.mp3",
+    "durasi": 5.642,
+    "words": [
+     {
+      "w": "Lalu",
+      "start": 0.0,
+      "end": 0.352
+     },
+     {
+      "w": "tahun",
+      "start": 0.352,
+      "end": 0.703
+     },
+     {
+      "w": "seribu",
+      "start": 0.703,
+      "end": 1.231
+     },
+     {
+      "w": "enam",
+      "start": 1.231,
+      "end": 1.582
+     },
+     {
+      "w": "ratus",
+      "start": 1.582,
+      "end": 1.934
+     },
+     {
+      "w": "tiga",
+      "start": 1.934,
+      "end": 2.286
+     },
+     {
+      "w": "puluh",
+      "start": 2.286,
+      "end": 2.846
+     },
+     {
+      "w": "tujuh,",
+      "start": 2.846,
+      "end": 3.198
+     },
+     {
+      "w": "René",
+      "start": 3.198,
+      "end": 3.549
+     },
+     {
+      "w": "Descartes",
+      "start": 3.549,
+      "end": 4.077
+     },
+     {
+      "w": "menerbitkan",
+      "start": 4.077,
+      "end": 4.78
+     },
+     {
+      "w": "La",
+      "start": 4.78,
+      "end": 4.956
+     },
+     {
+      "w": "Géométrie.",
+      "start": 4.956,
+      "end": 5.642
+     }
+    ]
+   }
+  },
+  {
+   "id": "aturan-descartes",
+   "type": "equation",
+   "durasi": 11,
+   "bg": "navy",
+   "transisi": "perkamen",
+   "narasi": "Ia memakai huruf awal a, b, c untuk yang diketahui, dan huruf akhir x, y, z untuk yang dicari. Aturan ini kita pakai sampai sekarang.",
+   "tts": "Ia memakai huruf awal, a, b, c, untuk yang diketahui, dan huruf akhir, eks, ye, zet, untuk yang dicari. Aturan ini kita pakai sampai sekarang.",
+   "props": {
+    "judul": "Aturan Descartes",
+    "size": 72,
+    "langkah": [
+     {
+      "tex": "\\text{diketahui: }\\; a,\\ b,\\ c",
+      "at": 1.2,
+      "kata": "awal"
+     },
+     {
+      "tex": "\\text{dicari: }\\; \\g{x,\\ y,\\ z}",
+      "at": 4.0,
+      "kata": "akhir"
+     },
+     {
+      "tex": "a x^2 + b x + c = 0",
+      "at": 7.0,
+      "kata": "Aturan",
+      "catatan": "bentuk yang kita kenal sampai sekarang"
+     }
+    ],
+    "finalEmas": true
+   }
+  },
+  {
+   "id": "teori-populer",
+   "type": "title",
+   "durasi": 11.5,
+   "bg": "navy",
+   "bingkai": true,
+   "transisi": "iris",
+   "narasi": "Kenapa x yang paling populer? Ada cerita percetakan yang kelebihan huruf x, dan cerita dari kata Arab syai'. Tapi keduanya belum terbukti.",
+   "tts": "Kenapa eks yang paling populer? Ada cerita percetakan yang kelebihan huruf eks, dan cerita dari kata Arab, syai. Tapi keduanya, belum terbukti.",
+   "props": {
+    "kicker": "Teori populer",
+    "judul": "Kenapa x paling sering?",
+    "sub": "① percetakan kelebihan huruf x\n② kata Arab syai' → x\nkeduanya belum terbukti"
+   }
+  },
+  {
+   "id": "penutup",
+   "type": "outro",
+   "durasi": 7,
+   "bg": "navy",
+   "bingkai": true,
+   "transisi": "fade",
+   "narasi": "Jadi, huruf untuk hal yang tak diketahui… asal-usulnya pun masih misteri.",
+   "props": {
+    "kesimpulan": "Simbol “yang tak diketahui” pun asal-usulnya masih misteri",
+    "tex": "\\g{x = \\;?}"
+   },
+   "tts": "Jadi, huruf untuk hal yang tak diketahui... asal-usulnya pun, masih misteri."
+  },
+  {
+   "id": "sumber",
+   "type": "sumber",
+   "durasi": 6,
+   "bg": "navy",
+   "narasi": "Sumber riset video ini ada di layar.",
+   "props": {
+    "daftar": [
+     "F. Cajori, A History of Mathematical Notations, Vol. 1–2 (1928–1929)",
+     "J. Miller, “Earliest Uses of Symbols for Variables”, MacTutor History of Mathematics, Univ. of St Andrews",
+     "P. Schumer, “X marks the unknown in algebra, but X’s origins are a math mystery”, The Conversation (Agustus 2023)",
+     "T. L. Heath, Diophantus of Alexandria (1910)",
+     "R. Descartes, La Géométrie (1637)"
+    ],
+    "catatan": "Teori percetakan & kata Arab: populer, belum ada bukti tertulis."
+   }
+  }
+ ]
+}

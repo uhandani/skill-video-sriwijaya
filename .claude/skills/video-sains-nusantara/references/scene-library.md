@@ -110,6 +110,15 @@ Pastikan `durasi ≥ 0,6 + slow × T + 1,2` dengan `T = 2 v0 sinθ / g`.
 ```json
 { "from": 0, "to": 40.8, "desimal": 1, "satuan": "m", "label": "jangkauan terjauh untuk v₀ = 20 m/s" }
 ```
+Untuk tahun pakai `"tahun": true` (tanpa pemisah ribuan: 1637, bukan 1.637).
+
+## `sumber` — daftar sumber riset (setelah outro)
+
+```json
+{ "judul": "Sumber riset", "daftar": ["F. Cajori, A History of Mathematical Notations (1928)", "..."], "catatan": "opsional" }
+```
+Dipakai bila pengguna minta sumber ditampilkan di video. Isi `daftar` = `sumber` storyboard.
+Teks krem/emas tidak terbaca di latar `perkamen` — pakai perkamen hanya untuk diagram bertinta gelap.
 
 ## `outro` — penutup (wajib di akhir)
 
