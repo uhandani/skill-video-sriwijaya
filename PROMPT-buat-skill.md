@@ -1,4 +1,4 @@
-# Prompt: Buat Skill "video-sains-nusantara"
+# Prompt: Buat Skill "video-sains-nusantara" (UDcation)
 
 > Salin seluruh isi blok di bawah ini ke Claude Code (sebaiknya di repo ini).
 > Gaya desainnya diambil dari video referensi "Sriwijaya" (Instagram Reels),
@@ -132,8 +132,10 @@ Bangun sebagai komponen Remotion berparameter, dipanggil dari storyboard JSON:
                        "mari kita hitung".
   - Analogy/WorldScene: ilustrasi dunia nyata bergaya tekstil (kapal, jembatan,
                        roket, bola, rumah panggung) untuk konteks soal.
-  - OutroCard        : kesimpulan satu kalimat + rumus final emas + ciri seri
-                       (nama channel/logo — beri placeholder yang mudah diganti).
+  - OutroCard        : kesimpulan satu kalimat + rumus final emas + logo
+                       UDcation "Surya Ilmu" + wordmark (lihat bagian 10).
+  - BrandIntro       : gunungan wayang "Gunungan Ilmu" berputar lalu membuka
+                       (±1,5 dtk) — opsional, untuk video YouTube panjang.
 
 ==================================================================
 6. STRUKTUR NARASI (template, bisa disesuaikan per topik)
@@ -191,6 +193,22 @@ Checklist gaya (wajib lolos sebelum render):
 [ ] Tidak ada hard-cut
 [ ] Rumus dirender KaTeX dan sudah diverifikasi
 [ ] Teks di dalam safe area (atas 8%, bawah 18%, samping 6%)
+
+==================================================================
+10. BRAND: UDcation
+==================================================================
+Nama channel: UDcation (UD = Uhan Dani, plesetan "education").
+Aset & filosofi ada di `branding/` repo ini (UDcation-brand.md, logo-konsep.html):
+  - Logo utama "Surya Ilmu": bintang 8 emas (Surya Majapahit) + monogram UD
+    + orbit. Muncul di OutroCard; boleh lahir dari transisi iris cincin emas.
+  - Pola "Kawung Semesta": watermark kecil sudut kanan atas (opacity 25%).
+  - "Gunungan Ilmu": BrandIntro / outro.
+  - Wordmark: "UD" emas foil + "cation" krem, DM Serif Display.
+  - Tagline default: "Ilmu Semesta, Rasa Nusantara".
+Pilar konten (tambahkan sebagai field `pilar` di storyboard JSON + label kecil
+di TitleCard): Ruang Hitung (MTK), Ruang Semesta (Fisika), Fakta Unik,
+Jejak Ilmu Nusantara. Field `kurikulum` (kelas/bab) juga disimpan untuk
+dipakai ulang di platform belajar nanti.
 
 Struktur folder skill:
   SKILL.md                         (alur kerja + aturan singkat)
