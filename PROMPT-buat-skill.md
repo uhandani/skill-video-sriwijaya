@@ -133,7 +133,7 @@ Bangun sebagai komponen Remotion berparameter, dipanggil dari storyboard JSON:
   - Analogy/WorldScene: ilustrasi dunia nyata bergaya tekstil (kapal, jembatan,
                        roket, bola, rumah panggung) untuk konteks soal.
   - OutroCard        : kesimpulan satu kalimat + rumus final emas + logo
-                       UDcation "Surya Ilmu" + wordmark (lihat bagian 10).
+                       UDcation "Kawung UD" + wordmark (lihat bagian 10).
   - BrandIntro       : gunungan wayang "Gunungan Ilmu" berputar lalu membuka
                        (±1,5 dtk) — opsional, untuk video YouTube panjang.
 
@@ -199,9 +199,11 @@ Checklist gaya (wajib lolos sebelum render):
 ==================================================================
 Nama channel: UDcation (UD = Uhan Dani, plesetan "education").
 Aset & filosofi ada di `branding/` repo ini (UDcation-brand.md, logo-konsep.html):
-  - Logo utama "Surya Ilmu": bintang 8 emas (Surya Majapahit) + monogram UD
-    + orbit. Muncul di OutroCard; boleh lahir dari transisi iris cincin emas.
-  - Pola "Kawung Semesta": watermark kecil sudut kanan atas (opacity 25%).
+  - Logo utama "Kawung UD" (branding/logo-kawung-ud.html — salin SVG-nya):
+    ligatur U+D satu tiang, 4 kelopak kawung emas di dalamnya. Animasi logo:
+    garis U-D tergambar (draw-on), lalu 4 kelopak mekar dari pusat tiang.
+    Muncul di OutroCard; watermark kecil sudut kanan atas (opacity 25%).
+  - Pola brand: kelopak kawung dari logo, diulang — untuk tekstur latar navy.
   - "Gunungan Ilmu": BrandIntro / outro.
   - Wordmark: "UD" emas foil + "cation" krem, DM Serif Display.
   - Tagline default: "Ilmu Semesta, Rasa Nusantara".

@@ -3,7 +3,35 @@
 **UD** = Uhan Dani · **UDcation** = plesetan *education*.
 Posisi: belajar Matematika & Fisika dengan rasa Nusantara — mewah, otentik, dan ilmiah.
 
-Lihat sketsa visual: [`logo-konsep.png`](logo-konsep.png) (sumber: `logo-konsep.html`).
+## Logo terpilih: Kawung UD
+
+Sketsa: [`logo-kawung-ud.png`](logo-kawung-ud.png) (sumber: `logo-kawung-ud.html`)
+
+- **Bentuk:**
+  - Huruf **U** dan **D** berbagi satu tiang (ligatur), ditulis dengan garis bulat lembut. Lengan U dan mangkuk D sengaja sedikit asimetris supaya tidak kaku.
+  - Di dalam ruang kedua huruf ada **empat kelopak kawung** berbentuk elips buah aren, dengan titik "biji" di tiap kelopak.
+  - Kelopak menghadap ke tiang. Pusat kawung jatuh tepat di tiang bersama, jadi motif kawungnya utuh.
+- **Filosofi:**
+  - **U** = wadah: pelajar yang siap menampung ilmu.
+  - **Tiang bersama** = guru dan murid berdiri di satu poros.
+  - **D** = kedalaman pemahaman.
+  - **Empat kelopak** = empat pilar konten (Ruang Hitung, Ruang Semesta, Fakta Unik, Jejak Ilmu Nusantara).
+  - **Pusat kawung** = titik (0,0), tempat semua perhitungan bermula.
+  - Kawung sendiri melambangkan kebijaksanaan, kemurnian, dan keseimbangan, dan bentuknya punya simetri yang dipelajari dalam matematika.
+- **Warna:**
+  - Huruf navy #262B4A (atau krem #F1E6D0 di latar gelap) dengan kelopak emas.
+  - Versi satu warna (hitam atau putih) tetap terbaca, cocok untuk stempel, sablon, dan emboss.
+- **Turunan:** pola brand dibuat dari kelopak yang sama, untuk latar video, kemasan, dan sertifikat.
+- **Masih perlu dirapikan untuk versi final:**
+  - Ketebalan garis dan *optical balance* (agar bentuk terlihat seimbang di mata).
+  - Versi khusus 16 px yang disederhanakan, misalnya dengan kelopak tanpa biji.
+  - Ekspor ke SVG/AI.
+
+---
+
+## Arsip: tiga konsep awal
+
+Lihat sketsa visual: [`logo-konsep.png`](logo-konsep.png) (sumber: `logo-konsep.html`). Konsep B (Kawung Semesta) dikembangkan menjadi logo Kawung UD di atas.
 
 ---
 
