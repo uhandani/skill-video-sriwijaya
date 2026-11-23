@@ -1,5 +1,6 @@
 import { buatAcak, type Acak } from "./acak";
-import type { Pecahan } from "./pecahan";
+import { sama, type Pecahan } from "./pecahan";
+import { bacaEkspresi, setara } from "./ekspresi";
 
 export type Jawaban =
   | { jenis: "bilangan"; nilai: Pecahan }
@@ -38,4 +39,15 @@ export function buatSoal<P>(t: Templat<P>, seed: number): Soal {
     pola: t.polaSalah.map((x) => ({ id: x.id, jawaban: x.jawaban(p) })),
     wajibSederhana: t.wajibSederhana ?? false,
   };
+}
+
+/** Dua jawaban bernilai sama? (bilangan: nilai; ekspresi: setara numerik). */
+export function samaJawaban(a: Jawaban, b: Jawaban): boolean {
+  if (a.jenis === "bilangan" && b.jenis === "bilangan") return sama(a.nilai, b.nilai);
+  if (a.jenis === "ekspresi" && b.jenis === "ekspresi") {
+    const x = bacaEkspresi(a.teks), y = bacaEkspresi(b.teks);
+    if (!x || !y) throw new Error(`ekspresi tak terbaca: ${a.teks} / ${b.teks}`);
+    return setara(x, y, [...new Set([...a.variabel, ...b.variabel])]);
+  }
+  return false;
 }

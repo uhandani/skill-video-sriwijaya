@@ -2,9 +2,8 @@ import { describe, expect, it } from "vitest";
 import petaJson from "../konten/peta.json";
 import polaJson from "../konten/pola-salah.json";
 import { SEMUA_TEMPLAT } from "../konten/templat";
-import { buatSoal, type Jawaban } from "../src/templat";
-import { bacaEkspresi, setara } from "../src/ekspresi";
-import { sama } from "../src/pecahan";
+import { buatSoal, samaJawaban } from "../src/templat";
+import { existsSync, readFileSync } from "node:fs";
 import { POLA_BELUM_SEDERHANA } from "../src/cek";
 import type { Peta } from "../src/peta";
 
@@ -12,16 +11,6 @@ const peta = petaJson as Peta;
 const pola = polaJson as { id: string; simpul: string; nama: string; sebut: string; tunjukkan: string; sumber?: string }[];
 const idSimpul = new Set(peta.simpul.map((s) => s.id));
 const idPola = new Set(pola.map((p) => p.id));
-
-const samaJawaban = (a: Jawaban, b: Jawaban) => {
-  if (a.jenis === "bilangan" && b.jenis === "bilangan") return sama(a.nilai, b.nilai);
-  if (a.jenis === "ekspresi" && b.jenis === "ekspresi") {
-    const x = bacaEkspresi(a.teks), y = bacaEkspresi(b.teks);
-    if (!x || !y) throw new Error(`ekspresi tak terbaca: ${a.teks} / ${b.teks}`);
-    return setara(x, y, [...new Set([...a.variabel, ...b.variabel])]);
-  }
-  return false;
-};
 
 describe("peta kurikulum", () => {
   it("memuat J01–J15", () => {
@@ -87,6 +76,21 @@ describe("templat", () => {
           s.pola.slice(i + 1).forEach((q) => expect(samaJawaban(p.jawaban, q.jawaban), `seed ${seed} ${p.id} = ${q.id}`).toBe(false));
         });
       }
+    });
+  }
+});
+
+const JALUR_PENUH = ["J07"];
+
+describe("modul jalur penuh", () => {
+  for (const s of peta.simpul.filter((x) => JALUR_PENUH.includes(x.jalur))) {
+    it(`${s.id}: punya modul & templat`, () => {
+      const f = new URL(`../konten/modul/${s.id}.md`, import.meta.url);
+      expect(existsSync(f), `modul ${s.id}`).toBe(true);
+      const isi = readFileSync(f, "utf8");
+      for (const id of isi.match(/`(T-[A-Z0-9-]+)`/g) ?? [])
+        expect(SEMUA_TEMPLAT.some((t) => t.id === id.slice(1, -1)), id).toBe(true);
+      expect(SEMUA_TEMPLAT.some((t) => t.simpul === s.id), `templat untuk ${s.id}`).toBe(true);
     });
   }
 });
