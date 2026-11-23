@@ -10,7 +10,8 @@ import { C } from "../brand/theme";
 export type JenisIlustrasi =
   | "matahari" | "bulan" | "bumi" | "bintang" | "awan" | "ombak" | "gunung"
   | "kapal" | "candi" | "rumahPanggung" | "gong" | "orang" | "kelapa" | "planet"
-  | "tangga" | "dindingBata" | "gulungan" | "buku" | "kubah" | "percetakan";
+  | "tangga" | "dindingBata" | "gulungan" | "buku" | "kubah" | "percetakan"
+  | "borobudur" | "hujan";
 
 const L = 4.5; // tebal garis
 
@@ -379,6 +380,67 @@ const Percetakan: React.FC<{ t: number }> = ({ t }) => {
   );
 };
 
+const StupaKecil: React.FC<{ x: number; y: number; s?: number; emas?: boolean }> = ({ x, y, s = 1, emas }) => (
+  <g transform={`translate(${x} ${y}) scale(${s})`}>
+    <path d="M-10 0 C-12 -16 12 -16 10 0 Z" fill={emas ? "url(#ilGold)" : IL.kayuTerang} stroke={C.krem} strokeWidth={2.5} />
+    <path d="M0 -13 V-20" stroke={emas ? C.emas : C.krem} strokeWidth={2.5} />
+  </g>
+);
+
+/** Borobudur: 5 teras persegi bertingkat + 3 teras bundar berstupa + stupa induk emas (di atas bukit). */
+const Borobudur: React.FC = () => {
+  const teras = [260, 228, 196, 166, 138];
+  let y = 0;
+  const rows: React.ReactNode[] = [];
+  teras.forEach((w, i) => {
+    const h = 18;
+    rows.push(
+      <g key={`t${i}`}>
+        <rect x={-w / 2} y={y - h} width={w} height={h} fill={i % 2 ? IL.kayu : IL.kayuTerang} stroke={C.krem} strokeWidth={3.5} />
+        <g stroke={C.krem} strokeWidth={1.4} opacity={0.55}>
+          {Array.from({ length: Math.floor(w / 18) }).map((_, k) => (
+            <path key={k} d={`M${-w / 2 + 9 + k * 18} ${y - h + 4} V${y - 4}`} />
+          ))}
+        </g>
+      </g>,
+    );
+    y -= h;
+  });
+  const bundar = [112, 88, 64];
+  bundar.forEach((w, i) => {
+    rows.push(<path key={`b${i}`} d={`M${-w / 2} ${y} Q0 ${y - 10} ${w / 2} ${y} V${y - 6} Q0 ${y - 16} ${-w / 2} ${y - 6} Z`} fill={IL.indigoTerang} stroke={C.krem} strokeWidth={3} />);
+    const n = [7, 5, 3][i];
+    for (let k = 0; k < n; k++) {
+      const x = -w / 2 + 10 + (k * (w - 20)) / (n - 1);
+      rows.push(<StupaKecil key={`s${i}-${k}`} x={x} y={y - 8} s={0.9} />);
+    }
+    y -= 22;
+  });
+  rows.push(<StupaKecil key="induk" x={0} y={y + 4} s={2.2} emas />);
+  return (
+    <g strokeLinejoin="round">
+      <path d="M-170 0 Q-140 -40 -60 -44 H60 Q140 -40 170 0 Z" fill={IL.indigo} stroke={C.krem} strokeWidth={3} opacity={0.85} transform="translate(0 0) scale(1 0.45)" />
+      {rows}
+    </g>
+  );
+};
+
+/** Hujan: awan + garis hujan bergerak. */
+const Hujan: React.FC<{ t: number }> = ({ t }) => (
+  <g>
+    <g transform="translate(0 -40)">
+      <Awan />
+    </g>
+    <g stroke={C.krem} strokeWidth={3} strokeLinecap="round" opacity={0.75}>
+      {Array.from({ length: 12 }).map((_, i) => {
+        const x = -90 + (i % 6) * 36 + (i > 5 ? 18 : 0);
+        const y = ((t * 6 + i * 23) % 90) - 20;
+        return <path key={i} d={`M${x} ${y} l-6 18`} />;
+      })}
+    </g>
+  </g>
+);
+
 export const ILUSTRASI: Record<JenisIlustrasi, React.FC<{ t: number }>> = {
   matahari: Matahari,
   bulan: Bulan,
@@ -400,6 +462,8 @@ export const ILUSTRASI: Record<JenisIlustrasi, React.FC<{ t: number }>> = {
   buku: Buku,
   kubah: Kubah,
   percetakan: Percetakan,
+  borobudur: Borobudur,
+  hujan: Hujan,
 };
 
 /** <defs> bersama (gradien emas + glow). Taruh sekali di dalam <svg>. */

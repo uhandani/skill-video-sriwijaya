@@ -1,0 +1,706 @@
+{
+ "id": "BorobudurTanpaSemen",
+ "judul": "Borobudur Tanpa Semen",
+ "pilar": "Ruang Nusantara",
+ "kurikulum": "SMP Kelas 8 — Gaya & Gaya Gesek · Sejarah Indonesia: Kerajaan Hindu-Buddha",
+ "rasio": "9:16",
+ "kpd": 2.6,
+ "sumber": [
+  "UNESCO World Heritage Centre, “Borobudur Temple Compounds” (No. 592)",
+  "Historia.id, “Membangun Candi Borobudur” — mengutip Balai Konservasi Borobudur",
+  "Detik Travel, “Rahasia di Balik Candi Borobudur yang Dibangun Tanpa Semen”",
+  "J. Byerlee, “Friction of Rocks”, Pure and Applied Geophysics 116 (1978)",
+  "Makara-pranala (jaladwara): pancuran air candi Jawa — ensiklopedia “Pranala”"
+ ],
+ "thumbnail": {
+  "hook": "Tanpa *Semen*,\nBerdiri 1.200 Tahun?",
+  "sub": "Rahasia batu Borobudur yang saling mengunci",
+  "elemen": [
+   {
+    "jenis": "matahari",
+    "x": 800,
+    "y": 230,
+    "skala": 1.0
+   },
+   {
+    "jenis": "borobudur",
+    "x": 500,
+    "y": 830,
+    "skala": 2.9
+   }
+  ]
+ },
+ "scenes": [
+  {
+   "id": "pembuka",
+   "type": "ilustrasi",
+   "durasi": 7,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Borobudur, salah satu monumen Buddha terbesar di dunia, dibangun pada abad kedelapan sampai kesembilan.",
+   "props": {
+    "garisLaut": 1180,
+    "elemen": [
+     {
+      "jenis": "matahari",
+      "x": 780,
+      "y": 420,
+      "skala": 1.2,
+      "at": 0.2
+     },
+     {
+      "jenis": "gunung",
+      "x": 170,
+      "y": 1180,
+      "skala": 1.5,
+      "at": 0.3
+     },
+     {
+      "jenis": "kelapa",
+      "x": 880,
+      "y": 1180,
+      "skala": 1.3,
+      "at": 0.6
+     },
+     {
+      "jenis": "borobudur",
+      "x": 500,
+      "y": 1180,
+      "skala": 3.0,
+      "at": 0.5,
+      "kata": "Borobudur,"
+     }
+    ],
+    "label": [
+     {
+      "teks": "Borobudur",
+      "x": 500,
+      "y": 1300,
+      "at": 1.2,
+      "emas": true,
+      "ukuran": 72
+     }
+    ]
+   }
+  },
+  {
+   "id": "hook",
+   "type": "title",
+   "durasi": 6,
+   "bg": "navy",
+   "bingkai": true,
+   "transisi": "iris",
+   "narasi": "Batu-batunya disusun tanpa semen. Kok bisa berdiri sekitar seribu dua ratus tahun?",
+   "props": {
+    "kicker": "Ruang Nusantara",
+    "judul": "Tanpa semen, kok bisa berdiri?",
+    "tandaTanya": true
+   }
+  },
+  {
+   "id": "volume",
+   "type": "counter",
+   "durasi": 7,
+   "bg": "cokelat",
+   "transisi": "iris",
+   "narasi": "Sekitar lima puluh lima ribu meter kubik batu andesit, ditumpuk menyelimuti sebuah bukit alami.",
+   "props": {
+    "from": 0,
+    "to": 55000,
+    "satuan": "m³",
+    "label": "batu andesit (perkiraan) di atas bukit alami"
+   },
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "gunung",
+      "x": 500,
+      "y": 1260,
+      "skala": 2.0,
+      "at": 1.5,
+      "kata": "bukit"
+     }
+    ]
+   }
+  },
+  {
+   "id": "kunci-batu",
+   "type": "diagram",
+   "durasi": 9,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Rahasia pertama, batu saling mengunci. Ada sambungan ekor burung, takikan, alur dan lidah, serta purus.",
+   "props": {
+    "judul": "Rahasia 1 · Saling mengunci",
+    "items": [
+     {
+      "type": "polygon",
+      "points": [
+       [
+        140,
+        170
+       ],
+       [
+        480,
+        170
+       ],
+       [
+        480,
+        225
+       ],
+       [
+        570,
+        195
+       ],
+       [
+        570,
+        345
+       ],
+       [
+        480,
+        315
+       ],
+       [
+        480,
+        370
+       ],
+       [
+        140,
+        370
+       ]
+      ],
+      "at": 0.3,
+      "dur": 1.0,
+      "stroke": "krem",
+      "fill": "cokelatTerang",
+      "fillOpacity": 0.9,
+      "width": 6
+     },
+     {
+      "type": "polygon",
+      "points": [
+       [
+        480,
+        170
+       ],
+       [
+        860,
+        170
+       ],
+       [
+        860,
+        370
+       ],
+       [
+        480,
+        370
+       ],
+       [
+        480,
+        315
+       ],
+       [
+        570,
+        345
+       ],
+       [
+        570,
+        195
+       ],
+       [
+        480,
+        225
+       ]
+      ],
+      "at": 1.0,
+      "dur": 1.0,
+      "stroke": "krem",
+      "fill": "navyTerang",
+      "fillOpacity": 0.9,
+      "width": 6,
+      "kata": "ekor"
+     },
+     {
+      "type": "text",
+      "pos": [
+       500,
+       440
+      ],
+      "text": "sambungan ekor burung",
+      "size": 50,
+      "fill": "emas",
+      "at": 1.6,
+      "kata": "ekor"
+     },
+     {
+      "type": "polygon",
+      "points": [
+       [
+        250,
+        560
+       ],
+       [
+        750,
+        560
+       ],
+       [
+        750,
+        700
+       ],
+       [
+        545,
+        700
+       ],
+       [
+        545,
+        750
+       ],
+       [
+        455,
+        750
+       ],
+       [
+        455,
+        700
+       ],
+       [
+        250,
+        700
+       ]
+      ],
+      "at": 2.6,
+      "dur": 1.0,
+      "stroke": "krem",
+      "fill": "cokelatTerang",
+      "fillOpacity": 0.9,
+      "width": 6,
+      "kata": "purus."
+     },
+     {
+      "type": "polygon",
+      "points": [
+       [
+        250,
+        700
+       ],
+       [
+        455,
+        700
+       ],
+       [
+        455,
+        750
+       ],
+       [
+        545,
+        750
+       ],
+       [
+        545,
+        700
+       ],
+       [
+        750,
+        700
+       ],
+       [
+        750,
+        860
+       ],
+       [
+        250,
+        860
+       ]
+      ],
+      "at": 3.0,
+      "dur": 1.0,
+      "stroke": "krem",
+      "fill": "navyTerang",
+      "fillOpacity": 0.9,
+      "width": 6
+     },
+     {
+      "type": "circle",
+      "c": [
+       500,
+       725
+      ],
+      "r": 60,
+      "at": 3.6,
+      "dur": 0.6,
+      "stroke": "emas",
+      "width": 5,
+      "dashed": true
+     },
+     {
+      "type": "text",
+      "pos": [
+       500,
+       935
+      ],
+      "text": "purus (pasak batu)",
+      "size": 50,
+      "fill": "emas",
+      "at": 3.8
+     }
+    ]
+   }
+  },
+  {
+   "id": "gesek",
+   "type": "diagram",
+   "durasi": 9,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Rahasia kedua, berat. Batu di atas menekan batu di bawahnya, sehingga gaya gesek di antara batu menjadi besar.",
+   "props": {
+    "judul": "Rahasia 2 · Berat & gesekan",
+    "items": [
+     {
+      "type": "line",
+      "from": [
+       80,
+       800
+      ],
+      "to": [
+       920,
+       800
+      ],
+      "at": 0.2,
+      "dur": 0.5,
+      "stroke": "krem",
+      "width": 6
+     },
+     {
+      "type": "rect",
+      "x": 280,
+      "y": 640,
+      "w": 440,
+      "h": 160,
+      "at": 0.4,
+      "dur": 0.6,
+      "stroke": "krem",
+      "fill": "cokelatTerang",
+      "fillOpacity": 0.9,
+      "width": 6
+     },
+     {
+      "type": "rect",
+      "x": 330,
+      "y": 480,
+      "w": 340,
+      "h": 160,
+      "at": 0.9,
+      "dur": 0.6,
+      "stroke": "krem",
+      "fill": "navyTerang",
+      "fillOpacity": 0.9,
+      "width": 6,
+      "kata": "menekan"
+     },
+     {
+      "type": "line",
+      "from": [
+       500,
+       250
+      ],
+      "to": [
+       500,
+       450
+      ],
+      "at": 1.6,
+      "dur": 0.6,
+      "stroke": "krem",
+      "width": 10,
+      "kata": "menekan"
+     },
+     {
+      "type": "polygon",
+      "points": [
+       [
+        470,
+        430
+       ],
+       [
+        530,
+        430
+       ],
+       [
+        500,
+        475
+       ]
+      ],
+      "at": 2.0,
+      "dur": 0.3,
+      "stroke": "krem",
+      "fill": "krem",
+      "width": 3
+     },
+     {
+      "type": "text",
+      "pos": [
+       640,
+       330
+      ],
+      "text": "berat (N)",
+      "size": 50,
+      "fill": "krem",
+      "at": 2.0
+     },
+     {
+      "type": "line",
+      "from": [
+       110,
+       560
+      ],
+      "to": [
+       300,
+       560
+      ],
+      "at": 2.8,
+      "dur": 0.5,
+      "stroke": "krem",
+      "width": 10
+     },
+     {
+      "type": "polygon",
+      "points": [
+       [
+        290,
+        530
+       ],
+       [
+        290,
+        590
+       ],
+       [
+        330,
+        560
+       ]
+      ],
+      "at": 3.1,
+      "dur": 0.3,
+      "stroke": "krem",
+      "fill": "krem",
+      "width": 3
+     },
+     {
+      "type": "text",
+      "pos": [
+       190,
+       520
+      ],
+      "text": "dorong",
+      "size": 46,
+      "fill": "krem",
+      "at": 3.1
+     },
+     {
+      "type": "line",
+      "from": [
+       880,
+       640
+      ],
+      "to": [
+       700,
+       640
+      ],
+      "at": 3.8,
+      "dur": 0.6,
+      "stroke": "emas",
+      "width": 10,
+      "kata": "gesek"
+     },
+     {
+      "type": "polygon",
+      "points": [
+       [
+        710,
+        610
+       ],
+       [
+        710,
+        670
+       ],
+       [
+        670,
+        640
+       ]
+      ],
+      "at": 4.2,
+      "dur": 0.3,
+      "stroke": "emas",
+      "fill": "emas",
+      "width": 3
+     },
+     {
+      "type": "text",
+      "pos": [
+       800,
+       600
+      ],
+      "text": "gaya gesek f",
+      "size": 46,
+      "fill": "emas",
+      "at": 4.3
+     }
+    ]
+   }
+  },
+  {
+   "id": "hitung",
+   "type": "equation",
+   "durasi": 10,
+   "bg": "cokelat",
+   "transisi": "iris",
+   "narasi": "Gaya gesek maksimum sama dengan mu kali gaya normal. Batu lima puluh kilogram butuh dorongan sekitar tiga ratus newton supaya bergeser.",
+   "tts": "Gaya gesek maksimum, sama dengan mu, kali gaya normal. Batu lima puluh kilogram, butuh dorongan sekitar tiga ratus newton, supaya bergeser.",
+   "props": {
+    "judul": "Contoh: satu balok batu",
+    "size": 64,
+    "langkah": [
+     {
+      "tex": "f_{\\text{maks}} = \\mu \\cdot N",
+      "at": 0.6,
+      "kata": "maksimum"
+     },
+     {
+      "tex": "N = m g = 50 \\times 9{,}8 = 490\\ \\text{N}",
+      "at": 4.0,
+      "kata": "lima"
+     },
+     {
+      "tex": "\\g{f_{\\text{maks}} = 0{,}6 \\times 490 \\approx 294\\ \\text{N}}",
+      "at": 6.5,
+      "kata": "dorongan",
+      "catatan": "μ batu ≈ 0,6–0,85 (Byerlee, 1978)"
+     }
+    ]
+   }
+  },
+  {
+   "id": "air",
+   "type": "ilustrasi",
+   "durasi": 9,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Rahasia ketiga, air. Air hujan dialirkan keluar lewat pancuran batu berbentuk makara, supaya bukit di dalamnya tidak tergerus.",
+   "props": {
+    "judul": "Rahasia 3 · Air dikendalikan",
+    "garisLaut": 1200,
+    "elemen": [
+     {
+      "jenis": "hujan",
+      "x": 500,
+      "y": 520,
+      "skala": 2.2,
+      "at": 0.3,
+      "kata": "hujan"
+     },
+     {
+      "jenis": "borobudur",
+      "x": 500,
+      "y": 1200,
+      "skala": 2.4,
+      "at": 0.6
+     }
+    ],
+    "label": [
+     {
+      "teks": "pancuran makara (jaladwara)",
+      "x": 500,
+      "y": 1290,
+      "at": 3.0,
+      "ukuran": 46,
+      "emas": true,
+      "kata": "pancuran"
+     }
+    ]
+   }
+  },
+  {
+   "id": "pemugaran",
+   "type": "ilustrasi",
+   "durasi": 8.5,
+   "bg": "navy",
+   "transisi": "perkamen",
+   "narasi": "Meski begitu, Borobudur tetap butuh dirawat. Tahun tujuh puluhan, candi ini dipugar besar-besaran bersama UNESCO.",
+   "props": {
+    "garisLaut": 1180,
+    "elemen": [
+     {
+      "jenis": "orang",
+      "x": 200,
+      "y": 1180,
+      "skala": 1.3,
+      "at": 0.5
+     },
+     {
+      "jenis": "borobudur",
+      "x": 580,
+      "y": 1180,
+      "skala": 2.0,
+      "at": 0.3
+     },
+     {
+      "jenis": "orang",
+      "x": 880,
+      "y": 1180,
+      "skala": 1.2,
+      "at": 0.8,
+      "cermin": true
+     }
+    ],
+    "label": [
+     {
+      "teks": "UNESCO",
+      "x": 500,
+      "y": 520,
+      "at": 2.0,
+      "ukuran": 96,
+      "emas": true,
+      "kata": "UNESCO."
+     },
+     {
+      "teks": "pemugaran besar · 1970-an",
+      "x": 500,
+      "y": 600,
+      "at": 2.4,
+      "ukuran": 46
+     }
+    ]
+   },
+   "tts": "Meski begitu, Borobudur tetap butuh dirawat. Tahun tujuh puluhan, candi ini dipugar besar-besaran bersama Yunesko."
+  },
+  {
+   "id": "penutup",
+   "type": "outro",
+   "durasi": 7.5,
+   "bg": "navy",
+   "bingkai": true,
+   "transisi": "fade",
+   "narasi": "Jadi, tanpa semen pun, batu yang saling mengunci dan saling menekan bisa bertahan berabad-abad.",
+   "props": {
+    "kesimpulan": "Saling mengunci + saling menekan = tahan berabad-abad",
+    "tex": "\\g{f = \\mu N}"
+   }
+  },
+  {
+   "id": "sumber",
+   "type": "sumber",
+   "durasi": 6.5,
+   "bg": "navy",
+   "narasi": "Sumber riset ada di layar.",
+   "props": {
+    "daftar": [
+     "UNESCO World Heritage Centre, “Borobudur Temple Compounds” (No. 592)",
+     "Historia.id, “Membangun Candi Borobudur” — mengutip Balai Konservasi Borobudur",
+     "Detik Travel, “Rahasia di Balik Candi Borobudur yang Dibangun Tanpa Semen”",
+     "J. Byerlee, “Friction of Rocks”, Pure and Applied Geophysics 116 (1978)",
+     "Makara-pranala (jaladwara): pancuran air candi Jawa — ensiklopedia “Pranala”"
+    ],
+    "catatan": "Angka volume batu adalah perkiraan; contoh 50 kg & μ = 0,6 untuk ilustrasi perhitungan."
+   }
+  }
+ ]
+}
