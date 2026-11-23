@@ -97,7 +97,7 @@ def pasang_isyarat(sc, words):
 
 def _pasang(sc, props, words):
     lead = VO_LEAD / FPS
-    for key in ("items", "langkah", "points", "curves", "elemen", "label", "momen"):
+    for key in ("items", "langkah", "points", "curves", "elemen", "label", "momen", "varian"):
         daftar = props.get(key)
         if not isinstance(daftar, list):
             continue

@@ -1,0 +1,231 @@
+{
+ "id": "LambangFisikaPart6",
+ "judul": "Kode Rahasia Lambang Fisika · Part 6: Huruf Kembar!",
+ "pilar": "Ruang Semesta",
+ "kurikulum": "SMP Kelas 8 & SMA Kelas 10–11 — Besaran & Satuan, Usaha-Energi, Tekanan, Listrik",
+ "rasio": "9:16",
+ "kpd": 2.6,
+ "sumber": [
+  "Kemendikbud, Buku Siswa Fisika SMA/MA Kelas XI (Kurikulum 2013) — lambang P, V, W, w, T",
+  "BIPM, The International System of Units (SI Brochure, 9th ed., 2019) — watt, pascal, volt, joule, newton, kelvin",
+  "ISO/IEC 80000 (via Wikipedia) — satu lambang bisa mewakili beberapa besaran",
+  "Merriam-Webster — power, pressure, voltage, volume, velocity, temperature, work, weight"
+ ],
+ "thumbnail": {
+  "hook": "*P* Itu Daya\natau Tekanan?",
+  "sub": "Huruf kembar fisika · Part 6",
+  "elemen": [
+   {
+    "jenis": "jam",
+    "x": 160,
+    "y": 260,
+    "skala": 0.75
+   },
+   {
+    "jenis": "roket",
+    "x": 850,
+    "y": 760,
+    "skala": 1.0
+   }
+  ],
+  "tex": "\\begin{gathered}\\g{P = \\tfrac{W}{t}}\\\\ \\small\\text{atau}\\\\ \\g{P = \\tfrac{F}{A}}\\end{gathered}"
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "title",
+   "durasi": 7,
+   "bg": "navy",
+   "bingkai": true,
+   "transisi": "iris",
+   "narasi": "Huruf P di fisika bisa berarti dua hal yang beda jauh. Kamu pernah ketukar?",
+   "tts": "Huruf pe di fisika, bisa berarti dua hal yang beda jauh. Kamu pernah ketukar?",
+   "props": {
+    "kicker": "Lambang Fisika · Part 6",
+    "judul": "Huruf Kembar!",
+    "sub": "Satu huruf, beda arti",
+    "tandaTanya": true
+   }
+  },
+  {
+   "id": "p",
+   "type": "kembar",
+   "durasi": 9,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "P bisa power, artinya daya, satuannya watt. Tapi P juga bisa pressure, artinya tekanan, satuannya pascal.",
+   "props": {
+    "kicker": "Lambang Fisika · Part 6",
+    "judul": "Huruf P",
+    "varian": [
+     {
+      "huruf": "P",
+      "besaran": "daya",
+      "satuan": "watt (W)",
+      "tex": "P=\\frac{W}{t}",
+      "at": 1.0,
+      "istilah": "Power",
+      "kata": "power,"
+     },
+     {
+      "huruf": "P",
+      "besaran": "tekanan",
+      "satuan": "pascal (Pa)",
+      "tex": "P=\\frac{F}{A}",
+      "at": 4.0,
+      "istilah": "Pressure",
+      "kata": "pressure,"
+     }
+    ]
+   },
+   "tts": "Pe bisa, power, artinya daya, satuannya watt. Tapi pe juga bisa, pressure, artinya tekanan, satuannya pascal."
+  },
+  {
+   "id": "v",
+   "type": "kembar",
+   "durasi": 10,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Huruf V lebih ramai. V besar bisa voltage, tegangan listrik, atau volume. Sedangkan v kecil adalah velocity, kecepatan.",
+   "props": {
+    "kicker": "Lambang Fisika · Part 6",
+    "judul": "Huruf V",
+    "varian": [
+     {
+      "huruf": "V",
+      "besaran": "tegangan listrik",
+      "satuan": "volt (V)",
+      "at": 1.0,
+      "istilah": "Voltage",
+      "kata": "voltage,"
+     },
+     {
+      "huruf": "V",
+      "besaran": "volume",
+      "satuan": "m³",
+      "at": 3.0,
+      "istilah": "Volume",
+      "kata": "volume."
+     },
+     {
+      "huruf": "v",
+      "besaran": "kecepatan",
+      "satuan": "m/s",
+      "at": 5.0,
+      "istilah": "velocity",
+      "kata": "velocity,"
+     }
+    ]
+   },
+   "tts": "Huruf ve lebih ramai. Ve besar bisa, voltage, tegangan listrik, atau volume. Sedangkan ve kecil adalah, velocity, kecepatan."
+  },
+  {
+   "id": "t",
+   "type": "kembar",
+   "durasi": 8,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "T bisa temperature, artinya suhu. Di materi getaran, T adalah periode, waktu untuk satu getaran.",
+   "props": {
+    "kicker": "Lambang Fisika · Part 6",
+    "judul": "Huruf T",
+    "varian": [
+     {
+      "huruf": "T",
+      "besaran": "suhu",
+      "satuan": "kelvin (K)",
+      "at": 1.0,
+      "istilah": "Temperature",
+      "kata": "temperature,"
+     },
+     {
+      "huruf": "T",
+      "besaran": "periode getaran",
+      "satuan": "sekon (s)",
+      "tex": "T=\\frac{t}{n}",
+      "at": 3.5,
+      "istilah": "Time (periode)",
+      "kata": "periode,"
+     }
+    ]
+   },
+   "tts": "Te bisa, temperature, artinya suhu. Di materi getaran, te adalah periode, waktu untuk satu getaran."
+  },
+  {
+   "id": "w",
+   "type": "kembar",
+   "durasi": 9,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Lalu W besar adalah work, usaha, satuannya joule. Sedangkan w kecil adalah weight, berat, satuannya newton.",
+   "props": {
+    "kicker": "Lambang Fisika · Part 6",
+    "judul": "Huruf W",
+    "varian": [
+     {
+      "huruf": "W",
+      "besaran": "usaha",
+      "satuan": "joule (J)",
+      "tex": "W=F\\cdot s",
+      "at": 1.0,
+      "istilah": "Work",
+      "kata": "work,"
+     },
+     {
+      "huruf": "w",
+      "besaran": "berat",
+      "satuan": "newton (N)",
+      "tex": "w=m\\cdot g",
+      "at": 4.0,
+      "istilah": "weight",
+      "kata": "weight,"
+     }
+    ]
+   },
+   "tts": "Lalu we besar adalah, work, usaha, satuannya joule. Sedangkan we kecil adalah, weight, berat, satuannya newton."
+  },
+  {
+   "id": "trik",
+   "type": "title",
+   "durasi": 7,
+   "bg": "cokelat",
+   "transisi": "iris",
+   "narasi": "Triknya: lihat satuan dan konteks soalnya. Huruf bisa kembar, satuan tidak pernah bohong.",
+   "props": {
+    "kicker": "Trik anti ketukar",
+    "judul": "Cek satuannya!",
+    "sub": "watt → daya · pascal → tekanan\njoule → usaha · newton → berat"
+   }
+  },
+  {
+   "id": "penutup",
+   "type": "outro",
+   "durasi": 7,
+   "bg": "navy",
+   "bingkai": true,
+   "transisi": "fade",
+   "narasi": "Jadi kalau ketemu huruf kembar, jangan panik. Di part berikutnya, kita bongkar lambang listrik.",
+   "props": {
+    "kesimpulan": "Huruf boleh kembar — satuannya yang membedakan",
+    "tex": "\\g{P,\\ V,\\ T,\\ W}",
+    "ajakan": "Part 3: lambang listrik →"
+   }
+  },
+  {
+   "id": "sumber",
+   "type": "sumber",
+   "durasi": 6.5,
+   "bg": "navy",
+   "narasi": "Sumber riset ada di layar.",
+   "props": {
+    "daftar": [
+     "Kemendikbud, Buku Siswa Fisika SMA/MA Kelas XI (Kurikulum 2013) — lambang P, V, W, w, T",
+     "BIPM, The International System of Units (SI Brochure, 9th ed., 2019) — watt, pascal, volt, joule, newton, kelvin",
+     "ISO/IEC 80000 (via Wikipedia) — satu lambang bisa mewakili beberapa besaran",
+     "Merriam-Webster — power, pressure, voltage, volume, velocity, temperature, work, weight"
+    ],
+    "catatan": "Lambang mengikuti kebiasaan buku pelajaran Indonesia; buku/negara lain bisa memakai huruf berbeda."
+   }
+  }
+ ]
+}

@@ -148,6 +148,14 @@ export type LambangProps = {
   momen?: (Isyarat & { nama: "urai" | "info" | "rumus"; at?: number })[];
 };
 
+/** Huruf kembar: satu huruf, beberapa arti (seri lambang fisika). */
+export type KembarProps = {
+  kicker?: string;
+  /** judul besar, mis. "Huruf P" */
+  judul: string;
+  varian: (Isyarat & { huruf: string; /** kata asal yang ditampilkan */ istilah: string; besaran: string; satuan: string; tex?: string; at?: number })[];
+};
+
 /** Daftar sumber riset di akhir video (setelah outro). */
 export type SumberProps = { judul?: string; daftar: string[]; catatan?: string };
 
@@ -161,7 +169,8 @@ export type Scene =
   | (SceneBase & { type: "outro"; props: OutroProps })
   | (SceneBase & { type: "sumber"; props: SumberProps })
   | (SceneBase & { type: "ilustrasi"; props: IlustrasiProps })
-  | (SceneBase & { type: "lambang"; props: LambangProps });
+  | (SceneBase & { type: "lambang"; props: LambangProps })
+  | (SceneBase & { type: "kembar"; props: KembarProps });
 
 export type Storyboard = {
   id: string;
