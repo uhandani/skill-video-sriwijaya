@@ -40,7 +40,7 @@
   {
    "id": "hook",
    "type": "title",
-   "durasi": 7,
+   "durasi": 7.9,
    "bg": "navy",
    "bingkai": true,
    "transisi": "iris",
@@ -76,12 +76,88 @@
       "at": 0.9
      }
     ]
+   },
+   "vo": {
+    "file": "audio/lambang-fisika-part3/1-hook.mp3",
+    "durasi": 6.531,
+    "words": [
+     {
+      "w": "Arus",
+      "start": 0.0,
+      "end": 0.37
+     },
+     {
+      "w": "listrik",
+      "start": 0.37,
+      "end": 0.739
+     },
+     {
+      "w": "dalam",
+      "start": 0.739,
+      "end": 1.109
+     },
+     {
+      "w": "bahasa",
+      "start": 1.109,
+      "end": 1.663
+     },
+     {
+      "w": "Inggris",
+      "start": 1.663,
+      "end": 2.194
+     },
+     {
+      "w": "itu",
+      "start": 2.194,
+      "end": 2.564
+     },
+     {
+      "w": "current.",
+      "start": 2.564,
+      "end": 3.32
+     },
+     {
+      "w": "Tapi",
+      "start": 3.32,
+      "end": 3.69
+     },
+     {
+      "w": "lambangnya",
+      "start": 3.69,
+      "end": 4.642
+     },
+     {
+      "w": "I,",
+      "start": 4.642,
+      "end": 4.827
+     },
+     {
+      "w": "bukan",
+      "start": 4.827,
+      "end": 5.196
+     },
+     {
+      "w": "C.",
+      "start": 5.196,
+      "end": 5.753
+     },
+     {
+      "w": "Kok",
+      "start": 5.753,
+      "end": 5.938
+     },
+     {
+      "w": "bisa?",
+      "start": 5.938,
+      "end": 6.531
+     }
+    ]
    }
   },
   {
    "id": "i",
    "type": "lambang",
-   "durasi": 11,
+   "durasi": 14.7,
    "bg": "navy",
    "transisi": "iris",
    "narasi": "Jawabannya dari bahasa Prancis, intensité du courant, artinya kuat arus. André-Marie Ampère memakai huruf ini sekitar tahun 1820. Satuannya pun dinamai ampere.",
@@ -98,15 +174,18 @@
     "momen": [
      {
       "nama": "urai",
-      "kata": "intensité"
+      "kata": "intensité",
+      "at": 2.62
      },
      {
       "nama": "info",
-      "kata": "kuat"
+      "kata": "kuat",
+      "at": 5.05
      },
      {
       "nama": "rumus",
-      "kata": "ampere."
+      "kata": "ampere.",
+      "at": 12.49
      }
     ],
     "tex": "I = \\frac{Q}{t}"
@@ -121,12 +200,128 @@
       "at": 0.5
      }
     ]
+   },
+   "vo": {
+    "file": "audio/lambang-fisika-part3/2-i.mp3",
+    "durasi": 13.401,
+    "words": [
+     {
+      "w": "Jawabannya",
+      "start": 0.0,
+      "end": 0.744
+     },
+     {
+      "w": "dari",
+      "start": 0.744,
+      "end": 1.116
+     },
+     {
+      "w": "bahasa",
+      "start": 1.116,
+      "end": 1.674
+     },
+     {
+      "w": "Prancis,",
+      "start": 1.674,
+      "end": 2.423
+     },
+     {
+      "w": "intensité",
+      "start": 2.423,
+      "end": 3.167
+     },
+     {
+      "w": "du",
+      "start": 3.167,
+      "end": 3.353
+     },
+     {
+      "w": "courant,",
+      "start": 3.353,
+      "end": 4.062
+     },
+     {
+      "w": "artinya",
+      "start": 4.062,
+      "end": 4.854
+     },
+     {
+      "w": "kuat",
+      "start": 4.854,
+      "end": 5.04
+     },
+     {
+      "w": "arus.",
+      "start": 5.04,
+      "end": 5.412
+     },
+     {
+      "w": "André-Marie",
+      "start": 5.412,
+      "end": 6.551
+     },
+     {
+      "w": "Ampère",
+      "start": 6.551,
+      "end": 7.109
+     },
+     {
+      "w": "memakai",
+      "start": 7.109,
+      "end": 7.667
+     },
+     {
+      "w": "huruf",
+      "start": 7.667,
+      "end": 8.345
+     },
+     {
+      "w": "ini",
+      "start": 8.345,
+      "end": 8.717
+     },
+     {
+      "w": "sekitar",
+      "start": 8.717,
+      "end": 9.275
+     },
+     {
+      "w": "tahun",
+      "start": 9.275,
+      "end": 9.647
+     },
+     {
+      "w": "1820.",
+      "start": 9.647,
+      "end": 10.578
+     },
+     {
+      "w": "Satuannya",
+      "start": 10.578,
+      "end": 11.543
+     },
+     {
+      "w": "pun",
+      "start": 11.543,
+      "end": 11.729
+     },
+     {
+      "w": "dinamai",
+      "start": 11.729,
+      "end": 12.287
+     },
+     {
+      "w": "ampere.",
+      "start": 12.287,
+      "end": 13.401
+     }
+    ]
    }
   },
   {
    "id": "q",
    "type": "lambang",
-   "durasi": 9,
+   "durasi": 10.1,
    "bg": "navy",
    "transisi": "iris",
    "narasi": "Muatan listrik ditulis Q. Konon dari quantity of electricity, istilah lama untuk muatan. Satuannya coulomb.",
@@ -143,15 +338,18 @@
     "momen": [
      {
       "nama": "urai",
-      "kata": "quantity"
+      "kata": "quantity",
+      "at": 3.48
      },
      {
       "nama": "info",
-      "kata": "istilah"
+      "kata": "istilah",
+      "at": 5.24
      },
      {
       "nama": "rumus",
-      "kata": "coulomb."
+      "kata": "coulomb.",
+      "at": 8.37
      }
     ],
     "tex": "Q = I \\cdot t"
@@ -173,12 +371,93 @@
       "at": 0.7
      }
     ]
+   },
+   "vo": {
+    "file": "audio/lambang-fisika-part3/3-q.mp3",
+    "durasi": 8.751,
+    "words": [
+     {
+      "w": "Muatan",
+      "start": 0.0,
+      "end": 0.412
+     },
+     {
+      "w": "listrik",
+      "start": 0.412,
+      "end": 0.824
+     },
+     {
+      "w": "ditulis",
+      "start": 0.824,
+      "end": 1.442
+     },
+     {
+      "w": "Q.",
+      "start": 1.442,
+      "end": 2.147
+     },
+     {
+      "w": "Konon",
+      "start": 2.147,
+      "end": 2.559
+     },
+     {
+      "w": "dari",
+      "start": 2.559,
+      "end": 3.277
+     },
+     {
+      "w": "quantity",
+      "start": 3.277,
+      "end": 3.689
+     },
+     {
+      "w": "of",
+      "start": 3.689,
+      "end": 3.895
+     },
+     {
+      "w": "electricity,",
+      "start": 3.895,
+      "end": 5.044
+     },
+     {
+      "w": "istilah",
+      "start": 5.044,
+      "end": 5.662
+     },
+     {
+      "w": "lama",
+      "start": 5.662,
+      "end": 6.074
+     },
+     {
+      "w": "untuk",
+      "start": 6.074,
+      "end": 6.487
+     },
+     {
+      "w": "muatan.",
+      "start": 6.487,
+      "end": 7.282
+     },
+     {
+      "w": "Satuannya",
+      "start": 7.282,
+      "end": 8.173
+     },
+     {
+      "w": "coulomb.",
+      "start": 8.173,
+      "end": 8.751
+     }
+    ]
    }
   },
   {
    "id": "v",
    "type": "lambang",
-   "durasi": 10,
+   "durasi": 11.0,
    "bg": "navy",
    "transisi": "iris",
    "narasi": "Tegangan listrik ditulis V, satuannya volt. Keduanya dari nama Alessandro Volta, penemu baterai pertama sekitar tahun 1800.",
@@ -195,15 +474,18 @@
     "momen": [
      {
       "nama": "urai",
-      "kata": "Volta,"
+      "kata": "volt.",
+      "at": 2.74
      },
      {
       "nama": "info",
-      "kata": "penemu"
+      "kata": "penemu",
+      "at": 5.86
      },
      {
       "nama": "rumus",
-      "kata": "tahun"
+      "kata": "1800.",
+      "at": 8.92
      }
     ],
     "tex": "V = \\frac{W}{Q}"
@@ -218,12 +500,103 @@
       "at": 0.5
      }
     ]
+   },
+   "vo": {
+    "file": "audio/lambang-fisika-part3/4-v.mp3",
+    "durasi": 9.639,
+    "words": [
+     {
+      "w": "Tegangan",
+      "start": 0.0,
+      "end": 0.553
+     },
+     {
+      "w": "listrik",
+      "start": 0.553,
+      "end": 0.921
+     },
+     {
+      "w": "ditulis",
+      "start": 0.921,
+      "end": 1.474
+     },
+     {
+      "w": "V,",
+      "start": 1.474,
+      "end": 1.989
+     },
+     {
+      "w": "satuannya",
+      "start": 1.989,
+      "end": 2.542
+     },
+     {
+      "w": "volt.",
+      "start": 2.542,
+      "end": 2.726
+     },
+     {
+      "w": "Keduanya",
+      "start": 2.726,
+      "end": 3.816
+     },
+     {
+      "w": "dari",
+      "start": 3.816,
+      "end": 4.185
+     },
+     {
+      "w": "nama",
+      "start": 4.185,
+      "end": 4.553
+     },
+     {
+      "w": "Alessandro",
+      "start": 4.553,
+      "end": 5.29
+     },
+     {
+      "w": "Volta,",
+      "start": 5.29,
+      "end": 5.659
+     },
+     {
+      "w": "penemu",
+      "start": 5.659,
+      "end": 6.407
+     },
+     {
+      "w": "baterai",
+      "start": 6.407,
+      "end": 6.959
+     },
+     {
+      "w": "pertama",
+      "start": 6.959,
+      "end": 7.796
+     },
+     {
+      "w": "sekitar",
+      "start": 7.796,
+      "end": 8.349
+     },
+     {
+      "w": "tahun",
+      "start": 8.349,
+      "end": 8.718
+     },
+     {
+      "w": "1800.",
+      "start": 8.718,
+      "end": 9.639
+     }
+    ]
    }
   },
   {
    "id": "r",
    "type": "lambang",
-   "durasi": 11,
+   "durasi": 12.8,
    "bg": "navy",
    "transisi": "iris",
    "narasi": "Hambatan ditulis R, dari resistance. Satuannya ohm, dari nama Georg Ohm, dengan lambang omega, huruf Yunani yang bunyinya mirip ohm.",
@@ -240,15 +613,18 @@
     "momen": [
      {
       "nama": "urai",
-      "kata": "resistance."
+      "kata": "resistance.",
+      "at": 2.87
      },
      {
       "nama": "info",
-      "kata": "Satuannya"
+      "kata": "Satuannya",
+      "at": 3.67
      },
      {
       "nama": "rumus",
-      "kata": "omega,"
+      "kata": "omega,",
+      "at": 7.77
      }
     ],
     "tex": "R = \\frac{V}{I}"
@@ -270,12 +646,118 @@
       "at": 0.8
      }
     ]
+   },
+   "vo": {
+    "file": "audio/lambang-fisika-part3/5-r.mp3",
+    "durasi": 11.468,
+    "words": [
+     {
+      "w": "Hambatan",
+      "start": 0.0,
+      "end": 0.603
+     },
+     {
+      "w": "ditulis",
+      "start": 0.603,
+      "end": 1.379
+     },
+     {
+      "w": "R,",
+      "start": 1.379,
+      "end": 1.902
+     },
+     {
+      "w": "dari",
+      "start": 1.902,
+      "end": 2.668
+     },
+     {
+      "w": "resistance.",
+      "start": 2.668,
+      "end": 3.472
+     },
+     {
+      "w": "Satuannya",
+      "start": 3.472,
+      "end": 4.441
+     },
+     {
+      "w": "ohm,",
+      "start": 4.441,
+      "end": 4.866
+     },
+     {
+      "w": "dari",
+      "start": 4.866,
+      "end": 5.525
+     },
+     {
+      "w": "nama",
+      "start": 5.525,
+      "end": 5.927
+     },
+     {
+      "w": "Georg",
+      "start": 5.927,
+      "end": 6.128
+     },
+     {
+      "w": "Ohm,",
+      "start": 6.128,
+      "end": 6.329
+     },
+     {
+      "w": "dengan",
+      "start": 6.329,
+      "end": 6.889
+     },
+     {
+      "w": "lambang",
+      "start": 6.889,
+      "end": 7.566
+     },
+     {
+      "w": "omega,",
+      "start": 7.566,
+      "end": 8.169
+     },
+     {
+      "w": "huruf",
+      "start": 8.169,
+      "end": 8.571
+     },
+     {
+      "w": "Yunani",
+      "start": 8.571,
+      "end": 9.353
+     },
+     {
+      "w": "yang",
+      "start": 9.353,
+      "end": 9.554
+     },
+     {
+      "w": "bunyinya",
+      "start": 9.554,
+      "end": 10.157
+     },
+     {
+      "w": "mirip",
+      "start": 10.157,
+      "end": 11.077
+     },
+     {
+      "w": "ohm.",
+      "start": 11.077,
+      "end": 11.468
+     }
+    ]
    }
   },
   {
    "id": "rangkaian",
    "type": "diagram",
-   "durasi": 12,
+   "durasi": 12.2,
    "bg": "cokelat",
    "transisi": "iris",
    "narasi": "Sekarang gabungkan. Baterai memberi tegangan V, arus I mengalir, dan hambatan R menahannya. Itulah hukum Ohm: V sama dengan I kali R.",
@@ -296,7 +778,7 @@
       "dur": 0.4,
       "kata": "gabungkan.",
       "width": 6,
-      "at": 0.5
+      "at": 0.91
      },
      {
       "type": "line",
@@ -312,7 +794,7 @@
       "kata": "gabungkan.",
       "kataMaju": -0.3,
       "width": 6,
-      "at": 0.5
+      "at": 1.31
      },
      {
       "type": "line",
@@ -328,7 +810,7 @@
       "kata": "gabungkan.",
       "kataMaju": -0.6,
       "width": 6,
-      "at": 0.5
+      "at": 1.61
      },
      {
       "type": "line",
@@ -344,7 +826,7 @@
       "kata": "gabungkan.",
       "kataMaju": -0.8,
       "width": 6,
-      "at": 0.5
+      "at": 1.81
      },
      {
       "type": "line",
@@ -360,7 +842,7 @@
       "kata": "gabungkan.",
       "kataMaju": -1.0,
       "width": 6,
-      "at": 0.5
+      "at": 2.01
      },
      {
       "type": "line",
@@ -376,7 +858,7 @@
       "kata": "gabungkan.",
       "kataMaju": -1.2,
       "width": 6,
-      "at": 0.5
+      "at": 2.21
      },
      {
       "type": "line",
@@ -392,7 +874,7 @@
       "kata": "gabungkan.",
       "kataMaju": -1.5,
       "width": 6,
-      "at": 0.5
+      "at": 2.51
      },
      {
       "type": "circle",
@@ -408,7 +890,7 @@
       "stroke": "emas",
       "fill": "emas",
       "fillOpacity": 0.25,
-      "at": 0.5
+      "at": 1.91
      },
      {
       "type": "path",
@@ -418,7 +900,7 @@
       "kataMaju": -1.0,
       "width": 5,
       "stroke": "emas",
-      "at": 0.5
+      "at": 2.01
      },
      {
       "type": "line",
@@ -434,7 +916,7 @@
       "kata": "Baterai",
       "width": 8,
       "stroke": "emas",
-      "at": 0.5
+      "at": 1.48
      },
      {
       "type": "line",
@@ -450,7 +932,7 @@
       "kata": "Baterai",
       "width": 14,
       "stroke": "emas",
-      "at": 0.5
+      "at": 1.48
      },
      {
       "type": "tex",
@@ -461,7 +943,7 @@
       "tex": "\\g{V}",
       "size": 80,
       "kata": "tegangan",
-      "at": 0.5
+      "at": 2.97
      },
      {
       "type": "polygon",
@@ -487,7 +969,7 @@
       "fillOpacity": 1,
       "width": 3,
       "focus": true,
-      "at": 0.5
+      "at": 4.76
      },
      {
       "type": "tex",
@@ -498,7 +980,7 @@
       "tex": "\\g{I}",
       "size": 80,
       "kata": "arus",
-      "at": 0.5
+      "at": 4.05
      },
      {
       "type": "path",
@@ -507,7 +989,7 @@
       "kata": "hambatan",
       "width": 6,
       "stroke": "emas",
-      "at": 0.5
+      "at": 5.64
      },
      {
       "type": "tex",
@@ -518,7 +1000,7 @@
       "tex": "\\g{R}",
       "size": 80,
       "kata": "menahannya.",
-      "at": 0.5
+      "at": 6.4
      },
      {
       "type": "tex",
@@ -529,7 +1011,123 @@
       "tex": "\\g{V = I \\cdot R}",
       "size": 110,
       "kata": "hukum",
-      "at": 0.5
+      "at": 8.05
+     }
+    ]
+   },
+   "vo": {
+    "file": "audio/lambang-fisika-part3/6-rangkaian.mp3",
+    "durasi": 10.841,
+    "words": [
+     {
+      "w": "Sekarang",
+      "start": 0.0,
+      "end": 0.714
+     },
+     {
+      "w": "gabungkan.",
+      "start": 0.714,
+      "end": 1.281
+     },
+     {
+      "w": "Baterai",
+      "start": 1.281,
+      "end": 2.202
+     },
+     {
+      "w": "memberi",
+      "start": 2.202,
+      "end": 2.769
+     },
+     {
+      "w": "tegangan",
+      "start": 2.769,
+      "end": 3.335
+     },
+     {
+      "w": "V,",
+      "start": 3.335,
+      "end": 3.851
+     },
+     {
+      "w": "arus",
+      "start": 3.851,
+      "end": 4.373
+     },
+     {
+      "w": "I",
+      "start": 4.373,
+      "end": 4.562
+     },
+     {
+      "w": "mengalir,",
+      "start": 4.562,
+      "end": 5.254
+     },
+     {
+      "w": "dan",
+      "start": 5.254,
+      "end": 5.442
+     },
+     {
+      "w": "hambatan",
+      "start": 5.442,
+      "end": 6.009
+     },
+     {
+      "w": "R",
+      "start": 6.009,
+      "end": 6.198
+     },
+     {
+      "w": "menahannya.",
+      "start": 6.198,
+      "end": 7.282
+     },
+     {
+      "w": "Itulah",
+      "start": 7.282,
+      "end": 7.848
+     },
+     {
+      "w": "hukum",
+      "start": 7.848,
+      "end": 8.537
+     },
+     {
+      "w": "Ohm:",
+      "start": 8.537,
+      "end": 8.726
+     },
+     {
+      "w": "V",
+      "start": 8.726,
+      "end": 8.915
+     },
+     {
+      "w": "sama",
+      "start": 8.915,
+      "end": 9.292
+     },
+     {
+      "w": "dengan",
+      "start": 9.292,
+      "end": 9.798
+     },
+     {
+      "w": "I",
+      "start": 9.798,
+      "end": 9.987
+     },
+     {
+      "w": "kali",
+      "start": 9.987,
+      "end": 10.364
+     },
+     {
+      "w": "R.",
+      "start": 10.364,
+      "end": 10.841
      }
     ]
    }
@@ -537,7 +1135,7 @@
   {
    "id": "penutup",
    "type": "outro",
-   "durasi": 7.5,
+   "durasi": 8.4,
    "bg": "navy",
    "bingkai": true,
    "transisi": "fade",
@@ -546,6 +1144,92 @@
     "kesimpulan": "Lambang listrik = jejak para penemunya",
     "tex": "\\g{V = I \\cdot R}",
     "ajakan": "Part 2: lambang gaya & energi →"
+   },
+   "vo": {
+    "file": "audio/lambang-fisika-part3/7-penutup.mp3",
+    "durasi": 7.314,
+    "words": [
+     {
+      "w": "Jadi",
+      "start": 0.0,
+      "end": 0.368
+     },
+     {
+      "w": "lambang",
+      "start": 0.368,
+      "end": 0.736
+     },
+     {
+      "w": "listrik",
+      "start": 0.736,
+      "end": 1.104
+     },
+     {
+      "w": "menyimpan",
+      "start": 1.104,
+      "end": 1.656
+     },
+     {
+      "w": "cerita",
+      "start": 1.656,
+      "end": 2.208
+     },
+     {
+      "w": "para",
+      "start": 2.208,
+      "end": 2.576
+     },
+     {
+      "w": "penemunya.",
+      "start": 2.576,
+      "end": 3.74
+     },
+     {
+      "w": "Di",
+      "start": 3.74,
+      "end": 3.924
+     },
+     {
+      "w": "part",
+      "start": 3.924,
+      "end": 4.108
+     },
+     {
+      "w": "berikutnya,",
+      "start": 4.108,
+      "end": 4.98
+     },
+     {
+      "w": "kita",
+      "start": 4.98,
+      "end": 5.348
+     },
+     {
+      "w": "bongkar",
+      "start": 5.348,
+      "end": 5.716
+     },
+     {
+      "w": "lambang",
+      "start": 5.716,
+      "end": 6.083
+     },
+     {
+      "w": "gaya",
+      "start": 6.083,
+      "end": 6.451
+     },
+     {
+      "w": "dan",
+      "start": 6.451,
+      "end": 6.635
+     },
+     {
+      "w": "energi.",
+      "start": 6.635,
+      "end": 7.314
+     }
+    ]
    }
   },
   {
@@ -564,6 +1248,37 @@
      "Buku teks Fisika SMA (Kemendikbud) — Listrik Arus Searah, hukum Ohm"
     ],
     "catatan": "Asal huruf Q (quantity) belum tercatat pasti, jadi disebut “konon”. Rangkaian dianggap ideal: hambatan kabel dan baterai diabaikan."
+   },
+   "vo": {
+    "file": "audio/lambang-fisika-part3/8-sumber.mp3",
+    "durasi": 1.802,
+    "words": [
+     {
+      "w": "Sumber",
+      "start": 0.0,
+      "end": 0.359
+     },
+     {
+      "w": "riset",
+      "start": 0.359,
+      "end": 0.718
+     },
+     {
+      "w": "ada",
+      "start": 0.718,
+      "end": 1.077
+     },
+     {
+      "w": "di",
+      "start": 1.077,
+      "end": 1.256
+     },
+     {
+      "w": "layar.",
+      "start": 1.256,
+      "end": 1.802
+     }
+    ]
    }
   }
  ]
