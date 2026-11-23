@@ -4,6 +4,8 @@ import polaJson from "../konten/pola-salah.json";
 import { SEMUA_TEMPLAT } from "../konten/templat";
 import { buatSoal, samaJawaban } from "../src/templat";
 import { existsSync, readFileSync } from "node:fs";
+import { POLA_LANGKAH } from "../konten/pola-langkah";
+import { cekLangkah } from "../src/langkah";
 import { POLA_BELUM_SEDERHANA } from "../src/cek";
 import type { Peta } from "../src/peta";
 
@@ -80,7 +82,7 @@ describe("templat", () => {
   }
 });
 
-const JALUR_PENUH = ["J07"];
+const JALUR_PENUH = ["J07", "J12"];
 
 describe("modul jalur penuh", () => {
   for (const s of peta.simpul.filter((x) => JALUR_PENUH.includes(x.jalur))) {
@@ -93,4 +95,20 @@ describe("modul jalur penuh", () => {
       expect(SEMUA_TEMPLAT.some((t) => t.simpul === s.id), `templat untuk ${s.id}`).toBe(true);
     });
   }
+});
+
+describe("pola langkah J12", () => {
+  const contoh: [string, string, string[]][] = [
+    ["PERS-PINDAH-TANDA-TETAP", "2x+3=11", ["2x=14"]],
+    ["PERS-PINDAH-TANDA-TETAP", "5x-2=2x+7", ["7x-2=7"]],
+    ["PERS-BAGI-SATU-SUKU", "2x+6=10", ["x+6=5"]],
+    ["PERS-KURANG-KOEF", "3x=12", ["x=9"]],
+    ["PERS-KALI-BUKAN-BAGI", "3x=12", ["x=36"]],
+  ];
+  it.each(contoh)("%s terdeteksi pada %s", (id, awal, langkah) => {
+    expect(cekLangkah(awal, langkah, "x", POLA_LANGKAH)).toEqual({ benar: false, jatuhDi: 0, polaId: id });
+  });
+  it("tiap pola langkah terdaftar di pola-salah.json", () => {
+    for (const p of POLA_LANGKAH) expect(idPola.has(p.id), p.id).toBe(true);
+  });
 });

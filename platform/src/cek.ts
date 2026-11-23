@@ -14,12 +14,12 @@ export const POLA_BELUM_SEDERHANA = "UMUM-BELUM-SEDERHANA";
 type Terbaca = { cocok(j: Jawaban): boolean; belumSederhana: boolean };
 
 function baca(soal: Soal, teks: string): Terbaca | null {
+  const tanpaRuasKiri = teks.replace(/^\s*\p{L}\s*=/u, "");
   if (soal.kunci.jenis === "bilangan") {
-    const b = bacaBilangan(teks);
+    const b = bacaBilangan(tanpaRuasKiri);
     if (!b) return null;
     return { belumSederhana: b.belumSederhana, cocok: (j) => j.jenis === "bilangan" && sama(j.nilai, b.nilai) };
   }
-  const tanpaRuasKiri = teks.replace(/^\s*\p{L}\s*=/u, "");
   const e = bacaEkspresi(tanpaRuasKiri);
   if (!e) return null;
   return {

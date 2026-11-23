@@ -31,6 +31,7 @@ describe("cekJawaban bilangan", () => {
     expect(cekJawaban(soal, "2/5")).toEqual({ status: "pola", polaId: "PEC-JUMLAH-LURUS" }));
   it("tak dikenal", () => expect(cekJawaban(soal, "7/9")).toEqual({ status: "tak-dikenal" }));
   it("tak terbaca", () => expect(cekJawaban(soal, "xx")).toEqual({ status: "tak-terbaca" }));
+  it("boleh menulis x = di depan bilangan", () => expect(cekJawaban(soal, "x = 5/6")).toEqual({ status: "benar" }));
   it("belum sederhana saat wajib", () =>
     expect(cekJawaban(soal, "10/12")).toEqual({ status: "pola", polaId: "UMUM-BELUM-SEDERHANA", belumSederhana: true }));
   it("belum sederhana boleh bila tidak wajib", () => {

@@ -119,5 +119,77 @@
   "nama": "Bilangan bulat dikalikan ke penyebut",
   "sebut": "Bilangan bulatnya kamu kalikan ke penyebut. Seharusnya ke pembilang.",
   "tunjukkan": "10 = 10/1. Jadi 10 × 1/2 = (10 × 1)/(1 × 2) = 10/2 = 5. Bilangan bulat ikut mengalikan pembilang."
+ },
+ {
+  "id": "PERS-PINDAH-TANDA-TETAP",
+  "simpul": "J12-02",
+  "nama": "Pindah ruas tanpa ganti operasi",
+  "sebut": "Sepertinya suku itu kamu pindahkan ke ruas lain tanpa mengganti tandanya.",
+  "tunjukkan": "Bayangkan timbangan: x + 3 = 11. Untuk menghilangkan +3 di kiri, kedua piring dikurangi 3 → x = 11 − 3 = 8. 'Pindah ruas' sebenarnya adalah melakukan operasi kebalikan di kedua ruas.",
+  "sumber": "https://www.exeter.ac.uk/research/groups/education/pmej/pome15/errors.htm"
+ },
+ {
+  "id": "PERS-KURANG-TERBALIK",
+  "simpul": "J12-02",
+  "nama": "Urutan pengurangan terbalik",
+  "sebut": "Sepertinya urutan pengurangannya terbalik, jadi tandanya ikut terbalik.",
+  "tunjukkan": "Pengurangan tidak bisa dibolak-balik: 11 − 3 = 8, tapi 3 − 11 = −8. Tulis langkahnya: x = (ruas kanan) − (angka yang dipindah)."
+ },
+ {
+  "id": "PERS-ABAIKAN-SUKU",
+  "simpul": "J12-02",
+  "nama": "Suku angka diabaikan",
+  "sebut": "Sepertinya angka di samping x belum kamu urus.",
+  "tunjukkan": "Kalau x + 3 = 11, x belum sendirian. Hilangkan dulu +3 dari kedua ruas, baru x ketemu."
+ },
+ {
+  "id": "PERS-KURANG-KOEF",
+  "simpul": "J12-03",
+  "nama": "Koefisien dikurangkan, bukan dibagi",
+  "sebut": "Sepertinya angka di depan x kamu kurangkan.",
+  "tunjukkan": "3x artinya 3 × x. Kebalikan dari dikali 3 adalah dibagi 3. Jadi 3x = 12 → x = 12 ÷ 3 = 4. Cek: 3 × 4 = 12 ✓."
+ },
+ {
+  "id": "PERS-KALI-BUKAN-BAGI",
+  "simpul": "J12-03",
+  "nama": "Koefisien dikalikan, bukan dibagi",
+  "sebut": "Sepertinya kamu mengalikan, padahal harusnya dibagi.",
+  "tunjukkan": "Cek jawabanmu dengan memasukkannya ke soal: kalau 3x = 12 dan x = 36, maka 3 × 36 = 108, bukan 12. Kebalikan 'dikali 3' adalah 'dibagi 3'."
+ },
+ {
+  "id": "PERS-BAGI-TERBALIK",
+  "simpul": "J12-03",
+  "nama": "Pembagian terbalik",
+  "sebut": "Pembagiannya terbalik: yang dibagi justru angka di depan x.",
+  "tunjukkan": "3x = 12 → x = 12/3, bukan 3/12. Yang dibagi adalah ruas kanan, pembaginya angka di depan x."
+ },
+ {
+  "id": "PERS-BAGI-SATU-SUKU",
+  "simpul": "J12-04",
+  "nama": "Membagi hanya satu suku",
+  "sebut": "Sepertinya hanya sebagian suku yang kamu bagi.",
+  "tunjukkan": "Pada 2x + 6 = 10, membagi dengan 2 harus untuk semua suku: x + 3 = 5. Lebih aman: kurangi 6 dulu → 2x = 4, baru bagi 2 → x = 2.",
+  "sumber": "https://core.ac.uk/download/270294089.pdf"
+ },
+ {
+  "id": "PERS-KURUNG-SEBAGIAN",
+  "simpul": "J12-06",
+  "nama": "Hanya sebagian isi kurung yang dikali",
+  "sebut": "Sepertinya angka di depan kurung hanya kamu kalikan ke x saja.",
+  "tunjukkan": "3(x + 2) = 3x + 6, karena 3 dikalikan ke semua yang di dalam kurung. Atau bagi dulu kedua ruas dengan 3: x + 2 = …"
+ },
+ {
+  "id": "PERS-BAGI-BUKAN-KALI",
+  "simpul": "J12-07",
+  "nama": "Membagi, padahal harus dikali",
+  "sebut": "Sepertinya kamu membagi lagi. Untuk menghilangkan '/a', kebalikannya dikali a.",
+  "tunjukkan": "x/4 = 3 → x = 3 × 4 = 12. Cek: 12/4 = 3 ✓."
+ },
+ {
+  "id": "PERS-KALI-SATU-SUKU",
+  "simpul": "J12-07",
+  "nama": "Hanya satu suku yang dikali",
+  "sebut": "Sepertinya saat mengalikan, hanya satu suku yang kamu kalikan.",
+  "tunjukkan": "Kalau kedua ruas dikali 4, semua suku ikut dikali: x/4 + 2 = 5 → x + 8 = 20. Lebih aman: kurangi 2 dulu → x/4 = 3 → x = 12."
  }
 ]
