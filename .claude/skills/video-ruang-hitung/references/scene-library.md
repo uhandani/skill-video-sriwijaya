@@ -173,3 +173,19 @@ rumus. `kata` harus diawali `huruf`. `status: "konon"` menampilkan lencana "KONO
 wajib untuk asal-usul yang tidak tercatat jelas. Contoh: `studio/src/storyboards/lambang-fisika-part1.json`.
 Pakai `kataKe` bila kata isyarat juga muncul lebih awal di narasi (mis. "kecepatan").
 Hemat kredit VO: kalimat yang persis sama (mis. "Sumber riset ada di layar.") boleh memakai ulang file audio video lain.
+
+## `kembar` — huruf kembar (satu huruf, beberapa arti)
+
+Untuk seri "Kode Rahasia Lambang Fisika" Part 6. Setiap varian menjadi kartu: huruf emas | istilah
+(huruf awal emas) + `besaran · satuan` | rumus opsional. Kartu muncul pada `at`, atau otomatis
+dari isyarat `kata` (diisi `npm run sinkron`).
+
+```json
+{ "type": "kembar", "props": { "kicker": "Lambang Fisika · Part 6", "judul": "Huruf P",
+  "varian": [
+    { "huruf": "P", "istilah": "Power", "besaran": "daya", "satuan": "watt (W)", "tex": "P = \\frac{W}{t}", "kata": "power," },
+    { "huruf": "P", "istilah": "Pressure", "besaran": "tekanan", "satuan": "pascal (Pa)", "tex": "P = \\frac{F}{A}", "kata": "pressure," }
+  ] } }
+```
+- `istilah` = teks tampilan; `kata` = isyarat sinkron (kata di narasi, termasuk tanda baca).
+- Maksimal 3 varian agar muat di layar 9:16.

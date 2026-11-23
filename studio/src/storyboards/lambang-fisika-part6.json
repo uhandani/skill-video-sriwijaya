@@ -45,12 +45,88 @@
     "judul": "Huruf Kembar!",
     "sub": "Satu huruf, beda arti",
     "tandaTanya": true
+   },
+   "vo": {
+    "file": "audio/lambang-fisika-part6/1-hook.mp3",
+    "durasi": 5.407,
+    "words": [
+     {
+      "w": "Huruf",
+      "start": 0.0,
+      "end": 0.54
+     },
+     {
+      "w": "P",
+      "start": 0.54,
+      "end": 0.71
+     },
+     {
+      "w": "di",
+      "start": 0.711,
+      "end": 0.881
+     },
+     {
+      "w": "fisika",
+      "start": 0.881,
+      "end": 1.393
+     },
+     {
+      "w": "bisa",
+      "start": 1.393,
+      "end": 2.077
+     },
+     {
+      "w": "berarti",
+      "start": 2.077,
+      "end": 2.589
+     },
+     {
+      "w": "dua",
+      "start": 2.589,
+      "end": 2.759
+     },
+     {
+      "w": "hal",
+      "start": 2.759,
+      "end": 2.93
+     },
+     {
+      "w": "yang",
+      "start": 2.93,
+      "end": 3.1
+     },
+     {
+      "w": "beda",
+      "start": 3.1,
+      "end": 3.441
+     },
+     {
+      "w": "jauh.",
+      "start": 3.441,
+      "end": 3.612
+     },
+     {
+      "w": "Kamu",
+      "start": 3.612,
+      "end": 4.393
+     },
+     {
+      "w": "pernah",
+      "start": 4.393,
+      "end": 4.734
+     },
+     {
+      "w": "ketukar?",
+      "start": 4.734,
+      "end": 5.407
+     }
+    ]
    }
   },
   {
    "id": "p",
    "type": "kembar",
-   "durasi": 9,
+   "durasi": 11.8,
    "bg": "navy",
    "transisi": "iris",
    "narasi": "P bisa power, artinya daya, satuannya watt. Tapi P juga bisa pressure, artinya tekanan, satuannya pascal.",
@@ -63,7 +139,7 @@
       "besaran": "daya",
       "satuan": "watt (W)",
       "tex": "P=\\frac{W}{t}",
-      "at": 1.0,
+      "at": 0.83,
       "istilah": "Power",
       "kata": "power,"
      },
@@ -72,18 +148,104 @@
       "besaran": "tekanan",
       "satuan": "pascal (Pa)",
       "tex": "P=\\frac{F}{A}",
-      "at": 4.0,
+      "at": 6.46,
       "istilah": "Pressure",
       "kata": "pressure,"
      }
     ]
    },
-   "tts": "Pe bisa, power, artinya daya, satuannya watt. Tapi pe juga bisa, pressure, artinya tekanan, satuannya pascal."
+   "tts": "Pe bisa, power, artinya daya, satuannya watt. Tapi pe juga bisa, pressure, artinya tekanan, satuannya pascal.",
+   "vo": {
+    "file": "audio/lambang-fisika-part6/2-p.mp3",
+    "durasi": 10.449,
+    "words": [
+     {
+      "w": "P",
+      "start": 0.0,
+      "end": 0.211
+     },
+     {
+      "w": "bisa",
+      "start": 0.211,
+      "end": 0.632
+     },
+     {
+      "w": "power,",
+      "start": 0.632,
+      "end": 1.468
+     },
+     {
+      "w": "artinya",
+      "start": 1.468,
+      "end": 2.442
+     },
+     {
+      "w": "daya,",
+      "start": 2.442,
+      "end": 2.864
+     },
+     {
+      "w": "satuannya",
+      "start": 2.864,
+      "end": 3.861
+     },
+     {
+      "w": "watt.",
+      "start": 3.861,
+      "end": 4.071
+     },
+     {
+      "w": "Tapi",
+      "start": 4.071,
+      "end": 4.992
+     },
+     {
+      "w": "P",
+      "start": 4.992,
+      "end": 5.203
+     },
+     {
+      "w": "juga",
+      "start": 5.203,
+      "end": 5.834
+     },
+     {
+      "w": "bisa",
+      "start": 5.834,
+      "end": 6.255
+     },
+     {
+      "w": "pressure,",
+      "start": 6.255,
+      "end": 7.578
+     },
+     {
+      "w": "artinya",
+      "start": 7.578,
+      "end": 8.21
+     },
+     {
+      "w": "tekanan,",
+      "start": 8.21,
+      "end": 9.09
+     },
+     {
+      "w": "satuannya",
+      "start": 9.09,
+      "end": 9.85
+     },
+     {
+      "w": "pascal.",
+      "start": 9.85,
+      "end": 10.449
+     }
+    ]
+   }
   },
   {
    "id": "v",
    "type": "kembar",
-   "durasi": 10,
+   "durasi": 12.3,
    "bg": "navy",
    "transisi": "iris",
    "narasi": "Huruf V lebih ramai. V besar bisa voltage, tegangan listrik, atau volume. Sedangkan v kecil adalah velocity, kecepatan.",
@@ -95,7 +257,7 @@
       "huruf": "V",
       "besaran": "tegangan listrik",
       "satuan": "volt (V)",
-      "at": 1.0,
+      "at": 3.13,
       "istilah": "Voltage",
       "kata": "voltage,"
      },
@@ -103,7 +265,7 @@
       "huruf": "V",
       "besaran": "volume",
       "satuan": "m³",
-      "at": 3.0,
+      "at": 5.95,
       "istilah": "Volume",
       "kata": "volume."
      },
@@ -111,18 +273,114 @@
       "huruf": "v",
       "besaran": "kecepatan",
       "satuan": "m/s",
-      "at": 5.0,
+      "at": 8.82,
       "istilah": "velocity",
       "kata": "velocity,"
      }
     ]
    },
-   "tts": "Huruf ve lebih ramai. Ve besar bisa, voltage, tegangan listrik, atau volume. Sedangkan ve kecil adalah, velocity, kecepatan."
+   "tts": "Huruf ve lebih ramai. Ve besar bisa, voltage, tegangan listrik, atau volume. Sedangkan ve kecil adalah, velocity, kecepatan.",
+   "vo": {
+    "file": "audio/lambang-fisika-part6/3-v.mp3",
+    "durasi": 10.919,
+    "words": [
+     {
+      "w": "Huruf",
+      "start": 0.0,
+      "end": 0.422
+     },
+     {
+      "w": "V",
+      "start": 0.422,
+      "end": 0.633
+     },
+     {
+      "w": "lebih",
+      "start": 0.633,
+      "end": 1.055
+     },
+     {
+      "w": "ramai.",
+      "start": 1.055,
+      "end": 1.478
+     },
+     {
+      "w": "V",
+      "start": 1.478,
+      "end": 2.09
+     },
+     {
+      "w": "besar",
+      "start": 2.09,
+      "end": 2.512
+     },
+     {
+      "w": "bisa",
+      "start": 2.512,
+      "end": 2.934
+     },
+     {
+      "w": "voltage,",
+      "start": 2.934,
+      "end": 3.99
+     },
+     {
+      "w": "tegangan",
+      "start": 3.99,
+      "end": 4.906
+     },
+     {
+      "w": "listrik,",
+      "start": 4.906,
+      "end": 5.328
+     },
+     {
+      "w": "atau",
+      "start": 5.328,
+      "end": 5.75
+     },
+     {
+      "w": "volume.",
+      "start": 5.75,
+      "end": 6.384
+     },
+     {
+      "w": "Sedangkan",
+      "start": 6.384,
+      "end": 7.356
+     },
+     {
+      "w": "v",
+      "start": 7.356,
+      "end": 7.567
+     },
+     {
+      "w": "kecil",
+      "start": 7.567,
+      "end": 7.989
+     },
+     {
+      "w": "adalah",
+      "start": 7.989,
+      "end": 8.622
+     },
+     {
+      "w": "velocity,",
+      "start": 8.622,
+      "end": 9.618
+     },
+     {
+      "w": "kecepatan.",
+      "start": 9.618,
+      "end": 10.919
+     }
+    ]
+   }
   },
   {
    "id": "t",
    "type": "kembar",
-   "durasi": 8,
+   "durasi": 9.8,
    "bg": "navy",
    "transisi": "iris",
    "narasi": "T bisa temperature, artinya suhu. Di materi getaran, T adalah periode, waktu untuk satu getaran.",
@@ -134,7 +392,7 @@
       "huruf": "T",
       "besaran": "suhu",
       "satuan": "kelvin (K)",
-      "at": 1.0,
+      "at": 0.73,
       "istilah": "Temperature",
       "kata": "temperature,"
      },
@@ -143,18 +401,99 @@
       "besaran": "periode getaran",
       "satuan": "sekon (s)",
       "tex": "T=\\frac{t}{n}",
-      "at": 3.5,
+      "at": 5.89,
       "istilah": "Time (periode)",
       "kata": "periode,"
      }
     ]
    },
-   "tts": "Te bisa, temperature, artinya suhu. Di materi getaran, te adalah periode, waktu untuk satu getaran."
+   "tts": "Te bisa, temperature, artinya suhu. Di materi getaran, te adalah periode, waktu untuk satu getaran.",
+   "vo": {
+    "file": "audio/lambang-fisika-part6/4-t.mp3",
+    "durasi": 8.438,
+    "words": [
+     {
+      "w": "T",
+      "start": 0.0,
+      "end": 0.177
+     },
+     {
+      "w": "bisa",
+      "start": 0.177,
+      "end": 0.53
+     },
+     {
+      "w": "temperature,",
+      "start": 0.53,
+      "end": 2.134
+     },
+     {
+      "w": "artinya",
+      "start": 2.134,
+      "end": 2.664
+     },
+     {
+      "w": "suhu.",
+      "start": 2.664,
+      "end": 3.018
+     },
+     {
+      "w": "Di",
+      "start": 3.018,
+      "end": 3.624
+     },
+     {
+      "w": "materi",
+      "start": 3.624,
+      "end": 4.154
+     },
+     {
+      "w": "getaran,",
+      "start": 4.154,
+      "end": 4.685
+     },
+     {
+      "w": "T",
+      "start": 4.685,
+      "end": 5.157
+     },
+     {
+      "w": "adalah",
+      "start": 5.157,
+      "end": 5.688
+     },
+     {
+      "w": "periode,",
+      "start": 5.688,
+      "end": 6.218
+     },
+     {
+      "w": "waktu",
+      "start": 6.218,
+      "end": 7.041
+     },
+     {
+      "w": "untuk",
+      "start": 7.041,
+      "end": 7.394
+     },
+     {
+      "w": "satu",
+      "start": 7.394,
+      "end": 7.748
+     },
+     {
+      "w": "getaran.",
+      "start": 7.748,
+      "end": 8.438
+     }
+    ]
+   }
   },
   {
    "id": "w",
    "type": "kembar",
-   "durasi": 9,
+   "durasi": 11.3,
    "bg": "navy",
    "transisi": "iris",
    "narasi": "Lalu W besar adalah work, usaha, satuannya joule. Sedangkan w kecil adalah weight, berat, satuannya newton.",
@@ -167,7 +506,7 @@
       "besaran": "usaha",
       "satuan": "joule (J)",
       "tex": "W=F\\cdot s",
-      "at": 1.0,
+      "at": 2.29,
       "istilah": "Work",
       "kata": "work,"
      },
@@ -176,18 +515,104 @@
       "besaran": "berat",
       "satuan": "newton (N)",
       "tex": "w=m\\cdot g",
-      "at": 4.0,
+      "at": 7.59,
       "istilah": "weight",
       "kata": "weight,"
      }
     ]
    },
-   "tts": "Lalu we besar adalah, work, usaha, satuannya joule. Sedangkan we kecil adalah, weight, berat, satuannya newton."
+   "tts": "Lalu we besar adalah, work, usaha, satuannya joule. Sedangkan we kecil adalah, weight, berat, satuannya newton.",
+   "vo": {
+    "file": "audio/lambang-fisika-part6/5-w.mp3",
+    "durasi": 9.953,
+    "words": [
+     {
+      "w": "Lalu",
+      "start": 0.0,
+      "end": 0.446
+     },
+     {
+      "w": "W",
+      "start": 0.446,
+      "end": 0.668
+     },
+     {
+      "w": "besar",
+      "start": 0.668,
+      "end": 1.114
+     },
+     {
+      "w": "adalah",
+      "start": 1.114,
+      "end": 2.094
+     },
+     {
+      "w": "work,",
+      "start": 2.094,
+      "end": 2.317
+     },
+     {
+      "w": "usaha,",
+      "start": 2.317,
+      "end": 3.734
+     },
+     {
+      "w": "satuannya",
+      "start": 3.734,
+      "end": 4.402
+     },
+     {
+      "w": "joule.",
+      "start": 4.402,
+      "end": 4.848
+     },
+     {
+      "w": "Sedangkan",
+      "start": 4.848,
+      "end": 5.843
+     },
+     {
+      "w": "w",
+      "start": 5.843,
+      "end": 6.066
+     },
+     {
+      "w": "kecil",
+      "start": 6.066,
+      "end": 6.512
+     },
+     {
+      "w": "adalah",
+      "start": 6.512,
+      "end": 7.387
+     },
+     {
+      "w": "weight,",
+      "start": 7.387,
+      "end": 7.835
+     },
+     {
+      "w": "berat,",
+      "start": 7.835,
+      "end": 8.631
+     },
+     {
+      "w": "satuannya",
+      "start": 8.631,
+      "end": 9.3
+     },
+     {
+      "w": "newton.",
+      "start": 9.3,
+      "end": 9.953
+     }
+    ]
+   }
   },
   {
    "id": "trik",
    "type": "title",
-   "durasi": 7,
+   "durasi": 8.4,
    "bg": "cokelat",
    "transisi": "iris",
    "narasi": "Triknya: lihat satuan dan konteks soalnya. Huruf bisa kembar, satuan tidak pernah bohong.",
@@ -195,12 +620,83 @@
     "kicker": "Trik anti ketukar",
     "judul": "Cek satuannya!",
     "sub": "watt → daya · pascal → tekanan\njoule → usaha · newton → berat"
+   },
+   "vo": {
+    "file": "audio/lambang-fisika-part6/6-trik.mp3",
+    "durasi": 7.079,
+    "words": [
+     {
+      "w": "Triknya:",
+      "start": 0.0,
+      "end": 0.459
+     },
+     {
+      "w": "lihat",
+      "start": 0.459,
+      "end": 1.328
+     },
+     {
+      "w": "satuan",
+      "start": 1.328,
+      "end": 1.787
+     },
+     {
+      "w": "dan",
+      "start": 1.787,
+      "end": 2.016
+     },
+     {
+      "w": "konteks",
+      "start": 2.016,
+      "end": 2.475
+     },
+     {
+      "w": "soalnya.",
+      "start": 2.475,
+      "end": 2.934
+     },
+     {
+      "w": "Huruf",
+      "start": 2.934,
+      "end": 3.884
+     },
+     {
+      "w": "bisa",
+      "start": 3.884,
+      "end": 4.343
+     },
+     {
+      "w": "kembar,",
+      "start": 4.343,
+      "end": 5.061
+     },
+     {
+      "w": "satuan",
+      "start": 5.061,
+      "end": 5.519
+     },
+     {
+      "w": "tidak",
+      "start": 5.519,
+      "end": 5.978
+     },
+     {
+      "w": "pernah",
+      "start": 5.978,
+      "end": 6.437
+     },
+     {
+      "w": "bohong.",
+      "start": 6.437,
+      "end": 7.079
+     }
+    ]
    }
   },
   {
    "id": "penutup",
    "type": "outro",
-   "durasi": 7,
+   "durasi": 7.4,
    "bg": "navy",
    "bingkai": true,
    "transisi": "fade",
@@ -209,6 +705,82 @@
     "kesimpulan": "Huruf boleh kembar — satuannya yang membedakan",
     "tex": "\\g{P,\\ V,\\ T,\\ W}",
     "ajakan": "Part 3: lambang listrik →"
+   },
+   "vo": {
+    "file": "audio/lambang-fisika-part6/7-penutup.mp3",
+    "durasi": 6.348,
+    "words": [
+     {
+      "w": "Jadi",
+      "start": 0.0,
+      "end": 0.397
+     },
+     {
+      "w": "kalau",
+      "start": 0.397,
+      "end": 0.793
+     },
+     {
+      "w": "ketemu",
+      "start": 0.793,
+      "end": 1.389
+     },
+     {
+      "w": "huruf",
+      "start": 1.389,
+      "end": 1.785
+     },
+     {
+      "w": "kembar,",
+      "start": 1.785,
+      "end": 2.182
+     },
+     {
+      "w": "jangan",
+      "start": 2.182,
+      "end": 2.579
+     },
+     {
+      "w": "panik.",
+      "start": 2.579,
+      "end": 3.261
+     },
+     {
+      "w": "Di",
+      "start": 3.261,
+      "end": 3.459
+     },
+     {
+      "w": "part",
+      "start": 3.459,
+      "end": 3.657
+     },
+     {
+      "w": "berikutnya,",
+      "start": 3.657,
+      "end": 4.451
+     },
+     {
+      "w": "kita",
+      "start": 4.451,
+      "end": 4.848
+     },
+     {
+      "w": "bongkar",
+      "start": 4.848,
+      "end": 5.244
+     },
+     {
+      "w": "lambang",
+      "start": 5.244,
+      "end": 5.641
+     },
+     {
+      "w": "listrik.",
+      "start": 5.641,
+      "end": 6.348
+     }
+    ]
    }
   },
   {
@@ -225,6 +797,37 @@
      "Merriam-Webster — power, pressure, voltage, volume, velocity, temperature, work, weight"
     ],
     "catatan": "Lambang mengikuti kebiasaan buku pelajaran Indonesia; buku/negara lain bisa memakai huruf berbeda."
+   },
+   "vo": {
+    "file": "audio/lambang-fisika-part6/8-sumber.mp3",
+    "durasi": 1.802,
+    "words": [
+     {
+      "w": "Sumber",
+      "start": 0.0,
+      "end": 0.359
+     },
+     {
+      "w": "riset",
+      "start": 0.359,
+      "end": 0.718
+     },
+     {
+      "w": "ada",
+      "start": 0.718,
+      "end": 1.077
+     },
+     {
+      "w": "di",
+      "start": 1.077,
+      "end": 1.256
+     },
+     {
+      "w": "layar.",
+      "start": 1.256,
+      "end": 1.802
+     }
+    ]
    }
   }
  ]
