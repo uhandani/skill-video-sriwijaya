@@ -6,10 +6,10 @@ export { buatKodeKelas };
 type KelasM = Kelas & { guruId: string };
 
 /** Data di memori: untuk tes & mode demo (?demo=1). Aturan akses meniru RLS Supabase. */
-export function dataMemori(awal: { pengguna?: Pengguna; guruDiizinkan?: string[] } = {}) {
+export function dataMemori(awal: { pengguna?: Pengguna; guruDiizinkan?: string[]; kelasAwal?: { nama: string; kode: string; guruId: string }[] } = {}) {
   const guru = new Set((awal.guruDiizinkan ?? []).map((e) => e.toLowerCase()));
   const profil = new Map<string, Pengguna>();
-  const kelas: KelasM[] = [];
+  const kelas: KelasM[] = (awal.kelasAwal ?? []).map((k, i) => ({ id: `k-awal-${i + 1}`, aktif: true, ...k }));
   const anggota = new Map<string, string>(); // siswaId → kelasId
   const jawaban = new Map<string, BarisJawaban>();
   const status = new Map<string, { siswaId: string; simpul: string; status: Status }>();
