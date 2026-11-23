@@ -387,12 +387,14 @@
         370
        ]
       ],
-      "at": 0.3,
+      "at": 2.66,
       "dur": 1.0,
       "stroke": "krem",
       "fill": "cokelatTerang",
       "fillOpacity": 0.9,
-      "width": 6
+      "width": 6,
+      "kata": "mengunci.",
+      "kataMaju": 0.2
      },
      {
       "type": "polygon",
@@ -486,13 +488,14 @@
         700
        ]
       ],
-      "at": 8.16,
+      "at": 7.66,
       "dur": 1.0,
       "stroke": "krem",
       "fill": "cokelatTerang",
       "fillOpacity": 0.9,
       "width": 6,
-      "kata": "purus."
+      "kata": "purus.",
+      "kataMaju": 0.6
      },
      {
       "type": "polygon",
@@ -530,12 +533,14 @@
         860
        ]
       ],
-      "at": 3.0,
+      "at": 7.96,
       "dur": 1.0,
       "stroke": "krem",
       "fill": "navyTerang",
       "fillOpacity": 0.9,
-      "width": 6
+      "width": 6,
+      "kata": "purus.",
+      "kataMaju": 0.3
      },
      {
       "type": "circle",
@@ -544,11 +549,13 @@
        725
       ],
       "r": 60,
-      "at": 3.6,
+      "at": 8.56,
       "dur": 0.6,
       "stroke": "emas",
       "width": 5,
-      "dashed": true
+      "dashed": true,
+      "kata": "purus.",
+      "kataMaju": -0.3
      },
      {
       "type": "text",
@@ -559,7 +566,9 @@
       "text": "purus (pasak batu)",
       "size": 50,
       "fill": "emas",
-      "at": 3.8
+      "at": 8.66,
+      "kata": "purus.",
+      "kataMaju": -0.4
      }
     ]
    },
@@ -676,12 +685,14 @@
       "y": 640,
       "w": 440,
       "h": 160,
-      "at": 0.4,
+      "at": 0.89,
       "dur": 0.6,
       "stroke": "krem",
       "fill": "cokelatTerang",
       "fillOpacity": 0.9,
-      "width": 6
+      "width": 6,
+      "kata": "berat.",
+      "kataMaju": 0.3
      },
      {
       "type": "rect",
@@ -689,13 +700,13 @@
       "y": 480,
       "w": 340,
       "h": 160,
-      "at": 3.2,
+      "at": 2.84,
       "dur": 0.6,
       "stroke": "krem",
       "fill": "navyTerang",
       "fillOpacity": 0.9,
       "width": 6,
-      "kata": "menekan"
+      "kata": "atas"
      },
      {
       "type": "line",
@@ -729,11 +740,13 @@
         475
        ]
       ],
-      "at": 2.0,
+      "at": 3.7,
       "dur": 0.3,
       "stroke": "krem",
       "fill": "krem",
-      "width": 3
+      "width": 3,
+      "kata": "menekan",
+      "kataMaju": -0.4
      },
      {
       "type": "text",
@@ -744,7 +757,9 @@
       "text": "berat (N)",
       "size": 50,
       "fill": "krem",
-      "at": 2.0
+      "at": 3.8,
+      "kata": "menekan",
+      "kataMaju": -0.5
      },
      {
       "type": "line",
@@ -756,10 +771,12 @@
        300,
        560
       ],
-      "at": 2.8,
+      "at": 5.33,
       "dur": 0.5,
       "stroke": "krem",
-      "width": 10
+      "width": 10,
+      "kata": "gaya",
+      "kataMaju": 0.4
      },
      {
       "type": "polygon",
@@ -777,11 +794,13 @@
         560
        ]
       ],
-      "at": 3.1,
+      "at": 5.53,
       "dur": 0.3,
       "stroke": "krem",
       "fill": "krem",
-      "width": 3
+      "width": 3,
+      "kata": "gaya",
+      "kataMaju": 0.2
      },
      {
       "type": "text",
@@ -792,7 +811,9 @@
       "text": "dorong",
       "size": 46,
       "fill": "krem",
-      "at": 3.1
+      "at": 5.73,
+      "kata": "gaya",
+      "kataMaju": 0.0
      },
      {
       "type": "line",
@@ -826,11 +847,13 @@
         640
        ]
       ],
-      "at": 4.2,
+      "at": 6.49,
       "dur": 0.3,
       "stroke": "emas",
       "fill": "emas",
-      "width": 3
+      "width": 3,
+      "kata": "gesek",
+      "kataMaju": -0.4
      },
      {
       "type": "text",
@@ -841,7 +864,9 @@
       "text": "gaya gesek f",
       "size": 46,
       "fill": "emas",
-      "at": 4.3
+      "at": 6.59,
+      "kata": "gesek",
+      "kataMaju": -0.5
      }
     ]
    },

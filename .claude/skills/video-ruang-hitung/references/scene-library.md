@@ -37,6 +37,11 @@ detik lebih awal). `npm run sinkron` lalu mengisi `at` tepat saat kata itu diuca
 muncul bersamaan dengan suara. Kata dicocokkan tanpa tanda baca, tidak peka huruf besar.
 Field `vo` pada adegan diisi otomatis — jangan ditulis manual.
 
+**Wajib pada video ber-VO:** beri `"kata"` pada SEMUA elemen yang menggambarkan sesuatu yang
+diucapkan (blok, panah, label, ilustrasi). Elemen tanpa isyarat memakai `at` tetap dan bisa muncul
+*sebelum* kata-nya diucapkan → urutan terasa salah. Untuk elemen pendukung yang muncul berurutan
+pada satu kata, pakai `kataMaju` negatif (mis. `-0.4`) agar muncul sedikit *setelah* kata itu.
+
 ---
 
 ## `title` — hook / judul
