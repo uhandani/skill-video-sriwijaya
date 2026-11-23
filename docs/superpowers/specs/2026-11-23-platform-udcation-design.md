@@ -28,6 +28,7 @@ Pembeda dari Gradient Academy (fokus UTBK/TKA): UDcation fokus **pondasi**.
 - Feedback yang cuma "Salah, coba lagi".
 - Fakta sejarah/tokoh tanpa sumber, atau klaim belum pasti tanpa label "konon".
 - Konteks Nusantara yang dipaksakan sampai soal jadi membingungkan.
+- Fitur "bikin betah" yang menjebak: loot box berbayar/judi, pay-to-win, tekanan streak berlebihan, notifikasi memaksa. Yang dicari: ketagihan **belajar**, bukan ketagihan layar.
 - Siswa SMA merasa direndahkan karena diberi soal "anak SD" tanpa bingkai yang tepat.
 
 ## 3. Batasan
@@ -141,14 +142,15 @@ Per simpul: konsep singkat → contoh → latihan bertahap (langkah kecil gaya K
 | `kartini-literasi-modul` | R.A. Kartini | soal cerita, bahasa modul, teks feedback |
 | `dewisartika-penguji` | Dewi Sartika | verifikasi kunci, pola salah, & hitungan dengan skrip |
 | `djuanda-developer` | Ir. Djuanda | format data, mesin cek jawaban & diagnostik, platform |
+| `radensaleh-kreatif-game` | Raden Saleh | tim kreatif pendamping Djuanda: riset app belajar ala game (Duolingo, Prodigy, dll.) & game mobile favorit anak; ubah fitur yang bikin betah jadi usulan fitur UDcation |
 
 Tiap skill: `.claude/skills/<nama>/SKILL.md` (peran, tugas, aturan, file yang dipegang, kapan
 serah ke agen lain). Tiap agen: `.claude/agents/<nama>.md` (ringkas, mengarah ke skill-nya).
 
 ## 6. Urutan kerja tahap ini (keputusan Claude, bisa dikoreksi)
 
-1. Buat 8 skill + agen.
-2. Malahayati: riset Kumon/AKM/Gradient → `platform/riset/`.
+1. Buat 9 skill + agen.
+2. Malahayati: riset Kumon/AKM/Gradient → `platform/riset/`. Raden Saleh: riset gamifikasi → `platform/riset/riset-gamifikasi.md`.
 3. Ki Hajar: peta kurikulum lengkap J1–J15 (garis besar semua simpul).
 4. Djuanda: skema JSON + mesin cek jawaban (TypeScript, dengan tes) — keputusan Claude:
    TypeScript karena platform web nanti & sejalan dengan `studio/`.

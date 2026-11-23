@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Tim 8 agen tokoh Nusantara, riset soal, peta kurikulum J1–J15, mesin cek jawaban + analisis salah + diagnostik, dan konten penuh J7 (pecahan), J12 (persamaan linear), J13 (ubah rumus).
+**Goal:** Tim 9 agen tokoh Nusantara, riset soal, peta kurikulum J1–J15, mesin cek jawaban + analisis salah + diagnostik, dan konten penuh J7 (pecahan), J12 (persamaan linear), J13 (ubah rumus).
 
 **Architecture:** Paket TypeScript baru `platform/` terpisah dari `studio/`. Metadata (simpul, pola salah, teks feedback) di JSON; templat soal berparameter berupa modul TS (punya fungsi kunci & fungsi jawaban-salah). Mesin murni (tanpa UI, tanpa server): cek jawaban → cocokkan pola salah → profil → diagnostik adaptif.
 
@@ -20,7 +20,7 @@
 - Remedi: pola salah sama ≥ 2 kali dalam 5 jawaban terakhir.
 - Syarat lancar default: akurasi ≥ 0,9 dan di bawah `targetDetik` simpul.
 - Tiap templat ≥ 3 pola salah; tingkat 1–5.
-- Nama skill/agen persis: `gajahmada-koordinator`, `kihajar-kurikulum`, `malahayati-riset-soal`, `sultanagung-bank-soal-mtk`, `habibie-fisika`, `kartini-literasi-modul`, `dewisartika-penguji`, `djuanda-developer`.
+- Nama skill/agen persis: `gajahmada-koordinator`, `kihajar-kurikulum`, `malahayati-riset-soal`, `sultanagung-bank-soal-mtk`, `habibie-fisika`, `kartini-literasi-modul`, `dewisartika-penguji`, `djuanda-developer`, `radensaleh-kreatif-game`.
 - Feedback 3 lapis: `sebut`, `tunjukkan`, lalu soal kembar (dibuat mesin).
 
 ## Review Focus
@@ -36,14 +36,14 @@
 ### Task 1: Tim agen tokoh Nusantara
 
 **Files:**
-- Create: `.claude/skills/<nama>/SKILL.md` × 8, `.claude/agents/<nama>.md` × 8
+- Create: `.claude/skills/<nama>/SKILL.md` × 9, `.claude/agents/<nama>.md` × 9
 - Modify: `CLAUDE.md` (bagian "Platform UDcation"), `PANDUAN-PROYEK-UDCATION.md` (bagian baru "Platform")
 
-- [ ] **Step 1:** Tulis 8 SKILL.md. Frontmatter `name` = nama folder, `description` (kapan dipakai, kata kunci Indonesia). Isi: peran & tokoh (1 paragraf, fakta tokoh dengan sumber), tugas, file yang dipegang, aturan wajib (Global Constraints yang relevan), serah-terima ke agen lain. Peran per spec §5.7; `gajahmada-koordinator` memuat urutan kerja spec §6 dan cara memanggil agen lain lewat Agent tool `subagent_type: <nama>`.
-- [ ] **Step 2:** Tulis 8 agen: frontmatter `name`, `description`, `tools` (Djuanda & Dewi Sartika: semua; Malahayati: Read, Write, Grep, Glob, WebSearch, WebFetch; lainnya: Read, Write, Edit, Grep, Glob, Bash). Badan: "Baca dan ikuti `.claude/skills/<nama>/SKILL.md`."
+- [ ] **Step 1:** Tulis 9 SKILL.md. Frontmatter `name` = nama folder, `description` (kapan dipakai, kata kunci Indonesia). Isi: peran & tokoh (1 paragraf, fakta tokoh dengan sumber), tugas, file yang dipegang, aturan wajib (Global Constraints yang relevan), serah-terima ke agen lain. Peran per spec §5.7; `gajahmada-koordinator` memuat urutan kerja spec §6 dan cara memanggil agen lain lewat Agent tool `subagent_type: <nama>`.
+- [ ] **Step 2:** Tulis 9 agen: frontmatter `name`, `description`, `tools` (Djuanda & Dewi Sartika: semua; Malahayati & Raden Saleh: Read, Write, Grep, Glob, WebSearch, WebFetch; lainnya: Read, Write, Edit, Grep, Glob, Bash). Badan: "Baca dan ikuti `.claude/skills/<nama>/SKILL.md`."
 - [ ] **Step 3: Verifikasi**
   Run: `for d in .claude/skills/*/; do n=$(basename $d); grep -q "^name: $n$" $d/SKILL.md || echo SALAH $n; done; ls .claude/agents | wc -l`
-  Expected: tanpa "SALAH", `8`.
+  Expected: tanpa "SALAH", `9`.
 - [ ] **Step 4:** Commit `feat: tim agen tokoh Nusantara`.
 
 ### Task 2: Paket `platform/`, pecahan, baca jawaban
@@ -181,6 +181,14 @@ Algoritma per jalur (simpul diurutkan `urutan`): cari biner `lo..hi`, mulai: SD 
 - [ ] **Step 1:** Riset web (WebSearch): metode Kumon (urutan level matematika, latihan berulang, target waktu, tes penempatan), AKM numerasi (domain, level kognitif, konteks), PISA math, Gradient Academy (diagnostik & mastery), riset miskonsepsi pecahan & aljabar & ubah rumus. Isi per sumber: temuan, "amati–tiru–modifikasi" untuk UDcation, URL.
 - [ ] **Step 2:** Bagian akhir "Daftar miskonsepsi kandidat" untuk J7/J12/J13 (id usulan, contoh salah, sumber).
 - [ ] **Step 3:** Cek: tidak ada teks soal yang disalin utuh; tiap klaim ber-URL. Commit `docs(riset): riset soal Kumon AKM Gradient`.
+
+### Task 8b: Riset gamifikasi (Raden Saleh)
+
+**Files:** Create `platform/riset/riset-gamifikasi.md`
+
+- [ ] **Step 1:** Riset web: app belajar ala game (Duolingo, Prodigy Math, Khan Academy Kids, DragonBox, Brilliant, Quipper/Ruangguru/Zenius bila ada fitur game) dan game mobile favorit anak/remaja Indonesia (mis. Mobile Legends, Free Fire, Roblox, Minecraft, Genshin, EA FC Mobile). Per app: fitur pemikat (streak, liga, XP, koleksi kartu, quest harian, avatar, event musiman, mabar), alasan psikologisnya, sumber URL.
+- [ ] **Step 2:** Tabel "fitur → versi UDcation bertema Nusantara" (mis. liga = turnamen antar-kerajaan, gacha → kartu tokoh didapat dari **prestasi**, bukan uang), diberi prioritas (versi pertama / nanti).
+- [ ] **Step 3:** Bagian "Garis merah": fitur yang ditolak (loot box berbayar, pay-to-win, streak yang menghukum, notifikasi memaksa) + alasan, rujuk riset/aturan perlindungan anak. Commit `docs(riset): riset gamifikasi`.
 
 ### Task 9: Peta kurikulum + validator konten (Ki Hajar, Dewi Sartika)
 
