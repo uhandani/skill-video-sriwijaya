@@ -155,3 +155,21 @@ ukuran dikali `s` dari `useS()`, warna dari `C`, fokus emas maksimal 1–2.
 
 Lihat `tema-ilustrasi-thumbnail.md` (daftar jenis, koordinat, gaya wajib). Contoh:
 `studio/src/storyboards/pinisi-terapung.json` (adegan `pembuka`, `unesco`).
+
+## `lambang` — kartu lambang besaran (seri "Kode Rahasia Lambang Fisika")
+
+```json
+{ "type": "lambang", "props": {
+  "kicker": "Lambang Fisika · Part 1",
+  "huruf": "v", "kata": "velocity",
+  "asal": "Latin: vēlōcitās —", "arti": "“kecepatan”",
+  "besaran": "kecepatan", "satuan": "m/s", "tex": "v = \\frac{s}{t}",
+  "status": "jelas",
+  "momen": [ { "nama": "urai", "kata": "velocity." }, { "nama": "info", "kata": "Latin" },
+             { "nama": "rumus", "kata": "kecepatan.", "kataKe": 2 } ] } }
+```
+Huruf emas raksasa → terurai jadi `kata` (huruf pertama tetap emas) → asal & arti → pil besaran/satuan →
+rumus. `kata` harus diawali `huruf`. `status: "konon"` menampilkan lencana "KONON · BELUM PASTI" —
+wajib untuk asal-usul yang tidak tercatat jelas. Contoh: `studio/src/storyboards/lambang-fisika-part1.json`.
+Pakai `kataKe` bila kata isyarat juga muncul lebih awal di narasi (mis. "kecepatan").
+Hemat kredit VO: kalimat yang persis sama (mis. "Sumber riset ada di layar.") boleh memakai ulang file audio video lain.

@@ -41,7 +41,7 @@ Jenis yang tersedia (`studio/src/components/Ilustrasi.tsx`):
 
 | Langit | Alam | Budaya & manusia | Benda MTK & sejarah ilmu |
 |---|---|---|---|
-| `matahari` `bulan` `bumi` `planet` `bintang` `awan` | `gunung` `ombak` `kelapa` | `kapal` (jung/pinisi) `candi` `rumahPanggung` `gong` `orang` (bercaping) | `tangga` (bersandar di tembok, proporsi 3:4:5) `dindingBata` `gulungan` (naskah kuno) `buku` (+ pena bulu) `kubah` (rumah ilmu Baghdad) `percetakan` (mesin cetak + blok huruf) |
+| `matahari` `bulan` `bumi` `planet` `bintang` `awan` | `gunung` `ombak` `kelapa` | `kapal` (jung/pinisi) `candi` `rumahPanggung` `gong` `orang` (bercaping) | `tangga` (bersandar di tembok, proporsi 3:4:5) `dindingBata` `gulungan` (naskah kuno) `buku` (+ pena bulu) `kubah` (rumah ilmu Baghdad) `percetakan` (mesin cetak + blok huruf) `borobudur` `hujan` `roket` `jam` |
 
 ### Lapisan ilustrasi di adegan APA PUN
 
