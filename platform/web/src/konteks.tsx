@@ -4,7 +4,7 @@ import { dataMemori } from "./data/memori";
 import { dataSupabase } from "./data/supabase";
 import type { BarisJawaban, Data, Kelas, Pengguna } from "./data/tipe";
 
-export const DEMO_KODE = "UDDEMO7";
+export const DEMO_KODE = "KAWUNG7";
 
 function pilihData(): { data: Data | null; demo: boolean } {
   const q = new URLSearchParams(location.search);

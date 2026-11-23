@@ -11,7 +11,7 @@ it("alur siswa: masuk → gabung → diagnostik → hasil → latihan dengan fee
   const p = await halamanHp(browser);
   await p.goto(`${url}/?demo=1`);
   await p.getByRole("button", { name: "Masuk dengan Google" }).click();
-  await p.getByLabel("Kode kelas").fill("uddemo7");
+  await p.getByLabel("Kode kelas").fill("kawung7");
   await p.getByRole("button", { name: "Gabung" }).click();
 
   for (const j of ["Pecahan", "Persamaan", "Ubah rumus"]) await expect(p.getByText(j, { exact: false }).first().isVisible()).resolves.toBe(true);
