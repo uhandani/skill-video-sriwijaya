@@ -55,7 +55,7 @@
   "simpul": "J07-04",
   "nama": "Kali silang saat mengalikan pecahan",
   "sebut": "Sepertinya kamu mengali silang. Kali silang itu dipakai untuk membandingkan, bukan mengalikan.",
-  "tunjukkan": "Mengalikan pecahan itu lurus: atas × atas, bawah × bawah. 2/3 × 3/4 = 6/12 = 1/2. Masuk akal: setengah dari tiga perempat itu lebih kecil dari keduanya."
+  "tunjukkan": "Mengalikan pecahan itu lurus: atas × atas, bawah × bawah. 2/3 × 3/4 = 6/12 = 1/2. Masuk akal: dua pertiga dari tiga perempat pasti lebih kecil dari tiga perempat."
  },
  {
   "id": "PEC-KALI-SEPERTI-JUMLAH",
@@ -133,7 +133,7 @@
   "simpul": "J12-02",
   "nama": "Urutan pengurangan terbalik",
   "sebut": "Sepertinya urutan pengurangannya terbalik, jadi tandanya ikut terbalik.",
-  "tunjukkan": "Pengurangan tidak bisa dibolak-balik: 11 − 3 = 8, tapi 3 − 11 = −8. Tulis langkahnya: x = (ruas kanan) − (angka yang dipindah)."
+  "tunjukkan": "Pengurangan tidak bisa dibolak-balik: 11 − 3 = 8, tapi 3 − 11 = −8. Tulis dulu operasi kebalikannya di kedua ruas (x + 3 = 11 → x = 11 − 3; x − 3 = 11 → x = 11 + 3), lalu hitung urut dari kiri."
  },
  {
   "id": "PERS-ABAIKAN-SUKU",
@@ -263,15 +263,15 @@
   "id": "RUMUS-KUADRAT-LUPA",
   "simpul": "J13-04",
   "nama": "Pangkat dua hilang",
-  "sebut": "Sepertinya pangkat dua pada v terlupa.",
-  "tunjukkan": "v² = v × v, jadi saat membagi, yang membagi tetap v², bukan v. m = 2E/v²."
+  "sebut": "Sepertinya pangkat dua pada huruf pembagi terlupa.",
+  "tunjukkan": "Huruf yang dikuadratkan tetap kuadrat saat jadi pembagi: E = ½·m·v² → m = 2E/v²; s = ½·a·t² → a = 2s/t²."
  },
  {
   "id": "RUMUS-AKAR-LUPA",
   "simpul": "J13-05",
   "nama": "Lupa mengakar",
-  "sebut": "Hasilmu masih v², belum v. Langkah terakhirnya diakar.",
-  "tunjukkan": "Kebalikan dari kuadrat adalah akar: v² = 2E/m → v = √(2E/m). Cek: satuan 2E/m = m²/s², akarnya m/s ✓.",
+  "sebut": "Hasilmu masih berupa kuadrat dari huruf yang dicari. Langkah terakhirnya: diakar.",
+  "tunjukkan": "Kebalikan dari kuadrat adalah akar: v² = 2E/m → v = √(2E/m). Begitu juga t² = 2s/a → t = √(2s/a).",
   "sumber": "https://mathematics.mtu.ie/common-errors-and-misconceptions"
  },
  {
@@ -279,6 +279,6 @@
   "simpul": "J13-05",
   "nama": "Akar hanya sebagian",
   "sebut": "Sepertinya akarnya hanya mengenai bagian atas.",
-  "tunjukkan": "Akar harus mengenai seluruh ruas: v = √(2E/m), bukan √(2E)/m."
+  "tunjukkan": "Akar harus mengenai seluruh ruas: v = √(2E/m), bukan √(2E)/m. Sama untuk t = √(2s/a)."
  }
 ]

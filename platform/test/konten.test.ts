@@ -112,3 +112,13 @@ describe("pola langkah J12", () => {
     for (const p of POLA_LANGKAH) expect(idPola.has(p.id), p.id).toBe(true);
   });
 });
+
+describe("teks feedback umum tidak menyebut huruf/angka khusus yang salah", () => {
+  const cari = (id: string) => pola.find((p) => p.id === id)!;
+  it("PEC-KALI-SILANG tidak menyebut 'setengah dari tiga perempat'", () =>
+    expect(cari("PEC-KALI-SILANG").tunjukkan).not.toMatch(/setengah dari tiga perempat/));
+  it("PERS-KURANG-TERBALIK tidak memakai aturan 'ruas kanan − angka'", () =>
+    expect(cari("PERS-KURANG-TERBALIK").tunjukkan).not.toMatch(/\(ruas kanan\) − \(angka/));
+  it.each(["RUMUS-AKAR-LUPA", "RUMUS-KUADRAT-LUPA"])("%s sebut tidak menyebut v", (id) =>
+    expect(cari(id).sebut).not.toMatch(/\bv\b|v²/));
+});

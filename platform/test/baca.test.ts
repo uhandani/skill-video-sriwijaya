@@ -21,6 +21,12 @@ describe("bacaBilangan", () => {
     expect(bacaBilangan("1/2")!.belumSederhana).toBe(false);
     expect(bacaBilangan("4/2")!.belumSederhana).toBe(true);
   });
+  it.each(["-½", "−½", "- 1/2"])("membaca negatif berspasi %j", (t) => {
+    expect(bacaBilangan(t)!.nilai).toEqual(pec(-1, 2));
+  });
+  it("angka sangat panjang tak terbaca, tidak melempar", () => {
+    for (const t of ["1/" + "9".repeat(400), "9".repeat(400), "0," + "0".repeat(330) + "1"]) expect(bacaBilangan(t)).toBeNull();
+  });
   it.each(["abc", "1/0", "", "1//2", "1/2/3", "--1"])("menolak %j", (t) => {
     expect(bacaBilangan(t)).toBeNull();
   });
