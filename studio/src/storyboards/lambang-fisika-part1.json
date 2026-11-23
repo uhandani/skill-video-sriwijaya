@@ -858,94 +858,104 @@
   {
    "id": "penutup",
    "type": "outro",
-   "durasi": 7.6,
+   "durasi": 8.1,
    "bg": "navy",
    "bingkai": true,
    "transisi": "fade",
-   "narasi": "Jadi lambang fisika bukan huruf acak. Di part berikutnya, kita bongkar lambang gaya dan energi.",
+   "narasi": "Jadi lambang fisika bukan huruf acak. Di part berikutnya, kita bongkar huruf kembar yang sering bikin ketukar.",
    "props": {
     "kesimpulan": "Lambang fisika = singkatan, bukan huruf acak",
     "tex": "\\g{v,\\ a,\\ t,\\ \\Delta}",
-    "ajakan": "Part 2: lambang gaya & energi →"
+    "ajakan": "Part 2: huruf kembar →"
    },
    "vo": {
     "file": "audio/lambang-fisika-part1/8-penutup.mp3",
-    "durasi": 6.531,
+    "durasi": 7.001,
     "words": [
      {
       "w": "Jadi",
       "start": 0.0,
-      "end": 0.379
+      "end": 0.358
      },
      {
       "w": "lambang",
-      "start": 0.379,
-      "end": 0.757
+      "start": 0.358,
+      "end": 0.717
      },
      {
       "w": "fisika",
-      "start": 0.757,
-      "end": 1.325
+      "start": 0.717,
+      "end": 1.254
      },
      {
       "w": "bukan",
-      "start": 1.325,
-      "end": 1.704
+      "start": 1.254,
+      "end": 1.612
      },
      {
       "w": "huruf",
-      "start": 1.704,
-      "end": 2.082
+      "start": 1.612,
+      "end": 1.971
      },
      {
       "w": "acak.",
-      "start": 2.082,
-      "end": 2.461
+      "start": 1.971,
+      "end": 2.329
      },
      {
       "w": "Di",
-      "start": 2.461,
-      "end": 3.014
+      "start": 2.329,
+      "end": 2.87
      },
      {
       "w": "part",
-      "start": 3.014,
-      "end": 3.203
+      "start": 2.87,
+      "end": 3.049
      },
      {
       "w": "berikutnya,",
-      "start": 3.203,
-      "end": 4.083
+      "start": 3.049,
+      "end": 3.765
      },
      {
       "w": "kita",
-      "start": 4.083,
-      "end": 4.462
+      "start": 3.765,
+      "end": 4.327
      },
      {
       "w": "bongkar",
-      "start": 4.462,
-      "end": 4.84
+      "start": 4.327,
+      "end": 4.686
      },
      {
-      "w": "lambang",
-      "start": 4.84,
-      "end": 5.219
+      "w": "huruf",
+      "start": 4.686,
+      "end": 5.044
      },
      {
-      "w": "gaya",
-      "start": 5.219,
-      "end": 5.598
+      "w": "kembar",
+      "start": 5.044,
+      "end": 5.402
      },
      {
-      "w": "dan",
-      "start": 5.598,
-      "end": 5.787
+      "w": "yang",
+      "start": 5.402,
+      "end": 5.581
      },
      {
-      "w": "energi.",
-      "start": 5.787,
-      "end": 6.531
+      "w": "sering",
+      "start": 5.581,
+      "end": 5.94
+     },
+     {
+      "w": "bikin",
+      "start": 5.94,
+      "end": 6.298
+     },
+     {
+      "w": "ketukar.",
+      "start": 6.298,
+      "end": 7.001
      }
     ]
    }
