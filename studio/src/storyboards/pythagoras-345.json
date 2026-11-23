@@ -1055,7 +1055,14 @@
  "thumbnail": {
   "hook": "Rahasia\nTali *3-4-5*",
   "sub": "Trik tukang bangunan bikin sudut siku sempurna",
-  "elemen": [],
+  "elemen": [
+   {
+    "jenis": "tangga",
+    "x": 640,
+    "y": 990,
+    "skala": 1.6
+   }
+  ],
   "tex": "\\g{a^2 + b^2 = c^2}"
  }
 }

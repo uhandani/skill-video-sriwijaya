@@ -139,7 +139,7 @@ export const Thumbnail: React.FC<{ storyboard: Storyboard }> = ({ storyboard: sb
     <AbsoluteFill>
       <Background variant="navy" />
       <div style={{ position: "absolute", right: -40 * s, top: 0, bottom: 0, display: "flex", alignItems: "center" }}>
-        <Art sb={sb} size={height * 1.0} />
+        <Art sb={sb} size={height * 0.9} />
       </div>
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "flex-start", paddingLeft: 90 * s, width: width * 0.6 }}>
         <Badge text={nama} s={s} />

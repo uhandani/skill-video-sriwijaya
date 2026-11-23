@@ -1084,7 +1084,20 @@
  "thumbnail": {
   "hook": "Kenapa Harus\n*x*?",
   "sub": "Asal-usulnya ternyata masih misteri",
-  "elemen": [],
+  "elemen": [
+   {
+    "jenis": "gulungan",
+    "x": 230,
+    "y": 900,
+    "skala": 1.1
+   },
+   {
+    "jenis": "buku",
+    "x": 620,
+    "y": 980,
+    "skala": 1.9
+   }
+  ],
   "tex": "\\g{x = \\;?}"
  }
 }
