@@ -6,7 +6,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "test": "vitest run",
-    "cek": "tsc --noEmit"
+    "cek": "tsc --noEmit",
+    "verifikasi": "tsx scripts/ekspor-sampel.ts && python3 verify/cek_kunci.py"
   },
   "devDependencies": {
     "tsx": "^4.19.2",
