@@ -1,6 +1,6 @@
 {
- "id": "LambangFisikaPart6",
- "judul": "Kode Rahasia Lambang Fisika · Part 6: Huruf Kembar!",
+ "id": "LambangFisikaPart2",
+ "judul": "Kode Rahasia Lambang Fisika · Part 2: Huruf Kembar!",
  "pilar": "Ruang Semesta",
  "kurikulum": "SMP Kelas 8 & SMA Kelas 10–11 — Besaran & Satuan, Usaha-Energi, Tekanan, Listrik",
  "rasio": "9:16",
@@ -13,7 +13,7 @@
  ],
  "thumbnail": {
   "hook": "*P* Itu Daya\natau Tekanan?",
-  "sub": "Huruf kembar fisika · Part 6",
+  "sub": "Huruf kembar fisika · Part 2",
   "elemen": [
    {
     "jenis": "jam",
@@ -41,13 +41,13 @@
    "narasi": "Huruf P di fisika bisa berarti dua hal yang beda jauh. Kamu pernah ketukar?",
    "tts": "Huruf pe di fisika, bisa berarti dua hal yang beda jauh. Kamu pernah ketukar?",
    "props": {
-    "kicker": "Lambang Fisika · Part 6",
+    "kicker": "Lambang Fisika · Part 2",
     "judul": "Huruf Kembar!",
     "sub": "Satu huruf, beda arti",
     "tandaTanya": true
    },
    "vo": {
-    "file": "audio/lambang-fisika-part6/1-hook.mp3",
+    "file": "audio/lambang-fisika-part2/1-hook.mp3",
     "durasi": 5.407,
     "words": [
      {
@@ -131,7 +131,7 @@
    "transisi": "iris",
    "narasi": "P bisa power, artinya daya, satuannya watt. Tapi P juga bisa pressure, artinya tekanan, satuannya pascal.",
    "props": {
-    "kicker": "Lambang Fisika · Part 6",
+    "kicker": "Lambang Fisika · Part 2",
     "judul": "Huruf P",
     "varian": [
      {
@@ -156,7 +156,7 @@
    },
    "tts": "Pe bisa, power, artinya daya, satuannya watt. Tapi pe juga bisa, pressure, artinya tekanan, satuannya pascal.",
    "vo": {
-    "file": "audio/lambang-fisika-part6/2-p.mp3",
+    "file": "audio/lambang-fisika-part2/2-p.mp3",
     "durasi": 10.449,
     "words": [
      {
@@ -250,7 +250,7 @@
    "transisi": "iris",
    "narasi": "Huruf V lebih ramai. V besar bisa voltage, tegangan listrik, atau volume. Sedangkan v kecil adalah velocity, kecepatan.",
    "props": {
-    "kicker": "Lambang Fisika · Part 6",
+    "kicker": "Lambang Fisika · Part 2",
     "judul": "Huruf V",
     "varian": [
      {
@@ -281,7 +281,7 @@
    },
    "tts": "Huruf ve lebih ramai. Ve besar bisa, voltage, tegangan listrik, atau volume. Sedangkan ve kecil adalah, velocity, kecepatan.",
    "vo": {
-    "file": "audio/lambang-fisika-part6/3-v.mp3",
+    "file": "audio/lambang-fisika-part2/3-v.mp3",
     "durasi": 10.919,
     "words": [
      {
@@ -385,7 +385,7 @@
    "transisi": "iris",
    "narasi": "T bisa temperature, artinya suhu. Di materi getaran, T adalah periode, waktu untuk satu getaran.",
    "props": {
-    "kicker": "Lambang Fisika · Part 6",
+    "kicker": "Lambang Fisika · Part 2",
     "judul": "Huruf T",
     "varian": [
      {
@@ -409,7 +409,7 @@
    },
    "tts": "Te bisa, temperature, artinya suhu. Di materi getaran, te adalah periode, waktu untuk satu getaran.",
    "vo": {
-    "file": "audio/lambang-fisika-part6/4-t.mp3",
+    "file": "audio/lambang-fisika-part2/4-t.mp3",
     "durasi": 8.438,
     "words": [
      {
@@ -498,7 +498,7 @@
    "transisi": "iris",
    "narasi": "Lalu W besar adalah work, usaha, satuannya joule. Sedangkan w kecil adalah weight, berat, satuannya newton.",
    "props": {
-    "kicker": "Lambang Fisika · Part 6",
+    "kicker": "Lambang Fisika · Part 2",
     "judul": "Huruf W",
     "varian": [
      {
@@ -523,7 +523,7 @@
    },
    "tts": "Lalu we besar adalah, work, usaha, satuannya joule. Sedangkan we kecil adalah, weight, berat, satuannya newton.",
    "vo": {
-    "file": "audio/lambang-fisika-part6/5-w.mp3",
+    "file": "audio/lambang-fisika-part2/5-w.mp3",
     "durasi": 9.953,
     "words": [
      {
@@ -622,7 +622,7 @@
     "sub": "watt → daya · pascal → tekanan\njoule → usaha · newton → berat"
    },
    "vo": {
-    "file": "audio/lambang-fisika-part6/6-trik.mp3",
+    "file": "audio/lambang-fisika-part2/6-trik.mp3",
     "durasi": 7.079,
     "words": [
      {
@@ -707,7 +707,7 @@
     "ajakan": "Part 3: lambang listrik →"
    },
    "vo": {
-    "file": "audio/lambang-fisika-part6/7-penutup.mp3",
+    "file": "audio/lambang-fisika-part2/7-penutup.mp3",
     "durasi": 6.348,
     "words": [
      {
@@ -799,7 +799,7 @@
     "catatan": "Lambang mengikuti kebiasaan buku pelajaran Indonesia; buku/negara lain bisa memakai huruf berbeda."
    },
    "vo": {
-    "file": "audio/lambang-fisika-part6/8-sumber.mp3",
+    "file": "audio/lambang-fisika-part2/8-sumber.mp3",
     "durasi": 1.802,
     "words": [
      {

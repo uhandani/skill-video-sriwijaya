@@ -1,8 +1,8 @@
-"""Verifikasi fakta video LambangFisikaPart6. Jalankan: python3 verify/lambang-fisika-part6.py"""
+"""Verifikasi fakta video LambangFisikaPart2. Jalankan: python3 verify/lambang-fisika-part2.py"""
 import json
 from pathlib import Path
 
-sb = json.loads((Path(__file__).parent.parent / "src/storyboards/lambang-fisika-part6.json").read_text())
+sb = json.loads((Path(__file__).parent.parent / "src/storyboards/lambang-fisika-part2.json").read_text())
 S = {s["id"]: s for s in sb["scenes"]}
 
 # Pasangan huruf - istilah - besaran - satuan SI (BIPM SI Brochure 2019)
@@ -25,4 +25,4 @@ assert n == 9
 # Rumus konsisten dengan satuan: P = W/t -> J/s = W ; P = F/A -> N/m² = Pa ; W = F·s -> N·m = J ; w = m·g -> kg·m/s² = N
 assert S["trik"]["props"]["sub"].count("→") == 4
 assert S["sumber"]["props"]["daftar"] == sb["sumber"]
-print("OK: fakta LambangFisikaPart6 konsisten (9 pasangan lambang)")
+print("OK: fakta LambangFisikaPart2 konsisten (9 pasangan lambang)")
