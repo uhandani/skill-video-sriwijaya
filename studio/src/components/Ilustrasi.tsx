@@ -11,7 +11,7 @@ export type JenisIlustrasi =
   | "matahari" | "bulan" | "bumi" | "bintang" | "awan" | "ombak" | "gunung"
   | "kapal" | "candi" | "rumahPanggung" | "gong" | "orang" | "kelapa" | "planet"
   | "tangga" | "dindingBata" | "gulungan" | "buku" | "kubah" | "percetakan"
-  | "borobudur" | "hujan" | "roket" | "jam";
+  | "borobudur" | "hujan" | "roket" | "jam" | "bohlam" | "baterai" | "petir";
 
 const L = 4.5; // tebal garis
 
@@ -476,6 +476,54 @@ const Jam: React.FC<{ t: number }> = ({ t }) => (
   </g>
 );
 
+/** Bohlam menyala (0,0 = bawah fitting). Cahaya berdenyut. */
+const Bohlam: React.FC<{ t: number }> = ({ t }) => {
+  const g = 0.75 + 0.25 * Math.sin(t / 9);
+  return (
+    <g strokeLinejoin="round" strokeLinecap="round">
+      <circle cy={-150} r={120} fill={C.emas} opacity={0.18 * g} />
+      <circle cy={-150} r={92} fill={C.emas} opacity={0.22 * g} />
+      {Array.from({ length: 8 }).map((_, i) => {
+        const a = (i * Math.PI) / 4;
+        return <line key={i} x1={Math.cos(a) * 100} y1={-150 + Math.sin(a) * 100} x2={Math.cos(a) * (124 + 8 * g)} y2={-150 + Math.sin(a) * (124 + 8 * g)} stroke={C.emas} strokeWidth={6} opacity={g} />;
+      })}
+      <path d="M-34 -62 Q-34 -92 -58 -122 A72 72 0 1 1 58 -122 Q34 -92 34 -62 Z" fill="#FFF3C8" stroke={C.krem} strokeWidth={L} />
+      <path d="M-16 -66 V-120 L-8 -140 L0 -120 L8 -140 L16 -120 V-66" fill="none" stroke={C.emas} strokeWidth={5} filter="url(#ilGlow)" />
+      <g stroke={C.krem} strokeWidth={L}>
+        <rect x={-36} y={-62} width={72} height={46} rx={6} fill={IL.indigo} />
+        <path d="M-36 -47 H36 M-36 -32 H36" strokeWidth={3} />
+        <path d="M-22 -16 Q0 4 22 -16 Z" fill={IL.indigoGelap} />
+      </g>
+    </g>
+  );
+};
+/** Baterai berdiri (0,0 = bawah), dengan tanda + dan − serta pita emas. */
+const Baterai: React.FC<{ t: number }> = ({ t }) => (
+  <g strokeLinejoin="round">
+    <g stroke={C.krem} strokeWidth={L}>
+      <rect x={-18} y={-232} width={36} height={22} rx={5} fill={C.emas} />
+      <rect x={-56} y={-212} width={112} height={212} rx={16} fill={IL.indigo} />
+      <rect x={-56} y={-212} width={112} height={70} rx={16} fill={IL.bata} />
+    </g>
+    <Isen x={-46} y={-130} w={92} h={120} step={16} />
+    <path d="M-56 -142 H56" stroke={C.emas} strokeWidth={8} />
+    <g stroke={C.krem} strokeWidth={8} strokeLinecap="round">
+      <path d="M-16 -177 H16 M0 -193 V-161" />
+      <path d="M-16 -40 H16" />
+    </g>
+    <path d="M8 -125 L-14 -82 H4 L-8 -50 L20 -96 H2 Z" fill={C.emas} opacity={0.7 + 0.3 * Math.sin(t / 6)} />
+  </g>
+);
+/** Petir zig-zag (0,0 = ujung bawah), berkedip. Pasangkan dengan "awan" di atasnya. */
+const Petir: React.FC<{ t: number }> = ({ t }) => {
+  const k = (t % 45) < 4 || ((t % 45) > 7 && (t % 45) < 10) ? 1 : 0.55;
+  return (
+    <g opacity={k} filter="url(#ilGlow)">
+      <path d="M40 -330 L-50 -150 H10 L-40 0 L80 -190 H20 L90 -330 Z" fill="url(#ilGold)" stroke="#FFF3C8" strokeWidth={4} strokeLinejoin="round" />
+    </g>
+  );
+};
+
 export const ILUSTRASI: Record<JenisIlustrasi, React.FC<{ t: number }>> = {
   matahari: Matahari,
   bulan: Bulan,
@@ -501,6 +549,9 @@ export const ILUSTRASI: Record<JenisIlustrasi, React.FC<{ t: number }>> = {
   hujan: Hujan,
   roket: Roket,
   jam: Jam,
+  bohlam: Bohlam,
+  baterai: Baterai,
+  petir: Petir,
 };
 
 /** <defs> bersama (gradien emas + glow). Taruh sekali di dalam <svg>. */

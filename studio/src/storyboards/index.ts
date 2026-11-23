@@ -7,9 +7,10 @@ import pinisi from "./pinisi-terapung.json";
 import borobudur from "./borobudur-tanpa-semen.json";
 import lambang1 from "./lambang-fisika-part1.json";
 import lambang6 from "./lambang-fisika-part6.json";
+import lambang3 from "./lambang-fisika-part3.json";
 
 /**
  * Daftar semua video. Video baru = tambah file JSON di folder ini
  * lalu tambahkan satu baris import + entri di array ini.
  */
-export const STORYBOARDS: Storyboard[] = [pythagoras as Storyboard, parabola as Storyboard, asalUsulX as Storyboard, bulan as Storyboard, pinisi as Storyboard, borobudur as Storyboard, lambang1 as Storyboard, lambang6 as Storyboard];
+export const STORYBOARDS: Storyboard[] = [pythagoras as Storyboard, parabola as Storyboard, asalUsulX as Storyboard, bulan as Storyboard, pinisi as Storyboard, borobudur as Storyboard, lambang1 as Storyboard, lambang6 as Storyboard, lambang3 as Storyboard];

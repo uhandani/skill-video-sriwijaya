@@ -1,0 +1,570 @@
+{
+ "id": "LambangFisikaPart3",
+ "judul": "Kode Rahasia Lambang Fisika — Part 3: Lambang Listrik",
+ "pilar": "Ruang Semesta",
+ "kurikulum": "SMP Kelas 9 & SMA Kelas 12 — Listrik Dinamis (arus, tegangan, hambatan, hukum Ohm)",
+ "rasio": "9:16",
+ "sumber": [
+  "Wikipedia, “Electric current” — lambang I dari Prancis intensité du courant (Ampère, 1820)",
+  "OQLF, Vitrine linguistique, “intensité de courant électrique” — lambang I",
+  "Wikipedia, “Quantity of electricity”; IEC Electropedia 113-02-10 — muatan Q",
+  "Wikipedia, “Alessandro Volta” & “Volt” — tumpukan volta (1800), satuan volt",
+  "Wikipedia, “Ohm” — satuan hambatan dan lambang Ω",
+  "Buku teks Fisika SMA (Kemendikbud) — Listrik Arus Searah, hukum Ohm"
+ ],
+ "thumbnail": {
+  "hook": "Arus Listrik\nKok *I*, Bukan C?",
+  "sub": "Kode Rahasia Lambang Fisika · Part 3",
+  "elemen": [
+   {
+    "jenis": "awan",
+    "x": 200,
+    "y": 330,
+    "skala": 1.6
+   },
+   {
+    "jenis": "petir",
+    "x": 215,
+    "y": 660,
+    "skala": 1.0
+   },
+   {
+    "jenis": "bohlam",
+    "x": 580,
+    "y": 960,
+    "skala": 2.3
+   }
+  ]
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "title",
+   "durasi": 7,
+   "bg": "navy",
+   "bingkai": true,
+   "transisi": "iris",
+   "narasi": "Arus listrik dalam bahasa Inggris itu current. Tapi lambangnya I, bukan C. Kok bisa?",
+   "tts": "Arus listrik dalam bahasa Inggris itu, current. Tapi lambangnya, i, bukan ce. Kok bisa?",
+   "props": {
+    "kicker": "Lambang Fisika · Part 3",
+    "judul": "Arus = I?",
+    "sub": "Kenapa bukan C?",
+    "tandaTanya": true
+   },
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "awan",
+      "x": 210,
+      "y": 1500,
+      "skala": 1.1,
+      "at": 0.3
+     },
+     {
+      "jenis": "petir",
+      "x": 225,
+      "y": 1760,
+      "skala": 0.75,
+      "at": 0.6
+     },
+     {
+      "jenis": "bohlam",
+      "x": 790,
+      "y": 1765,
+      "skala": 0.95,
+      "at": 0.9
+     }
+    ]
+   }
+  },
+  {
+   "id": "i",
+   "type": "lambang",
+   "durasi": 11,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Jawabannya dari bahasa Prancis, intensité du courant, artinya kuat arus. André-Marie Ampère memakai huruf ini sekitar tahun 1820. Satuannya pun dinamai ampere.",
+   "tts": "Jawabannya dari bahasa Prancis, ongtensite du kuran, artinya kuat arus. Andre Mari Amper memakai huruf ini, sekitar tahun seribu delapan ratus dua puluh. Satuannya pun dinamai, amper.",
+   "props": {
+    "kicker": "Lambang Fisika · Part 3",
+    "huruf": "I",
+    "kata": "Intensité",
+    "asal": "Prancis: intensité du courant —",
+    "arti": "“kuat arus”",
+    "besaran": "kuat arus",
+    "satuan": "ampere (A)",
+    "status": "jelas",
+    "momen": [
+     {
+      "nama": "urai",
+      "kata": "intensité"
+     },
+     {
+      "nama": "info",
+      "kata": "kuat"
+     },
+     {
+      "nama": "rumus",
+      "kata": "ampere."
+     }
+    ],
+    "tex": "I = \\frac{Q}{t}"
+   },
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "bohlam",
+      "x": 500,
+      "y": 1770,
+      "skala": 1.0,
+      "at": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "id": "q",
+   "type": "lambang",
+   "durasi": 9,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Muatan listrik ditulis Q. Konon dari quantity of electricity, istilah lama untuk muatan. Satuannya coulomb.",
+   "tts": "Muatan listrik ditulis ki. Konon dari, quantity of electricity, istilah lama untuk muatan. Satuannya, kulom.",
+   "props": {
+    "kicker": "Lambang Fisika · Part 3",
+    "huruf": "Q",
+    "kata": "Quantity",
+    "asal": "Inggris: quantity of electricity —",
+    "arti": "“jumlah listrik”",
+    "besaran": "muatan listrik",
+    "satuan": "coulomb (C)",
+    "status": "konon",
+    "momen": [
+     {
+      "nama": "urai",
+      "kata": "quantity"
+     },
+     {
+      "nama": "info",
+      "kata": "istilah"
+     },
+     {
+      "nama": "rumus",
+      "kata": "coulomb."
+     }
+    ],
+    "tex": "Q = I \\cdot t"
+   },
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "awan",
+      "x": 500,
+      "y": 1520,
+      "skala": 1.2,
+      "at": 0.4
+     },
+     {
+      "jenis": "petir",
+      "x": 510,
+      "y": 1772,
+      "skala": 0.75,
+      "at": 0.7
+     }
+    ]
+   }
+  },
+  {
+   "id": "v",
+   "type": "lambang",
+   "durasi": 10,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Tegangan listrik ditulis V, satuannya volt. Keduanya dari nama Alessandro Volta, penemu baterai pertama sekitar tahun 1800.",
+   "tts": "Tegangan listrik ditulis ve, satuannya volt. Keduanya dari nama Alesandro Volta, penemu baterai pertama, sekitar tahun seribu delapan ratus.",
+   "props": {
+    "kicker": "Lambang Fisika · Part 3",
+    "huruf": "V",
+    "kata": "Volta",
+    "asal": "Dari nama Alessandro Volta —",
+    "arti": "“penemu baterai”",
+    "besaran": "tegangan (beda potensial)",
+    "satuan": "volt (V)",
+    "status": "jelas",
+    "momen": [
+     {
+      "nama": "urai",
+      "kata": "Volta,"
+     },
+     {
+      "nama": "info",
+      "kata": "penemu"
+     },
+     {
+      "nama": "rumus",
+      "kata": "tahun"
+     }
+    ],
+    "tex": "V = \\frac{W}{Q}"
+   },
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "baterai",
+      "x": 500,
+      "y": 1770,
+      "skala": 1.05,
+      "at": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "id": "r",
+   "type": "lambang",
+   "durasi": 11,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Hambatan ditulis R, dari resistance. Satuannya ohm, dari nama Georg Ohm, dengan lambang omega, huruf Yunani yang bunyinya mirip ohm.",
+   "tts": "Hambatan ditulis er, dari, resistance. Satuannya ohm, dari nama Georg Ohm, dengan lambang omega, huruf Yunani yang bunyinya mirip, ohm.",
+   "props": {
+    "kicker": "Lambang Fisika · Part 3",
+    "huruf": "R",
+    "kata": "Resistance",
+    "asal": "Inggris: resistance —",
+    "arti": "“hambatan”",
+    "besaran": "hambatan",
+    "satuan": "ohm (Ω)",
+    "status": "jelas",
+    "momen": [
+     {
+      "nama": "urai",
+      "kata": "resistance."
+     },
+     {
+      "nama": "info",
+      "kata": "Satuannya"
+     },
+     {
+      "nama": "rumus",
+      "kata": "omega,"
+     }
+    ],
+    "tex": "R = \\frac{V}{I}"
+   },
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "baterai",
+      "x": 250,
+      "y": 1770,
+      "skala": 0.9,
+      "at": 0.5
+     },
+     {
+      "jenis": "bohlam",
+      "x": 750,
+      "y": 1770,
+      "skala": 0.9,
+      "at": 0.8
+     }
+    ]
+   }
+  },
+  {
+   "id": "rangkaian",
+   "type": "diagram",
+   "durasi": 12,
+   "bg": "cokelat",
+   "transisi": "iris",
+   "narasi": "Sekarang gabungkan. Baterai memberi tegangan V, arus I mengalir, dan hambatan R menahannya. Itulah hukum Ohm: V sama dengan I kali R.",
+   "tts": "Sekarang, gabungkan. Baterai memberi tegangan ve, arus i mengalir, dan hambatan er menahannya. Itulah hukum Ohm, ve sama dengan i kali er.",
+   "props": {
+    "judul": "Rangkaian sederhana",
+    "items": [
+     {
+      "type": "line",
+      "from": [
+       200,
+       470
+      ],
+      "to": [
+       200,
+       250
+      ],
+      "dur": 0.4,
+      "kata": "gabungkan.",
+      "width": 6,
+      "at": 0.5
+     },
+     {
+      "type": "line",
+      "from": [
+       200,
+       250
+      ],
+      "to": [
+       400,
+       250
+      ],
+      "dur": 0.4,
+      "kata": "gabungkan.",
+      "kataMaju": -0.3,
+      "width": 6,
+      "at": 0.5
+     },
+     {
+      "type": "line",
+      "from": [
+       600,
+       250
+      ],
+      "to": [
+       800,
+       250
+      ],
+      "dur": 0.4,
+      "kata": "gabungkan.",
+      "kataMaju": -0.6,
+      "width": 6,
+      "at": 0.5
+     },
+     {
+      "type": "line",
+      "from": [
+       800,
+       250
+      ],
+      "to": [
+       800,
+       445
+      ],
+      "dur": 0.4,
+      "kata": "gabungkan.",
+      "kataMaju": -0.8,
+      "width": 6,
+      "at": 0.5
+     },
+     {
+      "type": "line",
+      "from": [
+       800,
+       555
+      ],
+      "to": [
+       800,
+       750
+      ],
+      "dur": 0.4,
+      "kata": "gabungkan.",
+      "kataMaju": -1.0,
+      "width": 6,
+      "at": 0.5
+     },
+     {
+      "type": "line",
+      "from": [
+       800,
+       750
+      ],
+      "to": [
+       200,
+       750
+      ],
+      "dur": 0.5,
+      "kata": "gabungkan.",
+      "kataMaju": -1.2,
+      "width": 6,
+      "at": 0.5
+     },
+     {
+      "type": "line",
+      "from": [
+       200,
+       750
+      ],
+      "to": [
+       200,
+       530
+      ],
+      "dur": 0.4,
+      "kata": "gabungkan.",
+      "kataMaju": -1.5,
+      "width": 6,
+      "at": 0.5
+     },
+     {
+      "type": "circle",
+      "c": [
+       800,
+       500
+      ],
+      "r": 55,
+      "dur": 0.4,
+      "kata": "gabungkan.",
+      "kataMaju": -0.9,
+      "width": 6,
+      "stroke": "emas",
+      "fill": "emas",
+      "fillOpacity": 0.25,
+      "at": 0.5
+     },
+     {
+      "type": "path",
+      "d": "M761 461 L839 539 M839 461 L761 539",
+      "dur": 0.3,
+      "kata": "gabungkan.",
+      "kataMaju": -1.0,
+      "width": 5,
+      "stroke": "emas",
+      "at": 0.5
+     },
+     {
+      "type": "line",
+      "from": [
+       140,
+       470
+      ],
+      "to": [
+       260,
+       470
+      ],
+      "dur": 0.3,
+      "kata": "Baterai",
+      "width": 8,
+      "stroke": "emas",
+      "at": 0.5
+     },
+     {
+      "type": "line",
+      "from": [
+       172,
+       530
+      ],
+      "to": [
+       228,
+       530
+      ],
+      "dur": 0.3,
+      "kata": "Baterai",
+      "width": 14,
+      "stroke": "emas",
+      "at": 0.5
+     },
+     {
+      "type": "tex",
+      "pos": [
+       90,
+       500
+      ],
+      "tex": "\\g{V}",
+      "size": 80,
+      "kata": "tegangan",
+      "at": 0.5
+     },
+     {
+      "type": "polygon",
+      "points": [
+       [
+        470,
+        750
+       ],
+       [
+        525,
+        722
+       ],
+       [
+        525,
+        778
+       ]
+      ],
+      "close": true,
+      "dur": 0.3,
+      "kata": "mengalir,",
+      "stroke": "emas",
+      "fill": "emas",
+      "fillOpacity": 1,
+      "width": 3,
+      "focus": true,
+      "at": 0.5
+     },
+     {
+      "type": "tex",
+      "pos": [
+       500,
+       840
+      ],
+      "tex": "\\g{I}",
+      "size": 80,
+      "kata": "arus",
+      "at": 0.5
+     },
+     {
+      "type": "path",
+      "d": "M400 250 L417 210 L450 290 L483 210 L517 290 L550 210 L583 290 L600 250",
+      "dur": 0.6,
+      "kata": "hambatan",
+      "width": 6,
+      "stroke": "emas",
+      "at": 0.5
+     },
+     {
+      "type": "tex",
+      "pos": [
+       500,
+       150
+      ],
+      "tex": "\\g{R}",
+      "size": 80,
+      "kata": "menahannya.",
+      "at": 0.5
+     },
+     {
+      "type": "tex",
+      "pos": [
+       500,
+       960
+      ],
+      "tex": "\\g{V = I \\cdot R}",
+      "size": 110,
+      "kata": "hukum",
+      "at": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "id": "penutup",
+   "type": "outro",
+   "durasi": 7.5,
+   "bg": "navy",
+   "bingkai": true,
+   "transisi": "fade",
+   "narasi": "Jadi lambang listrik menyimpan cerita para penemunya. Di part berikutnya, kita bongkar lambang gaya dan energi.",
+   "props": {
+    "kesimpulan": "Lambang listrik = jejak para penemunya",
+    "tex": "\\g{V = I \\cdot R}",
+    "ajakan": "Part 2: lambang gaya & energi →"
+   }
+  },
+  {
+   "id": "sumber",
+   "type": "sumber",
+   "durasi": 6.5,
+   "bg": "navy",
+   "narasi": "Sumber riset ada di layar.",
+   "props": {
+    "daftar": [
+     "Wikipedia, “Electric current” — lambang I dari Prancis intensité du courant (Ampère, 1820)",
+     "OQLF, Vitrine linguistique, “intensité de courant électrique” — lambang I",
+     "Wikipedia, “Quantity of electricity”; IEC Electropedia 113-02-10 — muatan Q",
+     "Wikipedia, “Alessandro Volta” & “Volt” — tumpukan volta (1800), satuan volt",
+     "Wikipedia, “Ohm” — satuan hambatan dan lambang Ω",
+     "Buku teks Fisika SMA (Kemendikbud) — Listrik Arus Searah, hukum Ohm"
+    ],
+    "catatan": "Asal huruf Q (quantity) belum tercatat pasti, jadi disebut “konon”. Rangkaian dianggap ideal: hambatan kabel dan baterai diabaikan."
+   }
+  }
+ ]
+}
