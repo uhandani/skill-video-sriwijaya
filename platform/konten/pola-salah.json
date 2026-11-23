@@ -1,0 +1,9 @@
+[
+ {
+  "id": "UMUM-BELUM-SEDERHANA",
+  "simpul": "UMUM",
+  "nama": "Jawaban benar tapi belum paling sederhana",
+  "sebut": "Nilaimu sudah benar, tapi bentuknya belum paling sederhana.",
+  "tunjukkan": "Bagi pembilang dan penyebut dengan FPB-nya. Contoh: 6/8 → bagi 2 → 3/4."
+ }
+]

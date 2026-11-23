@@ -1,0 +1,959 @@
+{
+ "jalur": [
+  {
+   "id": "J01",
+   "nama": "Bilangan & nilai tempat"
+  },
+  {
+   "id": "J02",
+   "nama": "Tambah & kurang"
+  },
+  {
+   "id": "J03",
+   "nama": "Kali & bagi"
+  },
+  {
+   "id": "J04",
+   "nama": "Bilangan bulat"
+  },
+  {
+   "id": "J05",
+   "nama": "Urutan operasi"
+  },
+  {
+   "id": "J06",
+   "nama": "Pecahan: makna"
+  },
+  {
+   "id": "J07",
+   "nama": "Pecahan: operasi"
+  },
+  {
+   "id": "J08",
+   "nama": "Desimal & persen"
+  },
+  {
+   "id": "J09",
+   "nama": "Rasio & proporsi"
+  },
+  {
+   "id": "J10",
+   "nama": "Pangkat & akar"
+  },
+  {
+   "id": "J11",
+   "nama": "Huruf dalam MTK"
+  },
+  {
+   "id": "J12",
+   "nama": "Persamaan linear"
+  },
+  {
+   "id": "J13",
+   "nama": "Ubah rumus"
+  },
+  {
+   "id": "J14",
+   "nama": "Satuan"
+  },
+  {
+   "id": "J15",
+   "nama": "Soal cerita"
+  }
+ ],
+ "simpul": [
+  {
+   "id": "J01-01",
+   "jalur": "J01",
+   "nama": "Membilang & menulis bilangan sampai 100",
+   "urutan": 1,
+   "prasyarat": [],
+   "fase": "A",
+   "targetDetik": 10
+  },
+  {
+   "id": "J01-02",
+   "jalur": "J01",
+   "nama": "Nilai tempat puluhan & ratusan",
+   "urutan": 2,
+   "prasyarat": [
+    "J01-01"
+   ],
+   "fase": "A",
+   "targetDetik": 15
+  },
+  {
+   "id": "J01-03",
+   "jalur": "J01",
+   "nama": "Membandingkan & mengurutkan bilangan",
+   "urutan": 3,
+   "prasyarat": [
+    "J01-02"
+   ],
+   "fase": "B",
+   "targetDetik": 15
+  },
+  {
+   "id": "J01-04",
+   "jalur": "J01",
+   "nama": "Nilai tempat ribuan & pembulatan",
+   "urutan": 4,
+   "prasyarat": [
+    "J01-03"
+   ],
+   "fase": "B",
+   "targetDetik": 20
+  },
+  {
+   "id": "J01-05",
+   "jalur": "J01",
+   "nama": "Membaca & menulis bilangan besar",
+   "urutan": 5,
+   "prasyarat": [
+    "J01-04"
+   ],
+   "fase": "B",
+   "targetDetik": 20
+  },
+  {
+   "id": "J02-01",
+   "jalur": "J02",
+   "nama": "Fakta tambah sampai 20",
+   "urutan": 1,
+   "prasyarat": [],
+   "fase": "A",
+   "targetDetik": 5
+  },
+  {
+   "id": "J02-02",
+   "jalur": "J02",
+   "nama": "Fakta kurang sampai 20",
+   "urutan": 2,
+   "prasyarat": [
+    "J02-01"
+   ],
+   "fase": "A",
+   "targetDetik": 5
+  },
+  {
+   "id": "J02-03",
+   "jalur": "J02",
+   "nama": "Tambah tanpa menyimpan",
+   "urutan": 3,
+   "prasyarat": [
+    "J02-02"
+   ],
+   "fase": "A",
+   "targetDetik": 15
+  },
+  {
+   "id": "J02-04",
+   "jalur": "J02",
+   "nama": "Tambah dengan menyimpan",
+   "urutan": 4,
+   "prasyarat": [
+    "J02-03"
+   ],
+   "fase": "B",
+   "targetDetik": 20
+  },
+  {
+   "id": "J02-05",
+   "jalur": "J02",
+   "nama": "Kurang dengan meminjam",
+   "urutan": 5,
+   "prasyarat": [
+    "J02-04"
+   ],
+   "fase": "B",
+   "targetDetik": 25
+  },
+  {
+   "id": "J02-06",
+   "jalur": "J02",
+   "nama": "Tambah-kurang bersusun ribuan",
+   "urutan": 6,
+   "prasyarat": [
+    "J02-05"
+   ],
+   "fase": "B",
+   "targetDetik": 40
+  },
+  {
+   "id": "J03-01",
+   "jalur": "J03",
+   "nama": "Kali sebagai penjumlahan berulang",
+   "urutan": 1,
+   "prasyarat": [
+    "J02-04"
+   ],
+   "fase": "B",
+   "targetDetik": 15
+  },
+  {
+   "id": "J03-02",
+   "jalur": "J03",
+   "nama": "Fakta perkalian 1–10",
+   "urutan": 2,
+   "prasyarat": [
+    "J03-01"
+   ],
+   "fase": "B",
+   "targetDetik": 5
+  },
+  {
+   "id": "J03-03",
+   "jalur": "J03",
+   "nama": "Bagi sebagai kebalikan kali",
+   "urutan": 3,
+   "prasyarat": [
+    "J03-02"
+   ],
+   "fase": "B",
+   "targetDetik": 8
+  },
+  {
+   "id": "J03-04",
+   "jalur": "J03",
+   "nama": "Kali bersusun",
+   "urutan": 4,
+   "prasyarat": [
+    "J03-03"
+   ],
+   "fase": "C",
+   "targetDetik": 45
+  },
+  {
+   "id": "J03-05",
+   "jalur": "J03",
+   "nama": "Bagi bersusun",
+   "urutan": 5,
+   "prasyarat": [
+    "J03-04"
+   ],
+   "fase": "C",
+   "targetDetik": 60
+  },
+  {
+   "id": "J03-06",
+   "jalur": "J03",
+   "nama": "Bagi bersisa",
+   "urutan": 6,
+   "prasyarat": [
+    "J03-05"
+   ],
+   "fase": "C",
+   "targetDetik": 30
+  },
+  {
+   "id": "J03-07",
+   "jalur": "J03",
+   "nama": "Faktor, kelipatan, KPK & FPB",
+   "urutan": 7,
+   "prasyarat": [
+    "J03-06"
+   ],
+   "fase": "C",
+   "targetDetik": 45
+  },
+  {
+   "id": "J04-01",
+   "jalur": "J04",
+   "nama": "Bilangan negatif di garis bilangan",
+   "urutan": 1,
+   "prasyarat": [
+    "J02-06"
+   ],
+   "fase": "D",
+   "targetDetik": 15
+  },
+  {
+   "id": "J04-02",
+   "jalur": "J04",
+   "nama": "Tambah & kurang bilangan bulat",
+   "urutan": 2,
+   "prasyarat": [
+    "J04-01"
+   ],
+   "fase": "D",
+   "targetDetik": 15
+  },
+  {
+   "id": "J04-03",
+   "jalur": "J04",
+   "nama": "Kali & bagi bilangan bulat",
+   "urutan": 3,
+   "prasyarat": [
+    "J04-02"
+   ],
+   "fase": "D",
+   "targetDetik": 15
+  },
+  {
+   "id": "J04-04",
+   "jalur": "J04",
+   "nama": "Operasi campuran bilangan bulat",
+   "urutan": 4,
+   "prasyarat": [
+    "J04-03"
+   ],
+   "fase": "D",
+   "targetDetik": 30
+  },
+  {
+   "id": "J05-01",
+   "jalur": "J05",
+   "nama": "Kali/bagi sebelum tambah/kurang",
+   "urutan": 1,
+   "prasyarat": [
+    "J03-02"
+   ],
+   "fase": "C",
+   "targetDetik": 25
+  },
+  {
+   "id": "J05-02",
+   "jalur": "J05",
+   "nama": "Tanda kurung",
+   "urutan": 2,
+   "prasyarat": [
+    "J05-01"
+   ],
+   "fase": "C",
+   "targetDetik": 30
+  },
+  {
+   "id": "J05-03",
+   "jalur": "J05",
+   "nama": "Pangkat dalam urutan operasi",
+   "urutan": 3,
+   "prasyarat": [
+    "J05-02",
+    "J10-01"
+   ],
+   "fase": "D",
+   "targetDetik": 40
+  },
+  {
+   "id": "J06-01",
+   "jalur": "J06",
+   "nama": "Pecahan sebagai bagian dari keseluruhan",
+   "urutan": 1,
+   "prasyarat": [
+    "J03-03"
+   ],
+   "fase": "B",
+   "targetDetik": 15
+  },
+  {
+   "id": "J06-02",
+   "jalur": "J06",
+   "nama": "Pecahan di garis bilangan",
+   "urutan": 2,
+   "prasyarat": [
+    "J06-01"
+   ],
+   "fase": "C",
+   "targetDetik": 20
+  },
+  {
+   "id": "J06-03",
+   "jalur": "J06",
+   "nama": "Pecahan senilai",
+   "urutan": 3,
+   "prasyarat": [
+    "J06-02"
+   ],
+   "fase": "C",
+   "targetDetik": 20
+  },
+  {
+   "id": "J06-04",
+   "jalur": "J06",
+   "nama": "Menyederhanakan pecahan",
+   "urutan": 4,
+   "prasyarat": [
+    "J06-03"
+   ],
+   "fase": "C",
+   "targetDetik": 20
+  },
+  {
+   "id": "J06-05",
+   "jalur": "J06",
+   "nama": "Membandingkan pecahan",
+   "urutan": 5,
+   "prasyarat": [
+    "J06-04"
+   ],
+   "fase": "C",
+   "targetDetik": 25
+  },
+  {
+   "id": "J06-06",
+   "jalur": "J06",
+   "nama": "Pecahan campuran dan pecahan biasa",
+   "urutan": 6,
+   "prasyarat": [
+    "J06-05"
+   ],
+   "fase": "C",
+   "targetDetik": 25
+  },
+  {
+   "id": "J07-01",
+   "jalur": "J07",
+   "nama": "Tambah & kurang pecahan berpenyebut sama",
+   "urutan": 1,
+   "prasyarat": [
+    "J06-04"
+   ],
+   "fase": "C",
+   "targetDetik": 15
+  },
+  {
+   "id": "J07-02",
+   "jalur": "J07",
+   "nama": "Tambah & kurang pecahan berpenyebut beda",
+   "urutan": 2,
+   "prasyarat": [
+    "J07-01",
+    "J03-07",
+    "J06-03"
+   ],
+   "fase": "C",
+   "targetDetik": 40
+  },
+  {
+   "id": "J07-03",
+   "jalur": "J07",
+   "nama": "Tambah & kurang pecahan campuran",
+   "urutan": 3,
+   "prasyarat": [
+    "J07-02"
+   ],
+   "fase": "D",
+   "targetDetik": 50
+  },
+  {
+   "id": "J07-04",
+   "jalur": "J07",
+   "nama": "Kali pecahan",
+   "urutan": 4,
+   "prasyarat": [
+    "J07-03",
+    "J03-02",
+    "J06-04"
+   ],
+   "fase": "C",
+   "targetDetik": 25
+  },
+  {
+   "id": "J07-05",
+   "jalur": "J07",
+   "nama": "Bagi pecahan",
+   "urutan": 5,
+   "prasyarat": [
+    "J07-04"
+   ],
+   "fase": "D",
+   "targetDetik": 30
+  },
+  {
+   "id": "J07-06",
+   "jalur": "J07",
+   "nama": "Operasi campuran pecahan",
+   "urutan": 6,
+   "prasyarat": [
+    "J07-05"
+   ],
+   "fase": "D",
+   "targetDetik": 60
+  },
+  {
+   "id": "J07-07",
+   "jalur": "J07",
+   "nama": "Soal cerita pecahan",
+   "urutan": 7,
+   "prasyarat": [
+    "J07-06"
+   ],
+   "fase": "D",
+   "targetDetik": 90
+  },
+  {
+   "id": "J08-01",
+   "jalur": "J08",
+   "nama": "Desimal & nilai tempat",
+   "urutan": 1,
+   "prasyarat": [
+    "J01-04"
+   ],
+   "fase": "C",
+   "targetDetik": 15
+  },
+  {
+   "id": "J08-02",
+   "jalur": "J08",
+   "nama": "Mengubah pecahan ↔ desimal",
+   "urutan": 2,
+   "prasyarat": [
+    "J08-01",
+    "J06-04"
+   ],
+   "fase": "C",
+   "targetDetik": 25
+  },
+  {
+   "id": "J08-03",
+   "jalur": "J08",
+   "nama": "Operasi desimal",
+   "urutan": 3,
+   "prasyarat": [
+    "J08-02"
+   ],
+   "fase": "C",
+   "targetDetik": 40
+  },
+  {
+   "id": "J08-04",
+   "jalur": "J08",
+   "nama": "Persen sebagai per seratus",
+   "urutan": 4,
+   "prasyarat": [
+    "J08-03"
+   ],
+   "fase": "C",
+   "targetDetik": 20
+  },
+  {
+   "id": "J08-05",
+   "jalur": "J08",
+   "nama": "Persen dari suatu bilangan",
+   "urutan": 5,
+   "prasyarat": [
+    "J08-04",
+    "J03-04"
+   ],
+   "fase": "D",
+   "targetDetik": 30
+  },
+  {
+   "id": "J08-06",
+   "jalur": "J08",
+   "nama": "Diskon & kenaikan persen",
+   "urutan": 6,
+   "prasyarat": [
+    "J08-05"
+   ],
+   "fase": "D",
+   "targetDetik": 60
+  },
+  {
+   "id": "J09-01",
+   "jalur": "J09",
+   "nama": "Perbandingan",
+   "urutan": 1,
+   "prasyarat": [
+    "J06-03"
+   ],
+   "fase": "D",
+   "targetDetik": 25
+  },
+  {
+   "id": "J09-02",
+   "jalur": "J09",
+   "nama": "Perbandingan senilai",
+   "urutan": 2,
+   "prasyarat": [
+    "J09-01"
+   ],
+   "fase": "D",
+   "targetDetik": 40
+  },
+  {
+   "id": "J09-03",
+   "jalur": "J09",
+   "nama": "Perbandingan berbalik nilai",
+   "urutan": 3,
+   "prasyarat": [
+    "J09-02"
+   ],
+   "fase": "D",
+   "targetDetik": 45
+  },
+  {
+   "id": "J09-04",
+   "jalur": "J09",
+   "nama": "Skala",
+   "urutan": 4,
+   "prasyarat": [
+    "J09-03"
+   ],
+   "fase": "D",
+   "targetDetik": 40
+  },
+  {
+   "id": "J09-05",
+   "jalur": "J09",
+   "nama": "Laju & kecepatan rata-rata",
+   "urutan": 5,
+   "prasyarat": [
+    "J09-04"
+   ],
+   "fase": "D",
+   "targetDetik": 45
+  },
+  {
+   "id": "J10-01",
+   "jalur": "J10",
+   "nama": "Arti pangkat",
+   "urutan": 1,
+   "prasyarat": [
+    "J03-02"
+   ],
+   "fase": "D",
+   "targetDetik": 15
+  },
+  {
+   "id": "J10-02",
+   "jalur": "J10",
+   "nama": "Sifat perkalian & pembagian pangkat",
+   "urutan": 2,
+   "prasyarat": [
+    "J10-01"
+   ],
+   "fase": "D",
+   "targetDetik": 30
+  },
+  {
+   "id": "J10-03",
+   "jalur": "J10",
+   "nama": "Pangkat nol & negatif",
+   "urutan": 3,
+   "prasyarat": [
+    "J10-02",
+    "J07-05"
+   ],
+   "fase": "D",
+   "targetDetik": 30
+  },
+  {
+   "id": "J10-04",
+   "jalur": "J10",
+   "nama": "Akar kuadrat",
+   "urutan": 4,
+   "prasyarat": [
+    "J10-03"
+   ],
+   "fase": "D",
+   "targetDetik": 25
+  },
+  {
+   "id": "J10-05",
+   "jalur": "J10",
+   "nama": "Notasi ilmiah",
+   "urutan": 5,
+   "prasyarat": [
+    "J10-04"
+   ],
+   "fase": "D",
+   "targetDetik": 40
+  },
+  {
+   "id": "J11-01",
+   "jalur": "J11",
+   "nama": "Huruf sebagai wakil bilangan",
+   "urutan": 1,
+   "prasyarat": [
+    "J04-04",
+    "J05-02"
+   ],
+   "fase": "D",
+   "targetDetik": 20
+  },
+  {
+   "id": "J11-02",
+   "jalur": "J11",
+   "nama": "Substitusi nilai",
+   "urutan": 2,
+   "prasyarat": [
+    "J11-01"
+   ],
+   "fase": "D",
+   "targetDetik": 25
+  },
+  {
+   "id": "J11-03",
+   "jalur": "J11",
+   "nama": "Suku sejenis",
+   "urutan": 3,
+   "prasyarat": [
+    "J11-02"
+   ],
+   "fase": "D",
+   "targetDetik": 30
+  },
+  {
+   "id": "J11-04",
+   "jalur": "J11",
+   "nama": "Menjabarkan tanda kurung",
+   "urutan": 4,
+   "prasyarat": [
+    "J11-03"
+   ],
+   "fase": "D",
+   "targetDetik": 35
+  },
+  {
+   "id": "J11-05",
+   "jalur": "J11",
+   "nama": "Kalimat menjadi bentuk aljabar",
+   "urutan": 5,
+   "prasyarat": [
+    "J11-04"
+   ],
+   "fase": "D",
+   "targetDetik": 45
+  },
+  {
+   "id": "J12-01",
+   "jalur": "J12",
+   "nama": "Persamaan sebagai timbangan",
+   "urutan": 1,
+   "prasyarat": [
+    "J11-03"
+   ],
+   "fase": "D",
+   "targetDetik": 20
+  },
+  {
+   "id": "J12-02",
+   "jalur": "J12",
+   "nama": "Satu langkah: x + a = b",
+   "urutan": 2,
+   "prasyarat": [
+    "J12-01"
+   ],
+   "fase": "D",
+   "targetDetik": 20
+  },
+  {
+   "id": "J12-03",
+   "jalur": "J12",
+   "nama": "Satu langkah: ax = b",
+   "urutan": 3,
+   "prasyarat": [
+    "J12-02"
+   ],
+   "fase": "D",
+   "targetDetik": 20
+  },
+  {
+   "id": "J12-04",
+   "jalur": "J12",
+   "nama": "Dua langkah: ax + b = c",
+   "urutan": 4,
+   "prasyarat": [
+    "J12-03"
+   ],
+   "fase": "D",
+   "targetDetik": 40
+  },
+  {
+   "id": "J12-05",
+   "jalur": "J12",
+   "nama": "Variabel di kedua ruas",
+   "urutan": 5,
+   "prasyarat": [
+    "J12-04"
+   ],
+   "fase": "D",
+   "targetDetik": 60
+  },
+  {
+   "id": "J12-06",
+   "jalur": "J12",
+   "nama": "Persamaan dengan kurung",
+   "urutan": 6,
+   "prasyarat": [
+    "J12-05"
+   ],
+   "fase": "D",
+   "targetDetik": 70
+  },
+  {
+   "id": "J12-07",
+   "jalur": "J12",
+   "nama": "Persamaan dengan pecahan",
+   "urutan": 7,
+   "prasyarat": [
+    "J12-06",
+    "J07-06"
+   ],
+   "fase": "D",
+   "targetDetik": 90
+  },
+  {
+   "id": "J13-01",
+   "jalur": "J13",
+   "nama": "Rumus bentuk bagi (v = s/t, ρ = m/V, P = W/t)",
+   "urutan": 1,
+   "prasyarat": [
+    "J12-03"
+   ],
+   "fase": "D",
+   "targetDetik": 30
+  },
+  {
+   "id": "J13-02",
+   "jalur": "J13",
+   "nama": "Rumus bentuk kali (F = m·a, W = F·s, V = I·R)",
+   "urutan": 2,
+   "prasyarat": [
+    "J13-01"
+   ],
+   "fase": "D",
+   "targetDetik": 30
+  },
+  {
+   "id": "J13-03",
+   "jalur": "J13",
+   "nama": "Rumus dua langkah (v = v₀ + a·t)",
+   "urutan": 3,
+   "prasyarat": [
+    "J13-02",
+    "J12-04"
+   ],
+   "fase": "E",
+   "targetDetik": 50
+  },
+  {
+   "id": "J13-04",
+   "jalur": "J13",
+   "nama": "Rumus dengan konstanta (Ek = ½·m·v² untuk m)",
+   "urutan": 4,
+   "prasyarat": [
+    "J13-03"
+   ],
+   "fase": "E",
+   "targetDetik": 50
+  },
+  {
+   "id": "J13-05",
+   "jalur": "J13",
+   "nama": "Rumus dengan kuadrat & akar",
+   "urutan": 5,
+   "prasyarat": [
+    "J13-04",
+    "J10-04"
+   ],
+   "fase": "E",
+   "targetDetik": 60
+  },
+  {
+   "id": "J14-01",
+   "jalur": "J14",
+   "nama": "Konversi panjang, massa, waktu",
+   "urutan": 1,
+   "prasyarat": [
+    "J08-03"
+   ],
+   "fase": "C",
+   "targetDetik": 30
+  },
+  {
+   "id": "J14-02",
+   "jalur": "J14",
+   "nama": "Konversi satuan turunan (km/jam ↔ m/s)",
+   "urutan": 2,
+   "prasyarat": [
+    "J14-01",
+    "J09-05"
+   ],
+   "fase": "D",
+   "targetDetik": 45
+  },
+  {
+   "id": "J14-03",
+   "jalur": "J14",
+   "nama": "Awalan SI & notasi ilmiah",
+   "urutan": 3,
+   "prasyarat": [
+    "J14-02",
+    "J10-05"
+   ],
+   "fase": "E",
+   "targetDetik": 40
+  },
+  {
+   "id": "J14-04",
+   "jalur": "J14",
+   "nama": "Analisis satuan",
+   "urutan": 4,
+   "prasyarat": [
+    "J14-03"
+   ],
+   "fase": "E",
+   "targetDetik": 60
+  },
+  {
+   "id": "J15-01",
+   "jalur": "J15",
+   "nama": "Menemukan yang diketahui & ditanya",
+   "urutan": 1,
+   "prasyarat": [
+    "J01-03"
+   ],
+   "fase": "B",
+   "targetDetik": 40
+  },
+  {
+   "id": "J15-02",
+   "jalur": "J15",
+   "nama": "Memilih operasi yang tepat",
+   "urutan": 2,
+   "prasyarat": [
+    "J15-01",
+    "J02-06",
+    "J03-03"
+   ],
+   "fase": "C",
+   "targetDetik": 45
+  },
+  {
+   "id": "J15-03",
+   "jalur": "J15",
+   "nama": "Membuat model persamaan",
+   "urutan": 3,
+   "prasyarat": [
+    "J15-02",
+    "J12-04"
+   ],
+   "fase": "D",
+   "targetDetik": 90
+  },
+  {
+   "id": "J15-04",
+   "jalur": "J15",
+   "nama": "Soal cerita banyak langkah",
+   "urutan": 4,
+   "prasyarat": [
+    "J15-03"
+   ],
+   "fase": "D",
+   "targetDetik": 120
+  },
+  {
+   "id": "J15-05",
+   "jalur": "J15",
+   "nama": "Mengecek kewajaran jawaban",
+   "urutan": 5,
+   "prasyarat": [
+    "J15-04"
+   ],
+   "fase": "D",
+   "targetDetik": 45
+  }
+ ]
+}
