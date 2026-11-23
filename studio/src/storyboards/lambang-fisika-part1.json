@@ -45,12 +45,103 @@
     "judul": "Velocity!",
     "sub": "Kenapa kecepatan pakai huruf v?",
     "tandaTanya": true
+   },
+   "vo": {
+    "file": "audio/lambang-fisika-part1/1-hook.mp3",
+    "durasi": 6.426,
+    "words": [
+     {
+      "w": "Velocity",
+      "start": 0.0,
+      "end": 0.491
+     },
+     {
+      "w": "bukan",
+      "start": 0.491,
+      "end": 0.819
+     },
+     {
+      "w": "cuma",
+      "start": 0.819,
+      "end": 1.146
+     },
+     {
+      "w": "efek",
+      "start": 1.146,
+      "end": 1.474
+     },
+     {
+      "w": "edit",
+      "start": 1.474,
+      "end": 1.801
+     },
+     {
+      "w": "di",
+      "start": 1.801,
+      "end": 2.112
+     },
+     {
+      "w": "TikTok.",
+      "start": 2.112,
+      "end": 2.931
+     },
+     {
+      "w": "Kata",
+      "start": 2.931,
+      "end": 3.258
+     },
+     {
+      "w": "ini",
+      "start": 3.258,
+      "end": 3.586
+     },
+     {
+      "w": "adalah",
+      "start": 3.586,
+      "end": 4.077
+     },
+     {
+      "w": "rahasia",
+      "start": 4.077,
+      "end": 4.568
+     },
+     {
+      "w": "di",
+      "start": 4.568,
+      "end": 4.732
+     },
+     {
+      "w": "balik",
+      "start": 4.732,
+      "end": 5.06
+     },
+     {
+      "w": "huruf",
+      "start": 5.06,
+      "end": 5.387
+     },
+     {
+      "w": "v",
+      "start": 5.387,
+      "end": 5.551
+     },
+     {
+      "w": "di",
+      "start": 5.551,
+      "end": 5.715
+     },
+     {
+      "w": "fisika.",
+      "start": 5.715,
+      "end": 6.426
+     }
+    ]
    }
   },
   {
    "id": "v",
    "type": "lambang",
-   "durasi": 8,
+   "durasi": 10.0,
    "bg": "navy",
    "transisi": "iris",
    "narasi": "Kecepatan ditulis v, dari bahasa Inggris velocity. Asalnya bahasa Latin velocitas, artinya kecepatan.",
@@ -66,18 +157,19 @@
     "momen": [
      {
       "nama": "urai",
-      "at": 1.2,
+      "at": 3.5,
       "kata": "velocity."
      },
      {
       "nama": "info",
-      "at": 2.6,
+      "at": 5.54,
       "kata": "Latin"
      },
      {
       "nama": "rumus",
-      "at": 4.2,
-      "kata": "kecepatan."
+      "at": 7.85,
+      "kata": "kecepatan.",
+      "kataKe": 2
      }
     ],
     "tex": "v = \\frac{s}{t}"
@@ -94,12 +186,83 @@
       "at": 0.5
      }
     ]
+   },
+   "vo": {
+    "file": "audio/lambang-fisika-part1/2-v.mp3",
+    "durasi": 8.673,
+    "words": [
+     {
+      "w": "Kecepatan",
+      "start": 0.0,
+      "end": 0.729
+     },
+     {
+      "w": "ditulis",
+      "start": 0.729,
+      "end": 1.276
+     },
+     {
+      "w": "v,",
+      "start": 1.276,
+      "end": 1.458
+     },
+     {
+      "w": "dari",
+      "start": 1.458,
+      "end": 2.194
+     },
+     {
+      "w": "bahasa",
+      "start": 2.194,
+      "end": 2.741
+     },
+     {
+      "w": "Inggris",
+      "start": 2.741,
+      "end": 3.302
+     },
+     {
+      "w": "velocity.",
+      "start": 3.302,
+      "end": 3.848
+     },
+     {
+      "w": "Asalnya",
+      "start": 3.848,
+      "end": 4.791
+     },
+     {
+      "w": "bahasa",
+      "start": 4.791,
+      "end": 5.338
+     },
+     {
+      "w": "Latin",
+      "start": 5.338,
+      "end": 6.084
+     },
+     {
+      "w": "velocitas,",
+      "start": 6.084,
+      "end": 7.1
+     },
+     {
+      "w": "artinya",
+      "start": 7.1,
+      "end": 7.647
+     },
+     {
+      "w": "kecepatan.",
+      "start": 7.647,
+      "end": 8.673
+     }
+    ]
    }
   },
   {
    "id": "a",
    "type": "lambang",
-   "durasi": 8,
+   "durasi": 9.6,
    "bg": "navy",
    "transisi": "iris",
    "narasi": "Percepatan ditulis a, dari acceleration. Akarnya bahasa Latin accelerare, artinya mempercepat.",
@@ -115,17 +278,17 @@
     "momen": [
      {
       "nama": "urai",
-      "at": 1.2,
+      "at": 2.47,
       "kata": "acceleration."
      },
      {
       "nama": "info",
-      "at": 2.6,
+      "at": 5.05,
       "kata": "Latin"
      },
      {
       "nama": "rumus",
-      "at": 4.2,
+      "at": 7.59,
       "kata": "mempercepat."
      }
     ],
@@ -143,12 +306,73 @@
       "at": 0.5
      }
     ]
+   },
+   "vo": {
+    "file": "audio/lambang-fisika-part1/3-a.mp3",
+    "durasi": 8.281,
+    "words": [
+     {
+      "w": "Percepatan",
+      "start": 0.0,
+      "end": 0.717
+     },
+     {
+      "w": "ditulis",
+      "start": 0.717,
+      "end": 1.418
+     },
+     {
+      "w": "a,",
+      "start": 1.418,
+      "end": 1.911
+     },
+     {
+      "w": "dari",
+      "start": 1.911,
+      "end": 2.27
+     },
+     {
+      "w": "acceleration.",
+      "start": 2.27,
+      "end": 3.372
+     },
+     {
+      "w": "Akarnya",
+      "start": 3.372,
+      "end": 4.315
+     },
+     {
+      "w": "bahasa",
+      "start": 4.315,
+      "end": 4.852
+     },
+     {
+      "w": "Latin",
+      "start": 4.852,
+      "end": 5.503
+     },
+     {
+      "w": "accelerare,",
+      "start": 5.503,
+      "end": 6.719
+     },
+     {
+      "w": "artinya",
+      "start": 6.719,
+      "end": 7.387
+     },
+     {
+      "w": "mempercepat.",
+      "start": 7.387,
+      "end": 8.281
+     }
+    ]
    }
   },
   {
    "id": "t",
    "type": "lambang",
-   "durasi": 6.5,
+   "durasi": 8.1,
    "bg": "navy",
    "transisi": "iris",
    "narasi": "Waktu ditulis t, dari time. Dalam bahasa Latin, waktu disebut tempus.",
@@ -164,12 +388,12 @@
     "momen": [
      {
       "nama": "urai",
-      "at": 1.2,
+      "at": 2.24,
       "kata": "time."
      },
      {
       "nama": "info",
-      "at": 2.6,
+      "at": 4.39,
       "kata": "Latin"
      }
     ]
@@ -185,12 +409,73 @@
       "at": 0.5
      }
     ]
+   },
+   "vo": {
+    "file": "audio/lambang-fisika-part1/4-t.mp3",
+    "durasi": 6.766,
+    "words": [
+     {
+      "w": "Waktu",
+      "start": 0.0,
+      "end": 0.4
+     },
+     {
+      "w": "ditulis",
+      "start": 0.4,
+      "end": 1.138
+     },
+     {
+      "w": "t,",
+      "start": 1.138,
+      "end": 1.642
+     },
+     {
+      "w": "dari",
+      "start": 1.642,
+      "end": 2.042
+     },
+     {
+      "w": "time.",
+      "start": 2.042,
+      "end": 2.768
+     },
+     {
+      "w": "Dalam",
+      "start": 2.768,
+      "end": 3.588
+     },
+     {
+      "w": "bahasa",
+      "start": 3.588,
+      "end": 4.188
+     },
+     {
+      "w": "Latin,",
+      "start": 4.188,
+      "end": 4.781
+     },
+     {
+      "w": "waktu",
+      "start": 4.781,
+      "end": 5.181
+     },
+     {
+      "w": "disebut",
+      "start": 5.181,
+      "end": 6.183
+     },
+     {
+      "w": "tempus.",
+      "start": 6.183,
+      "end": 6.766
+     }
+    ]
    }
   },
   {
    "id": "delta",
    "type": "lambang",
-   "durasi": 10,
+   "durasi": 13.8,
    "bg": "navy",
    "transisi": "iris",
    "narasi": "Lalu segitiga ini, delta. Huruf D dalam bahasa Yunani, dari kata diaphora, artinya perbedaan. Jadi delta v berarti perubahan kecepatan.",
@@ -206,28 +491,134 @@
     "momen": [
      {
       "nama": "urai",
-      "at": 1.2,
+      "at": 6.4,
       "kata": "diaphora,"
      },
      {
       "nama": "info",
-      "at": 2.6,
+      "at": 7.88,
       "kata": "perbedaan."
      },
      {
       "nama": "rumus",
-      "at": 4.2,
+      "at": 10.71,
       "kata": "perubahan"
      }
     ],
     "tex": "\\Delta v = v_2 - v_1"
    },
-   "tts": "Lalu segitiga ini, delta. Huruf de dalam bahasa Yunani, dari kata, diafora, artinya perbedaan. Jadi delta ve, berarti perubahan kecepatan."
+   "tts": "Lalu segitiga ini, delta. Huruf de dalam bahasa Yunani, dari kata, diafora, artinya perbedaan. Jadi delta ve, berarti perubahan kecepatan.",
+   "vo": {
+    "file": "audio/lambang-fisika-part1/5-delta.mp3",
+    "durasi": 12.434,
+    "words": [
+     {
+      "w": "Lalu",
+      "start": 0.0,
+      "end": 0.398
+     },
+     {
+      "w": "segitiga",
+      "start": 0.398,
+      "end": 1.194
+     },
+     {
+      "w": "ini,",
+      "start": 1.194,
+      "end": 1.93
+     },
+     {
+      "w": "delta.",
+      "start": 1.93,
+      "end": 2.772
+     },
+     {
+      "w": "Huruf",
+      "start": 2.772,
+      "end": 3.17
+     },
+     {
+      "w": "D",
+      "start": 3.17,
+      "end": 3.369
+     },
+     {
+      "w": "dalam",
+      "start": 3.369,
+      "end": 3.767
+     },
+     {
+      "w": "bahasa",
+      "start": 3.767,
+      "end": 4.364
+     },
+     {
+      "w": "Yunani,",
+      "start": 4.364,
+      "end": 5.272
+     },
+     {
+      "w": "dari",
+      "start": 5.272,
+      "end": 5.798
+     },
+     {
+      "w": "kata",
+      "start": 5.798,
+      "end": 6.196
+     },
+     {
+      "w": "diaphora,",
+      "start": 6.196,
+      "end": 7.081
+     },
+     {
+      "w": "artinya",
+      "start": 7.081,
+      "end": 7.678
+     },
+     {
+      "w": "perbedaan.",
+      "start": 7.678,
+      "end": 8.659
+     },
+     {
+      "w": "Jadi",
+      "start": 8.659,
+      "end": 9.057
+     },
+     {
+      "w": "delta",
+      "start": 9.057,
+      "end": 9.455
+     },
+     {
+      "w": "v",
+      "start": 9.455,
+      "end": 9.654
+     },
+     {
+      "w": "berarti",
+      "start": 9.654,
+      "end": 10.51
+     },
+     {
+      "w": "perubahan",
+      "start": 10.51,
+      "end": 11.451
+     },
+     {
+      "w": "kecepatan.",
+      "start": 11.451,
+      "end": 12.434
+     }
+    ]
+   }
   },
   {
    "id": "s",
    "type": "lambang",
-   "durasi": 8,
+   "durasi": 10.4,
    "bg": "navy",
    "transisi": "iris",
    "narasi": "Jarak sering ditulis s. Konon dari bahasa Latin spatium, artinya ruang. Tapi asal pastinya belum tercatat jelas.",
@@ -243,22 +634,113 @@
     "momen": [
      {
       "nama": "urai",
-      "at": 1.2,
+      "at": 4.35,
       "kata": "spatium,"
      },
      {
       "nama": "info",
-      "at": 2.6,
+      "at": 5.59,
       "kata": "ruang."
      }
     ]
    },
-   "tts": "Jarak sering ditulis es. Konon dari bahasa Latin, spasium, artinya ruang. Tapi asal pastinya, belum tercatat jelas."
+   "tts": "Jarak sering ditulis es. Konon dari bahasa Latin, spasium, artinya ruang. Tapi asal pastinya, belum tercatat jelas.",
+   "vo": {
+    "file": "audio/lambang-fisika-part1/6-s.mp3",
+    "durasi": 9.091,
+    "words": [
+     {
+      "w": "Jarak",
+      "start": 0.0,
+      "end": 0.402
+     },
+     {
+      "w": "sering",
+      "start": 0.402,
+      "end": 0.805
+     },
+     {
+      "w": "ditulis",
+      "start": 0.805,
+      "end": 1.554
+     },
+     {
+      "w": "s.",
+      "start": 1.554,
+      "end": 2.192
+     },
+     {
+      "w": "Konon",
+      "start": 2.192,
+      "end": 2.594
+     },
+     {
+      "w": "dari",
+      "start": 2.594,
+      "end": 2.997
+     },
+     {
+      "w": "bahasa",
+      "start": 2.997,
+      "end": 3.6
+     },
+     {
+      "w": "Latin",
+      "start": 3.6,
+      "end": 4.149
+     },
+     {
+      "w": "spatium,",
+      "start": 4.149,
+      "end": 4.552
+     },
+     {
+      "w": "artinya",
+      "start": 4.552,
+      "end": 5.391
+     },
+     {
+      "w": "ruang.",
+      "start": 5.391,
+      "end": 5.592
+     },
+     {
+      "w": "Tapi",
+      "start": 5.592,
+      "end": 6.383
+     },
+     {
+      "w": "asal",
+      "start": 6.383,
+      "end": 6.786
+     },
+     {
+      "w": "pastinya",
+      "start": 6.786,
+      "end": 7.389
+     },
+     {
+      "w": "belum",
+      "start": 7.389,
+      "end": 7.924
+     },
+     {
+      "w": "tercatat",
+      "start": 7.924,
+      "end": 8.528
+     },
+     {
+      "w": "jelas.",
+      "start": 8.528,
+      "end": 9.091
+     }
+    ]
+   }
   },
   {
    "id": "trik",
    "type": "equation",
-   "durasi": 9,
+   "durasi": 10.5,
    "bg": "cokelat",
    "transisi": "iris",
    "narasi": "Sekarang rumusnya gampang diingat. Velocity sama dengan jarak per waktu. Acceleration sama dengan perubahan velocity per waktu.",
@@ -269,23 +751,114 @@
     "langkah": [
      {
       "tex": "\\g{v} = \\frac{s}{\\g{t}}",
-      "at": 1.5,
+      "at": 2.57,
       "kata": "Velocity"
      },
      {
       "tex": "\\g{a} = \\frac{\\Delta v}{\\Delta \\g{t}}",
-      "at": 4.5,
+      "at": 5.04,
       "kata": "Acceleration",
       "catatan": "acceleration = Δ velocity / time"
      }
     ],
     "finalEmas": true
+   },
+   "vo": {
+    "file": "audio/lambang-fisika-part1/7-trik.mp3",
+    "durasi": 9.169,
+    "words": [
+     {
+      "w": "Sekarang",
+      "start": 0.0,
+      "end": 0.576
+     },
+     {
+      "w": "rumusnya",
+      "start": 0.576,
+      "end": 1.151
+     },
+     {
+      "w": "gampang",
+      "start": 1.151,
+      "end": 1.535
+     },
+     {
+      "w": "diingat.",
+      "start": 1.535,
+      "end": 2.37
+     },
+     {
+      "w": "Velocity",
+      "start": 2.37,
+      "end": 3.11
+     },
+     {
+      "w": "sama",
+      "start": 3.11,
+      "end": 3.494
+     },
+     {
+      "w": "dengan",
+      "start": 3.494,
+      "end": 3.878
+     },
+     {
+      "w": "jarak",
+      "start": 3.878,
+      "end": 4.261
+     },
+     {
+      "w": "per",
+      "start": 4.261,
+      "end": 4.453
+     },
+     {
+      "w": "waktu.",
+      "start": 4.453,
+      "end": 4.837
+     },
+     {
+      "w": "Acceleration",
+      "start": 4.837,
+      "end": 6.19
+     },
+     {
+      "w": "sama",
+      "start": 6.19,
+      "end": 6.574
+     },
+     {
+      "w": "dengan",
+      "start": 6.574,
+      "end": 6.957
+     },
+     {
+      "w": "perubahan",
+      "start": 6.957,
+      "end": 7.725
+     },
+     {
+      "w": "velocity",
+      "start": 7.725,
+      "end": 8.469
+     },
+     {
+      "w": "per",
+      "start": 8.469,
+      "end": 8.661
+     },
+     {
+      "w": "waktu.",
+      "start": 8.661,
+      "end": 9.169
+     }
+    ]
    }
   },
   {
    "id": "penutup",
    "type": "outro",
-   "durasi": 7.5,
+   "durasi": 7.6,
    "bg": "navy",
    "bingkai": true,
    "transisi": "fade",
@@ -294,6 +867,87 @@
     "kesimpulan": "Lambang fisika = singkatan, bukan huruf acak",
     "tex": "\\g{v,\\ a,\\ t,\\ \\Delta}",
     "ajakan": "Part 2: lambang gaya & energi →"
+   },
+   "vo": {
+    "file": "audio/lambang-fisika-part1/8-penutup.mp3",
+    "durasi": 6.531,
+    "words": [
+     {
+      "w": "Jadi",
+      "start": 0.0,
+      "end": 0.379
+     },
+     {
+      "w": "lambang",
+      "start": 0.379,
+      "end": 0.757
+     },
+     {
+      "w": "fisika",
+      "start": 0.757,
+      "end": 1.325
+     },
+     {
+      "w": "bukan",
+      "start": 1.325,
+      "end": 1.704
+     },
+     {
+      "w": "huruf",
+      "start": 1.704,
+      "end": 2.082
+     },
+     {
+      "w": "acak.",
+      "start": 2.082,
+      "end": 2.461
+     },
+     {
+      "w": "Di",
+      "start": 2.461,
+      "end": 3.014
+     },
+     {
+      "w": "part",
+      "start": 3.014,
+      "end": 3.203
+     },
+     {
+      "w": "berikutnya,",
+      "start": 3.203,
+      "end": 4.083
+     },
+     {
+      "w": "kita",
+      "start": 4.083,
+      "end": 4.462
+     },
+     {
+      "w": "bongkar",
+      "start": 4.462,
+      "end": 4.84
+     },
+     {
+      "w": "lambang",
+      "start": 4.84,
+      "end": 5.219
+     },
+     {
+      "w": "gaya",
+      "start": 5.219,
+      "end": 5.598
+     },
+     {
+      "w": "dan",
+      "start": 5.598,
+      "end": 5.787
+     },
+     {
+      "w": "energi.",
+      "start": 5.787,
+      "end": 6.531
+     }
+    ]
    }
   },
   {
@@ -311,6 +965,37 @@
      "physics.info, “Distance and Displacement” — s dari Latin spatium (konon)"
     ],
     "catatan": "Asal huruf s (spatium) masih diperdebatkan — disebut “konon” di video."
+   },
+   "vo": {
+    "file": "audio/lambang-fisika-part1/9-sumber.mp3",
+    "durasi": 1.802,
+    "words": [
+     {
+      "w": "Sumber",
+      "start": 0.0,
+      "end": 0.359
+     },
+     {
+      "w": "riset",
+      "start": 0.359,
+      "end": 0.718
+     },
+     {
+      "w": "ada",
+      "start": 0.718,
+      "end": 1.077
+     },
+     {
+      "w": "di",
+      "start": 1.077,
+      "end": 1.256
+     },
+     {
+      "w": "layar.",
+      "start": 1.256,
+      "end": 1.802
+     }
+    ]
    }
   }
  ]
