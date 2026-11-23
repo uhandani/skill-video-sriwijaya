@@ -152,3 +152,26 @@ Catatan ElevenLabs gratis: bila muncul "Free generations are busy", tunggu ±1 m
 
 File video MP4 tidak disimpan di repo (terlalu besar). Simpan hasil unduhan di Google Drive, misalnya folder
 `UDCATION/Video/<Pilar>/` dan `UDCATION/Thumbnail/<Pilar>/`.
+
+## Platform UDcation (Tahap 2)
+
+Platform belajar umum SD–SMA untuk menambal **pondasi** numerasi & literasi: operasi bilangan,
+pecahan, huruf dalam MTK/persamaan, ubah rumus fisika, dan soal cerita. Pembeda dari Gradient
+Academy (fokus UTBK/TKA): UDcation fokus pondasi.
+
+- Alur siswa: login → tes diagnostik adaptif → peta Kuasai/Rapuh/Bolong → latihan di anak tangga yang bolong.
+- Analisis salah: jawaban isian dicocokkan dengan pola salah (miskonsepsi), cek per langkah untuk persamaan & ubah rumus,
+  feedback 3 lapis (sebut → tunjukkan → soal kembar), profil salah dievaluasi terus.
+- Gamifikasi (nanti): map kerajaan Nusantara, kartu tokoh & pahlawan nasional dari prestasi belajar (bukan uang).
+
+| Skill/agen | Tokoh | Keahlian |
+|---|---|---|
+| `gajahmada-koordinator` | Gajah Mada | koordinator tim |
+| `kihajar-kurikulum` | Ki Hajar Dewantara | kurikulum, diagnostik, desain modul |
+| `malahayati-riset-soal` | Malahayati | riset Kumon, AKM, PISA, Gradient |
+| `sultanagung-bank-soal-mtk` | Sultan Agung | bank soal MTK & pola salah |
+| `habibie-fisika` | B.J. Habibie | ubah rumus & soal fisika |
+| `kartini-literasi-modul` | R.A. Kartini | soal cerita, modul, teks feedback |
+| `dewisartika-penguji` | Dewi Sartika | verifikasi kunci & hitungan |
+| `djuanda-developer` | Ir. Djuanda | developer platform |
+| `radensaleh-kreatif-game` | Raden Saleh | tim kreatif & gamifikasi |
