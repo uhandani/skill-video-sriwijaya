@@ -34,7 +34,7 @@
   {
    "id": "pembuka",
    "type": "ilustrasi",
-   "durasi": 7,
+   "durasi": 8.0,
    "bg": "navy",
    "transisi": "iris",
    "narasi": "Borobudur, salah satu monumen Buddha terbesar di dunia, dibangun pada abad kedelapan sampai kesembilan.",
@@ -67,7 +67,7 @@
       "x": 500,
       "y": 1180,
       "skala": 3.0,
-      "at": 0.5,
+      "at": 0.2,
       "kata": "Borobudur,"
      }
     ],
@@ -81,12 +81,88 @@
       "ukuran": 72
      }
     ]
+   },
+   "vo": {
+    "file": "audio/borobudur-tanpa-semen/1-pembuka.mp3",
+    "durasi": 6.687,
+    "words": [
+     {
+      "w": "Borobudur,",
+      "start": 0.0,
+      "end": 0.663
+     },
+     {
+      "w": "salah",
+      "start": 0.663,
+      "end": 1.325
+     },
+     {
+      "w": "satu",
+      "start": 1.325,
+      "end": 1.657
+     },
+     {
+      "w": "monumen",
+      "start": 1.657,
+      "end": 2.155
+     },
+     {
+      "w": "Buddha",
+      "start": 2.155,
+      "end": 2.486
+     },
+     {
+      "w": "terbesar",
+      "start": 2.486,
+      "end": 2.984
+     },
+     {
+      "w": "di",
+      "start": 2.984,
+      "end": 3.15
+     },
+     {
+      "w": "dunia,",
+      "start": 3.15,
+      "end": 3.481
+     },
+     {
+      "w": "dibangun",
+      "start": 3.481,
+      "end": 4.175
+     },
+     {
+      "w": "pada",
+      "start": 4.175,
+      "end": 4.507
+     },
+     {
+      "w": "abad",
+      "start": 4.507,
+      "end": 4.839
+     },
+     {
+      "w": "kedelapan",
+      "start": 4.839,
+      "end": 5.502
+     },
+     {
+      "w": "sampai",
+      "start": 5.502,
+      "end": 5.834
+     },
+     {
+      "w": "kesembilan.",
+      "start": 5.834,
+      "end": 6.687
+     }
+    ]
    }
   },
   {
    "id": "hook",
    "type": "title",
-   "durasi": 6,
+   "durasi": 6.6,
    "bg": "navy",
    "bingkai": true,
    "transisi": "iris",
@@ -95,12 +171,78 @@
     "kicker": "Ruang Nusantara",
     "judul": "Tanpa semen, kok bisa berdiri?",
     "tandaTanya": true
+   },
+   "vo": {
+    "file": "audio/borobudur-tanpa-semen/2-hook.mp3",
+    "durasi": 5.251,
+    "words": [
+     {
+      "w": "Batu-batunya",
+      "start": 0.0,
+      "end": 0.817
+     },
+     {
+      "w": "disusun",
+      "start": 0.817,
+      "end": 1.307
+     },
+     {
+      "w": "tanpa",
+      "start": 1.307,
+      "end": 1.634
+     },
+     {
+      "w": "semen.",
+      "start": 1.634,
+      "end": 1.96
+     },
+     {
+      "w": "Kok",
+      "start": 1.96,
+      "end": 2.124
+     },
+     {
+      "w": "bisa",
+      "start": 2.124,
+      "end": 2.761
+     },
+     {
+      "w": "berdiri",
+      "start": 2.761,
+      "end": 3.251
+     },
+     {
+      "w": "sekitar",
+      "start": 3.251,
+      "end": 3.741
+     },
+     {
+      "w": "seribu",
+      "start": 3.741,
+      "end": 4.231
+     },
+     {
+      "w": "dua",
+      "start": 4.231,
+      "end": 4.395
+     },
+     {
+      "w": "ratus",
+      "start": 4.395,
+      "end": 4.721
+     },
+     {
+      "w": "tahun?",
+      "start": 4.721,
+      "end": 5.251
+     }
+    ]
    }
   },
   {
    "id": "volume",
    "type": "counter",
-   "durasi": 7,
+   "durasi": 7.3,
    "bg": "cokelat",
    "transisi": "iris",
    "narasi": "Sekitar lima puluh lima ribu meter kubik batu andesit, ditumpuk menyelimuti sebuah bukit alami.",
@@ -117,8 +259,84 @@
       "x": 500,
       "y": 1260,
       "skala": 2.0,
-      "at": 1.5,
+      "at": 5.19,
       "kata": "bukit"
+     }
+    ]
+   },
+   "vo": {
+    "file": "audio/borobudur-tanpa-semen/3-volume.mp3",
+    "durasi": 5.956,
+    "words": [
+     {
+      "w": "Sekitar",
+      "start": 0.0,
+      "end": 0.461
+     },
+     {
+      "w": "lima",
+      "start": 0.461,
+      "end": 0.769
+     },
+     {
+      "w": "puluh",
+      "start": 0.769,
+      "end": 1.076
+     },
+     {
+      "w": "lima",
+      "start": 1.076,
+      "end": 1.384
+     },
+     {
+      "w": "ribu",
+      "start": 1.384,
+      "end": 1.691
+     },
+     {
+      "w": "meter",
+      "start": 1.691,
+      "end": 1.998
+     },
+     {
+      "w": "kubik",
+      "start": 1.998,
+      "end": 2.306
+     },
+     {
+      "w": "batu",
+      "start": 2.306,
+      "end": 2.613
+     },
+     {
+      "w": "andesit,",
+      "start": 2.613,
+      "end": 3.451
+     },
+     {
+      "w": "ditumpuk",
+      "start": 3.451,
+      "end": 3.912
+     },
+     {
+      "w": "menyelimuti",
+      "start": 3.912,
+      "end": 4.68
+     },
+     {
+      "w": "sebuah",
+      "start": 4.68,
+      "end": 4.988
+     },
+     {
+      "w": "bukit",
+      "start": 4.988,
+      "end": 5.295
+     },
+     {
+      "w": "alami.",
+      "start": 5.295,
+      "end": 5.956
      }
     ]
    }
@@ -126,7 +344,7 @@
   {
    "id": "kunci-batu",
    "type": "diagram",
-   "durasi": 9,
+   "durasi": 9.8,
    "bg": "navy",
    "transisi": "iris",
    "narasi": "Rahasia pertama, batu saling mengunci. Ada sambungan ekor burung, takikan, alur dan lidah, serta purus.",
@@ -212,7 +430,7 @@
         225
        ]
       ],
-      "at": 1.0,
+      "at": 4.82,
       "dur": 1.0,
       "stroke": "krem",
       "fill": "navyTerang",
@@ -229,7 +447,7 @@
       "text": "sambungan ekor burung",
       "size": 50,
       "fill": "emas",
-      "at": 1.6,
+      "at": 4.82,
       "kata": "ekor"
      },
      {
@@ -268,7 +486,7 @@
         700
        ]
       ],
-      "at": 2.6,
+      "at": 8.16,
       "dur": 1.0,
       "stroke": "krem",
       "fill": "cokelatTerang",
@@ -344,12 +562,93 @@
       "at": 3.8
      }
     ]
+   },
+   "vo": {
+    "file": "audio/borobudur-tanpa-semen/4-kunci-batu.mp3",
+    "durasi": 8.516,
+    "words": [
+     {
+      "w": "Rahasia",
+      "start": 0.0,
+      "end": 0.594
+     },
+     {
+      "w": "pertama,",
+      "start": 0.594,
+      "end": 1.639
+     },
+     {
+      "w": "batu",
+      "start": 1.639,
+      "end": 2.167
+     },
+     {
+      "w": "saling",
+      "start": 2.167,
+      "end": 2.563
+     },
+     {
+      "w": "mengunci.",
+      "start": 2.563,
+      "end": 3.63
+     },
+     {
+      "w": "Ada",
+      "start": 3.63,
+      "end": 4.026
+     },
+     {
+      "w": "sambungan",
+      "start": 4.026,
+      "end": 4.62
+     },
+     {
+      "w": "ekor",
+      "start": 4.62,
+      "end": 5.2
+     },
+     {
+      "w": "burung,",
+      "start": 5.2,
+      "end": 5.596
+     },
+     {
+      "w": "takikan,",
+      "start": 5.596,
+      "end": 6.377
+     },
+     {
+      "w": "alur",
+      "start": 6.377,
+      "end": 6.773
+     },
+     {
+      "w": "dan",
+      "start": 6.773,
+      "end": 6.971
+     },
+     {
+      "w": "lidah,",
+      "start": 6.971,
+      "end": 7.563
+     },
+     {
+      "w": "serta",
+      "start": 7.563,
+      "end": 7.959
+     },
+     {
+      "w": "purus.",
+      "start": 7.959,
+      "end": 8.516
+     }
+    ]
    }
   },
   {
    "id": "gesek",
    "type": "diagram",
-   "durasi": 9,
+   "durasi": 9.6,
    "bg": "navy",
    "transisi": "iris",
    "narasi": "Rahasia kedua, berat. Batu di atas menekan batu di bawahnya, sehingga gaya gesek di antara batu menjadi besar.",
@@ -390,7 +689,7 @@
       "y": 480,
       "w": 340,
       "h": 160,
-      "at": 0.9,
+      "at": 3.2,
       "dur": 0.6,
       "stroke": "krem",
       "fill": "navyTerang",
@@ -408,7 +707,7 @@
        500,
        450
       ],
-      "at": 1.6,
+      "at": 3.2,
       "dur": 0.6,
       "stroke": "krem",
       "width": 10,
@@ -505,7 +804,7 @@
        700,
        640
       ],
-      "at": 3.8,
+      "at": 5.99,
       "dur": 0.6,
       "stroke": "emas",
       "width": 10,
@@ -545,12 +844,108 @@
       "at": 4.3
      }
     ]
+   },
+   "vo": {
+    "file": "audio/borobudur-tanpa-semen/5-gesek.mp3",
+    "durasi": 8.281,
+    "words": [
+     {
+      "w": "Rahasia",
+      "start": 0.0,
+      "end": 0.532
+     },
+     {
+      "w": "kedua,",
+      "start": 0.532,
+      "end": 0.887
+     },
+     {
+      "w": "berat.",
+      "start": 0.887,
+      "end": 1.58
+     },
+     {
+      "w": "Batu",
+      "start": 1.58,
+      "end": 2.467
+     },
+     {
+      "w": "di",
+      "start": 2.467,
+      "end": 2.645
+     },
+     {
+      "w": "atas",
+      "start": 2.645,
+      "end": 3.0
+     },
+     {
+      "w": "menekan",
+      "start": 3.0,
+      "end": 3.532
+     },
+     {
+      "w": "batu",
+      "start": 3.532,
+      "end": 3.887
+     },
+     {
+      "w": "di",
+      "start": 3.887,
+      "end": 4.064
+     },
+     {
+      "w": "bawahnya,",
+      "start": 4.064,
+      "end": 4.597
+     },
+     {
+      "w": "sehingga",
+      "start": 4.597,
+      "end": 5.433
+     },
+     {
+      "w": "gaya",
+      "start": 5.433,
+      "end": 5.788
+     },
+     {
+      "w": "gesek",
+      "start": 5.788,
+      "end": 6.142
+     },
+     {
+      "w": "di",
+      "start": 6.142,
+      "end": 6.32
+     },
+     {
+      "w": "antara",
+      "start": 6.32,
+      "end": 6.852
+     },
+     {
+      "w": "batu",
+      "start": 6.852,
+      "end": 7.207
+     },
+     {
+      "w": "menjadi",
+      "start": 7.207,
+      "end": 7.739
+     },
+     {
+      "w": "besar.",
+      "start": 7.739,
+      "end": 8.281
+     }
+    ]
    }
   },
   {
    "id": "hitung",
    "type": "equation",
-   "durasi": 10,
+   "durasi": 11.8,
    "bg": "cokelat",
    "transisi": "iris",
    "narasi": "Gaya gesek maksimum sama dengan mu kali gaya normal. Batu lima puluh kilogram butuh dorongan sekitar tiga ratus newton supaya bergeser.",
@@ -561,19 +956,130 @@
     "langkah": [
      {
       "tex": "f_{\\text{maks}} = \\mu \\cdot N",
-      "at": 0.6,
+      "at": 0.93,
       "kata": "maksimum"
      },
      {
       "tex": "N = m g = 50 \\times 9{,}8 = 490\\ \\text{N}",
-      "at": 4.0,
+      "at": 4.7,
       "kata": "lima"
      },
      {
       "tex": "\\g{f_{\\text{maks}} = 0{,}6 \\times 490 \\approx 294\\ \\text{N}}",
-      "at": 6.5,
+      "at": 7.0,
       "kata": "dorongan",
       "catatan": "μ batu ≈ 0,6–0,85 (Byerlee, 1978)"
+     }
+    ]
+   },
+   "vo": {
+    "file": "audio/borobudur-tanpa-semen/6-hitung.mp3",
+    "durasi": 10.449,
+    "words": [
+     {
+      "w": "Gaya",
+      "start": 0.0,
+      "end": 0.365
+     },
+     {
+      "w": "gesek",
+      "start": 0.365,
+      "end": 0.731
+     },
+     {
+      "w": "maksimum",
+      "start": 0.731,
+      "end": 1.279
+     },
+     {
+      "w": "sama",
+      "start": 1.279,
+      "end": 1.983
+     },
+     {
+      "w": "dengan",
+      "start": 1.983,
+      "end": 2.349
+     },
+     {
+      "w": "mu",
+      "start": 2.349,
+      "end": 2.775
+     },
+     {
+      "w": "kali",
+      "start": 2.775,
+      "end": 3.4
+     },
+     {
+      "w": "gaya",
+      "start": 3.4,
+      "end": 3.765
+     },
+     {
+      "w": "normal.",
+      "start": 3.765,
+      "end": 4.13
+     },
+     {
+      "w": "Batu",
+      "start": 4.13,
+      "end": 4.496
+     },
+     {
+      "w": "lima",
+      "start": 4.496,
+      "end": 5.339
+     },
+     {
+      "w": "puluh",
+      "start": 5.339,
+      "end": 5.705
+     },
+     {
+      "w": "kilogram",
+      "start": 5.705,
+      "end": 6.253
+     },
+     {
+      "w": "butuh",
+      "start": 6.253,
+      "end": 6.802
+     },
+     {
+      "w": "dorongan",
+      "start": 6.802,
+      "end": 7.35
+     },
+     {
+      "w": "sekitar",
+      "start": 7.35,
+      "end": 7.898
+     },
+     {
+      "w": "tiga",
+      "start": 7.898,
+      "end": 8.264
+     },
+     {
+      "w": "ratus",
+      "start": 8.264,
+      "end": 8.629
+     },
+     {
+      "w": "newton",
+      "start": 8.629,
+      "end": 8.994
+     },
+     {
+      "w": "supaya",
+      "start": 8.994,
+      "end": 9.736
+     },
+     {
+      "w": "bergeser.",
+      "start": 9.736,
+      "end": 10.449
      }
     ]
    }
@@ -581,7 +1087,7 @@
   {
    "id": "air",
    "type": "ilustrasi",
-   "durasi": 9,
+   "durasi": 10.9,
    "bg": "navy",
    "transisi": "iris",
    "narasi": "Rahasia ketiga, air. Air hujan dialirkan keluar lewat pancuran batu berbentuk makara, supaya bukit di dalamnya tidak tergerus.",
@@ -594,7 +1100,7 @@
       "x": 500,
       "y": 520,
       "skala": 2.2,
-      "at": 0.3,
+      "at": 2.77,
       "kata": "hujan"
      },
      {
@@ -610,10 +1116,106 @@
       "teks": "pancuran makara (jaladwara)",
       "x": 500,
       "y": 1290,
-      "at": 3.0,
+      "at": 4.48,
       "ukuran": 46,
       "emas": true,
       "kata": "pancuran"
+     }
+    ]
+   },
+   "vo": {
+    "file": "audio/borobudur-tanpa-semen/7-air.mp3",
+    "durasi": 9.561,
+    "words": [
+     {
+      "w": "Rahasia",
+      "start": 0.0,
+      "end": 0.568
+     },
+     {
+      "w": "ketiga,",
+      "start": 0.568,
+      "end": 1.67
+     },
+     {
+      "w": "air.",
+      "start": 1.67,
+      "end": 1.859
+     },
+     {
+      "w": "Air",
+      "start": 1.859,
+      "end": 2.573
+     },
+     {
+      "w": "hujan",
+      "start": 2.573,
+      "end": 2.952
+     },
+     {
+      "w": "dialirkan",
+      "start": 2.952,
+      "end": 3.52
+     },
+     {
+      "w": "keluar",
+      "start": 3.52,
+      "end": 3.898
+     },
+     {
+      "w": "lewat",
+      "start": 3.898,
+      "end": 4.277
+     },
+     {
+      "w": "pancuran",
+      "start": 4.277,
+      "end": 4.845
+     },
+     {
+      "w": "batu",
+      "start": 4.845,
+      "end": 5.223
+     },
+     {
+      "w": "berbentuk",
+      "start": 5.223,
+      "end": 5.791
+     },
+     {
+      "w": "makara,",
+      "start": 5.791,
+      "end": 6.359
+     },
+     {
+      "w": "supaya",
+      "start": 6.359,
+      "end": 7.314
+     },
+     {
+      "w": "bukit",
+      "start": 7.314,
+      "end": 7.692
+     },
+     {
+      "w": "di",
+      "start": 7.692,
+      "end": 7.881
+     },
+     {
+      "w": "dalamnya",
+      "start": 7.881,
+      "end": 8.449
+     },
+     {
+      "w": "tidak",
+      "start": 8.449,
+      "end": 8.828
+     },
+     {
+      "w": "tergerus.",
+      "start": 8.828,
+      "end": 9.561
      }
     ]
    }
@@ -621,7 +1223,7 @@
   {
    "id": "pemugaran",
    "type": "ilustrasi",
-   "durasi": 8.5,
+   "durasi": 9.0,
    "bg": "navy",
    "transisi": "perkamen",
    "narasi": "Meski begitu, Borobudur tetap butuh dirawat. Tahun tujuh puluhan, candi ini dipugar besar-besaran bersama UNESCO.",
@@ -656,7 +1258,7 @@
       "teks": "UNESCO",
       "x": 500,
       "y": 520,
-      "at": 2.0,
+      "at": 7.19,
       "ukuran": 96,
       "emas": true,
       "kata": "UNESCO."
@@ -670,7 +1272,88 @@
      }
     ]
    },
-   "tts": "Meski begitu, Borobudur tetap butuh dirawat. Tahun tujuh puluhan, candi ini dipugar besar-besaran bersama Yunesko."
+   "tts": "Meski begitu, Borobudur tetap butuh dirawat. Tahun tujuh puluhan, candi ini dipugar besar-besaran bersama Yunesko.",
+   "vo": {
+    "file": "audio/borobudur-tanpa-semen/8-pemugaran.mp3",
+    "durasi": 7.628,
+    "words": [
+     {
+      "w": "Meski",
+      "start": 0.0,
+      "end": 0.31
+     },
+     {
+      "w": "begitu,",
+      "start": 0.31,
+      "end": 0.776
+     },
+     {
+      "w": "Borobudur",
+      "start": 0.776,
+      "end": 1.581
+     },
+     {
+      "w": "tetap",
+      "start": 1.581,
+      "end": 2.041
+     },
+     {
+      "w": "butuh",
+      "start": 2.041,
+      "end": 2.352
+     },
+     {
+      "w": "dirawat.",
+      "start": 2.352,
+      "end": 3.304
+     },
+     {
+      "w": "Tahun",
+      "start": 3.304,
+      "end": 3.614
+     },
+     {
+      "w": "tujuh",
+      "start": 3.614,
+      "end": 3.925
+     },
+     {
+      "w": "puluhan,",
+      "start": 3.925,
+      "end": 4.533
+     },
+     {
+      "w": "candi",
+      "start": 4.533,
+      "end": 4.844
+     },
+     {
+      "w": "ini",
+      "start": 4.844,
+      "end": 5.282
+     },
+     {
+      "w": "dipugar",
+      "start": 5.282,
+      "end": 5.748
+     },
+     {
+      "w": "besar-besaran",
+      "start": 5.748,
+      "end": 6.524
+     },
+     {
+      "w": "bersama",
+      "start": 6.524,
+      "end": 6.99
+     },
+     {
+      "w": "UNESCO.",
+      "start": 6.99,
+      "end": 7.628
+     }
+    ]
+   }
   },
   {
    "id": "penutup",
@@ -683,6 +1366,82 @@
    "props": {
     "kesimpulan": "Saling mengunci + saling menekan = tahan berabad-abad",
     "tex": "\\g{f = \\mu N}"
+   },
+   "vo": {
+    "file": "audio/borobudur-tanpa-semen/9-penutup.mp3",
+    "durasi": 6.269,
+    "words": [
+     {
+      "w": "Jadi,",
+      "start": 0.0,
+      "end": 0.37
+     },
+     {
+      "w": "tanpa",
+      "start": 0.37,
+      "end": 0.867
+     },
+     {
+      "w": "semen",
+      "start": 0.867,
+      "end": 1.236
+     },
+     {
+      "w": "pun,",
+      "start": 1.236,
+      "end": 1.421
+     },
+     {
+      "w": "batu",
+      "start": 1.421,
+      "end": 1.965
+     },
+     {
+      "w": "yang",
+      "start": 1.965,
+      "end": 2.15
+     },
+     {
+      "w": "saling",
+      "start": 2.15,
+      "end": 2.52
+     },
+     {
+      "w": "mengunci",
+      "start": 2.52,
+      "end": 3.075
+     },
+     {
+      "w": "dan",
+      "start": 3.075,
+      "end": 3.259
+     },
+     {
+      "w": "saling",
+      "start": 3.259,
+      "end": 3.629
+     },
+     {
+      "w": "menekan",
+      "start": 3.629,
+      "end": 4.184
+     },
+     {
+      "w": "bisa",
+      "start": 4.184,
+      "end": 4.553
+     },
+     {
+      "w": "bertahan",
+      "start": 4.553,
+      "end": 5.108
+     },
+     {
+      "w": "berabad-abad.",
+      "start": 5.108,
+      "end": 6.269
+     }
+    ]
    }
   },
   {
@@ -700,6 +1459,37 @@
      "Makara-pranala (jaladwara): pancuran air candi Jawa — ensiklopedia “Pranala”"
     ],
     "catatan": "Angka volume batu adalah perkiraan; contoh 50 kg & μ = 0,6 untuk ilustrasi perhitungan."
+   },
+   "vo": {
+    "file": "audio/borobudur-tanpa-semen/10-sumber.mp3",
+    "durasi": 1.802,
+    "words": [
+     {
+      "w": "Sumber",
+      "start": 0.0,
+      "end": 0.359
+     },
+     {
+      "w": "riset",
+      "start": 0.359,
+      "end": 0.718
+     },
+     {
+      "w": "ada",
+      "start": 0.718,
+      "end": 1.077
+     },
+     {
+      "w": "di",
+      "start": 1.077,
+      "end": 1.256
+     },
+     {
+      "w": "layar.",
+      "start": 1.256,
+      "end": 1.802
+     }
+    ]
    }
   }
  ]
