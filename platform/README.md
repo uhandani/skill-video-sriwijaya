@@ -46,6 +46,10 @@ npm run verifikasi  # ekspor 20 soal/templat, hitung ulang kunci dengan Python
 5. `npm test && npm run verifikasi` (Dewi Sartika). Untuk pola teks soal baru, tambahkan pembacanya di
    `verify/cek_kunci.py`.
 
+## Aplikasi web
+
+Prototipe uji coba kelas ada di `web/` — lihat `web/README.md`.
+
 ## Tim agen
 
 Panggil skill dengan nama: `/gajahmada-koordinator`, `/kihajar-kurikulum`, `/malahayati-riset-soal`,
