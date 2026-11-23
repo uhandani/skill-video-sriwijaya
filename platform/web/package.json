@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "cek": "tsc --noEmit",
-    "e2e": "vite build && vitest run -c vitest.e2e.config.ts"
+    "e2e": "vite build && vitest run -c vitest.e2e.config.ts",
+    "uji-rls": "bash supabase/uji-lokal.sh"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.4",
