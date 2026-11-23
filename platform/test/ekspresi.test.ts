@@ -26,6 +26,10 @@ describe("ekspresi", () => {
     expect(setara(s("s/v"), s("v/s"), ["s", "v"])).toBe(false);
     expect(setara(s("s/v"), s("s*v"), ["s", "v"])).toBe(false);
   });
+  it("pangkat dua & tiga unikode", () => {
+    expect(setara(s("2E/v²"), s("2E/v^2"), ["E", "v"])).toBe(true);
+    expect(nilai(s("x³"), { x: 2 })).toBe(8);
+  });
   it("akar", () => {
     expect(setara(s("√(2E/m)"), s("(2E/m)^0.5"), ["E", "m"])).toBe(true);
     expect(setara(s("√(2E/m)"), s("2E/m"), ["E", "m"])).toBe(false);

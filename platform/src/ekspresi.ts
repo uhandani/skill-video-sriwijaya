@@ -22,6 +22,7 @@ function tokenisasi(teks: string): Token[] | null {
     if (/\s/.test(c)) { i++; continue; }
     const m = /^\d+(?:[.,]\d+)?/.exec(teks.slice(i));
     if (m) { hasil.push({ t: "bil", n: Number(m[0].replace(",", ".")) }); i += m[0].length; continue; }
+    if (c === "²" || c === "³") { hasil.push({ t: "sim", s: "^" }, { t: "bil", n: c === "²" ? 2 : 3 }); i++; continue; }
     if (SIMBOL[c]) { hasil.push({ t: "sim", s: SIMBOL[c] }); i++; continue; }
     if (/\p{L}/u.test(c)) { hasil.push({ t: "var", v: c }); i++; continue; }
     return null;

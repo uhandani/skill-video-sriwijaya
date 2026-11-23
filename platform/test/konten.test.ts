@@ -82,7 +82,7 @@ describe("templat", () => {
   }
 });
 
-const JALUR_PENUH = ["J07", "J12"];
+const JALUR_PENUH = ["J07", "J12", "J13"];
 
 describe("modul jalur penuh", () => {
   for (const s of peta.simpul.filter((x) => JALUR_PENUH.includes(x.jalur))) {

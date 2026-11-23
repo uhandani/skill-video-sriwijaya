@@ -191,5 +191,94 @@
   "nama": "Hanya satu suku yang dikali",
   "sebut": "Sepertinya saat mengalikan, hanya satu suku yang kamu kalikan.",
   "tunjukkan": "Kalau kedua ruas dikali 4, semua suku ikut dikali: x/4 + 2 = 5 → x + 8 = 20. Lebih aman: kurangi 2 dulu → x/4 = 3 → x = 12."
+ },
+ {
+  "id": "RUMUS-BALIK-PECAHAN",
+  "simpul": "J13-01",
+  "nama": "Pecahan terbalik",
+  "sebut": "Sepertinya pecahannya terbalik: yang harusnya di atas jadi di bawah.",
+  "tunjukkan": "Coba dengan angka kembar: 5 = 10/2. Untuk mencari 2, hitung 10/5, bukan 5/10. Jadi dari v = s/t, t = s/v.",
+  "sumber": "https://journals.gre.ac.uk/index.php/msor/article/view/1053/pdf"
+ },
+ {
+  "id": "RUMUS-BAGI-BUKAN-KALI",
+  "simpul": "J13-01",
+  "nama": "Membagi, padahal harus dikali",
+  "sebut": "Sepertinya kamu membagi, padahal untuk mengeluarkan s dari s/t kita kalikan dengan t.",
+  "tunjukkan": "Angka kembar: 5 = 10/2 → 10 = 5 × 2. Sama dengan v = s/t → s = v × t.",
+  "sumber": "https://journals.gre.ac.uk/index.php/msor/article/view/1053/pdf"
+ },
+ {
+  "id": "RUMUS-TAMBAH-BUKAN-KALI",
+  "simpul": "J13-01",
+  "nama": "Memakai tambah untuk membalik bagi",
+  "sebut": "Sepertinya kamu menjumlahkan. Kebalikan dari 'dibagi' adalah 'dikali', bukan ditambah.",
+  "tunjukkan": "Angka kembar: 5 = 10/2 → 10 = 5 × 2, bukan 5 + 2."
+ },
+ {
+  "id": "RUMUS-KALI-BUKAN-BAGI",
+  "simpul": "J13-02",
+  "nama": "Mengalikan, padahal harus dibagi",
+  "sebut": "Sepertinya kamu mengalikan. Untuk mengeluarkan huruf yang dikali, kita bagi.",
+  "tunjukkan": "Angka kembar: 12 = 3 × 4 → 3 = 12/4. Sama dengan F = m·a → m = F/a. Cek satuan juga: N/(m/s²) = kg ✓.",
+  "sumber": "https://journals.gre.ac.uk/index.php/msor/article/view/1053/pdf"
+ },
+ {
+  "id": "RUMUS-KURANG-BUKAN-BAGI",
+  "simpul": "J13-02",
+  "nama": "Memakai kurang untuk membalik kali/bagi",
+  "sebut": "Sepertinya kamu mengurangkan. Kebalikan dari 'dikali' adalah 'dibagi'.",
+  "tunjukkan": "Angka kembar: 12 = 3 × 4 → 3 = 12 ÷ 4, bukan 12 − 4. Mengurangkan besaran yang satuannya beda (N − kg) juga tidak bermakna."
+ },
+ {
+  "id": "RUMUS-PINDAH-TANDA",
+  "simpul": "J13-03",
+  "nama": "Pindah ruas tanpa ganti tanda",
+  "sebut": "Sepertinya u kamu pindahkan ke ruas lain tanpa mengganti tandanya.",
+  "tunjukkan": "Sama seperti persamaan linear: v = u + a·t → kurangi u di kedua ruas → v − u = a·t. Baru bagi dengan t.",
+  "sumber": "https://mathematics.mtu.ie/common-errors-and-misconceptions"
+ },
+ {
+  "id": "RUMUS-BAGI-SATU-SUKU",
+  "simpul": "J13-03",
+  "nama": "Membagi hanya satu suku",
+  "sebut": "Sepertinya hanya v yang kamu bagi dengan t, sedangkan u tertinggal.",
+  "tunjukkan": "Pindahkan u dulu: v − u = a·t. Lalu seluruh ruas kiri dibagi t: a = (v − u)/t. Tanda kurung itu penting."
+ },
+ {
+  "id": "RUMUS-LUPA-KONSTANTA",
+  "simpul": "J13-04",
+  "nama": "Angka ½ hilang",
+  "sebut": "Sepertinya angka ½ di rumus terlupa.",
+  "tunjukkan": "½ juga ikut 'dibongkar': kalikan kedua ruas dengan 2 dulu. E = ½·m·v² → 2E = m·v² → m = 2E/v²."
+ },
+ {
+  "id": "RUMUS-KONSTANTA-TERBALIK",
+  "simpul": "J13-04",
+  "nama": "½ dibagi, padahal harus dikali 2",
+  "sebut": "Kamu ingat ada ½, tapi arahnya terbalik.",
+  "tunjukkan": "Kebalikan dari 'dikali ½' adalah 'dikali 2' (bukan dibagi 2). Angka kembar: 9 = ½ × 18 → 18 = 2 × 9."
+ },
+ {
+  "id": "RUMUS-KUADRAT-LUPA",
+  "simpul": "J13-04",
+  "nama": "Pangkat dua hilang",
+  "sebut": "Sepertinya pangkat dua pada v terlupa.",
+  "tunjukkan": "v² = v × v, jadi saat membagi, yang membagi tetap v², bukan v. m = 2E/v²."
+ },
+ {
+  "id": "RUMUS-AKAR-LUPA",
+  "simpul": "J13-05",
+  "nama": "Lupa mengakar",
+  "sebut": "Hasilmu masih v², belum v. Langkah terakhirnya diakar.",
+  "tunjukkan": "Kebalikan dari kuadrat adalah akar: v² = 2E/m → v = √(2E/m). Cek: satuan 2E/m = m²/s², akarnya m/s ✓.",
+  "sumber": "https://mathematics.mtu.ie/common-errors-and-misconceptions"
+ },
+ {
+  "id": "RUMUS-AKAR-SEBAGIAN",
+  "simpul": "J13-05",
+  "nama": "Akar hanya sebagian",
+  "sebut": "Sepertinya akarnya hanya mengenai bagian atas.",
+  "tunjukkan": "Akar harus mengenai seluruh ruas: v = √(2E/m), bukan √(2E)/m."
  }
 ]
