@@ -11,7 +11,7 @@ export type JenisIlustrasi =
   | "matahari" | "bulan" | "bumi" | "bintang" | "awan" | "ombak" | "gunung"
   | "kapal" | "candi" | "rumahPanggung" | "gong" | "orang" | "kelapa" | "planet"
   | "tangga" | "dindingBata" | "gulungan" | "buku" | "kubah" | "percetakan"
-  | "borobudur" | "hujan";
+  | "borobudur" | "hujan" | "roket" | "jam";
 
 const L = 4.5; // tebal garis
 
@@ -441,6 +441,41 @@ const Hujan: React.FC<{ t: number }> = ({ t }) => (
   </g>
 );
 
+/** Roket dengan nyala api berkedip (percepatan). (0,0) = tengah-bawah nozzle. */
+const Roket: React.FC<{ t: number }> = ({ t }) => {
+  const fl = 1 + 0.18 * Math.sin(t / 2.2) + 0.08 * Math.sin(t / 1.3);
+  return (
+    <g strokeLinejoin="round">
+      <g transform={`scale(1 ${fl})`}>
+        <path d="M-18 0 Q0 70 18 0 Z" fill={C.emas} />
+        <path d="M-9 0 Q0 40 9 0 Z" fill="#FFF3C8" />
+      </g>
+      <g stroke={C.krem} strokeWidth={L}>
+        <path d="M-34 -10 L-62 18 L-56 -40 Z M34 -10 L62 18 L56 -40 Z" fill={IL.bata} />
+        <path d="M-34 0 V-150 Q0 -230 34 -150 V0 Z" fill={C.krem} />
+        <circle cy={-120} r={18} fill={IL.indigo} />
+        <path d="M-34 -40 H34" strokeWidth={3} />
+      </g>
+      <path d="M-34 -150 Q0 -230 34 -150 Z" fill={IL.bata} stroke={C.krem} strokeWidth={L} />
+    </g>
+  );
+};
+
+/** Jam dinding dengan jarum berputar (waktu). (0,0) = pusat. */
+const Jam: React.FC<{ t: number }> = ({ t }) => (
+  <g strokeLinecap="round">
+    <circle r={86} fill={C.perkamen} stroke={C.emas} strokeWidth={8} />
+    <circle r={76} fill="none" stroke={IL.kayu} strokeWidth={2} />
+    {Array.from({ length: 12 }).map((_, i) => {
+      const a = (i * Math.PI) / 6;
+      return <line key={i} x1={64 * Math.sin(a)} y1={-64 * Math.cos(a)} x2={72 * Math.sin(a)} y2={-72 * Math.cos(a)} stroke={IL.indigoGelap} strokeWidth={i % 3 ? 3 : 6} />;
+    })}
+    <line x1={0} y1={0} x2={0} y2={-40} stroke={IL.indigoGelap} strokeWidth={7} transform={`rotate(${t * 0.5})`} />
+    <line x1={0} y1={0} x2={0} y2={-60} stroke={IL.bata} strokeWidth={4} transform={`rotate(${t * 6})`} />
+    <circle r={7} fill={C.emas} />
+  </g>
+);
+
 export const ILUSTRASI: Record<JenisIlustrasi, React.FC<{ t: number }>> = {
   matahari: Matahari,
   bulan: Bulan,
@@ -464,6 +499,8 @@ export const ILUSTRASI: Record<JenisIlustrasi, React.FC<{ t: number }>> = {
   percetakan: Percetakan,
   borobudur: Borobudur,
   hujan: Hujan,
+  roket: Roket,
+  jam: Jam,
 };
 
 /** <defs> bersama (gradien emas + glow). Taruh sekali di dalam <svg>. */

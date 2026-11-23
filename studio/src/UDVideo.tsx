@@ -15,6 +15,7 @@ import { ProjectileScene } from "./scenes/ProjectileScene";
 import { TitleScene } from "./scenes/TitleScene";
 import { SourcesScene } from "./scenes/SourcesScene";
 import { IllustrationScene } from "./scenes/IllustrationScene";
+import { LambangScene } from "./scenes/LambangScene";
 import { GoldDust } from "./scenes/common";
 import { FPS, TRANS_FRAMES, VO_LEAD, buildCaptions, sceneTimings } from "./storyboard/timeline";
 import type { Scene, Storyboard } from "./storyboard/types";
@@ -40,6 +41,8 @@ const SceneBody: React.FC<{ scene: Scene }> = ({ scene }) => {
       return <SourcesScene {...scene.props} />;
     case "ilustrasi":
       return <IllustrationScene {...scene.props} />;
+    case "lambang":
+      return <LambangScene {...scene.props} />;
     default:
       return null;
   }

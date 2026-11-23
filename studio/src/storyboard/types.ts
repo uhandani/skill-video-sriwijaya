@@ -129,6 +129,25 @@ export type ThumbnailSpec = {
   tex?: string;
 };
 
+/** Kartu lambang besaran (seri "Kode Rahasia Lambang Fisika"). */
+export type LambangProps = {
+  kicker?: string;
+  /** huruf/lambang, mis. "v", "Δ" */
+  huruf: string;
+  /** kata asal yang diawali huruf tsb, mis. "velocity" (untuk Δ: "Δiaphorá" → tulis "Δiaphorá") */
+  kata: string;
+  /** keterangan asal, mis. "Latin: vēlōcitās —" */
+  asal: string;
+  /** arti, mis. "“kecepatan”" */
+  arti: string;
+  besaran: string;
+  satuan?: string;
+  tex?: string;
+  status?: "jelas" | "konon";
+  /** momen animasi: urai (kata muncul), info, rumus — bisa diberi isyarat "kata" */
+  momen?: (Isyarat & { nama: "urai" | "info" | "rumus"; at?: number })[];
+};
+
 /** Daftar sumber riset di akhir video (setelah outro). */
 export type SumberProps = { judul?: string; daftar: string[]; catatan?: string };
 
@@ -141,7 +160,8 @@ export type Scene =
   | (SceneBase & { type: "counter"; props: CounterProps })
   | (SceneBase & { type: "outro"; props: OutroProps })
   | (SceneBase & { type: "sumber"; props: SumberProps })
-  | (SceneBase & { type: "ilustrasi"; props: IlustrasiProps });
+  | (SceneBase & { type: "ilustrasi"; props: IlustrasiProps })
+  | (SceneBase & { type: "lambang"; props: LambangProps });
 
 export type Storyboard = {
   id: string;

@@ -1,0 +1,317 @@
+{
+ "id": "LambangFisikaPart1",
+ "judul": "Kode Rahasia Lambang Fisika · Part 1: Velocity!",
+ "pilar": "Ruang Semesta",
+ "kurikulum": "SMP Kelas 8 & SMA Kelas 10 — Gerak Lurus (kecepatan, percepatan)",
+ "rasio": "9:16",
+ "kpd": 2.6,
+ "sumber": [
+  "Merriam-Webster, “velocity” — dari Latin vēlōcitās, vēlōx “cepat”",
+  "Merriam-Webster & Etymonline, “acceleration” — dari Latin accelerāre “mempercepat”",
+  "Wikipedia, “Delta (letter)” — huruf awal Yunani diaphorá “perbedaan”",
+  "F. Cajori, A History of Mathematical Notations (1928–1929)",
+  "physics.info, “Distance and Displacement” — s dari Latin spatium (konon)"
+ ],
+ "thumbnail": {
+  "hook": "Huruf *v* Itu\nVelocity?!",
+  "sub": "Rahasia lambang fisika yang bikin gampang hafal · Part 1",
+  "elemen": [
+   {
+    "jenis": "orang",
+    "x": 170,
+    "y": 990,
+    "skala": 1.3
+   },
+   {
+    "jenis": "roket",
+    "x": 840,
+    "y": 990,
+    "skala": 1.3
+   }
+  ],
+  "tex": "\\g{v = \\tfrac{s}{t}}"
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "title",
+   "durasi": 7.8,
+   "bg": "navy",
+   "bingkai": true,
+   "transisi": "iris",
+   "narasi": "Velocity bukan cuma efek edit di TikTok. Kata ini adalah rahasia di balik huruf v di fisika.",
+   "props": {
+    "kicker": "Lambang Fisika · Part 1",
+    "judul": "Velocity!",
+    "sub": "Kenapa kecepatan pakai huruf v?",
+    "tandaTanya": true
+   }
+  },
+  {
+   "id": "v",
+   "type": "lambang",
+   "durasi": 8,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Kecepatan ditulis v, dari bahasa Inggris velocity. Asalnya bahasa Latin velocitas, artinya kecepatan.",
+   "props": {
+    "kicker": "Lambang Fisika · Part 1",
+    "huruf": "v",
+    "kata": "velocity",
+    "asal": "Latin: vēlōcitās —",
+    "arti": "“kecepatan”",
+    "besaran": "kecepatan",
+    "satuan": "m/s",
+    "status": "jelas",
+    "momen": [
+     {
+      "nama": "urai",
+      "at": 1.2,
+      "kata": "velocity."
+     },
+     {
+      "nama": "info",
+      "at": 2.6,
+      "kata": "Latin"
+     },
+     {
+      "nama": "rumus",
+      "at": 4.2,
+      "kata": "kecepatan."
+     }
+    ],
+    "tex": "v = \\frac{s}{t}"
+   },
+   "tts": "Kecepatan ditulis ve, dari bahasa Inggris, velocity. Asalnya bahasa Latin, velositas, artinya kecepatan.",
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "orang",
+      "x": 120,
+      "y": 1290,
+      "skala": 1.22,
+      "gerak": "geser",
+      "at": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "id": "a",
+   "type": "lambang",
+   "durasi": 8,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Percepatan ditulis a, dari acceleration. Akarnya bahasa Latin accelerare, artinya mempercepat.",
+   "props": {
+    "kicker": "Lambang Fisika · Part 1",
+    "huruf": "a",
+    "kata": "acceleration",
+    "asal": "Latin: accelerāre —",
+    "arti": "“mempercepat”",
+    "besaran": "percepatan",
+    "satuan": "m/s²",
+    "status": "jelas",
+    "momen": [
+     {
+      "nama": "urai",
+      "at": 1.2,
+      "kata": "acceleration."
+     },
+     {
+      "nama": "info",
+      "at": 2.6,
+      "kata": "Latin"
+     },
+     {
+      "nama": "rumus",
+      "at": 4.2,
+      "kata": "mempercepat."
+     }
+    ],
+    "tex": "a = \\frac{\\Delta v}{\\Delta t}"
+   },
+   "tts": "Percepatan ditulis a, dari, acceleration. Akarnya bahasa Latin, akselerare, artinya mempercepat.",
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "roket",
+      "x": 860,
+      "y": 1290,
+      "skala": 1.15,
+      "gerak": "melayang",
+      "at": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "id": "t",
+   "type": "lambang",
+   "durasi": 6.5,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Waktu ditulis t, dari time. Dalam bahasa Latin, waktu disebut tempus.",
+   "props": {
+    "kicker": "Lambang Fisika · Part 1",
+    "huruf": "t",
+    "kata": "time",
+    "asal": "Latin: tempus —",
+    "arti": "“waktu”",
+    "besaran": "waktu",
+    "satuan": "s (sekon)",
+    "status": "jelas",
+    "momen": [
+     {
+      "nama": "urai",
+      "at": 1.2,
+      "kata": "time."
+     },
+     {
+      "nama": "info",
+      "at": 2.6,
+      "kata": "Latin"
+     }
+    ]
+   },
+   "tts": "Waktu ditulis te, dari, time. Dalam bahasa Latin, waktu disebut, tempus.",
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "jam",
+      "x": 500,
+      "y": 1170,
+      "skala": 1.49,
+      "at": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "id": "delta",
+   "type": "lambang",
+   "durasi": 10,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Lalu segitiga ini, delta. Huruf D dalam bahasa Yunani, dari kata diaphora, artinya perbedaan. Jadi delta v berarti perubahan kecepatan.",
+   "props": {
+    "kicker": "Lambang Fisika · Part 1",
+    "huruf": "Δ",
+    "kata": "Δiaphorá",
+    "asal": "Yunani: diaphorá —",
+    "arti": "“perbedaan”",
+    "besaran": "perubahan (selisih)",
+    "satuan": null,
+    "status": "jelas",
+    "momen": [
+     {
+      "nama": "urai",
+      "at": 1.2,
+      "kata": "diaphora,"
+     },
+     {
+      "nama": "info",
+      "at": 2.6,
+      "kata": "perbedaan."
+     },
+     {
+      "nama": "rumus",
+      "at": 4.2,
+      "kata": "perubahan"
+     }
+    ],
+    "tex": "\\Delta v = v_2 - v_1"
+   },
+   "tts": "Lalu segitiga ini, delta. Huruf de dalam bahasa Yunani, dari kata, diafora, artinya perbedaan. Jadi delta ve, berarti perubahan kecepatan."
+  },
+  {
+   "id": "s",
+   "type": "lambang",
+   "durasi": 8,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Jarak sering ditulis s. Konon dari bahasa Latin spatium, artinya ruang. Tapi asal pastinya belum tercatat jelas.",
+   "props": {
+    "kicker": "Lambang Fisika · Part 1",
+    "huruf": "s",
+    "kata": "spatium",
+    "asal": "Latin: spatium —",
+    "arti": "“ruang, jarak”",
+    "besaran": "jarak / perpindahan",
+    "satuan": "m",
+    "status": "konon",
+    "momen": [
+     {
+      "nama": "urai",
+      "at": 1.2,
+      "kata": "spatium,"
+     },
+     {
+      "nama": "info",
+      "at": 2.6,
+      "kata": "ruang."
+     }
+    ]
+   },
+   "tts": "Jarak sering ditulis es. Konon dari bahasa Latin, spasium, artinya ruang. Tapi asal pastinya, belum tercatat jelas."
+  },
+  {
+   "id": "trik",
+   "type": "equation",
+   "durasi": 9,
+   "bg": "cokelat",
+   "transisi": "iris",
+   "narasi": "Sekarang rumusnya gampang diingat. Velocity sama dengan jarak per waktu. Acceleration sama dengan perubahan velocity per waktu.",
+   "tts": "Sekarang rumusnya gampang diingat. Velocity, sama dengan jarak per waktu. Acceleration, sama dengan perubahan velocity, per waktu.",
+   "props": {
+    "judul": "Trik hafal",
+    "size": 84,
+    "langkah": [
+     {
+      "tex": "\\g{v} = \\frac{s}{\\g{t}}",
+      "at": 1.5,
+      "kata": "Velocity"
+     },
+     {
+      "tex": "\\g{a} = \\frac{\\Delta v}{\\Delta \\g{t}}",
+      "at": 4.5,
+      "kata": "Acceleration",
+      "catatan": "acceleration = Δ velocity / time"
+     }
+    ],
+    "finalEmas": true
+   }
+  },
+  {
+   "id": "penutup",
+   "type": "outro",
+   "durasi": 7.5,
+   "bg": "navy",
+   "bingkai": true,
+   "transisi": "fade",
+   "narasi": "Jadi lambang fisika bukan huruf acak. Di part berikutnya, kita bongkar lambang gaya dan energi.",
+   "props": {
+    "kesimpulan": "Lambang fisika = singkatan, bukan huruf acak",
+    "tex": "\\g{v,\\ a,\\ t,\\ \\Delta}",
+    "ajakan": "Part 2: lambang gaya & energi →"
+   }
+  },
+  {
+   "id": "sumber",
+   "type": "sumber",
+   "durasi": 6.5,
+   "bg": "navy",
+   "narasi": "Sumber riset ada di layar.",
+   "props": {
+    "daftar": [
+     "Merriam-Webster, “velocity” — dari Latin vēlōcitās, vēlōx “cepat”",
+     "Merriam-Webster & Etymonline, “acceleration” — dari Latin accelerāre “mempercepat”",
+     "Wikipedia, “Delta (letter)” — huruf awal Yunani diaphorá “perbedaan”",
+     "F. Cajori, A History of Mathematical Notations (1928–1929)",
+     "physics.info, “Distance and Displacement” — s dari Latin spatium (konon)"
+    ],
+    "catatan": "Asal huruf s (spatium) masih diperdebatkan — disebut “konon” di video."
+   }
+  }
+ ]
+}
