@@ -56,13 +56,14 @@ Skill Claude Code per pilar: `video-ruang-hitung` (inti), `video-ruang-semesta`,
 | LambangFisikaPart1 | Huruf v Itu Velocity?! | Ruang Semesta | SMP 8/SMA 10 — Gerak lurus | Selesai + VO |
 | LambangFisikaPart2 | P Itu Daya atau Tekanan? (Huruf Kembar) | Ruang Semesta | Besaran & satuan | Selesai + VO |
 | LambangFisikaPart3 | Arus Listrik Kok I, Bukan C? | Ruang Semesta | SMP 9/SMA 12 — Listrik dinamis | Selesai + VO |
+| LambangFisikaPart4 | F = m·a Itu Singkatan! | Ruang Semesta | SMP 8/SMA 10 — Hukum Newton, Usaha & Energi | Selesai + VO |
 
 ### Seri "Kode Rahasia Lambang Fisika" (urutan posting)
 
 1. ✅ Velocity (v, a, t, Δ, s)
 2. ✅ Huruf Kembar (P, V/v, T, W/w)
 3. ✅ Lambang Listrik (I, Q, V, R, Ω)
-4. ⏳ Gaya & Energi (F, m, g, E, W, p)
+4. ✅ Gaya & Energi (F, m, g, E, satuan N & J)
 5. ⏳ Gelombang (λ, f, T, v)
 6. ⏳ Panas & Zat (Q, c, ρ, P)
 7. ⏳ Cerita sejarah di balik lambang
