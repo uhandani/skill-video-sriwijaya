@@ -3,6 +3,10 @@
 
 create extension if not exists pgcrypto;
 
+-- Fungsi bantu kebijakan di skema 'privat' (tidak diekspos lewat API).
+create schema if not exists privat;
+grant usage on schema privat to authenticated, anon;
+
 create table public.guru_diizinkan (email text primary key);
 
 create table public.profil (
@@ -56,16 +60,16 @@ create table public.status_simpul (
 );
 
 -- ── Fungsi bantu (security definer → memutus rekursi antar-kebijakan) ──
-create function public.adalah_guru() returns boolean language sql stable security definer set search_path = public as $$
+create function privat.adalah_guru() returns boolean language sql stable security definer set search_path = public as $$
   select exists (select 1 from profil where id = auth.uid() and peran = 'guru')
 $$;
-create function public.kelas_saya() returns uuid language sql stable security definer set search_path = public as $$
+create function privat.kelas_saya() returns uuid language sql stable security definer set search_path = public as $$
   select kelas_id from anggota where siswa_id = auth.uid()
 $$;
-create function public.kelas_milik_saya() returns setof uuid language sql stable security definer set search_path = public as $$
+create function privat.kelas_milik_saya() returns setof uuid language sql stable security definer set search_path = public as $$
   select id from kelas where guru_id = auth.uid()
 $$;
-create function public.siswa_dari_guru(siswa uuid) returns boolean language sql stable security definer set search_path = public as $$
+create function privat.siswa_dari_guru(siswa uuid) returns boolean language sql stable security definer set search_path = public as $$
   select exists (select 1 from anggota a join kelas k on k.id = a.kelas_id where a.siswa_id = siswa and k.guru_id = auth.uid())
 $$;
 
@@ -107,28 +111,30 @@ alter table public.jawaban enable row level security;
 alter table public.status_simpul enable row level security;
 
 -- profil: baca diri sendiri / siswa di kelas saya. Tidak ada insert/update/delete dari klien → peran tak bisa diubah.
-create policy profil_baca on public.profil for select using (id = auth.uid() or public.siswa_dari_guru(id));
+create policy profil_baca on public.profil for select using (id = auth.uid() or privat.siswa_dari_guru(id));
 
 -- kelas
-create policy kelas_baca on public.kelas for select using (guru_id = auth.uid() or id = public.kelas_saya());
-create policy kelas_buat on public.kelas for insert with check (guru_id = auth.uid() and public.adalah_guru());
+create policy kelas_baca on public.kelas for select using (guru_id = auth.uid() or id = privat.kelas_saya());
+create policy kelas_buat on public.kelas for insert with check (guru_id = auth.uid() and privat.adalah_guru());
 create policy kelas_ubah on public.kelas for update using (guru_id = auth.uid()) with check (guru_id = auth.uid());
 
 -- anggota: baca saja (tulis lewat gabung_kelas)
 create policy anggota_baca on public.anggota for select
-  using (siswa_id = auth.uid() or kelas_id in (select public.kelas_milik_saya()));
+  using (siswa_id = auth.uid() or kelas_id in (select privat.kelas_milik_saya()));
 
 -- jawaban: siswa menulis/membaca miliknya di kelasnya; guru membaca kelas miliknya
 create policy jawaban_baca on public.jawaban for select
-  using (siswa_id = auth.uid() or kelas_id in (select public.kelas_milik_saya()));
+  using (siswa_id = auth.uid() or kelas_id in (select privat.kelas_milik_saya()));
 create policy jawaban_tulis on public.jawaban for insert
-  with check (siswa_id = auth.uid() and kelas_id = public.kelas_saya());
+  with check (siswa_id = auth.uid() and kelas_id = privat.kelas_saya());
 create policy jawaban_ubah on public.jawaban for update
-  using (siswa_id = auth.uid()) with check (siswa_id = auth.uid() and kelas_id = public.kelas_saya());
+  using (siswa_id = auth.uid()) with check (siswa_id = auth.uid() and kelas_id = privat.kelas_saya());
 
 -- status simpul
-create policy status_baca on public.status_simpul for select using (siswa_id = auth.uid() or public.siswa_dari_guru(siswa_id));
+create policy status_baca on public.status_simpul for select using (siswa_id = auth.uid() or privat.siswa_dari_guru(siswa_id));
 create policy status_tulis on public.status_simpul for insert with check (siswa_id = auth.uid());
 create policy status_ubah on public.status_simpul for update using (siswa_id = auth.uid()) with check (siswa_id = auth.uid());
 
 revoke execute on function public.profil_baru() from public, anon, authenticated;
+revoke execute on function public.gabung_kelas(text) from public, anon;
+grant execute on function public.gabung_kelas(text) to authenticated;

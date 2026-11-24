@@ -11,5 +11,5 @@ trap 'jalan "$BIN/pg_ctl -D $TMP/data -m immediate stop >/dev/null" || true' EXI
 P="psql -h $TMP -p 54329 -U postgres -v ON_ERROR_STOP=1 -q"
 $P -f "$DIR/stub-auth-lokal.sql" >/dev/null
 $P -f "$DIR/skema.sql" >/dev/null
-$P -c "grant all on all tables in schema public to anon, authenticated; grant execute on all functions in schema public to anon, authenticated;" >/dev/null
+$P -c "grant all on all tables in schema public to anon, authenticated; grant execute on function public.gabung_kelas(text) to authenticated;" >/dev/null
 $P -f "$DIR/uji-rls.sql" 2>&1 | grep -E "NOTICE|ERROR|exception" || true

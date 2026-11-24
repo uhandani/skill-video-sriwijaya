@@ -88,6 +88,10 @@ end $$; commit;
 begin; set local role anon;
 do $$ begin
   if (select count(*) from jawaban) <> 0 or (select count(*) from profil) <> 0 or (select count(*) from kelas) <> 0 then raise exception 'anon melihat data'; end if;
+  begin
+    perform public.gabung_kelas('KAWUNG7');
+    raise exception 'SEHARUSNYA GAGAL: anon memanggil gabung_kelas';
+  exception when insufficient_privilege then null; end;
 end $$; commit;
 
 do $$ begin raise notice 'RLS: LULUS'; end $$;
