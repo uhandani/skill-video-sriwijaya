@@ -11,7 +11,7 @@ export type JenisIlustrasi =
   | "matahari" | "bulan" | "bumi" | "bintang" | "awan" | "ombak" | "gunung"
   | "kapal" | "candi" | "rumahPanggung" | "gong" | "orang" | "kelapa" | "planet"
   | "tangga" | "dindingBata" | "gulungan" | "buku" | "kubah" | "percetakan"
-  | "borobudur" | "hujan" | "roket" | "jam" | "bohlam" | "baterai" | "petir";
+  | "borobudur" | "hujan" | "roket" | "jam" | "bohlam" | "baterai" | "petir" | "timbangan" | "kelapaJatuh";
 
 const L = 4.5; // tebal garis
 
@@ -524,6 +524,49 @@ const Petir: React.FC<{ t: number }> = ({ t }) => {
   );
 };
 
+/** Timbangan dua lengan (0,0 = alas). Lengan bergoyang pelan lalu seimbang. */
+const Timbangan: React.FC<{ t: number }> = ({ t }) => {
+  const a = 6 * Math.exp(-t / 60) * Math.sin(t / 9);
+  const rad = (a * Math.PI) / 180;
+  const ujung = (x: number) => [x * Math.cos(rad), -170 + x * Math.sin(rad)];
+  const [lx, ly] = ujung(-110);
+  const [rx, ry] = ujung(110);
+  const Piring: React.FC<{ x: number; y: number; isi?: boolean }> = ({ x, y, isi }) => (
+    <g transform={`translate(${x} ${y})`}>
+      <path d="M0 0 L-38 60 M0 0 L38 60" stroke={C.krem} strokeWidth={3} />
+      <path d="M-48 60 H48 Q40 80 0 80 Q-40 80 -48 60 Z" fill={IL.kayu} stroke={C.krem} strokeWidth={L} strokeLinejoin="round" />
+      {isi ? <rect x={-22} y={22} width={44} height={38} rx={6} fill={IL.indigo} stroke={C.emas} strokeWidth={4} /> : <circle cy={42} r={18} fill={C.emas} stroke={C.krem} strokeWidth={3} />}
+    </g>
+  );
+  return (
+    <g strokeLinejoin="round" strokeLinecap="round">
+      <path d="M-60 0 H60 L40 -24 H-40 Z" fill={IL.kayu} stroke={C.krem} strokeWidth={L} />
+      <path d="M0 -24 V-170" stroke={C.krem} strokeWidth={10} />
+      <line x1={lx} y1={ly} x2={rx} y2={ry} stroke={C.emas} strokeWidth={9} />
+      <circle cy={-170} r={12} fill={C.emas} stroke={C.krem} strokeWidth={3} />
+      <Piring x={lx} y={ly} isi />
+      <Piring x={rx} y={ry} />
+    </g>
+  );
+};
+/** Pohon kelapa + buah yang jatuh menurut y = ½·g·t² (g = 9,8 m/s², tinggi ±10 m), berulang tiap 3 detik. */
+const KelapaJatuh: React.FC<{ t: number }> = ({ t }) => {
+  const PX_PER_M = 17; // 170 satuan lokal = 10 m
+  const tt = (t % 90) / 30; // detik dalam satu siklus
+  const tJatuh = Math.sqrt((2 * 10) / 9.8);
+  const y = -170 + Math.min(0.5 * 9.8 * tt * tt, 10) * PX_PER_M;
+  const op = tt < tJatuh + 0.9 ? 1 : Math.max(0, 1 - (tt - tJatuh - 0.9) / 0.4);
+  return (
+    <g>
+      <Kelapa t={t} />
+      <g opacity={op}>
+        <circle cx={16} cy={y - 14} r={14} fill={IL.kayuTerang} stroke={C.krem} strokeWidth={3} />
+      </g>
+      {tt >= tJatuh && tt < tJatuh + 0.5 ? <path d="M14 -4 L4 -14 M54 -4 L64 -14" stroke={C.emas} strokeWidth={4} strokeLinecap="round" /> : null}
+    </g>
+  );
+};
+
 export const ILUSTRASI: Record<JenisIlustrasi, React.FC<{ t: number }>> = {
   matahari: Matahari,
   bulan: Bulan,
@@ -552,6 +595,8 @@ export const ILUSTRASI: Record<JenisIlustrasi, React.FC<{ t: number }>> = {
   bohlam: Bohlam,
   baterai: Baterai,
   petir: Petir,
+  timbangan: Timbangan,
+  kelapaJatuh: KelapaJatuh,
 };
 
 /** <defs> bersama (gradien emas + glow). Taruh sekali di dalam <svg>. */

@@ -1,0 +1,339 @@
+{
+ "id": "LambangFisikaPart4",
+ "judul": "Kode Rahasia Lambang Fisika — Part 4: Gaya & Energi",
+ "pilar": "Ruang Semesta",
+ "kurikulum": "SMP Kelas 8 & SMA Kelas 10 — Hukum Newton, Usaha & Energi",
+ "rasio": "9:16",
+ "sumber": [
+  "Etymonline, “force” — dari Latin fortis “kuat”",
+  "Etymonline, “mass” — dari Latin massa “gumpalan, adonan”",
+  "Etymonline, “gravity” — dari Latin gravitas “berat”",
+  "Wikipedia, “History of energy” — Yunani enérgeia “aktivitas”; Thomas Young (1802/1807)",
+  "BIPM, The International System of Units (SI Brochure, 9th ed.) — newton & joule",
+  "Buku teks Fisika SMA (Kemendikbud) — Hukum Newton, Usaha & Energi"
+ ],
+ "thumbnail": {
+  "hook": "*F = m·a*\nItu Singkatan!",
+  "sub": "Kode Rahasia Lambang Fisika · Part 4",
+  "elemen": [
+   {
+    "jenis": "kelapaJatuh",
+    "x": 320,
+    "y": 960,
+    "skala": 2.4
+   },
+   {
+    "jenis": "timbangan",
+    "x": 720,
+    "y": 960,
+    "skala": 1.25
+   }
+  ]
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "title",
+   "durasi": 7.5,
+   "bg": "navy",
+   "bingkai": true,
+   "transisi": "iris",
+   "narasi": "Rumus paling terkenal di fisika: F sama dengan m kali a. Ternyata tiap hurufnya adalah singkatan.",
+   "tts": "Rumus paling terkenal di fisika, ef sama dengan em kali a. Ternyata, tiap hurufnya adalah singkatan.",
+   "props": {
+    "kicker": "Lambang Fisika · Part 4",
+    "judul": "F = m · a",
+    "sub": "Tiap hurufnya singkatan!",
+    "tandaTanya": true
+   },
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "orang",
+      "x": 150,
+      "y": 1760,
+      "skala": 1.1,
+      "gerak": "geser",
+      "at": 0.3
+     },
+     {
+      "jenis": "roket",
+      "x": 830,
+      "y": 1740,
+      "skala": 0.95,
+      "gerak": "melayang",
+      "at": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "id": "f",
+   "type": "lambang",
+   "durasi": 10,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Gaya ditulis F, dari force. Akarnya bahasa Latin fortis, artinya kuat. Satuannya newton, dari nama Isaac Newton.",
+   "tts": "Gaya ditulis ef, dari, force. Akarnya bahasa Latin, fortis, artinya kuat. Satuannya nyuton, dari nama Isaac Newton.",
+   "props": {
+    "kicker": "Lambang Fisika · Part 4",
+    "huruf": "F",
+    "kata": "Force",
+    "asal": "Latin: fortis —",
+    "arti": "“kuat”",
+    "besaran": "gaya",
+    "satuan": "newton (N)",
+    "status": "jelas",
+    "momen": [
+     {
+      "nama": "urai",
+      "kata": "force."
+     },
+     {
+      "nama": "info",
+      "kata": "Latin"
+     },
+     {
+      "nama": "rumus",
+      "kata": "newton,"
+     }
+    ],
+    "tex": "F = m \\cdot a"
+   },
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "orang",
+      "x": 500,
+      "y": 1770,
+      "skala": 1.15,
+      "gerak": "melayang",
+      "at": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "id": "m",
+   "type": "lambang",
+   "durasi": 10,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Massa ditulis m, dari mass. Asalnya bahasa Latin massa, artinya gumpalan atau adonan. Satuannya kilogram.",
+   "tts": "Massa ditulis em, dari, mass. Asalnya bahasa Latin, massa, artinya gumpalan, atau adonan. Satuannya kilogram.",
+   "props": {
+    "kicker": "Lambang Fisika · Part 4",
+    "huruf": "m",
+    "kata": "mass",
+    "asal": "Latin: massa —",
+    "arti": "“gumpalan, adonan”",
+    "besaran": "massa",
+    "satuan": "kilogram (kg)",
+    "status": "jelas",
+    "momen": [
+     {
+      "nama": "urai",
+      "kata": "mass."
+     },
+     {
+      "nama": "info",
+      "kata": "gumpalan"
+     },
+     {
+      "nama": "rumus",
+      "kata": "kilogram."
+     }
+    ],
+    "tex": "m = \\frac{F}{a}"
+   },
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "timbangan",
+      "x": 500,
+      "y": 1770,
+      "skala": 1.15,
+      "at": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "id": "g",
+   "type": "lambang",
+   "durasi": 12,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Percepatan gravitasi ditulis g, dari gravity. Akarnya bahasa Latin gravitas, artinya berat. Karena g, buah kelapa jatuh makin cepat, sekitar 9,8 meter per sekon kuadrat.",
+   "tts": "Percepatan gravitasi ditulis ge, dari, gravity. Akarnya bahasa Latin, gravitas, artinya berat. Karena ge, buah kelapa jatuh makin cepat, sekitar sembilan koma delapan meter per sekon kuadrat.",
+   "props": {
+    "kicker": "Lambang Fisika · Part 4",
+    "huruf": "g",
+    "kata": "gravitas",
+    "asal": "Latin: gravitas —",
+    "arti": "“berat”",
+    "besaran": "percepatan gravitasi",
+    "satuan": "m/s²",
+    "status": "jelas",
+    "momen": [
+     {
+      "nama": "urai",
+      "kata": "gravity."
+     },
+     {
+      "nama": "info",
+      "kata": "Latin"
+     },
+     {
+      "nama": "rumus",
+      "kata": "kelapa"
+     }
+    ],
+    "tex": "g \\approx 9{,}8\\ \\text{m/s}^2"
+   },
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "kelapaJatuh",
+      "x": 470,
+      "y": 1770,
+      "skala": 1.5,
+      "at": 0.4
+     }
+    ]
+   }
+  },
+  {
+   "id": "e",
+   "type": "lambang",
+   "durasi": 11,
+   "bg": "navy",
+   "transisi": "iris",
+   "narasi": "Energi ditulis E, dari energy. Asalnya bahasa Yunani energeia, artinya aktivitas. Satuannya joule, dari nama James Joule.",
+   "tts": "Energi ditulis e, dari, energy. Asalnya bahasa Yunani, energeia, artinya aktivitas. Satuannya jul, dari nama James Joule.",
+   "props": {
+    "kicker": "Lambang Fisika · Part 4",
+    "huruf": "E",
+    "kata": "Energy",
+    "asal": "Yunani: enérgeia —",
+    "arti": "“aktivitas”",
+    "besaran": "energi",
+    "satuan": "joule (J)",
+    "status": "jelas",
+    "momen": [
+     {
+      "nama": "urai",
+      "kata": "energy."
+     },
+     {
+      "nama": "info",
+      "kata": "Yunani"
+     },
+     {
+      "nama": "rumus",
+      "kata": "joule,"
+     }
+    ],
+    "tex": "E_k = \\tfrac{1}{2} m v^2"
+   },
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "matahari",
+      "x": 250,
+      "y": 1600,
+      "skala": 0.8,
+      "at": 0.5
+     },
+     {
+      "jenis": "bohlam",
+      "x": 760,
+      "y": 1770,
+      "skala": 0.9,
+      "at": 0.8
+     }
+    ]
+   }
+  },
+  {
+   "id": "satuan",
+   "type": "equation",
+   "durasi": 11,
+   "bg": "cokelat",
+   "transisi": "iris",
+   "narasi": "Satuannya pun saling terhubung. Satu newton sama dengan satu kilogram kali meter per sekon kuadrat. Satu joule sama dengan satu newton kali satu meter.",
+   "tts": "Satuannya pun saling terhubung. Satu nyuton, sama dengan satu kilogram kali meter per sekon kuadrat. Satu jul, sama dengan satu nyuton kali satu meter.",
+   "props": {
+    "judul": "Satuan pun bersaudara",
+    "size": 80,
+    "finalEmas": true,
+    "langkah": [
+     {
+      "tex": "F = m \\cdot a",
+      "kata": "terhubung."
+     },
+     {
+      "tex": "1\\ \\g{\\text{N}} = 1\\ \\text{kg} \\cdot \\text{m/s}^2",
+      "kata": "newton"
+     },
+     {
+      "tex": "1\\ \\g{\\text{J}} = 1\\ \\text{N} \\cdot 1\\ \\text{m}",
+      "kata": "joule",
+      "catatan": "usaha W = F · s"
+     }
+    ]
+   },
+   "ilustrasi": {
+    "elemen": [
+     {
+      "jenis": "timbangan",
+      "x": 200,
+      "y": 1770,
+      "skala": 0.8,
+      "at": 0.5
+     },
+     {
+      "jenis": "kelapaJatuh",
+      "x": 800,
+      "y": 1770,
+      "skala": 1.1,
+      "at": 0.8
+     }
+    ]
+   }
+  },
+  {
+   "id": "penutup",
+   "type": "outro",
+   "durasi": 9,
+   "bg": "navy",
+   "bingkai": true,
+   "transisi": "fade",
+   "narasi": "Jadi F sama dengan m kali a artinya force sama dengan mass kali acceleration. Di part berikutnya, kita bongkar lambang gelombang.",
+   "tts": "Jadi, ef sama dengan em kali a, artinya, force sama dengan mass kali acceleration. Di part berikutnya, kita bongkar lambang gelombang.",
+   "props": {
+    "kesimpulan": "force = mass × acceleration",
+    "tex": "\\g{F = m \\cdot a}",
+    "ajakan": "Part 5: lambang gelombang →"
+   }
+  },
+  {
+   "id": "sumber",
+   "type": "sumber",
+   "durasi": 6.5,
+   "bg": "navy",
+   "narasi": "Sumber riset ada di layar.",
+   "props": {
+    "daftar": [
+     "Etymonline, “force” — dari Latin fortis “kuat”",
+     "Etymonline, “mass” — dari Latin massa “gumpalan, adonan”",
+     "Etymonline, “gravity” — dari Latin gravitas “berat”",
+     "Wikipedia, “History of energy” — Yunani enérgeia “aktivitas”; Thomas Young (1802/1807)",
+     "BIPM, The International System of Units (SI Brochure, 9th ed.) — newton & joule",
+     "Buku teks Fisika SMA (Kemendikbud) — Hukum Newton, Usaha & Energi"
+    ],
+    "catatan": "g ≈ 9,8 m/s² di permukaan Bumi; gerak kelapa dihitung tanpa hambatan udara."
+   }
+  }
+ ]
+}
