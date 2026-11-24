@@ -20,6 +20,12 @@ Mode demo: `/?demo=1` (siswa, kode kelas `KAWUNG7`) dan `/?demo=1&peran=guru`. D
 Produksi: buat `.env.local` berisi `VITE_SUPABASE_URL=…` dan `VITE_SUPABASE_ANON_KEY=…` (kunci publik).
 Database: jalankan `supabase/skema.sql` di proyek Supabase. Login Google: `PANDUAN-LOGIN-GOOGLE.md`.
 
+## Online
+
+- Web: <https://udcation.vercel.app> (Vercel proyek `udcation`, tim `uhan-dani`; root `platform/web`).
+- Database: Supabase proyek `udcation` (`vefbdpocoxyddfwanmlj`, Singapura).
+- Vercel membangun otomatis setiap push ke cabang produksi repo (cabang default GitHub).
+
 ## Struktur
 
 | Path | Isi |

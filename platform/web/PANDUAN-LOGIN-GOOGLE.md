@@ -3,6 +3,12 @@
 Login Google butuh "kunci" (OAuth Client) dari akun Google **kamu sendiri**. Claude tidak bisa membuatnya.
 Siapkan dua tab: **Google Cloud Console** dan **dasbor Supabase** proyek UDcation.
 
+**Alamat proyekmu (sudah dibuat):**
+- Web UDcation: `https://udcation.vercel.app`
+- Callback Supabase: `https://vefbdpocoxyddfwanmlj.supabase.co/auth/v1/callback`
+- Dasbor Supabase: <https://supabase.com/dashboard/project/vefbdpocoxyddfwanmlj>
+- Email guru terdaftar: email yang kamu berikan (tabel `guru_diizinkan`).
+
 ## A. Ambil alamat callback dari Supabase
 1. Buka dasbor Supabase → proyek UDcation → **Authentication** → **Sign In / Providers** (atau *Providers*) → **Google**.
 2. Salin **Callback URL**, bentuknya `https://<kode-proyek>.supabase.co/auth/v1/callback`.
@@ -16,7 +22,7 @@ Siapkan dua tab: **Google Cloud Console** dan **dasbor Supabase** proyek UDcatio
      Untuk dibuka ke semua orang, klik **Publish app** (nama, email & logo saja tidak butuh verifikasi panjang).
 3. **Clients** (versi lama: *Credentials → Create credentials → OAuth client ID*):
    - Application type: **Web application**, nama: `UDcation Web`.
-   - **Authorized JavaScript origins**: alamat web UDcation (dari Vercel), mis. `https://udcation.vercel.app`.
+   - **Authorized JavaScript origins**: alamat web UDcation (dari Vercel), yaitu `https://udcation.vercel.app`.
    - **Authorized redirect URIs**: tempel **Callback URL** dari langkah A.
    - Klik **Create** → salin **Client ID** dan **Client secret**.
 
