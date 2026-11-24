@@ -2,16 +2,16 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useApp } from "../konteks";
 import { JALUR_UJI, PETA, simpulJalur } from "../penilai";
-import { simpulLatihanBerikut } from "../latihan";
+import { gabungStatus, simpulLatihanBerikut } from "../latihan";
 import type { Status } from "../data/tipe";
 import Titik from "./Titik";
 
 export const NAMA_JALUR: Record<string, string> = { J07: "Pecahan", J12: "Persamaan linear", J13: "Ubah rumus fisika" };
 
 export default function Beranda() {
-  const { data, pengguna, kelas } = useApp();
+  const { data, pengguna, kelas, kirimanTertunda } = useApp();
   const [status, setStatus] = useState<Record<string, Status> | null>(null);
-  useEffect(() => { void data.statusSaya().then(setStatus).catch(() => setStatus({})); }, [data]);
+  useEffect(() => { void data.statusSaya().catch(() => ({})).then((st) => setStatus(gabungStatus(st, kirimanTertunda()))); }, [data, kirimanTertunda]);
   if (!status) return <p className="redup">Memuat…</p>;
   return (
     <main>

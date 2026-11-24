@@ -31,3 +31,8 @@ export interface Data {
   jawabanKelas(kelasId: string): Promise<BarisJawaban[]>;
   statusKelas(kelasId: string): Promise<{ siswaId: string; simpul: string; status: Status }[]>;
 }
+
+/** Isi antrean kiriman (jawaban & status simpul) — disimpan lokal sampai terkirim. */
+export type Kiriman =
+  | { id: string; jenis: "jawaban"; jawaban: BarisJawaban }
+  | { id: string; jenis: "status"; simpul: string; status: Status; sumber: "diagnostik" | "latihan" };

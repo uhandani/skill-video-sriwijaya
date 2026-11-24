@@ -5,7 +5,7 @@ import { keTeks } from "../../../src/pecahan";
 import type { Jawaban } from "../../../src/templat";
 import { useApp } from "../konteks";
 import { ambilSoal, infoSimpul, nilaiJawaban, nilaiLangkah, umpanPola, type Penilaian } from "../penilai";
-import { seedBaru, simpulLatihanBerikut, sudahLancar, type CatatanLatihan } from "../latihan";
+import { gabungStatus, seedBaru, simpulLatihanBerikut, sudahLancar, type CatatanLatihan } from "../latihan";
 import IsianJawaban from "./IsianJawaban";
 import KartuModul from "./KartuModul";
 
@@ -22,7 +22,7 @@ export default function LatihanSimpul() {
 function Latihan() {
   const { simpul = "" } = useParams();
 
-  const { data, demo, pengguna, kelas, kirimJawaban } = useApp();
+  const { data, demo, pengguna, kelas, kirimJawaban, kirimStatus } = useApp();
   const info = infoSimpul(simpul);
   const [riwayat, setRiwayat] = useState<CatatanLatihan[] | null>(null);
   const [lihatModul, setLihatModul] = useState(true);
@@ -59,7 +59,7 @@ function Latihan() {
     const baru = [...riwayat!, { simpul, benar: h.status === "benar", detik, polaId: h.polaId }];
     setRiwayat(baru);
     if (h.status === "benar" && sudahLancar(baru, simpul, info!.targetDetik)) {
-      await data.simpanStatus(simpul, "kuasai", "latihan").catch(() => {});
+      await kirimStatus(simpul, "kuasai", "latihan");
       setLancar(true);
       return;
     }
@@ -105,7 +105,7 @@ function Latihan() {
               void periksa(langkah, "langkah", { status: r.benar ? "benar" : r.polaId ? "pola" : "tak-dikenal", polaId: r.polaId, umpan: u, jatuhDi: r.jatuhDi });
             }}>
               <label htmlFor="langkah" className="redup">Satu langkah per baris, akhiri dengan x = …</label>
-              <textarea id="langkah" className="isian" rows={4} value={langkah} onChange={(e) => setLangkah(e.target.value)} placeholder={"2x = 8\nx = 4"} />
+              <textarea id="langkah" className="isian" rows={4} maxLength={500} value={langkah} onChange={(e) => setLangkah(e.target.value)} placeholder={"2x = 8\nx = 4"} />
               <p><button className="tombol penuh" disabled={!langkah.trim()}>Periksa</button></p>
             </form>
           )}
@@ -155,9 +155,11 @@ function Umpan({ hasil, tunjuk, setTunjuk, soalBaru, ulangi }: {
 }
 
 function LanjutSimpul({ jalur, statusTambahan }: { jalur: string; statusTambahan: Record<string, "kuasai"> }) {
-  const { data } = useApp();
+  const { data, kirimanTertunda } = useApp();
   const [berikut, setBerikut] = useState<string | null | undefined>(undefined);
-  useEffect(() => { void data.statusSaya().then((s) => setBerikut(simpulLatihanBerikut(jalur, { ...s, ...statusTambahan }))); }, [data, jalur, statusTambahan]);
+  useEffect(() => {
+    void data.statusSaya().catch(() => ({})).then((s) => setBerikut(simpulLatihanBerikut(jalur, { ...gabungStatus(s, kirimanTertunda()), ...statusTambahan })));
+  }, [data, jalur, statusTambahan, kirimanTertunda]);
   if (berikut === undefined) return null;
   return berikut
     ? <p><Link className="tombol emas penuh" to={`/latihan/${berikut}`}>Lanjut ke simpul berikut</Link></p>

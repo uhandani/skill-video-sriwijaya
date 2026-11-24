@@ -31,3 +31,12 @@ it("seedBaru bilangan bulat positif dan berbeda", () => {
   expect(Number.isInteger(a) && a > 0).toBe(true);
   expect(a).not.toBe(b);
 });
+
+import { gabungStatus } from "../src/latihan";
+it("gabungStatus: kiriman status tertunda menimpa status server", () => {
+  const tertunda = [
+    { id: "status|J07-01", jenis: "status" as const, simpul: "J07-01", status: "kuasai" as const, sumber: "latihan" as const },
+    { id: "x", jenis: "jawaban" as const, jawaban: {} as never },
+  ];
+  expect(gabungStatus({ "J07-01": "bolong", "J07-02": "rapuh" }, tertunda)).toEqual({ "J07-01": "kuasai", "J07-02": "rapuh" });
+});

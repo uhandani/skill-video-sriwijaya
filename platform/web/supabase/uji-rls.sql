@@ -1,9 +1,12 @@
 -- Uji keamanan (RLS). Jalankan setelah skema.sql. Gagal = RAISE EXCEPTION; semua lulus = NOTICE 'RLS: LULUS'.
 \set ON_ERROR_STOP on
-insert into guru_diizinkan values ('guru1@uji.id'), ('guru2@uji.id');
+insert into guru_diizinkan values ('guru1@uji.id'), ('guru2@uji.id'), ('guru3@uji.id');
+insert into auth.users (id, email, raw_user_meta_data, raw_app_meta_data) values
+  ('00000000-0000-0000-0000-0000000000a1', 'guru1@uji.id', '{"full_name":"Guru Satu"}', '{"provider":"google"}'),
+  ('00000000-0000-0000-0000-0000000000a2', 'GURU2@uji.id', '{"full_name":"Guru Dua"}', '{"provider":"google"}'),
+  -- daftar lewat email/password memakai email guru: TIDAK boleh jadi guru
+  ('00000000-0000-0000-0000-0000000000a3', 'guru3@uji.id', '{}', '{"provider":"email"}');
 insert into auth.users (id, email, raw_user_meta_data) values
-  ('00000000-0000-0000-0000-0000000000a1', 'guru1@uji.id', '{"full_name":"Guru Satu"}'),
-  ('00000000-0000-0000-0000-0000000000a2', 'GURU2@uji.id', '{"full_name":"Guru Dua"}'),
   ('00000000-0000-0000-0000-0000000000b1', 'a@uji.id', '{"full_name":"Siswa A"}'),
   ('00000000-0000-0000-0000-0000000000b2', 'b@uji.id', '{"name":"Siswa B"}'),
   ('00000000-0000-0000-0000-0000000000b3', 'c@uji.id', '{}');
@@ -11,6 +14,7 @@ insert into auth.users (id, email, raw_user_meta_data) values
 do $$ begin
   if (select peran from profil where id = '00000000-0000-0000-0000-0000000000a2') <> 'guru' then raise exception 'email guru (huruf besar) tidak jadi guru'; end if;
   if (select peran from profil where id = '00000000-0000-0000-0000-0000000000b1') <> 'siswa' then raise exception 'siswa salah peran'; end if;
+  if (select peran from profil where id = '00000000-0000-0000-0000-0000000000a3') <> 'siswa' then raise exception 'akun non-Google dengan email guru menjadi guru'; end if;
   if (select nama from profil where id = '00000000-0000-0000-0000-0000000000b2') <> 'Siswa B' then raise exception 'nama dari meta name'; end if;
 end $$;
 

@@ -1,5 +1,6 @@
 import type { Status } from "../../src/peta";
 import { simpulJalur } from "./penilai";
+import type { Kiriman } from "./data/tipe";
 
 export type CatatanLatihan = { simpul: string; benar: boolean; detik: number; polaId?: string };
 
@@ -20,4 +21,11 @@ export function seedBaru(): number {
   const a = new Uint32Array(1);
   crypto.getRandomValues(a);
   return (a[0] % 2_000_000_000) + 1;
+}
+
+/** Status dari server ditimpa kiriman status yang masih menunggu di antrean (offline tetap terlihat). */
+export function gabungStatus(server: Record<string, Status>, tertunda: Kiriman[]): Record<string, Status> {
+  const hasil = { ...server };
+  for (const k of tertunda) if (k.jenis === "status") hasil[k.simpul] = k.status;
+  return hasil;
 }

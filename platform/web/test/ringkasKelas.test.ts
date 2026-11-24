@@ -25,9 +25,16 @@ describe("ringkas kelas", () => {
   it("keCsv meng-escape koma dan kutip", () => {
     const siswa: Pengguna[] = [{ id: "s1", nama: 'Rina "R"', email: "r@x.id", peran: "siswa" }];
     const csv = keCsv([j({ teksJawaban: "1,5" })], siswa);
-    const [kepala, baris] = csv.trim().split("\n");
+    expect(csv.startsWith("\uFEFF")).toBe(true);
+    const [kepala, baris] = csv.replace("\uFEFF", "").trim().split("\n");
     expect(kepala).toBe("waktu,nama,email,mode,simpul,templat,jawaban,status,pola,detik");
     expect(baris).toContain('"Rina ""R"""');
     expect(baris).toContain('"1,5"');
+  });
+  it("keCsv menetralkan jawaban berbentuk rumus Excel", () => {
+    const csv = keCsv([j({ teksJawaban: "=HYPERLINK(1)" }), j({ teksJawaban: "-3" }), j({ teksJawaban: "+x" })], []);
+    expect(csv).toContain("'=HYPERLINK(1)");
+    expect(csv).toContain(",'-3,");
+    expect(csv).toContain(",'+x,");
   });
 });

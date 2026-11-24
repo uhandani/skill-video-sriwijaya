@@ -11,7 +11,7 @@ import { NAMA_JALUR } from "./Beranda";
 export default function Diagnostik() {
   const { jalur = "" } = useParams();
   const nav = useNavigate();
-  const { data, pengguna, kelas, kirimJawaban } = useApp();
+  const { pengguna, kelas, kirimJawaban, kirimStatus } = useApp();
   const [sesi, setSesi] = useState<SesiDiagnostik | null>(null);
   const [seed, setSeed] = useState(seedBaru);
   const [mulai, setMulai] = useState(Date.now());
@@ -21,8 +21,8 @@ export default function Diagnostik() {
 
   useEffect(() => {
     if (!(JALUR_UJI as readonly string[]).includes(jalur)) { nav("/"); return; }
-    setSesi(muatSesi(jalur) ?? mulaiDiagnostik(PETA, [jalur], "SMA"));
-  }, [jalur, nav]);
+    setSesi(muatSesi(pengguna!.id, jalur) ?? mulaiDiagnostik(PETA, [jalur], "SMA"));
+  }, [jalur, nav, pengguna]);
 
   if (!sesi) return <p className="redup">Menyiapkan tes…</p>;
   const simpul = simpulBerikut(sesi);
@@ -41,12 +41,13 @@ export default function Diagnostik() {
     catat(sesi, simpul, h.status === "benar");
     if (!simpulBerikut(sesi)) {
       const r = ringkasan(sesi);
-      for (const [id, st] of Object.entries(r.status)) await data.simpanStatus(id, st, "diagnostik").catch(() => {});
-      hapusSesi(jalur);
+      // Status lewat antrean: tetap aman walau sinyal putus di soal terakhir.
+      for (const [id, st] of Object.entries(r.status)) await kirimStatus(id, st, "diagnostik");
+      hapusSesi(pengguna!.id, jalur);
       nav(`/hasil/${jalur}`, { state: r });
       return;
     }
-    simpanSesi(jalur, sesi);
+    simpanSesi(pengguna!.id, jalur, sesi);
     setSesi({ ...sesi });
     setSeed(seedBaru()); setMulai(Date.now()); setJawab(""); setNomor((n) => n + 1); setSibuk(false);
   }

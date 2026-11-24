@@ -2,7 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState, t
 import { buatAntrean } from "./data/antrean";
 import { dataMemori } from "./data/memori";
 import { dataSupabase } from "./data/supabase";
-import type { BarisJawaban, Data, Kelas, Pengguna } from "./data/tipe";
+import type { BarisJawaban, Data, Kelas, Kiriman, Pengguna, Status } from "./data/tipe";
 
 export const DEMO_KODE = "KAWUNG7";
 
@@ -29,7 +29,10 @@ function pilihData(): { data: Data | null; demo: boolean } {
 
 type Konteks = {
   data: Data; demo: boolean; pengguna: Pengguna | null; kelas: Kelas | null; siap: boolean;
-  muatUlang(): Promise<void>; kirimJawaban(j: BarisJawaban): Promise<void>; tertunda: number;
+  muatUlang(): Promise<void>; tertunda: number;
+  kirimJawaban(j: BarisJawaban): Promise<void>;
+  kirimStatus(simpul: string, status: Status, sumber: "diagnostik" | "latihan"): Promise<void>;
+  kirimanTertunda(): Kiriman[];
 };
 const K = createContext<Konteks | null>(null);
 export const useApp = () => { const k = useContext(K); if (!k) throw new Error("di luar penyedia"); return k; };
@@ -41,7 +44,15 @@ export function PenyediaApp({ children }: { children: ReactNode }) {
   const [siap, setSiap] = useState(false);
   const [tertunda, setTertunda] = useState(0);
 
-  const antrean = useMemo(() => data && buatAntrean((j) => data.simpanJawaban(j), (() => { try { return localStorage; } catch { const m = new Map<string, string>(); return { getItem: (k: string) => m.get(k) ?? null, setItem: (k: string, v: string) => void m.set(k, v) }; } })()), [data]);
+  // Antrean per pengguna: HP sekolah bisa dipakai bergantian; kiriman siswa A tidak tercampur dengan B.
+  const antrean = useMemo(() => {
+    if (!data || !pengguna) return null;
+    const toko = (() => { try { return localStorage; } catch { const m = new Map<string, string>(); return { getItem: (k: string) => m.get(k) ?? null, setItem: (k: string, v: string) => void m.set(k, v) }; } })();
+    return buatAntrean<Kiriman>(
+      (k) => (k.jenis === "jawaban" ? data.simpanJawaban(k.jawaban) : data.simpanStatus(k.simpul, k.status, k.sumber)),
+      toko, `udcation-antrean-${pengguna.id}`,
+    );
+  }, [data, pengguna]);
 
   const muatUlang = useCallback(async () => {
     if (!data) return;
@@ -51,10 +62,12 @@ export function PenyediaApp({ children }: { children: ReactNode }) {
     setSiap(true);
   }, [data]);
 
+  const kirimanTertunda = useCallback(() => antrean?.isi() ?? [], [antrean]);
   useEffect(() => { void muatUlang(); }, [muatUlang]);
   useEffect(() => {
     if (!antrean) return;
     const kirim = () => void antrean.kirimUlang().then(() => setTertunda(antrean.jumlah()));
+    setTertunda(antrean.jumlah());
     kirim();
     addEventListener("online", kirim);
     const t = setInterval(kirim, 30_000);
@@ -70,7 +83,12 @@ export function PenyediaApp({ children }: { children: ReactNode }) {
 
   const nilai: Konteks = {
     data, demo, pengguna, kelas, siap, muatUlang, tertunda,
-    async kirimJawaban(j) { await antrean!.tambah(j); setTertunda(antrean!.jumlah()); },
+    async kirimJawaban(j) { await antrean!.tambah({ id: j.id, jenis: "jawaban", jawaban: j }); setTertunda(antrean!.jumlah()); },
+    async kirimStatus(simpul, status, sumber) {
+      await antrean!.tambah({ id: `status|${simpul}`, jenis: "status", simpul, status, sumber });
+      setTertunda(antrean!.jumlah());
+    },
+    kirimanTertunda,
   };
   return <K.Provider value={nilai}>{children}</K.Provider>;
 }

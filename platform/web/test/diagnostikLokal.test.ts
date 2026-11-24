@@ -11,25 +11,30 @@ describe("sesi diagnostik lokal", () => {
     const s = mulaiDiagnostik(PETA, ["J07"], "SMA");
     const id = simpulBerikut(s)!;
     catat(s, id, true); catat(s, id, true);
-    simpanSesi("J07", s, t);
-    const m = muatSesi("J07", t)!;
+    simpanSesi("u1", "J07", s, t);
+    const m = muatSesi("u1", "J07", t)!;
     expect(simpulBerikut(m)).toBe(simpulBerikut(s));
     expect([...m.tersirat]).toEqual([...s.tersirat]);
     expect(m.status).toEqual(s.status);
   });
   it("data rusak → null", () => {
     const t = toko();
-    t.setItem("udcation-diag-J07", "{rusak");
-    expect(muatSesi("J07", t)).toBeNull();
-    t.setItem("udcation-diag-J07", JSON.stringify({ versi: 99 }));
-    expect(muatSesi("J07", t)).toBeNull();
+    t.setItem("udcation-diag-u1-J07", "{rusak");
+    expect(muatSesi("u1", "J07", t)).toBeNull();
+    t.setItem("udcation-diag-u1-J07", JSON.stringify({ versi: 99 }));
+    expect(muatSesi("u1", "J07", t)).toBeNull();
   });
   it("hapus satu jalur tidak menyentuh jalur lain", () => {
     const t = toko();
-    simpanSesi("J07", mulaiDiagnostik(PETA, ["J07"], "SMA"), t);
-    simpanSesi("J12", mulaiDiagnostik(PETA, ["J12"], "SMA"), t);
-    hapusSesi("J07", t);
-    expect(muatSesi("J07", t)).toBeNull();
-    expect(muatSesi("J12", t)).not.toBeNull();
+    simpanSesi("u1", "J07", mulaiDiagnostik(PETA, ["J07"], "SMA"), t);
+    simpanSesi("u1", "J12", mulaiDiagnostik(PETA, ["J12"], "SMA"), t);
+    hapusSesi("u1", "J07", t);
+    expect(muatSesi("u1", "J07", t)).toBeNull();
+    expect(muatSesi("u1", "J12", t)).not.toBeNull();
+  });
+  it("sesi siswa lain di HP yang sama tidak terbaca", () => {
+    const t = toko();
+    simpanSesi("u1", "J07", mulaiDiagnostik(PETA, ["J07"], "SMA"), t);
+    expect(muatSesi("u2", "J07", t)).toBeNull();
   });
 });

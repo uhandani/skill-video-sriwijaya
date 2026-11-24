@@ -80,7 +80,9 @@ begin
     new.id,
     coalesce(new.raw_user_meta_data ->> 'full_name', new.raw_user_meta_data ->> 'name', split_part(new.email, '@', 1)),
     new.email,
-    case when exists (select 1 from guru_diizinkan g where lower(g.email) = lower(new.email)) then 'guru' else 'siswa' end
+    -- Guru hanya lewat Google (email terverifikasi Google), bukan daftar email/password yang memakai email guru.
+    case when coalesce(new.raw_app_meta_data ->> 'provider', '') = 'google'
+          and exists (select 1 from guru_diizinkan g where lower(g.email) = lower(new.email)) then 'guru' else 'siswa' end
   );
   return new;
 end $$;

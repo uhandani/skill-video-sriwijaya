@@ -1,4 +1,5 @@
 import { buatKodeKelas } from "./kode";
+import { GalatPermanen } from "./antrean";
 import type { BarisJawaban, Data, Kelas, Pengguna, Status } from "./tipe";
 
 export { buatKodeKelas };
@@ -49,7 +50,7 @@ export function dataMemori(awal: { pengguna?: Pengguna; guruDiizinkan?: string[]
       return { ok: true, kelas: tanpaGuru(k) };
     },
     async simpanJawaban(j) {
-      if (j.siswaId !== saya().id) throw new Error("bukan jawaban Anda");
+      if (j.siswaId !== saya().id) throw new GalatPermanen("bukan jawaban Anda");
       jawaban.set(j.id, { ...j });
     },
     async simpanStatus(simpul, st) {

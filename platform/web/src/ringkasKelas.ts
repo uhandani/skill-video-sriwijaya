@@ -19,13 +19,16 @@ export function waktuPerSimpul(js: BarisJawaban[]) {
   }));
 }
 
+/** Sel CSV: teks yang diawali = + - @ diberi ' supaya tidak dijalankan sebagai rumus oleh Excel. */
 const sel = (v: string | number | null) => {
-  const s = v === null ? "" : String(v);
+  let s = v === null ? "" : String(v);
+  if (typeof v === "string" && /^[=+\-@\t\r]/.test(s)) s = `'${s}`;
   return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
 };
 
 export function keCsv(js: BarisJawaban[], siswa: Pengguna[]): string {
   const p = new Map(siswa.map((s) => [s.id, s]));
   const baris = js.map((j) => [j.dibuat, p.get(j.siswaId)?.nama ?? "", p.get(j.siswaId)?.email ?? "", j.mode, j.simpul, j.templatId, j.teksJawaban, j.status, j.polaId, j.detik].map(sel).join(","));
-  return ["waktu,nama,email,mode,simpul,templat,jawaban,status,pola,detik", ...baris].join("\n") + "\n";
+  // BOM: supaya Excel membaca UTF-8 (√, ½, −, nama berhuruf khusus) dengan benar.
+  return "\uFEFF" + ["waktu,nama,email,mode,simpul,templat,jawaban,status,pola,detik", ...baris].join("\n") + "\n";
 }

@@ -2,16 +2,16 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useApp } from "../konteks";
 import { simpulJalur } from "../penilai";
-import { simpulLatihanBerikut } from "../latihan";
+import { gabungStatus, simpulLatihanBerikut } from "../latihan";
 import type { Status } from "../data/tipe";
 import Titik from "./Titik";
 import { NAMA_JALUR } from "./Beranda";
 
 export default function Hasil() {
   const { jalur = "" } = useParams();
-  const { data } = useApp();
+  const { data, kirimanTertunda } = useApp();
   const [status, setStatus] = useState<Record<string, Status> | null>(null);
-  useEffect(() => { void data.statusSaya().then(setStatus); }, [data]);
+  useEffect(() => { void data.statusSaya().catch(() => ({})).then((st) => setStatus(gabungStatus(st, kirimanTertunda()))); }, [data, kirimanTertunda]);
   if (!status) return <p className="redup">Memuat hasil…</p>;
   const mulai = simpulLatihanBerikut(jalur, status);
   return (

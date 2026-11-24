@@ -1,5 +1,6 @@
 import { createClient } from "@supabase/supabase-js";
 import { buatKodeKelas } from "./kode";
+import { GalatPermanen } from "./antrean";
 import type { BarisJawaban, Data, HasilGabung, Kelas, Pengguna, Status } from "./tipe";
 
 type BarisDb = {
@@ -16,9 +17,15 @@ const dariDb = (r: BarisDb): BarisJawaban => ({
 });
 const KOLOM_KELAS = "id, nama, kode, aktif";
 
-function periksa<T>(r: { data: T; error: { message: string } | null }): T {
+function periksa<T>(r: { data: T; error: { message: string; code?: string } | null }): T {
   if (r.error) throw new Error(r.error.message);
   return r.data;
+}
+/** Untuk kiriman antrean: galat dari database (ber-kode: RLS, cek, kunci) tak akan sembuh dengan kirim ulang. */
+function periksaKiriman(r: { error: { message: string; code?: string } | null }): void {
+  if (!r.error) return;
+  if (r.error.code) throw new GalatPermanen(r.error.message);
+  throw new Error(r.error.message);
 }
 
 export function dataSupabase(url: string, kunci: string): Data {
@@ -49,9 +56,9 @@ export function dataSupabase(url: string, kunci: string): Data {
     async gabungKelas(kode) {
       return periksa(await sb.rpc("gabung_kelas", { kode_masuk: kode.trim().toUpperCase() })) as HasilGabung;
     },
-    async simpanJawaban(j) { periksa(await sb.from("jawaban").upsert(keDb(j))); },
+    async simpanJawaban(j) { periksaKiriman(await sb.from("jawaban").upsert(keDb(j))); },
     async simpanStatus(simpul, status, sumber) {
-      periksa(await sb.from("status_simpul").upsert({ siswa_id: await idSaya(), simpul, status, sumber, diperbarui: new Date().toISOString() }));
+      periksaKiriman(await sb.from("status_simpul").upsert({ siswa_id: await idSaya(), simpul, status, sumber, diperbarui: new Date().toISOString() }));
     },
     async statusSaya() {
       const r = periksa(await sb.from("status_simpul").select("simpul, status").eq("siswa_id", await idSaya())) as { simpul: string; status: Status }[];
