@@ -14,6 +14,9 @@ Pilar sejarah & budaya × MTK/fisika. Mesin video dan alur kerja SAMA dengan ski
 
 ## Identitas Ruang Nusantara
 
+- **Logo** sama di semua pilar: **Δ Kawung Cetak Biru** (garis emas, tanpa arsiran, titik krem) lewat komponen
+  `DeltaLogo` — lihat `style-guide.md`. Jangan pakai logo isi foil lama.
+
 - `"pilar": "Ruang Nusantara"` → latar **cokelat sogan** (`bg: navy`), latar sekunder **laut indigo**
   (`bg: cokelat`), bar subtitle **indigo**, aksen **terakota**, motif **parang** (motif keraton).
 - Ilustrasi bergaya video Sriwijaya: garis krem, isian warna tekstil, aksen emas, laut bermotif ombak

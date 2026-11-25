@@ -130,7 +130,7 @@ Teks krem/emas tidak terbaca di latar `perkamen` — pakai perkamen hanya untuk 
 ```json
 { "kesimpulan": "Seutas tali 3-4-5 = sudut siku-siku sempurna", "tex": "\\g{a^2 + b^2 = c^2}", "ajakan": "Ikuti UDcation untuk seri berikutnya" }
 ```
-Kesimpulan → rumus emas → logo Δ Kawung beranimasi → wordmark UDCATION → tagline → ajakan.
+Kesimpulan → rumus emas → logo Δ Kawung Cetak Biru (garis bantu muncul, kelopak tergambar, titik jatuh, kilau) → wordmark UDCATION (mono) → tagline → ajakan.
 Watermark logo kecil otomatis hilang saat outro.
 
 ---
@@ -141,7 +141,7 @@ Watermark logo kecil otomatis hilang saat outro.
 |---|---|---|
 | `Background` | `components/Background.tsx` | latar bertekstur + grain + light leak + vignette, drift pelan |
 | `TumpalFrame` | `components/TumpalFrame.tsx` | bingkai krem ganda + tumpal, tergambar |
-| `DeltaLogo` | `components/DeltaLogo.tsx` | logo Δ Kawung animasi (kelopak tumbuh, titik jatuh, kilau) |
+| `DeltaLogo` | `components/DeltaLogo.tsx` | logo resmi Δ Kawung Cetak Biru: kelopak garis emas tergambar, titik jatuh, kilau; `construction` = garis bantu; `isStatic` untuk watermark. Tanpa arsiran. |
 | `GoldText` | `components/GoldText.tsx` | teks emas foil + kilau menyapu |
 | `Tex` | `components/Tex.tsx` | KaTeX; `\g{}` = emas |
 | `CaptionBar` | `components/CaptionBar.tsx` | subtitle marun karaoke |

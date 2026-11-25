@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, useVideoConfig } from "remotion";
 import { applyTheme, TEMA, temaDariPilar } from "./brand/tema";
-import { C, sans, serif } from "./brand/theme";
+import { C, mono, sans, serif } from "./brand/theme";
 import { Background } from "./components/Background";
 import { DeltaLogo } from "./components/DeltaLogo";
 import { Elemen, IlustrasiDefs } from "./components/Ilustrasi";
@@ -95,9 +95,9 @@ const Art: React.FC<{ sb: Storyboard; size: number }> = ({ sb, size }) => (
 const Brand: React.FC<{ s: number }> = ({ s }) => (
   <div style={{ display: "flex", alignItems: "center", gap: 16 * s }}>
     <DeltaLogo size={70 * s} isStatic id="thumb-logo" />
-    <span style={{ fontFamily: serif, fontWeight: 600, fontSize: 46 * s, letterSpacing: "0.16em" }}>
-      <span style={{ color: C.emas }}>UD</span>
-      <span style={{ color: C.krem }}>CATION</span>
+    <span style={{ fontFamily: mono, fontSize: 40 * s, letterSpacing: "0.3em" }}>
+      <span style={{ color: C.emas, fontWeight: 700 }}>UD</span>
+      <span style={{ color: C.krem, fontWeight: 400 }}>CATION</span>
     </span>
   </div>
 );

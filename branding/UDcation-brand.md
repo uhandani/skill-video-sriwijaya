@@ -3,7 +3,44 @@
 **UD** = Uhan Dani · **UDcation** = plesetan *education*.
 Posisi: belajar Matematika & Fisika dengan rasa Nusantara — mewah, otentik, dan ilmiah.
 
-## Logo terpilih: Δ Kawung (delta dari tiga kelopak kawung)
+## LOGO RESMI (sejak 25 Nov 2026): Δ Kawung Cetak Biru
+
+Lembar logo: [`logo-cetak-biru.png`](logo-cetak-biru.png) (sumber: `logo-cetak-biru.html`).
+Penerapan di 7 media (Instagram, intro & watermark video, banner YouTube, kartu nama, merchandise, sertifikat):
+kanvas desain https://claude.ai/artifact/7HFkVJhg4eLm3NAKna2bf8
+
+- **Bentuk:** sama dengan Δ Kawung (segitiga dari tiga kelopak kawung, titik di pusat), tetapi digambar
+  sebagai **gambar teknik / cetak biru**: kelopak berupa **garis emas tanpa isi**, ramping, dengan celah lebar
+  di tiap sudut.
+- **TANPA ARSIRAN.** Tidak ada kelopak yang diarsir/di-hatch, di ukuran apa pun.
+- **Garis bantu teknik** (garis tengah putus-putus ke tiap sudut, lingkaran luar, busur 60°) **opsional**,
+  hanya untuk logo besar: intro/outro video, lembar logo, banner, sertifikat. Ukuran kecil = tanpa garis bantu.
+- **Warna** (tetap palet Δ Kawung):
+  | Peran | Hex |
+  |---|---|
+  | garis kelopak (utama) | emas `#EDB53D` |
+  | titik pusat di latar gelap | krem `#F1E6D0` |
+  | latar utama | navy `#262B4A` (bertekstur kertas cetak biru halus) |
+  | latar terang | krem `#F4ECDD` — garis emas tua `#B07A26`, titik navy |
+  | satu warna | krem di marun `#6A1A25`, navy, putih, hitam |
+  | aksen (stempel, garis kecil) | marun `#6A1A25` |
+- **Wordmark:** `UDCATION` IBM Plex Mono, spasi huruf lebar — **UD** tebal emas, **CATION** reguler krem
+  (navy di latar terang). Tagline tulisan tangan Architects Daughter: *Ilmu Semesta · Rasa Nusantara*.
+- **Ukuran kecil (≤ 64 px):** pakai garis lebih tebal (`mark-icon-small.svg`, favicon).
+- **Geometri (satu sumber):** `tools/delta.mjs` ⇄ `studio/src/brand/delta.ts` → `SPEC_BLUEPRINT = [0.013, 0.108, 0.09·SIDE]`,
+  `STROKE_BP = 3.2`, `DOT_R_BP = 9` (satuan R = 100).
+- **Aset:** `assets/svg/` (mark-gold-on-dark, mark-gold-on-light, mark-krem-on-marun, mark-navy, mark-white,
+  mark-black, mark-icon-small, mark-construction) dan `assets/png/` (profile-1080, app-icon-1024, favicon-512/32,
+  watermark-400, lockup horizontal gelap/terang, lockup vertikal, yt-banner-2560).
+  Ekspor ulang: `NODE_PATH=$(npm root -g) node branding/tools/export-assets.mjs`. Font OFL di `fonts/`.
+- **Video:** komponen `DeltaLogo` (Remotion) menggambar logo ini: garis bantu muncul → kelopak tergambar seperti
+  pena → titik jatuh ke pusat → kilau foil. Watermark & thumbnail memakai versi statis.
+- **Arsip:** logo Δ Kawung isi foil (versi di bawah) dipindah ke `assets/legacy-foil/`. Jangan dipakai lagi
+  untuk konten baru. Video yang sudah dirender tidak perlu diubah.
+
+---
+
+## Versi sebelumnya: Δ Kawung isi foil (delta dari tiga kelopak kawung)
 
 Sketsa: [`logo-delta-kawung.png`](logo-delta-kawung.png) (sumber: `logo-delta-kawung.html`).
 

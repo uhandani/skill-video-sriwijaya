@@ -1,6 +1,6 @@
 ---
 name: video-ruang-hitung
-description: Membuat video pendek MATEMATIKA pilar "Ruang Hitung" UDcation (juga konten Fakta Unik) bergaya khas "Nusantara Emas" — navy + marun, motif kawung, foil emas, subtitle karaoke, logo Δ Kawung, rumus KaTeX, diagram & grafik, voice-over ElevenLabs, plus thumbnail — dengan Remotion. Ini juga skill INTI: mesin video, alur kerja, dan referensi bersama untuk skill video-ruang-semesta (fisika) dan video-ruang-nusantara (sejarah & budaya). Gunakan saat pengguna minta video/Reels/Shorts UDcation tentang MTK (aljabar, geometri, bilangan, peluang, sejarah simbol MTK) atau revisi video UDcation.
+description: Membuat video pendek MATEMATIKA pilar "Ruang Hitung" UDcation (juga konten Fakta Unik) bergaya khas "Nusantara Emas" — navy + marun, motif kawung, foil emas, subtitle karaoke, logo Δ Kawung Cetak Biru, rumus KaTeX, diagram & grafik, voice-over ElevenLabs, plus thumbnail — dengan Remotion. Ini juga skill INTI: mesin video, alur kerja, dan referensi bersama untuk skill video-ruang-semesta (fisika) dan video-ruang-nusantara (sejarah & budaya). Gunakan saat pengguna minta video/Reels/Shorts UDcation tentang MTK (aljabar, geometri, bilangan, peluang, sejarah simbol MTK) atau revisi video UDcation.
 ---
 
 # Video Ruang Hitung (MTK) — inti UDcation
@@ -21,7 +21,7 @@ Semua komponen visual sudah ada di proyek Remotion `studio/` dan dipakai ulang.
 | `studio/` | Proyek Remotion (React). Komponen, adegan, storyboard, skrip cek. |
 | `studio/src/storyboards/*.json` | Storyboard tiap video + `index.ts` (daftar video) |
 | `studio/verify/*.py` | Skrip verifikasi angka/rumus per video (wajib) |
-| `branding/` | Logo Δ Kawung (SVG/PNG), dokumen brand, generator aset |
+| `branding/` | Logo resmi **Δ Kawung Cetak Biru** (garis emas, tanpa arsiran) SVG/PNG, dokumen brand, generator aset |
 | `.claude/skills/video-ruang-hitung/references/` | Panduan rinci (baca sesuai kebutuhan) |
 
 Jika `studio/` belum ada `node_modules`, jalankan `cd studio && npm install` dulu.
@@ -67,7 +67,7 @@ Perintah lengkap, audio/voice-over, dan catatan lingkungan → `references/produ
 - Latar selalu bertekstur (komponen `Background`: navy/cokelat/perkamen/kayu) — tidak ada warna polos.
 - Tidak ada hard-cut: transisi `iris` (default), `fade`, atau `perkamen` (untuk "yang salah / masa lalu").
 - Video dibuka dengan **pena emas** menggambar di perkamen (`diagram` + `"pena": true`, `bg: "perkamen"`)
-  ATAU hook `title` dengan tanda tanya emas. Adegan terakhir selalu `outro` (logo Δ Kawung).
+  ATAU hook `title` dengan tanda tanya emas. Adegan terakhir selalu `outro` (logo Δ Kawung Cetak Biru tergambar garis demi garis).
 - Subtitle dibuat otomatis dari `narasi` — jangan menaruh rumus di narasi; tulis seperti diucapkan.
 - Teks di dalam safe area: atas 8%, bawah 18% (bar subtitle di ±74%), samping 6%.
 

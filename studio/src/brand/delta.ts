@@ -12,7 +12,15 @@ export const DOT_R = 10;
 export const VIEWBOX = "-110 -112 220 198";
 
 type Spec = [number, number, number];
+/** LEGACY: logo isi foil lama. */
 export const SPEC_MAIN: Spec = [0.04, 0.16, 6];
+/**
+ * LOGO RESMI (sejak 25 Nov 2026): Δ Kawung cetak biru — kelopak GARIS emas,
+ * tanpa isi, TANPA ARSIRAN, titik krem di pusat.
+ */
+export const SPEC_BLUEPRINT: Spec = [0.013, 0.108, 0.09 * SIDE];
+export const STROKE_BP = 3.2;
+export const DOT_R_BP = 9;
 
 const rad = (c: number, h: number) => (c * c) / 4 / (2 * h) + h / 2;
 const f = (n: number) => Number(n.toFixed(2));
@@ -39,12 +47,10 @@ export function petalPath(
   return `M${f(a[0])},${f(a[1])} ${seg(b, ho)} ${seg(a, hi)} Z`;
 }
 
-export const PETALS: string[] = VERTS.map((_, i) =>
-  petalPath(
-    VERTS[i],
-    VERTS[(i + 1) % 3],
-    SPEC_MAIN[0] * SIDE,
-    SPEC_MAIN[1] * SIDE,
-    SPEC_MAIN[2],
-  ),
-);
+const petalsFor = (spec: Spec) =>
+  VERTS.map((_, i) => petalPath(VERTS[i], VERTS[(i + 1) % 3], spec[0] * SIDE, spec[1] * SIDE, spec[2]));
+
+/** Kelopak logo resmi (cetak biru). */
+export const PETALS: string[] = petalsFor(SPEC_BLUEPRINT);
+/** Kelopak logo lama (isi foil), arsip. */
+export const PETALS_LEGACY: string[] = petalsFor(SPEC_MAIN);

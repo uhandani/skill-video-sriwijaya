@@ -15,7 +15,7 @@
 
 | Elemen | Ketentuan |
 |---|---|
-| Logo | **Δ Kawung** — segitiga (delta = perubahan) yang ketiga sisinya kelopak kawung, titik pusat = titik berat. Detail: `branding/UDcation-brand.md` |
+| Logo | **Δ Kawung Cetak Biru** (resmi sejak 25 Nov 2026) — segitiga Δ dari tiga kelopak kawung berupa **garis emas tanpa isi, tanpa arsiran**, titik krem di pusat (titik berat), latar navy. Wordmark IBM Plex Mono: **UD** emas + CATION krem. Aset: `branding/assets/`; logo foil lama diarsipkan. Detail: `branding/UDcation-brand.md` |
 | Gaya | "Nusantara Emas": tekstur kain/batik, foil emas, ilustrasi tekstil bergaya video Sriwijaya, subtitle karaoke |
 | Font | Cormorant Garamond (judul, serif) + Mulish (teks, sans) |
 | Emas | Hanya 1–2 fokus per adegan (rumus kunci, hasil, kata penting) |

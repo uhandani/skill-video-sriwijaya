@@ -52,8 +52,12 @@ hak komersial — untuk konten yang dimonetisasi perlu minimal Starter.
 
 ## Brand
 
-- Logo, aset, dan filosofi: `branding/UDcation-brand.md`, `branding/assets/`.
-- Geometri logo: `branding/tools/delta.mjs` ⇄ `studio/src/brand/delta.ts` (ubah keduanya bila logo berubah).
+- Logo resmi: **Δ Kawung Cetak Biru** (garis emas tanpa isi, TANPA arsiran, titik krem). Aset: `branding/assets/svg|png`;
+  logo isi foil lama hanya arsip di `branding/assets/legacy-foil/` — jangan dipakai di video/thumbnail baru.
+- Logo, aset, dan filosofi: `branding/UDcation-brand.md`.
+- Geometri logo: `branding/tools/delta.mjs` ⇄ `studio/src/brand/delta.ts` (`SPEC_BLUEPRINT`, `STROKE_BP`, `DOT_R_BP`;
+  ubah keduanya bila logo berubah).
+- Di video selalu pakai komponen `DeltaLogo` (jangan menggambar logo sendiri). Wordmark: font `mono` (IBM Plex Mono).
 - Ekspor ulang aset logo: `NODE_PATH=$(npm root -g) node branding/tools/export-assets.mjs` (butuh playwright).
 
 ## Catatan lingkungan

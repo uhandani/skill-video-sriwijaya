@@ -5,13 +5,16 @@ import { continueRender, delayRender, staticFile } from "remotion";
 const FONTS = [
   { family: "UD Cormorant", file: "fonts/CormorantGaramond-latin.woff2", weight: "300 700" },
   { family: "UD Mulish", file: "fonts/Mulish-latin.woff2", weight: "200 1000" },
+  // Wordmark logo resmi (Δ Kawung cetak biru): UD tebal emas + CATION reguler krem.
+  { family: "UD Plex", file: "fonts/IBMPlexMono-Regular.ttf", weight: "400" },
+  { family: "UD Plex", file: "fonts/IBMPlexMono-Bold.ttf", weight: "700" },
 ];
 
 if (typeof document !== "undefined") {
   const handle = delayRender("Memuat font lokal UDcation");
   Promise.all(
     FONTS.map((f) => {
-      const face = new FontFace(f.family, `url(${staticFile(f.file)}) format("woff2")`, { weight: f.weight });
+      const face = new FontFace(f.family, `url(${staticFile(f.file)}) format("${f.file.endsWith(".ttf") ? "truetype" : "woff2"}")`, { weight: f.weight });
       document.fonts.add(face);
       return face.load();
     }),
@@ -24,6 +27,8 @@ if (typeof document !== "undefined") {
 }
 
 export const serif = '"UD Cormorant", "Cormorant Garamond", Georgia, serif';
+/** Font wordmark logo resmi UDCATION. */
+export const mono = '"UD Plex", "IBM Plex Mono", Menlo, monospace';
 export const sans = '"UD Mulish", Mulish, "Helvetica Neue", Arial, sans-serif';
 
 /**

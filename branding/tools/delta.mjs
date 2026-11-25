@@ -1,4 +1,8 @@
 // Geometri logo Δ Kawung — satu sumber kebenaran untuk SVG, PNG, dan Remotion.
+// LOGO RESMI (sejak 25 Nov 2026): Δ Kawung CETAK BIRU — kelopak berupa GARIS
+// emas tanpa isi dan TANPA ARSIRAN, titik krem di pusat. Lihat SPEC_BLUEPRINT,
+// STROKE_BP, DOT_R_BP, markSVG({ style: 'line' }). Versi isi foil (SPEC_MAIN)
+// sekarang arsip/legacy.
 // Segitiga sama sisi (jari-jari R ke sudut), tiap sisi = kelopak kawung
 // (irisan dua busur lingkaran). Sisi luar hampir lurus, sisi dalam melengkung.
 
@@ -12,6 +16,10 @@ export const VERTS = [
 
 // [tonjolan luar, tonjolan dalam, celah sudut] per sisi
 export const SPEC_MAIN = [0.04, 0.16, 6];
+// Logo resmi cetak biru: kelopak ramping, sisi dalam melengkung dalam, celah sudut lebar.
+export const SPEC_BLUEPRINT = [0.013, 0.108, 0.09 * SIDE];
+export const STROKE_BP = 3.2; // tebal garis kelopak (satuan R = 100)
+export const DOT_R_BP = 9;
 export const SPEC_TYPO = [[0.2, 0.2, 6], [0.11, 0.11, 6], [0.07, 0.07, 6]];
 export const DOT_R = 10;
 // viewBox yang membungkus mark dengan pas
@@ -45,7 +53,32 @@ export const COLORS = {
 
 export const GOLD_STOPS = [[0, '#F6D27A'], [0.55, '#E2A834'], [1, '#B07A26']];
 
-/** SVG string mark. fills: [p1,p2,p3,dot]; 'gold' = gradien foil. */
+/** Garis bantu gambar teknik (opsional, hanya untuk ukuran besar/intro). */
+export function constructionSVG(color, sw = 0.8) {
+  const lines = VERTS.map(([x, y]) => `<line x1="${f(x * 1.18)}" y1="${f(y * 1.18)}" x2="${f(-x * 0.62)}" y2="${f(-y * 0.62)}" stroke="${color}" stroke-width="${sw}" stroke-dasharray="12 4 2.5 4" opacity=".7"/>`).join('');
+  const circ = `<circle cx="0" cy="0" r="${R}" fill="none" stroke="${color}" stroke-width="${sw * 0.8}" stroke-dasharray="2 4.5" opacity=".55"/>`;
+  const arc = `<path d="M-14 -76 A28 28 0 0 0 14 -76" fill="none" stroke="${color}" stroke-width="${sw}"/>`;
+  return lines + circ + arc;
+}
+
+/**
+ * Logo resmi: garis (cetak biru). line = warna garis kelopak, dot = warna titik pusat.
+ * construction = tambah garis bantu teknik. Tidak pernah ada arsiran.
+ */
+export function lineMarkSVG({ line = COLORS.emas, dot = COLORS.krem, size = 512, bg = null, pad = 6, construction = false, stroke = STROKE_BP } = {}) {
+  const [x, y, w, h] = VIEWBOX.split(' ').map(Number);
+  const P = construction ? Math.max(pad, 18) : pad;
+  const vb = `${x - P} ${y - P} ${w + 2 * P} ${h + 2 * P}`;
+  const H = Math.round(size * (h + 2 * P) / (w + 2 * P));
+  const p = petals(SPEC_BLUEPRINT);
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${H}" viewBox="${vb}">` +
+    (bg ? `<rect x="${x - P}" y="${y - P}" width="${w + 2 * P}" height="${h + 2 * P}" fill="${bg}"/>` : '') +
+    (construction ? constructionSVG(line) : '') +
+    p.map((d) => `<path d="${d}" fill="none" stroke="${line}" stroke-width="${stroke}" stroke-linejoin="round"/>`).join('') +
+    `<circle cx="0" cy="0" r="${DOT_R_BP}" fill="${dot}"/></svg>`;
+}
+
+/** LEGACY (logo isi foil lama). fills: [p1,p2,p3,dot]; 'gold' = gradien foil. */
 export function markSVG({ fills = ['gold', 'gold', 'gold', COLORS.krem], size = 512, bg = null, spec = SPEC_MAIN, pad = 0 } = {}) {
   const [x, y, w, h] = VIEWBOX.split(' ').map(Number);
   const vb = `${x - pad} ${y - pad} ${w + 2 * pad} ${h + 2 * pad}`;

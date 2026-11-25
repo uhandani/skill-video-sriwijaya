@@ -14,6 +14,9 @@ lalu referensi bersama di `.claude/skills/video-ruang-hitung/references/`:
 
 ## Identitas Ruang Semesta
 
+- **Logo** sama di semua pilar: **Δ Kawung Cetak Biru** (garis emas, tanpa arsiran, titik krem) lewat komponen
+  `DeltaLogo` — lihat `style-guide.md`. Jangan pakai logo isi foil lama.
+
 - `"pilar": "Ruang Semesta"` → palet otomatis: latar **hijau zamrud** (`bg: navy`), latar sekunder
   **langit malam indigo** (`bg: cokelat`, cocok untuk astronomi/antariksa), bar subtitle **jingga senja**,
   aksen **hijau giok**, motif **mega mendung** (awan Cirebon = langit, udara, alam).

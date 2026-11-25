@@ -6,9 +6,12 @@ Implementasi ada di `studio/src/` — panduan ini menjelaskan *kenapa* dan *kapa
 ## Identitas
 
 - **Brand**: UDcation (UD = Uhan Dani, plesetan *education*). Tagline: *Ilmu Semesta · Rasa Nusantara*.
-- **Logo**: Δ Kawung — segitiga delta yang tiap sisinya kelopak kawung emas, titik krem di pusat
-  (titik berat). Δ = perubahan; 3 kelopak = Matematika, Fisika, Nusantara.
-- **Wordmark**: `UDCATION` kapital renggang, Cormorant Garamond SemiBold; "UD" emas.
+- **Logo (resmi sejak 25 Nov 2026)**: **Δ Kawung Cetak Biru** — tiga kelopak kawung berupa **garis emas** `#EDB53D`
+  tanpa isi dan **tanpa arsiran**, membentuk segitiga Δ; titik krem `#F1E6D0` di pusat (titik berat). Latar navy
+  `#262B4A`. Garis bantu teknik (garis tengah putus-putus, lingkaran, sudut 60°) hanya untuk logo besar (intro/outro).
+  Δ = perubahan; 3 kelopak = Matematika, Fisika, Nusantara. Logo isi foil lama = arsip, jangan dipakai lagi.
+- **Wordmark**: `UDCATION` kapital renggang, IBM Plex Mono — "UD" tebal emas, "CATION" reguler krem.
+  Tagline tulisan tangan (Architects Daughter) di aset brand; di video tetap pakai font video.
 - **Pilar konten**: Ruang Hitung (MTK) · Ruang Semesta (fisika) · Fakta Unik · Jejak Ilmu Nusantara.
 
 ## Warna

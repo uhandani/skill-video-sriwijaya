@@ -16,4 +16,5 @@ Proyek video pendek edukasi MTK & fisika bergaya "Nusantara Emas" milik UDcation
 - Selalu ada ilustrasi; tiap pilar warnanya beda; thumbnail Reels & YouTube dengan hook "wow".
 - Nomor part di video/thumbnail mengikuti **urutan posting**, bukan urutan rencana.
 - Hemat token & kredit ElevenLabs: untuk revisi, ubah hanya adegan yang perlu.
+- **Logo resmi: Δ Kawung Cetak Biru** (sejak 25 Nov 2026) — kelopak garis emas tanpa isi, **tanpa arsiran**, titik krem, latar navy; wordmark IBM Plex Mono (UD emas). Selalu lewat komponen `DeltaLogo` / aset `branding/assets/`. Logo isi foil lama hanya arsip (`branding/assets/legacy-foil/`). Detail: `branding/UDcation-brand.md`.
 - Bahasa percakapan: Indonesia.

@@ -202,6 +202,10 @@ Checklist gaya (wajib lolos sebelum render):
 10. BRAND: UDcation
 ==================================================================
 Nama channel: UDcation (UD = Uhan Dani, plesetan "education").
+> **PEMBARUAN 25 Nov 2026:** logo resmi sekarang **Δ Kawung Cetak Biru** (kelopak garis emas, tanpa isi,
+> tanpa arsiran, titik krem; wordmark IBM Plex Mono). Deskripsi logo isi foil di bawah ini sudah usang —
+> ikuti `branding/UDcation-brand.md` dan `studio/src/components/DeltaLogo.tsx`.
+
 Aset & filosofi ada di `branding/` repo ini (UDcation-brand.md, logo-konsep.html):
   - Logo utama "Δ Kawung" (branding/logo-delta-kawung.html — salin fungsi
     petal() & simbolnya): segitiga Δ yang tiap sisinya kelopak kawung emas,
