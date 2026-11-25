@@ -49,7 +49,8 @@ const center = (inner, col = false, gap = 0) => `<div style="position:absolute;i
 
 const pages = [
   // nama, lebar, tinggi, html, transparan?
-  ['profile-1080', 1080, 1080, box(1080, 1080, sheet(1080, 1080) + center(size(svgs['mark-gold-on-dark'], 700)))],
+  // foto profil IG/YouTube: garis lebih tebal agar terbaca di lingkaran kecil (±110 px)
+  ['profile-1080', 1080, 1080, box(1080, 1080, sheet(1080, 1080) + center(size(lineMarkSVG({ line: K.emas, dot: K.krem, stroke: 5.2 }), 740), false, 0).replace('justify-content:center', 'justify-content:center;padding-top:28px;box-sizing:border-box'))],
   ['app-icon-1024', 1024, 1024, box(1024, 1024, center(size(svgs['mark-krem-on-marun'], 680)), K.marun)],
   ['favicon-512', 512, 512, box(512, 512, center(size(svgs['mark-icon-small'], 400)), K.navy, 'border-radius:96px'), true],
   ['favicon-32', 32, 32, box(32, 32, center(size(lineMarkSVG({ line: K.emas, dot: K.krem, stroke: 11, pad: 2 }), 30)), K.navy, 'border-radius:6px'), true],
