@@ -1,0 +1,284 @@
+[
+ {
+  "id": "UMUM-BELUM-SEDERHANA",
+  "simpul": "UMUM",
+  "nama": "Jawaban benar tapi belum paling sederhana",
+  "sebut": "Nilaimu sudah benar, tapi bentuknya belum paling sederhana.",
+  "tunjukkan": "Bagi pembilang dan penyebut dengan FPB-nya. Contoh: 6/8 → bagi 2 → 3/4."
+ },
+ {
+  "id": "PEC-JUMLAH-LURUS",
+  "simpul": "J07-01",
+  "nama": "Pembilang & penyebut dijumlah lurus",
+  "sebut": "Sepertinya kamu menjumlahkan pembilang dengan pembilang, lalu penyebut dengan penyebut.",
+  "tunjukkan": "Coba cek: 1/2 + 1/2 harusnya 1 utuh, tapi cara itu menghasilkan 2/4 = 1/2. Penyebut itu nama ukuran potongan, jadi samakan dulu ukurannya, baru pembilangnya dijumlah.",
+  "sumber": "https://www.nfer.ac.uk/assessment-hub/what-are-the-common-mistakes-when-adding-fractions/"
+ },
+ {
+  "id": "PEC-PENYEBUT-DIKALI",
+  "simpul": "J07-01",
+  "nama": "Penyebut ikut dikalikan padahal sudah sama",
+  "sebut": "Sepertinya penyebutnya kamu kalikan, padahal penyebutnya sudah sama.",
+  "tunjukkan": "2/7 + 3/7 itu seperti 2 potong + 3 potong kue yang ukurannya sama (sepertujuh). Hasilnya 5 potong sepertujuh = 5/7. Ukuran potongnya tidak berubah."
+ },
+ {
+  "id": "PEC-LUPA-PENYEBUT",
+  "simpul": "J07-01",
+  "nama": "Penyebut hilang di akhir",
+  "sebut": "Hitungan pembilangmu sudah jalan, tapi penyebutnya hilang di akhir.",
+  "tunjukkan": "Jawaban pecahan selalu butuh penyebut. Kalau tidak ditulis, 5/7 berubah jadi 5 utuh, jauh lebih besar dari yang sebenarnya."
+ },
+ {
+  "id": "PEC-SAMAKAN-PENYEBUT-SAJA",
+  "simpul": "J07-02",
+  "nama": "Penyebut disamakan, pembilang tidak disesuaikan",
+  "sebut": "Kamu sudah menyamakan penyebut, bagus! Tapi pembilangnya belum ikut diubah.",
+  "tunjukkan": "Saat 1/2 jadi per-enam, pembilang juga dikali 3: 1/2 = 3/6. Jadi 1/2 + 1/3 = 3/6 + 2/6 = 5/6, bukan 2/6.",
+  "sumber": "https://files.eric.ed.gov/fulltext/EJ1139514.pdf"
+ },
+ {
+  "id": "PEC-CAMPURAN-ABAIKAN-BULAT",
+  "simpul": "J07-03",
+  "nama": "Bagian bilangan bulat terlupa",
+  "sebut": "Bagian pecahannya sudah kamu hitung, tapi bilangan bulatnya tertinggal.",
+  "tunjukkan": "2 1/3 artinya 2 utuh ditambah 1/3. Jumlahkan dulu bagian utuhnya (2 + 1), baru bagian pecahannya."
+ },
+ {
+  "id": "PEC-CAMPURAN-UBAH-SALAH",
+  "simpul": "J07-03",
+  "nama": "Salah mengubah pecahan campuran",
+  "sebut": "Sepertinya cara mengubah pecahan campuran ke pecahan biasa masih keliru.",
+  "tunjukkan": "2 1/3 bukan (2+1)/3. Dua utuh = 6/3, jadi 2 1/3 = 6/3 + 1/3 = 7/3. Rumusnya: (utuh × penyebut + pembilang) / penyebut."
+ },
+ {
+  "id": "PEC-KALI-SILANG",
+  "simpul": "J07-04",
+  "nama": "Kali silang saat mengalikan pecahan",
+  "sebut": "Sepertinya kamu mengali silang. Kali silang itu dipakai untuk membandingkan, bukan mengalikan.",
+  "tunjukkan": "Mengalikan pecahan itu lurus: atas × atas, bawah × bawah. 2/3 × 3/4 = 6/12 = 1/2. Masuk akal: dua pertiga dari tiga perempat pasti lebih kecil dari tiga perempat."
+ },
+ {
+  "id": "PEC-KALI-SEPERTI-JUMLAH",
+  "simpul": "J07-04",
+  "nama": "Mengalikan dengan aturan penjumlahan",
+  "sebut": "Sepertinya kamu menjumlahkan, padahal soalnya perkalian.",
+  "tunjukkan": "1/2 × 1/2 artinya setengah dari setengah = 1/4 (makin kecil). Kalau dijumlah malah jadi 1. Cek tanda operasinya dulu, ya."
+ },
+ {
+  "id": "PEC-KALI-SAMAKAN-PENYEBUT",
+  "simpul": "J07-04",
+  "nama": "Menyamakan penyebut saat perkalian",
+  "sebut": "Kamu menyamakan penyebut dulu. Untuk perkalian itu tidak perlu, dan malah membuat hasilnya salah.",
+  "tunjukkan": "Langsung saja: pembilang × pembilang, penyebut × penyebut. 1/2 × 2/3 = 2/6 = 1/3."
+ },
+ {
+  "id": "PEC-BAGI-TANPA-BALIK",
+  "simpul": "J07-05",
+  "nama": "Membagi tanpa membalik pecahan",
+  "sebut": "Sepertinya kamu langsung mengalikan, belum membalik pecahan pembaginya.",
+  "tunjukkan": "Membagi dengan 1/2 sama dengan bertanya 'ada berapa setengah?'. 3 ÷ 1/2 = 6, bukan 3/2. Caranya: kali dengan kebalikan pembagi, 3 × 2/1."
+ },
+ {
+  "id": "PEC-BALIK-YANG-SALAH",
+  "simpul": "J07-05",
+  "nama": "Yang dibalik pecahan pertama",
+  "sebut": "Kamu sudah ingat aturan membalik, tapi yang dibalik pecahan pertama.",
+  "tunjukkan": "Yang dibalik selalu pembaginya (pecahan di belakang tanda ÷). 2/3 ÷ 3/4 = 2/3 × 4/3 = 8/9."
+ },
+ {
+  "id": "PEC-BALIK-KEDUANYA",
+  "simpul": "J07-05",
+  "nama": "Kedua pecahan dibalik",
+  "sebut": "Sepertinya kedua pecahan kamu balik. Cukup satu saja.",
+  "tunjukkan": "Hanya pembagi yang dibalik: 2/3 ÷ 3/4 = 2/3 × 4/3. Pecahan pertama tetap."
+ },
+ {
+  "id": "PEC-URUTAN-KIRI-KANAN",
+  "simpul": "J07-06",
+  "nama": "Mengerjakan dari kiri ke kanan, abaikan kali dulu",
+  "sebut": "Sepertinya kamu menghitung urut dari kiri ke kanan.",
+  "tunjukkan": "Aturannya sama seperti bilangan biasa: kali dan bagi dikerjakan lebih dulu daripada tambah dan kurang. 2 + 3 × 4 = 14, bukan 20."
+ },
+ {
+  "id": "PEC-SALAH-OPERASI-TAMBAH",
+  "simpul": "J07-07",
+  "nama": "Memilih tambah, padahal 'bagian dari' berarti kali",
+  "sebut": "Sepertinya kamu menjumlahkan. Kata 'bagian dari' biasanya berarti dikali.",
+  "tunjukkan": "1/2 bagian dari 10 hektare = 1/2 × 10 = 5 hektare. Hasilnya harus lebih kecil dari luas seluruh sawah, kan?"
+ },
+ {
+  "id": "PEC-SALAH-OPERASI-BAGI",
+  "simpul": "J07-07",
+  "nama": "Memilih bagi, padahal 'bagian dari' berarti kali",
+  "sebut": "Sepertinya kamu membagi. Coba cek: hasilmu lebih besar dari luas sawahnya.",
+  "tunjukkan": "Sebagian sawah pasti lebih kecil dari seluruh sawah. 'a/b bagian dari w' = a/b × w."
+ },
+ {
+  "id": "PEC-KALI-BULAT-KE-PENYEBUT",
+  "simpul": "J07-07",
+  "nama": "Bilangan bulat dikalikan ke penyebut",
+  "sebut": "Bilangan bulatnya kamu kalikan ke penyebut. Seharusnya ke pembilang.",
+  "tunjukkan": "10 = 10/1. Jadi 10 × 1/2 = (10 × 1)/(1 × 2) = 10/2 = 5. Bilangan bulat ikut mengalikan pembilang."
+ },
+ {
+  "id": "PERS-PINDAH-TANDA-TETAP",
+  "simpul": "J12-02",
+  "nama": "Pindah ruas tanpa ganti operasi",
+  "sebut": "Sepertinya suku itu kamu pindahkan ke ruas lain tanpa mengganti tandanya.",
+  "tunjukkan": "Bayangkan timbangan: x + 3 = 11. Untuk menghilangkan +3 di kiri, kedua piring dikurangi 3 → x = 11 − 3 = 8. 'Pindah ruas' sebenarnya adalah melakukan operasi kebalikan di kedua ruas.",
+  "sumber": "https://www.exeter.ac.uk/research/groups/education/pmej/pome15/errors.htm"
+ },
+ {
+  "id": "PERS-KURANG-TERBALIK",
+  "simpul": "J12-02",
+  "nama": "Urutan pengurangan terbalik",
+  "sebut": "Sepertinya urutan pengurangannya terbalik, jadi tandanya ikut terbalik.",
+  "tunjukkan": "Pengurangan tidak bisa dibolak-balik: 11 − 3 = 8, tapi 3 − 11 = −8. Tulis dulu operasi kebalikannya di kedua ruas (x + 3 = 11 → x = 11 − 3; x − 3 = 11 → x = 11 + 3), lalu hitung urut dari kiri."
+ },
+ {
+  "id": "PERS-ABAIKAN-SUKU",
+  "simpul": "J12-02",
+  "nama": "Suku angka diabaikan",
+  "sebut": "Sepertinya angka di samping x belum kamu urus.",
+  "tunjukkan": "Kalau x + 3 = 11, x belum sendirian. Hilangkan dulu +3 dari kedua ruas, baru x ketemu."
+ },
+ {
+  "id": "PERS-KURANG-KOEF",
+  "simpul": "J12-03",
+  "nama": "Koefisien dikurangkan, bukan dibagi",
+  "sebut": "Sepertinya angka di depan x kamu kurangkan.",
+  "tunjukkan": "3x artinya 3 × x. Kebalikan dari dikali 3 adalah dibagi 3. Jadi 3x = 12 → x = 12 ÷ 3 = 4. Cek: 3 × 4 = 12 ✓."
+ },
+ {
+  "id": "PERS-KALI-BUKAN-BAGI",
+  "simpul": "J12-03",
+  "nama": "Koefisien dikalikan, bukan dibagi",
+  "sebut": "Sepertinya kamu mengalikan, padahal harusnya dibagi.",
+  "tunjukkan": "Cek jawabanmu dengan memasukkannya ke soal: kalau 3x = 12 dan x = 36, maka 3 × 36 = 108, bukan 12. Kebalikan 'dikali 3' adalah 'dibagi 3'."
+ },
+ {
+  "id": "PERS-BAGI-TERBALIK",
+  "simpul": "J12-03",
+  "nama": "Pembagian terbalik",
+  "sebut": "Pembagiannya terbalik: yang dibagi justru angka di depan x.",
+  "tunjukkan": "3x = 12 → x = 12/3, bukan 3/12. Yang dibagi adalah ruas kanan, pembaginya angka di depan x."
+ },
+ {
+  "id": "PERS-BAGI-SATU-SUKU",
+  "simpul": "J12-04",
+  "nama": "Membagi hanya satu suku",
+  "sebut": "Sepertinya hanya sebagian suku yang kamu bagi.",
+  "tunjukkan": "Pada 2x + 6 = 10, membagi dengan 2 harus untuk semua suku: x + 3 = 5. Lebih aman: kurangi 6 dulu → 2x = 4, baru bagi 2 → x = 2.",
+  "sumber": "https://core.ac.uk/download/270294089.pdf"
+ },
+ {
+  "id": "PERS-KURUNG-SEBAGIAN",
+  "simpul": "J12-06",
+  "nama": "Hanya sebagian isi kurung yang dikali",
+  "sebut": "Sepertinya angka di depan kurung hanya kamu kalikan ke x saja.",
+  "tunjukkan": "3(x + 2) = 3x + 6, karena 3 dikalikan ke semua yang di dalam kurung. Atau bagi dulu kedua ruas dengan 3: x + 2 = …"
+ },
+ {
+  "id": "PERS-BAGI-BUKAN-KALI",
+  "simpul": "J12-07",
+  "nama": "Membagi, padahal harus dikali",
+  "sebut": "Sepertinya kamu membagi lagi. Untuk menghilangkan '/a', kebalikannya dikali a.",
+  "tunjukkan": "x/4 = 3 → x = 3 × 4 = 12. Cek: 12/4 = 3 ✓."
+ },
+ {
+  "id": "PERS-KALI-SATU-SUKU",
+  "simpul": "J12-07",
+  "nama": "Hanya satu suku yang dikali",
+  "sebut": "Sepertinya saat mengalikan, hanya satu suku yang kamu kalikan.",
+  "tunjukkan": "Kalau kedua ruas dikali 4, semua suku ikut dikali: x/4 + 2 = 5 → x + 8 = 20. Lebih aman: kurangi 2 dulu → x/4 = 3 → x = 12."
+ },
+ {
+  "id": "RUMUS-BALIK-PECAHAN",
+  "simpul": "J13-01",
+  "nama": "Pecahan terbalik",
+  "sebut": "Sepertinya pecahannya terbalik: yang harusnya di atas jadi di bawah.",
+  "tunjukkan": "Coba dengan angka kembar: 5 = 10/2. Untuk mencari 2, hitung 10/5, bukan 5/10. Jadi dari v = s/t, t = s/v.",
+  "sumber": "https://journals.gre.ac.uk/index.php/msor/article/view/1053/pdf"
+ },
+ {
+  "id": "RUMUS-BAGI-BUKAN-KALI",
+  "simpul": "J13-01",
+  "nama": "Membagi, padahal harus dikali",
+  "sebut": "Sepertinya kamu membagi, padahal untuk mengeluarkan s dari s/t kita kalikan dengan t.",
+  "tunjukkan": "Angka kembar: 5 = 10/2 → 10 = 5 × 2. Sama dengan v = s/t → s = v × t.",
+  "sumber": "https://journals.gre.ac.uk/index.php/msor/article/view/1053/pdf"
+ },
+ {
+  "id": "RUMUS-TAMBAH-BUKAN-KALI",
+  "simpul": "J13-01",
+  "nama": "Memakai tambah untuk membalik bagi",
+  "sebut": "Sepertinya kamu menjumlahkan. Kebalikan dari 'dibagi' adalah 'dikali', bukan ditambah.",
+  "tunjukkan": "Angka kembar: 5 = 10/2 → 10 = 5 × 2, bukan 5 + 2."
+ },
+ {
+  "id": "RUMUS-KALI-BUKAN-BAGI",
+  "simpul": "J13-02",
+  "nama": "Mengalikan, padahal harus dibagi",
+  "sebut": "Sepertinya kamu mengalikan. Untuk mengeluarkan huruf yang dikali, kita bagi.",
+  "tunjukkan": "Angka kembar: 12 = 3 × 4 → 3 = 12/4. Sama dengan F = m·a → m = F/a. Cek satuan juga: N/(m/s²) = kg ✓.",
+  "sumber": "https://journals.gre.ac.uk/index.php/msor/article/view/1053/pdf"
+ },
+ {
+  "id": "RUMUS-KURANG-BUKAN-BAGI",
+  "simpul": "J13-02",
+  "nama": "Memakai kurang untuk membalik kali/bagi",
+  "sebut": "Sepertinya kamu mengurangkan. Kebalikan dari 'dikali' adalah 'dibagi'.",
+  "tunjukkan": "Angka kembar: 12 = 3 × 4 → 3 = 12 ÷ 4, bukan 12 − 4. Mengurangkan besaran yang satuannya beda (N − kg) juga tidak bermakna."
+ },
+ {
+  "id": "RUMUS-PINDAH-TANDA",
+  "simpul": "J13-03",
+  "nama": "Pindah ruas tanpa ganti tanda",
+  "sebut": "Sepertinya u kamu pindahkan ke ruas lain tanpa mengganti tandanya.",
+  "tunjukkan": "Sama seperti persamaan linear: v = u + a·t → kurangi u di kedua ruas → v − u = a·t. Baru bagi dengan t.",
+  "sumber": "https://mathematics.mtu.ie/common-errors-and-misconceptions"
+ },
+ {
+  "id": "RUMUS-BAGI-SATU-SUKU",
+  "simpul": "J13-03",
+  "nama": "Membagi hanya satu suku",
+  "sebut": "Sepertinya hanya v yang kamu bagi dengan t, sedangkan u tertinggal.",
+  "tunjukkan": "Pindahkan u dulu: v − u = a·t. Lalu seluruh ruas kiri dibagi t: a = (v − u)/t. Tanda kurung itu penting."
+ },
+ {
+  "id": "RUMUS-LUPA-KONSTANTA",
+  "simpul": "J13-04",
+  "nama": "Angka ½ hilang",
+  "sebut": "Sepertinya angka ½ di rumus terlupa.",
+  "tunjukkan": "½ juga ikut 'dibongkar': kalikan kedua ruas dengan 2 dulu. E = ½·m·v² → 2E = m·v² → m = 2E/v²."
+ },
+ {
+  "id": "RUMUS-KONSTANTA-TERBALIK",
+  "simpul": "J13-04",
+  "nama": "½ dibagi, padahal harus dikali 2",
+  "sebut": "Kamu ingat ada ½, tapi arahnya terbalik.",
+  "tunjukkan": "Kebalikan dari 'dikali ½' adalah 'dikali 2' (bukan dibagi 2). Angka kembar: 9 = ½ × 18 → 18 = 2 × 9."
+ },
+ {
+  "id": "RUMUS-KUADRAT-LUPA",
+  "simpul": "J13-04",
+  "nama": "Pangkat dua hilang",
+  "sebut": "Sepertinya pangkat dua pada huruf pembagi terlupa.",
+  "tunjukkan": "Huruf yang dikuadratkan tetap kuadrat saat jadi pembagi: E = ½·m·v² → m = 2E/v²; s = ½·a·t² → a = 2s/t²."
+ },
+ {
+  "id": "RUMUS-AKAR-LUPA",
+  "simpul": "J13-05",
+  "nama": "Lupa mengakar",
+  "sebut": "Hasilmu masih berupa kuadrat dari huruf yang dicari. Langkah terakhirnya: diakar.",
+  "tunjukkan": "Kebalikan dari kuadrat adalah akar: v² = 2E/m → v = √(2E/m). Begitu juga t² = 2s/a → t = √(2s/a).",
+  "sumber": "https://mathematics.mtu.ie/common-errors-and-misconceptions"
+ },
+ {
+  "id": "RUMUS-AKAR-SEBAGIAN",
+  "simpul": "J13-05",
+  "nama": "Akar hanya sebagian",
+  "sebut": "Sepertinya akarnya hanya mengenai bagian atas.",
+  "tunjukkan": "Akar harus mengenai seluruh ruas: v = √(2E/m), bukan √(2E)/m. Sama untuk t = √(2s/a)."
+ }
+]

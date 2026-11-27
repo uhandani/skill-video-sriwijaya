@@ -153,3 +153,39 @@ Catatan ElevenLabs gratis: bila muncul "Free generations are busy", tunggu ±1 m
 
 File video MP4 tidak disimpan di repo (terlalu besar). Simpan hasil unduhan di Google Drive, misalnya folder
 `UDCATION/Video/<Pilar>/` dan `UDCATION/Thumbnail/<Pilar>/`.
+
+## Platform UDcation (Tahap 2)
+
+Platform belajar umum SD–SMA untuk menambal **pondasi** numerasi & literasi: operasi bilangan,
+pecahan, huruf dalam MTK/persamaan, ubah rumus fisika, dan soal cerita. Pembeda dari Gradient
+Academy (fokus UTBK/TKA): UDcation fokus pondasi.
+
+- Alur siswa: login → tes diagnostik adaptif → peta Kuasai/Rapuh/Bolong → latihan di anak tangga yang bolong.
+- Analisis salah: jawaban isian dicocokkan dengan pola salah (miskonsepsi), cek per langkah untuk persamaan & ubah rumus,
+  feedback 3 lapis (sebut → tunjukkan → soal kembar), profil salah dievaluasi terus.
+- Gamifikasi (nanti): map kerajaan Nusantara, kartu tokoh & pahlawan nasional dari prestasi belajar (bukan uang).
+
+| Skill/agen | Tokoh | Keahlian |
+|---|---|---|
+| `gajahmada-koordinator` | Gajah Mada | koordinator tim |
+| `kihajar-kurikulum` | Ki Hajar Dewantara | kurikulum, diagnostik, desain modul |
+| `malahayati-riset-soal` | Malahayati | riset Kumon, AKM, PISA, Gradient |
+| `sultanagung-bank-soal-mtk` | Sultan Agung | bank soal MTK & pola salah |
+| `habibie-fisika` | B.J. Habibie | ubah rumus & soal fisika |
+| `kartini-literasi-modul` | R.A. Kartini | soal cerita, modul, teks feedback |
+| `dewisartika-penguji` | Dewi Sartika | verifikasi kunci & hitungan |
+| `djuanda-developer` | Ir. Djuanda | developer platform |
+| `radensaleh-kreatif-game` | Raden Saleh | tim kreatif & gamifikasi |
+
+### Peta jalan platform (fase build)
+
+| Fase | Isi | Status |
+|---|---|---|
+| 0. Fondasi | Desain, 9 agen tokoh, riset Kumon/AKM/Gradient & gamifikasi | ✅ selesai |
+| 1. Mesin & konten inti | Cek jawaban + pola salah, diagnostik adaptif, profil remedi; peta 80 simpul J01–J15; konten penuh J07, J12, J13 | ✅ selesai |
+| 2. Prototipe web uji coba | Web HP-first (udcation.vercel.app), Supabase + RLS, halaman siswa & guru, mode demo | 🟡 ~90 % — sisa: login Google (pemilik), uji sendiri, merge PR #1 |
+| 3. Uji coba kelas | 1–2 kelas, 1–2 minggu; kumpulkan jawaban "tak dikenal", kalibrasi target waktu, tanya siswa | ⏳ berikutnya |
+| 4. Perluas konten pondasi | J02–J03 hitung dasar, J06, J08–J11, J14, J15 soal cerita + literasi; dicek guru | ⏳ |
+| 5. Gamifikasi Nusantara | Peta kerajaan, kartu tokoh (dari prestasi), gelar, Api Obor, Titah Raja | ⏳ |
+| 6. Siap umum (opsi B) | Next.js (cek jawaban di server), jenjang SD–SMA, banyak guru/sekolah, privasi & izin ortu, mode offline | ⏳ |
+| 7. Langganan | Inti pondasi tetap gratis; berbayar untuk laporan guru/ortu & modul lanjutan | ⏳ |

@@ -18,3 +18,10 @@ Proyek video pendek edukasi MTK & fisika bergaya "Nusantara Emas" milik UDcation
 - Hemat token & kredit ElevenLabs: untuk revisi, ubah hanya adegan yang perlu.
 - **Logo resmi: Δ Kawung Cetak Biru** (sejak 25 Nov 2026) — kelopak garis emas tanpa isi, **tanpa arsiran**, titik krem, latar navy; wordmark IBM Plex Mono (UD emas). Selalu lewat komponen `DeltaLogo` / aset `branding/assets/`. Logo isi foil lama hanya arsip (`branding/assets/legacy-foil/`). Detail: `branding/UDcation-brand.md`.
 - Bahasa percakapan: Indonesia.
+
+## Platform UDcation (tahap konten)
+- Platform belajar numerasi & literasi SD–SMA (gratis dulu, nanti langganan). Kode & konten di `platform/`.
+- Desain: `docs/superpowers/specs/2026-11-23-platform-udcation-design.md` · Rencana: `docs/superpowers/plans/2026-11-23-platform-udcation-konten.md`.
+- Tim agen tokoh (skill + agen, panggil dengan nama, mis. `/kihajar-kurikulum`): `gajahmada-koordinator`, `kihajar-kurikulum`, `malahayati-riset-soal`, `sultanagung-bank-soal-mtk`, `habibie-fisika`, `kartini-literasi-modul`, `dewisartika-penguji`, `djuanda-developer`, `radensaleh-kreatif-game`.
+- Cek: `cd platform && npm test && npm run cek`.
+- Prototipe web (Vite + React + Supabase) di `platform/web/` — cek: `cd platform/web && npm test && npm run cek && npm run e2e && npm run uji-rls`. Mode demo `/?demo=1`.
